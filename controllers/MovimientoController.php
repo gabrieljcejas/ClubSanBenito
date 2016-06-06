@@ -13,6 +13,7 @@ use app\models\SocioDebito;
 use app\models\SubCuenta;
 use mPDF;
 use Yii;
+use yii\data\ActiveDataProvider;
 use yii\filters\VerbFilter;
 use yii\helpers\ArrayHelper;
 use yii\web\Controller;
@@ -717,21 +718,15 @@ class MovimientoController extends Controller {
 		if (Yii::$app->request->post()) {
 
 			$post = Yii::$app->request->post();
-
+						
+			// PARAMETROS	
 			$fecha_desde = date('Y-m-d', strtotime($post['fecha_desde']));
-			
-			$fecha_hasta = date('Y-m-d', strtotime($post['fecha_hasta']));
-
-			var_dump($post['deportes']);die;
-
-			$mpdf = new mPDF('utf-8', 'A4');
-			$mpdf->WriteHTML($this->renderPartial('_imprimir_egresos', [				
-				'fecha_desde' => $fecha_desde,
-				'fecha_hasta' => $fecha_hasta,
-			]));
-			$mpdf->Output();
-			exit;
-
+			$fecha_hasta = date('Y-m-d', strtotime($post['fecha_hasta']));		
+			$deporte = $post['deportes'];
+			$categoria = $post['categorias'];
+			$estado_opcion = $post['estado_opcion'];			
+						
+			$this->imprimirEstadoCuenta($fecha_desde,$fecha_hasta,$deporte,$categoria,$estado_opcion);
 		}
 
 
@@ -757,6 +752,109 @@ class MovimientoController extends Controller {
 		]);
 
 	}
+
+	/*
+	** FUNCION PRIVATE
+	**	CONSULTAS DE ESTADO DE CUENTA 
+	*/
+
+	private function imprimirEstadoCuenta($fecha_desde,$fecha_hasta,$deporte,$categoria,$estado_opcion){
+			
+			$mes_desde   = date('m', strtotime($fecha_desde));
+			$mes_hasta   = date('m', strtotime($fecha_desde));
+			$anio_desde  = date('Y', strtotime($fecha_hasta));
+			$anio_hasta  = date('Y', strtotime($fecha_hasta));
+
+			$cat = CategoriaSocial::findOne($categoria);			
+			$dep = Debito::findOne($deporte);
+			//var_dump($estado_opcion);die;
+			//CONSULTA TODOS LOS ESTADOS DE CUENTAS 
+			if ($estado_opcion == 1){			
+
+				$sql = "SELECT s.id,s.apellido_nombre,s.id_categoria_social FROM socio  s
+						JOIN socio_debito sd ON sd.id_socio = s.id
+						WHERE s.id_categoria_social = " . $categoria . " AND sd.id_debito = ". $deporte ." ORDER BY s.id ASC" ;
+				
+				$socio = Socio::findBySql($sql)->all();			
+
+				
+				$movimientoDetalle = MovimientoDetalle::find()
+					->where(['>=', 'periodo_mes', $mes_desde])
+					->andWhere(['>=', 'periodo_anio', $anio_desde])
+					->andWhere(['<=', 'periodo_mes', $mes_hasta])
+					->andWhere(['<=', 'periodo_anio', $anio_hasta])
+					->andWhere(['subcuenta_id'=>$dep->subcuenta_id])
+					->all();
+
+				$titulo = " - Todos";
+				
+			//SOLO LOS PAGADOS
+			}elseif ($estado_opcion == 2) {
+				
+				$sql = "SELECT * FROM socio  s
+						JOIN socio_debito sd ON sd.id_socio = s.id
+						WHERE s.id_categoria_social = " . $categoria . " AND sd.id_debito = ". $deporte ." ORDER BY s.id DESC" ;
+				
+				$socio = Socio::findBySql($sql)->all();
+				
+				$movimientoDetalle = MovimientoDetalle::find()
+					->joinWith('movimiento')
+					->where(['<>','movimiento.fecha_pago',''])
+					->andWhere(['>=', 'periodo_mes', $mes_desde])
+					->andWhere(['>=', 'periodo_anio', $anio_desde])
+					->andWhere(['<=', 'periodo_mes', $mes_hasta])
+					->andWhere(['<=', 'periodo_anio', $anio_hasta])
+					->andWhere(['subcuenta_id'=>$dep->subcuenta_id])
+					->all();
+
+				$titulo = " - Pagas";
+
+			//SOLO LAS DEUDAS	
+			}else{
+
+				$sql = "SELECT * FROM socio  s
+						JOIN socio_debito sd ON sd.id_socio = s.id
+						WHERE s.id_categoria_social = " . $categoria . " AND sd.id_debito = ". $deporte ." ORDER BY s.id DESC" ;
+				
+				$socio = Socio::findBySql($sql)->all();
+				
+				$movimientoDetalle = MovimientoDetalle::find()
+					->joinWith('movimiento')
+					->where(['movimiento.fecha_pago'=>''])
+					->andWhere(['>=', 'periodo_mes', $mes_desde])
+					->andWhere(['>=', 'periodo_anio', $anio_desde])
+					->andWhere(['<=', 'periodo_mes', $mes_hasta])
+					->andWhere(['<=', 'periodo_anio', $anio_hasta])
+					->andWhere(['subcuenta_id'=>$dep->subcuenta_id])
+					->all();
+
+				$titulo = " - Deudas";
+
+			}
+
+
+			/**
+			****** IMPRIMIR 
+			**/
+			$mpdf = new mPDF('utf-8', 'A4');
+			$mpdf->WriteHTML($this->renderPartial('_imprimir_consulta_estado_cuenta', [				
+				'fecha_desde' => $fecha_desde,
+				'fecha_hasta' => $fecha_hasta,	
+				'deporte' => $deporte,
+				'categoria' => $categoria,
+				'socio' => $socio,
+				'movimientoDetalle' => $movimientoDetalle,
+				'cat' => $cat,
+				'dep' => $dep,
+				'titulo' => $titulo,
+			]));
+			$mpdf->Output();
+			exit;
+	
+	}
+
+	
+
 
 	public function actionConsultaProveedor() {
 

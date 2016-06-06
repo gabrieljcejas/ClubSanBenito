@@ -14,7 +14,7 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 <?php $form = ActiveForm::begin();?>
 
 <div class="row">
-	<div class="col-md-5">
+	<div class="col-md-3">
 	     <label>Fecha Desde</label>
 	     <div class="input-group">
 	      	<?=
@@ -29,10 +29,8 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 	      <span class="input-group-addon glyphicon glyphicon-calendar"></span>
 	    </div>
     </div>
-</div><br>
 
-<div class="row">	
-	<div class="col-md-5">
+	<div class="col-md-3">
 	 	<label>Fecha Hasta</label> 	
 		<div class="input-group">
 	      	<?=
@@ -50,6 +48,19 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 </div><br>
 
 <div class="row">
+	
+	<div class="col-md-6">
+	 	<?=Html::radio("ep",true,["label"=>"Todo","uncheck"=>false,"data-id"=>1,"class"=>"form-control"])?>
+	    
+	    <?=Html::radio("ep",false,["label"=>"Pagos","uncheck"=>true,"data-id"=>2,"class"=>"form-control"])?>
+	    
+	    <?=Html::radio("ep",false,["label"=>"Deudas","uncheck"=>true,"data-id"=>3,"class"=>"form-control"])?>
+
+	    <?=Html::textInput("estado_opcion", 1 ,["id"=>"estado_opcion","type"=>"hidden"] )?>
+    </div>
+
+</div><br>
+<!--<div class="row">
 	<div class="col-md-5">
 		<label>Socios</label>		             
             <?=
@@ -64,7 +75,7 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
         		]);
             ?>            
 	</div>
-</div><br>
+</div><br>-->
 
 <div class="row">
 	<div class="col-md-5">
@@ -102,7 +113,48 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 
 <br>
 
-<div><?=Html::submitButton('Buscar', ['class' => 'btn btn-success'])?></div>
+<div><!--<?=Html::Button('Buscar', ['class' => 'btn btn-success','name'=>'buttonSubmit'])?>--></div>
 
+<input type="button" id="filter" name="filter" value="Buscar" class="btn btn-success" />
 
 <?php $form = ActiveForm::end();?>
+
+
+<script type="text/javascript" src="<?=Yii::$app->request->baseUrl?>/js/jquery.min.js"></script>
+
+<script>
+
+
+$(function () { 
+    
+   	/*
+   	**	VALIDAR CAMPOS
+   	**/
+
+	 $("#filter").on( "click", function() {
+		
+		if ( $( "input[name='fecha_desde']" ).val() == "" ){
+			alert("FECHA DESDE: Ingrese un valor.");
+			$( "input[name='fecha_desde']" ).focus();
+			return false;
+		}
+
+		if ( $( "input[name='fecha_hasta']" ).val() == "" ){
+			alert("FECHA HASTA: Ingrese un valor.");
+			$( "input[name='fecha_desde']" ).focus();
+			return false;
+		}
+			
+		$("#filter").submit();
+		
+	});
+
+    $( "input[type=radio]" ).on( "click", function() {
+        var valor = $(this).data("id");                       
+        $("#estado_opcion").val(valor);
+    }); 
+
+
+}); 
+
+</script>
