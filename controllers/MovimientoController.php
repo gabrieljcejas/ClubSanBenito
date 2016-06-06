@@ -776,7 +776,7 @@ class MovimientoController extends Controller {
 						WHERE s.id_categoria_social = " . $categoria . " AND sd.id_debito = ". $deporte ." ORDER BY s.id ASC" ;
 				
 				$socio = Socio::findBySql($sql)->all();			
-
+				//var_dump($socio);die;	
 				
 				$movimientoDetalle = MovimientoDetalle::find()
 					->where(['>=', 'periodo_mes', $mes_desde])
@@ -791,7 +791,7 @@ class MovimientoController extends Controller {
 			//SOLO LOS PAGADOS
 			}elseif ($estado_opcion == 2) {
 				
-				$sql = "SELECT * FROM socio  s
+				$sql = "SELECT s.id,s.apellido_nombre,s.id_categoria_social FROM socio  s
 						JOIN socio_debito sd ON sd.id_socio = s.id
 						WHERE s.id_categoria_social = " . $categoria . " AND sd.id_debito = ". $deporte ." ORDER BY s.id DESC" ;
 				
@@ -799,7 +799,8 @@ class MovimientoController extends Controller {
 				
 				$movimientoDetalle = MovimientoDetalle::find()
 					->joinWith('movimiento')
-					->where(['<>','movimiento.fecha_pago',''])
+					->where(['not', ['movimiento.fecha_pago' => null]])
+					//->where(['<>','movimiento.fecha_pago',''])
 					->andWhere(['>=', 'periodo_mes', $mes_desde])
 					->andWhere(['>=', 'periodo_anio', $anio_desde])
 					->andWhere(['<=', 'periodo_mes', $mes_hasta])
@@ -809,10 +810,11 @@ class MovimientoController extends Controller {
 
 				$titulo = " - Pagas";
 
+				
 			//SOLO LAS DEUDAS	
 			}else{
 
-				$sql = "SELECT * FROM socio  s
+				$sql = "SELECT s.id,s.apellido_nombre,s.id_categoria_social FROM socio  s
 						JOIN socio_debito sd ON sd.id_socio = s.id
 						WHERE s.id_categoria_social = " . $categoria . " AND sd.id_debito = ". $deporte ." ORDER BY s.id DESC" ;
 				
@@ -820,7 +822,7 @@ class MovimientoController extends Controller {
 				
 				$movimientoDetalle = MovimientoDetalle::find()
 					->joinWith('movimiento')
-					->where(['movimiento.fecha_pago'=>''])
+					->where(['movimiento.fecha_pago' => null])
 					->andWhere(['>=', 'periodo_mes', $mes_desde])
 					->andWhere(['>=', 'periodo_anio', $anio_desde])
 					->andWhere(['<=', 'periodo_mes', $mes_hasta])
@@ -829,7 +831,7 @@ class MovimientoController extends Controller {
 					->all();
 
 				$titulo = " - Deudas";
-
+				//var_dump($movimientoDetalle);die;	
 			}
 
 

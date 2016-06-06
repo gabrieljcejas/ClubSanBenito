@@ -29,13 +29,23 @@ use yii\grid\GridView;
 <?php foreach ($socio as $s) {?>	
 	
 	<?php foreach ($movimientoDetalle as $md) {?>
+
 		<tr>			
-			<?php if ($md->movimiento->fk_cliente == $s->id){ ?>								
+			<?php if ($s->id == $md->movimiento->fk_cliente){ ?>
+
 				<td align="center"><?= $s->apellido_nombre ?></td> 
 				<td align="center"><?= $md->subCuenta->concepto ?></td>
 				<td align="center"><?= $md->periodo_mes ?></td>
 				<td align="center"><?= $md->periodo_anio ?></td>
-				<td align="center"><?= date("d-m-Y",strtotime($md->movimiento->fecha_pago)) ?></td>
+				<td align="center">
+					<?php 
+						if ($md->movimiento->fecha_pago!=""){
+							echo date("d-m-Y",strtotime($md->movimiento->fecha_pago)) ;
+						}else{
+							echo "-";
+						}
+					?>		
+				</td>
 				<?php $saldo = $md->importe + $saldo ?>
 				<td align="right"><?= "$".$md->importe?></td>
 			<?php } ?>	

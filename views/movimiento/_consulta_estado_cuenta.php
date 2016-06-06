@@ -79,16 +79,17 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 
 <div class="row">
 	<div class="col-md-5">
-		<label>Categorias</label>
+		<label>Deportes</label>
 		 	<?=
             	Select2::widget([
-	    			'name' => 'categorias',
-	                'data' => $categorias,
+	    			'name' => 'deportes',
+	                'data' => $deportes,
 	                //'language' => 'de',
-	                'options' => ['placeholder' => 'Selecione una Categoria ...'],
+	                'options' => ['placeholder' => 'Selecione un Deporte ...','id'=>'deporte'],
 	                'pluginOptions' => [
 	                    'allowClear' => true
 	                ],
+
         		]);
         	?>        
 	</div>
@@ -96,13 +97,13 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 
 <div class="row">
 	<div class="col-md-5">
-		<label>Deportes</label>
+		<label>Categorias</label>
 		 	<?=
             	Select2::widget([
-	    			'name' => 'deportes',
-	                'data' => $deportes,
+	    			'name' => 'categorias',
+	                'data' => $categorias,
 	                //'language' => 'de',
-	                'options' => ['placeholder' => 'Selecione un Deporte ...'],
+	                'options' => ['placeholder' => 'Selecione una Categoria ...','id'=>'categoria'],
 	                'pluginOptions' => [
 	                    'allowClear' => true
 	                ],
@@ -115,7 +116,7 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 
 <div><!--<?=Html::Button('Buscar', ['class' => 'btn btn-success','name'=>'buttonSubmit'])?>--></div>
 
-<input type="button" id="filter" name="filter" value="Buscar" class="btn btn-success" />
+<input type="button" id="buscar" name="buscar" value="Buscar" class="btn btn-success"/>
 
 <?php $form = ActiveForm::end();?>
 
@@ -131,7 +132,7 @@ $(function () {
    	**	VALIDAR CAMPOS
    	**/
 
-	 $("#filter").on( "click", function() {
+	$("#buscar").on( "click", function() {
 		
 		if ( $( "input[name='fecha_desde']" ).val() == "" ){
 			alert("FECHA DESDE: Ingrese un valor.");
@@ -141,11 +142,25 @@ $(function () {
 
 		if ( $( "input[name='fecha_hasta']" ).val() == "" ){
 			alert("FECHA HASTA: Ingrese un valor.");
-			$( "input[name='fecha_desde']" ).focus();
+			$( "input[name='fecha_hasta']" ).focus();
 			return false;
 		}
-			
-		$("#filter").submit();
+		
+		//if ( $( ".select2-selection__rendered" ).prop('title') == "" ){		
+		if ( $( "#select2-deporte-container" ).prop('title') == "" ){		
+			alert("Ingrese un Deporte.");	
+			$( "#select2-deporte-container" ).focus();
+			return false;
+		}
+
+		if ( $( "#select2-categoria-container" ).prop('title') == "" ){
+			alert("Ingrese una Categoria.");
+			$( "#select2-categoria-container" ).focus();			
+			return false;
+		}
+		
+
+		$("#buscar").submit();
 		
 	});
 
@@ -154,6 +169,10 @@ $(function () {
         $("#estado_opcion").val(valor);
     }); 
 
+    
+    /*$( "#select2-input" ).change(function() {
+ 		 alert( "Handler for .change() called." );
+	});*/
 
 }); 
 
