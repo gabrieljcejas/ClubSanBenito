@@ -61,7 +61,7 @@ class MovimientoController extends Controller {
 
 			$model->fecha_pago = date('Y-m-d', strtotime($model->fecha_pago));
 			$post = Yii::$app->request->post();
-
+			
 			if ($v == 'i') {
 				$title = "Ingresos";
 				$modelR = Recibo::find()->where(['id' => 1])->one();
@@ -369,11 +369,10 @@ class MovimientoController extends Controller {
 
 		$m = Movimiento::find()->where(['id' => $id])->one();
 		$modelDetalle = MovimientoDetalle::find()->where(['movimiento_id' => $m->id])->one();
-
 		$mpdf = new mPDF('utf-8', 'A4');
 		$mpdf->WriteHTML($this->renderPartial('_imprimir_recibo_egreso', [
 			'm' => $m,
-			'modelDetalle' => $modelDetalle,
+			'modelDetalle' => $modelDetalle,			
 		]));
 		$mpdf->Output();
 		exit;
@@ -434,6 +433,7 @@ class MovimientoController extends Controller {
 
 		if ($tipo == 'i') {
 			$query = SubCuenta::find()->where(['>=', 'codigo', '4.1.1'])->andWhere(['<', 'codigo', '4.2'])->all();
+			//$query = Debito::find()->all();
 		} else {
 			$query = SubCuenta::find()->where(['>=', 'codigo', '4.2.1'])->andWhere(['<', 'codigo', '5.1'])->all();
 		}
@@ -740,10 +740,8 @@ class MovimientoController extends Controller {
 		$categorias = ArrayHelper::map($consultaCategorias, 'id', 'descripcion');	
 		
 	 	$consultaDebitos = Debito::find()->asArray()->all();
-		$deportes = ArrayHelper::map($consultaDebitos, 'id', 'concepto');	
+		$deportes = ArrayHelper::map($consultaDebitos, 'id', 'concepto');
         
-		
-
 		return $this->render('_consulta_estado_cuenta', [
 			'socios' => $socios,
 			'categorias' => $categorias,
@@ -753,11 +751,9 @@ class MovimientoController extends Controller {
 
 	}
 
-	/*
-	** FUNCION PRIVATE
+	/*	
 	**	CONSULTAS DE ESTADO DE CUENTA 
 	*/
-
 	private function imprimirEstadoCuenta($fecha_desde,$fecha_hasta,$deporte,$categoria,$estado_opcion){
 			
 			$mes_desde   = date('m', strtotime($fecha_desde));
@@ -767,74 +763,25 @@ class MovimientoController extends Controller {
 
 			$cat = CategoriaSocial::findOne($categoria);			
 			$dep = Debito::findOne($deporte);
-			//var_dump($estado_opcion);die;
-			//CONSULTA TODOS LOS ESTADOS DE CUENTAS 
-			if ($estado_opcion == 1){			
+		
+			$sql = "SELECT s.id,s.apellido_nombre,s.id_categoria_social FROM socio  s
+					JOIN socio_debito sd ON sd.id_socio = s.id
+					WHERE s.id_categoria_social = " . $categoria . " AND sd.id_debito = ". $deporte ." ORDER BY s.id DESC" ;
+			
+			$socio = Socio::findBySql($sql)->all();
+			
+			$movimientoDetalle = MovimientoDetalle::find()
+				->joinWith('movimiento')
+				->where(['movimiento.fecha_pago' => null])
+				->andWhere(['>=', 'periodo_mes', $mes_desde])
+				->andWhere(['>=', 'periodo_anio', $anio_desde])
+				->andWhere(['<=', 'periodo_mes', $mes_hasta])
+				->andWhere(['<=', 'periodo_anio', $anio_hasta])
+				->andWhere(['subcuenta_id'=>$dep->subcuenta_id])
+				->all();
 
-				$sql = "SELECT s.id,s.apellido_nombre,s.id_categoria_social FROM socio  s
-						JOIN socio_debito sd ON sd.id_socio = s.id
-						WHERE s.id_categoria_social = " . $categoria . " AND sd.id_debito = ". $deporte ." ORDER BY s.id ASC" ;
-				
-				$socio = Socio::findBySql($sql)->all();			
-				//var_dump($socio);die;	
-				
-				$movimientoDetalle = MovimientoDetalle::find()
-					->where(['>=', 'periodo_mes', $mes_desde])
-					->andWhere(['>=', 'periodo_anio', $anio_desde])
-					->andWhere(['<=', 'periodo_mes', $mes_hasta])
-					->andWhere(['<=', 'periodo_anio', $anio_hasta])
-					->andWhere(['subcuenta_id'=>$dep->subcuenta_id])
-					->all();
-
-				$titulo = " - Todos";
-				
-			//SOLO LOS PAGADOS
-			}elseif ($estado_opcion == 2) {
-				
-				$sql = "SELECT s.id,s.apellido_nombre,s.id_categoria_social FROM socio  s
-						JOIN socio_debito sd ON sd.id_socio = s.id
-						WHERE s.id_categoria_social = " . $categoria . " AND sd.id_debito = ". $deporte ." ORDER BY s.id DESC" ;
-				
-				$socio = Socio::findBySql($sql)->all();
-				
-				$movimientoDetalle = MovimientoDetalle::find()
-					->joinWith('movimiento')
-					->where(['not', ['movimiento.fecha_pago' => null]])
-					//->where(['<>','movimiento.fecha_pago',''])
-					->andWhere(['>=', 'periodo_mes', $mes_desde])
-					->andWhere(['>=', 'periodo_anio', $anio_desde])
-					->andWhere(['<=', 'periodo_mes', $mes_hasta])
-					->andWhere(['<=', 'periodo_anio', $anio_hasta])
-					->andWhere(['subcuenta_id'=>$dep->subcuenta_id])
-					->all();
-
-				$titulo = " - Pagas";
-
-				
-			//SOLO LAS DEUDAS	
-			}else{
-
-				$sql = "SELECT s.id,s.apellido_nombre,s.id_categoria_social FROM socio  s
-						JOIN socio_debito sd ON sd.id_socio = s.id
-						WHERE s.id_categoria_social = " . $categoria . " AND sd.id_debito = ". $deporte ." ORDER BY s.id DESC" ;
-				
-				$socio = Socio::findBySql($sql)->all();
-				
-				$movimientoDetalle = MovimientoDetalle::find()
-					->joinWith('movimiento')
-					->where(['movimiento.fecha_pago' => null])
-					->andWhere(['>=', 'periodo_mes', $mes_desde])
-					->andWhere(['>=', 'periodo_anio', $anio_desde])
-					->andWhere(['<=', 'periodo_mes', $mes_hasta])
-					->andWhere(['<=', 'periodo_anio', $anio_hasta])
-					->andWhere(['subcuenta_id'=>$dep->subcuenta_id])
-					->all();
-
-				$titulo = " - Deudas";
-				//var_dump($movimientoDetalle);die;	
-			}
-
-
+			$titulo = " - Deudas";
+			
 			/**
 			****** IMPRIMIR 
 			**/
@@ -859,8 +806,6 @@ class MovimientoController extends Controller {
 
 
 	public function actionConsultaProveedor() {
-
-		//$model = new Movimiento();
 
 		if (Yii::$app->request->post()) {
 

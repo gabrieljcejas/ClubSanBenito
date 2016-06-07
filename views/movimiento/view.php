@@ -51,7 +51,7 @@ $this->params['breadcrumbs'][] = "Listado";
 					]);
 				},
 				'imprimir' => function ($url, $model) {
-					return Html::a('<span class="btn btn-default glyphicon glyphicon-remove"></span>', $url, [
+					return Html::a('<span class="btn btn-default glyphicon glyphicon-print"></span>', $url, [
 						'data-confirm' => Yii::t('yii', 'Imprimir el Recibo?'),
 
 					]);

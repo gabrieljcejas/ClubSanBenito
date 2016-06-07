@@ -64,13 +64,16 @@ margin-left: 0.5cm;
         </strong></td>
       </tr>
       <tr>
+       <?php foreach ($modelDetalle as $md) {
+            $periodom = $md->getMes($md->periodo_mes) . " " . $md->periodo_anio;
+         }?>
         <td>Domicilio:</td>
         <td style="border:none"><strong>
         <?=$m->socio->direccion?>
         </strong></td>
         <td>Periodo:</td>
         <td style="border:none"><strong>        
-         <?=$md->getMes($modelDetalle->periodo_mes) . " " . $modelDetalle->periodo_anio ?>
+          <?= $periodom ?>
         </strong></td>
         <td style="border:none">&nbsp;</td>
         <td>Domicilio:</td>
@@ -79,7 +82,7 @@ margin-left: 0.5cm;
         </strong></td>
         <td>Periodo:</td>
         <td style="border:none"><strong>
-         <?=$md->getMes($modelDetalle->periodo_mes) . " " . $modelDetalle->periodo_anio ?>
+         <?= $periodom ?>
         </strong></td>
       </tr>
       <tr>
@@ -111,22 +114,21 @@ margin-left: 0.5cm;
 
         <?php $total = $md->importe + $total;?>
 
-    <?php }
-?>
+    <?php }?>
 
     <!-- codigo html parte de abajo-->
     <tr>
-        <td style="border:none"><barcode code="<?=$m->socio->dni?>" type="I25" /></td>
-        <td align="center" style="border:none"><p><strong>...........................</strong></p>          <p>Firma</p></td>
-        <td align="right" ><strong>TOTAL:</strong></td>
-        <td align="center"><strong>$
+        <td style="border:none"><br><br><barcode code="<?=$m->socio->dni?>" type="I25" /></td>
+        <td align="center" style="border:none"><br><br><p><strong>...........................</strong></p>          <p>Firma</p></td>
+        <td align="right" ><br><br><strong>TOTAL:</strong></td>
+        <td align="center"><br><br><br><strong>$
         <?=$total?>
         </strong></td>
         <td style="border:none"></td>
-        <td style="border:none"><barcode code="<?=$m->socio->dni?>" type="I25" /></td>
-        <td align="center" style="border:none"><p><strong>...........................</strong></p>          <p>Firma</p></td>
-      <td align="right" ><strong>TOTAL</strong></td>
-        <td align="center"><strong>$
+        <td style="border:none"><br><br><barcode code="<?=$m->socio->dni?>" type="I25" /></td>
+        <td align="center" style="border:none"><br><br><p><strong>...........................</strong><br><br><p>Firma</p></td>
+      <td align="right" ><br><br><strong>TOTAL</strong></td>
+        <td align="center"><br><br><br><strong>$
         <?=$total?>
         </strong></td>
       </tr>

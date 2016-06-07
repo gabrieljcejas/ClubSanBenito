@@ -75,7 +75,7 @@ class CiudadController extends Controller
         $model = new Ciudad();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['create']);
         } else {
             return $this->render('create', [
                 'model' => $model,

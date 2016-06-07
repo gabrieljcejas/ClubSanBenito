@@ -48,37 +48,7 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 </div><br>
 
 <div class="row">
-	
 	<div class="col-md-6">
-	 	<?=Html::radio("ep",true,["label"=>"Todo","uncheck"=>false,"data-id"=>1,"class"=>"form-control"])?>
-	    
-	    <?=Html::radio("ep",false,["label"=>"Pagos","uncheck"=>true,"data-id"=>2,"class"=>"form-control"])?>
-	    
-	    <?=Html::radio("ep",false,["label"=>"Deudas","uncheck"=>true,"data-id"=>3,"class"=>"form-control"])?>
-
-	    <?=Html::textInput("estado_opcion", 1 ,["id"=>"estado_opcion","type"=>"hidden"] )?>
-    </div>
-
-</div><br>
-<!--<div class="row">
-	<div class="col-md-5">
-		<label>Socios</label>		             
-            <?=
-            	Select2::widget([
-	    			'name' => 'socios',
-	                'data' => $socios,
-	                //'language' => 'de',
-	                'options' => ['placeholder' => 'Selecione un Socio ...'],
-	                'pluginOptions' => [
-	                    'allowClear' => true
-	                ],
-        		]);
-            ?>            
-	</div>
-</div><br>-->
-
-<div class="row">
-	<div class="col-md-5">
 		<label>Deportes</label>
 		 	<?=
             	Select2::widget([
@@ -96,7 +66,7 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 </div><br>
 
 <div class="row">
-	<div class="col-md-5">
+	<div class="col-md-6">
 		<label>Categorias</label>
 		 	<?=
             	Select2::widget([
@@ -146,7 +116,6 @@ $(function () {
 			return false;
 		}
 		
-		//if ( $( ".select2-selection__rendered" ).prop('title') == "" ){		
 		if ( $( "#select2-deporte-container" ).prop('title') == "" ){		
 			alert("Ingrese un Deporte.");	
 			$( "#select2-deporte-container" ).focus();
@@ -163,16 +132,6 @@ $(function () {
 		$("#buscar").submit();
 		
 	});
-
-    $( "input[type=radio]" ).on( "click", function() {
-        var valor = $(this).data("id");                       
-        $("#estado_opcion").val(valor);
-    }); 
-
-    
-    /*$( "#select2-input" ).change(function() {
- 		 alert( "Handler for .change() called." );
-	});*/
 
 }); 
 
