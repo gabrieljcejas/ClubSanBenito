@@ -26670,3 +26670,342 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1465229053.188
     'REQUEST_TIME' => 1465229053
 ]
+2016-06-22 01:55:38 [::1][1][hs5l1rqjj17rrmr657ids6n0l4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on null' in C:\xampp\htdocs\ClubSanBenito\controllers\SocioController.php:102
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-22 01:55:38 [::1][1][hs5l1rqjj17rrmr657ids6n0l4][info][application] $_GET = [
+    'r' => 'socio/create'
+]
+
+$_POST = [
+    '_csrf' => 'LmdONFFPbTJoCChDDiEHfW0se3MIIhVIGB4lBiIjQEEYEApdFggECw=='
+    'Socio' => [
+        'id_socio' => '540'
+        'matricula' => '3145454'
+        'apellido_nombre' => 'Daniel'
+        'direccion' => 'asdasd'
+        'id_provincia' => '1'
+        'id_ciudad' => '4'
+        'cp' => '3100'
+        'email' => 'lala@hotmail.com'
+        'telefono' => 'dasd'
+        'telefono2' => '4 6589798'
+        'dni' => '16555666'
+        'sexo' => 'f'
+        'fecha_nacimiento' => '05-06-2016'
+        'id_categoria_social' => '1'
+        'id_cobrador' => '1'
+        'fecha_alta' => '06-06-2016'
+        'file' => ''
+        'fecha_baja' => ''
+        'obs' => ''
+    ]
+]
+
+$_FILES = [
+    'Socio' => [
+        'name' => [
+            'file' => ''
+        ]
+        'type' => [
+            'file' => ''
+        ]
+        'tmp_name' => [
+            'file' => ''
+        ]
+        'error' => [
+            'file' => 4
+        ]
+        'size' => [
+            'file' => 0
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '5c2132ec6384110dafb5ea9ebbb2bc50fc144a4ed03d47eaab03ba6ac2c60d65a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Fofw_njOCK5GYmxz6yk2sl-s6wDiGGi9\";}'
+    'PHPSESSID' => 'hs5l1rqjj17rrmr657ids6n0l4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '2383'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryDtBMYMAhAHaVIhl0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=socio%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=5c2132ec6384110dafb5ea9ebbb2bc50fc144a4ed03d47eaab03ba6ac2c60d65a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Fofw_njOCK5GYmxz6yk2sl-s6wDiGGi9%22%3B%7D; PHPSESSID=hs5l1rqjj17rrmr657ids6n0l4'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '29637'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=socio%2Fcreate'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=socio%2Fcreate'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466553338.184
+    'REQUEST_TIME' => 1466553338
+]
+2016-06-22 01:56:47 [::1][1][hs5l1rqjj17rrmr657ids6n0l4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on null' in C:\xampp\htdocs\ClubSanBenito\controllers\SocioController.php:102
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-22 01:56:46 [::1][1][hs5l1rqjj17rrmr657ids6n0l4][info][application] $_GET = [
+    'r' => 'socio/create'
+]
+
+$_POST = [
+    '_csrf' => 'LmdONFFPbTJoCChDDiEHfW0se3MIIhVIGB4lBiIjQEEYEApdFggECw=='
+    'Socio' => [
+        'id_socio' => '540'
+        'matricula' => '3145454'
+        'apellido_nombre' => 'Daniel'
+        'direccion' => 'asdasd'
+        'id_provincia' => '1'
+        'id_ciudad' => '4'
+        'cp' => '3100'
+        'email' => 'lala@hotmail.com'
+        'telefono' => 'dasd'
+        'telefono2' => '4 6589798'
+        'dni' => '16555666'
+        'sexo' => 'f'
+        'fecha_nacimiento' => '05-06-2016'
+        'id_categoria_social' => '1'
+        'id_cobrador' => '1'
+        'fecha_alta' => '06-06-2016'
+        'file' => ''
+        'fecha_baja' => ''
+        'obs' => ''
+    ]
+]
+
+$_FILES = [
+    'Socio' => [
+        'name' => [
+            'file' => ''
+        ]
+        'type' => [
+            'file' => ''
+        ]
+        'tmp_name' => [
+            'file' => ''
+        ]
+        'error' => [
+            'file' => 4
+        ]
+        'size' => [
+            'file' => 0
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '5c2132ec6384110dafb5ea9ebbb2bc50fc144a4ed03d47eaab03ba6ac2c60d65a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Fofw_njOCK5GYmxz6yk2sl-s6wDiGGi9\";}'
+    'PHPSESSID' => 'hs5l1rqjj17rrmr657ids6n0l4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '2383'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryDtBMYMAhAHaVIhl0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=socio%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=5c2132ec6384110dafb5ea9ebbb2bc50fc144a4ed03d47eaab03ba6ac2c60d65a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Fofw_njOCK5GYmxz6yk2sl-s6wDiGGi9%22%3B%7D; PHPSESSID=hs5l1rqjj17rrmr657ids6n0l4'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '29693'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=socio%2Fcreate'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=socio%2Fcreate'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466553406.777
+    'REQUEST_TIME' => 1466553406
+]
+2016-06-22 01:56:59 [::1][1][hs5l1rqjj17rrmr657ids6n0l4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function saveAs() on null' in C:\xampp\htdocs\ClubSanBenito\controllers\SocioController.php:102
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-06-22 01:56:59 [::1][1][hs5l1rqjj17rrmr657ids6n0l4][info][application] $_GET = [
+    'r' => 'socio/create'
+]
+
+$_POST = [
+    '_csrf' => 'by5vWGRtcUkpQQkvOwMbBixlWh89AAkzWVcEahcBXDpZWSsxIyoYcA=='
+    'Socio' => [
+        'id_socio' => '540'
+        'matricula' => '3145454'
+        'apellido_nombre' => 'Daniel'
+        'direccion' => 'asdasd'
+        'id_provincia' => '1'
+        'id_ciudad' => '4'
+        'cp' => '3100'
+        'email' => 'lala@hotmail.com'
+        'telefono' => 'dasd'
+        'telefono2' => '4 6589798'
+        'dni' => '16555666'
+        'sexo' => 'f'
+        'fecha_nacimiento' => '05-06-2016'
+        'id_categoria_social' => '1'
+        'id_cobrador' => '1'
+        'fecha_alta' => '06-06-2016'
+        'file' => ''
+        'fecha_baja' => ''
+        'obs' => ''
+    ]
+]
+
+$_FILES = [
+    'Socio' => [
+        'name' => [
+            'file' => ''
+        ]
+        'type' => [
+            'file' => ''
+        ]
+        'tmp_name' => [
+            'file' => ''
+        ]
+        'error' => [
+            'file' => 4
+        ]
+        'size' => [
+            'file' => 0
+        ]
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '5c2132ec6384110dafb5ea9ebbb2bc50fc144a4ed03d47eaab03ba6ac2c60d65a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Fofw_njOCK5GYmxz6yk2sl-s6wDiGGi9\";}'
+    'PHPSESSID' => 'hs5l1rqjj17rrmr657ids6n0l4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '2383'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryQzcG65aVZ3Q1XXe2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=socio%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=5c2132ec6384110dafb5ea9ebbb2bc50fc144a4ed03d47eaab03ba6ac2c60d65a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Fofw_njOCK5GYmxz6yk2sl-s6wDiGGi9%22%3B%7D; PHPSESSID=hs5l1rqjj17rrmr657ids6n0l4'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '29704'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=socio%2Fcreate'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=socio%2Fcreate'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1466553419.471
+    'REQUEST_TIME' => 1466553419
+]

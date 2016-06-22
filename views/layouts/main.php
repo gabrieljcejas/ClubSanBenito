@@ -63,6 +63,7 @@ echo Nav::widget([
 				['label' => 'Plan de Cuentas', 'url' => ['/cuenta/index']],
 				'<li class="divider"></li>',
 				['label' => 'ABM Proveedores', 'url' => ['/proveedor/index']],
+				['label' => 'ABM Clientes', 'url' => ['/cliente/index']],
 			],
 		],
 		['label' => 'Reportes', 'url' => ['#'],

@@ -136,11 +136,10 @@ use yii\jui\DatePicker;
             <div class="row">
 
                 <?php if (empty($model->nombre_foto)) {?>
-                    <div class="col-md-6"><?=Html::img(yii::$app->urlManager->baseUrl . '/fotos/sin_foto.png', ['width' => 200])?></div>
+                    <div class="col-md-6" id="foto_perfil"><?=Html::img(yii::$app->urlManager->baseUrl . '/fotos/sin_foto.png', ['width' => 200])?></div>
                 <?php } else {?>
-                    <div class="col-md-6"><?=Html::img(yii::$app->urlManager->baseUrl . '/fotos/' . $model->nombre_foto, ['width' => 200])?></div>
-                <?php }
-?>
+                    <div class="col-md-6" id="foto_perfil"><?=Html::img(yii::$app->urlManager->baseUrl . '/fotos/' . $model->nombre_foto, ['width' => 200])?></div>
+                <?php }?>
 
                 <div class="col-md-1">
 

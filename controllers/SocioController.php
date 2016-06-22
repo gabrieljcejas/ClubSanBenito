@@ -96,18 +96,16 @@ class SocioController extends Controller {
 
 		if ($model->load(Yii::$app->request->post())) {
 			
-			//verifico que no se repita el dni
-			//$consulta = Socio::find()->Where(['dni'=>$model->dni])->one();
-			//var_dump($consulta)
-
 			
-			/*             * * SUBIR FOTO ** */
-			if (!empty($model->file)) {
-				$model->file = UploadedFile::getInstance($model, 'file');
+			/*** SUBIR FOTO ***/						
+			$model->file = UploadedFile::getInstance($model, 'file');
+			if ($model->file!=""){
 				$model->file->saveAs(Yii::$app->basePath . '/web/fotos/' . $model->dni . '.' . $model->file->extension);
 				$model->nombre_foto = $model->dni . '.' . $model->file->extension;
 			}
-			/*             * * FIN SUBIR FOTO ** */
+			/*--FIN---*/
+
+
 			$model->fecha_alta = date('Y-m-d', strtotime($model->fecha_alta)); // da vuelta la fecha a mysql
 			$model->fecha_nacimiento = date('Y-m-d', strtotime($model->fecha_nacimiento)); // da vuelta la fecha a mysql
 			if (!$model->save()) {
@@ -175,13 +173,13 @@ class SocioController extends Controller {
 		//var_dump($service->calcularEdad($model->fecha_nacimiento));die;
 		if ($model->load(Yii::$app->request->post())) {
 
-			/*             * * SUBIR FOTO ** */
-			if (!empty($model->file)) {
-				$model->file = UploadedFile::getInstance($model, 'file');
+			/*** SUBIR FOTO ***/						
+			$model->file = UploadedFile::getInstance($model, 'file');
+			if ($model->file!=""){
 				$model->file->saveAs(Yii::$app->basePath . '/web/fotos/' . $model->dni . '.' . $model->file->extension);
 				$model->nombre_foto = $model->dni . '.' . $model->file->extension;
 			}
-			/*             * * FIN SUBIR FOTO ** */
+			/*--FIN---*/
 
 			$model->fecha_alta = date('Y-m-d', strtotime($model->fecha_alta)); // da vuelta la fecha a mysql
 			$model->fecha_baja = date('Y-m-d', strtotime($model->fecha_baja)); // da vuelta la fecha a mysql

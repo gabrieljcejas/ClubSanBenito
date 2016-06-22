@@ -21,10 +21,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
         <div class="col-md-3">
           <div>
-              <?php if (isset($model->nombre_foto)) {?>
-                <?=Html::img(yii::$app->urlManager->baseUrl . '/fotos/' . $model->nombre_foto, ['width' => 150])?>
-              <?php }
-?>
+              <?php if (empty($model->nombre_foto)) {?>
+                    <div class="col-md-6" id="foto_perfil"><?=Html::img(yii::$app->urlManager->baseUrl . '/fotos/sin_foto.png', ['width' => 200])?></div>
+                <?php } else {?>
+                    <div class="col-md-6" id="foto_perfil"><?=Html::img(yii::$app->urlManager->baseUrl . '/fotos/' . $model->nombre_foto, ['width' => 200])?></div>
+                <?php }?>
           </div>
         </div>
         <div class="col-md-6">
