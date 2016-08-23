@@ -6,9 +6,11 @@ use yii\helpers\Html;
 use app\models\Debito;
 use yii\helpers\Url;
 ?>
-<?php $form = ActiveForm::begin(); ?>
-<div class="socio-view">
 
+
+<?php $form = ActiveForm::begin(); ?>
+
+<div class="socio-view">
 
     <?= $form->field($model, 'id_socio')->textInput(array('value' => $proximoIDSocio, 'type' => 'hidden')) ?>
 
@@ -80,8 +82,8 @@ use yii\helpers\Url;
                   id_socio: $("#sociodebito-id_socio").val()
                 },
                 success: function (data) {              
-                  window.location.reload(); 
-                   //$.pjax.reload({container: '#grd_socio'});
+                  //window.location.reload(); 
+                  $.pjax.reload({container: '#grd_socio'});
                 }
             });
 

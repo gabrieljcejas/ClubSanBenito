@@ -144,7 +144,7 @@ class SocioController extends Controller {
 		$model->id_socio = $post['id_socio'];
 
 		if (!$model->save()){
-			throw new NotFoundHttpException('The requested page does not exist.');
+			throw new NotFoundHttpException('The requested page does not exist.');die;
 		}		
 		return true;
 	}

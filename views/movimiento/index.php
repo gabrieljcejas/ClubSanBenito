@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
       <div class="col-md-3"><?=$form->field($model, 'nro_recibo')->textInput(['value' => $nroRecibo, 'readOnly' => 'readOnly'])?></div>
       
       <div class="col-md-3">       
-      <label>Fecha Pago</label>      
+      <label>Fecha</label>      
       <?= 
         DatePicker::widget([
           'model' => $model,
@@ -103,27 +103,35 @@ else {
 
 <?php }?>
 
-        </div>
+        </div><br></br>
 
 
 
     <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-8">
             <table class="table table-hover" id="tabla_debitos" border="1">
                 <thead>
-                    <tr><th>Concepto</th><th>Importe</th><th>Forma de Pago</th><th>Importe Pagado</th><th></th></tr>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Importe</th>
+                        <th>Forma de Pago</th>
+                        <th>Importe</th>
+                        <th>
+                            <div class="col-md-3">
+                                <?=Html::a('Agregar Cuenta', null, [
+                                   'class' => 'btn btn-primary',
+                                   'id' => 'btn_agregar_cuenta',
+                                   'value' => $v,
+                                ])?>
+                            </div>
+                        </th>
+                    </tr>
                 </thead>
                 <tbody>
                 </tbody>
             </table>
         </div>
-        <div class="col-md-3">
-            <?=Html::a('Agregar Cuenta', null, [
-               'class' => 'btn btn-primary',
-               'id' => 'btn_agregar_cuenta',
-               'value' => $v,
-            ])?>
-        </div>
+        
     </div>
 
     

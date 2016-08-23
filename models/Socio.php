@@ -37,7 +37,14 @@ use yii\data\ActiveDataProvider;
  * @property string $antiguedad
  * @property string $codigo_desde
  * @property string $codigo_hasta
-    
+ * @property string $grupo_sanguineo
+ * @property string $antecedentes_medicos
+ * @property string $sanciones
+ * @property string $tutor_nombre
+ * @property integer $tutor_dni
+ * @property string $tutor_fn
+ * @property string $tutor_tel
+
  */
 class Socio extends \yii\db\ActiveRecord
 {
@@ -65,9 +72,10 @@ class Socio extends \yii\db\ActiveRecord
     {
         return [
             [['apellido_nombre','dni','matricula','direccion','id_categoria_social','id_cobrador','fecha_alta'], 'required'],
-            [['dni','id_categoria_social', 'id_ciudad', 'id_cobrador', 'matricula'], 'integer'],
+            [['dni','id_categoria_social', 'id_ciudad', 'id_cobrador', 'matricula','tutor_dni'], 'integer'],
             [['fecha_alta', 'fecha_baja', 'fecha_nacimiento'], 'safe'],
             [['apellido_nombre'], 'string', 'max' => 80],
+            [['grupo_sanguineo','antecedentes_medicos','sanciones','tutor_nombre','tutor_fn','tutor_tel'], 'string'],
             [['file'], 'file'],
             [['cp', 'telefono', 'telefono2','edad','antiguedad','codigo_desde','codigo_hasta'], 'string', 'max' => 15],
             [['direccion'], 'string', 'max' => 60],
@@ -78,7 +86,7 @@ class Socio extends \yii\db\ActiveRecord
     }
     
        
-    /**[['apellido_nombre','cp', 'direccion', 'dni', 'fecha_alta','fecha_nacimiento', 'id_categoria_social', 'id_ciudad', 'id_cobrador', 'matricula', 'id_provincia', 'sexo'], 'required'],
+    /**
      * @Relaciones
      */      
     public function getCategoriaSocial()
@@ -109,7 +117,7 @@ class Socio extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'Codigo Socio',
+            'id' => 'Codigo',
             'apellido_nombre' => 'Apellido y Nombre',
             'cp' => 'Codigo Postal',
             'direccion' => 'Direccion',
@@ -125,20 +133,28 @@ class Socio extends \yii\db\ActiveRecord
             'matricula' => 'Matricula',
             'id_provincia' => 'Provincia',
             'sexo' => 'Sexo',
-            'telefono' => 'Telefono',
-            'telefono2' => 'Telefono2',
+            'telefono' => 'Celular',
+            'telefono2' => 'Telefono',
             'categoriaSocial.descripcion'=>'Categoria Social',
             'ciudad.descripcion'=>'Ciudad',
             'provincia.descripcion'=>'Provincia',
             'cobrador.descripcion'=>'Cobrador',
             'id_debito'=>'',
-            'id_socio'=>'Codigo Socio',
+            'id_socio'=>'Codigo',
             'obs'=>'Observacion',
             'edad'=>'Edad',
             'codigo_desde'=>'Codigo Desde',
             'codigo_hasta'=>'Codigo Hasta',
+            'grupo_sanguineo'=> 'Grupo Sanguineo',
+            'antecedentes_medicos'=>'Antecedentes Medicos',
+            'sanciones'=>'Sanciones',
+            'tutor_nombre'=> 'Nombre',
+            'tutor_dni'=> 'Dni',
+            'tutor_fn'=> 'Fecha Nacimiento',
+            'tutor_tel'=>'Telefono',
         ];
     }
+
     
     /**
      * ----------------------FUNCIONES------------------------------------------

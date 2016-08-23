@@ -188,6 +188,10 @@ class MovimientoController extends Controller {
 			$title = "Engresos";
 		}
 
+		// paso fecha actual
+        date_default_timezone_set('America/Buenos_Aires');
+        $model->fecha_pago = date('d-m-Y',time());
+		
 		return $this->render('index', [
 			'model' => $model,
 			'nroRecibo' => $nroRecibo,

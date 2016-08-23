@@ -11,7 +11,7 @@ use yii\jui\DatePicker;
 ?>
 <script type="text/javascript" src="<?=Yii::$app->request->baseUrl?>/js/jquery.min.js"></script>
 
-<?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]);?>
+
 <br>
 <div class="container">
 
@@ -30,6 +30,37 @@ use yii\jui\DatePicker;
             <div class="row">
 
                 <div class="col-md-12"><?=$form->field($model, 'apellido_nombre')->textInput(['maxlength' => 80])?></div>
+
+            </div>
+
+             <div class="row">
+
+                <div class="col-md-6"><?=$form->field($model, 'dni')->textInput()?></div>
+
+                <div class="col-md-6"><?=$form->field($model, 'sexo')->dropDownList(['m' => 'M', 'f' => 'F'], ['prompt' => '...'])?></div>
+
+            </div>
+
+            <div class="row">              
+                 
+                <div class="col-md-6"> 
+                 <label>Fecha Nacimiento</label>                                        
+                 <div class="input-group">   
+                      <?= 
+                        DatePicker::widget([
+                          'model' => $model,
+                          'attribute' => 'fecha_nacimiento',                          
+                          'dateFormat' => 'php:d-m-Y',
+                          'options'=>[
+                            'class'=>'form-control',            
+                           ],               
+                        ]);
+                      ?>
+                      <span class="input-group-addon glyphicon glyphicon-calendar"></span>
+                </div>
+                </div>      
+
+                <div class="col-md-6">Edad:<div class="alert alert-success" role="alert"><?=$model->edad;?></div></div>
 
             </div>
 
@@ -65,36 +96,7 @@ use yii\jui\DatePicker;
 
             </div>
 
-            <div class="row">
-
-                <div class="col-md-6"><?=$form->field($model, 'dni')->textInput()?></div>
-
-                <div class="col-md-6"><?=$form->field($model, 'sexo')->dropDownList(['m' => 'M', 'f' => 'F'], ['prompt' => '...'])?></div>
-
-            </div>
-
-            <div class="row">              
-                 
-                <div class="col-md-6"> 
-                 <label>Fecha Nacimiento</label>                                        
-                 <div class="input-group">   
-                      <?= 
-                        DatePicker::widget([
-                          'model' => $model,
-                          'attribute' => 'fecha_nacimiento',                          
-                          'dateFormat' => 'php:d-m-Y',
-                          'options'=>[
-                            'class'=>'form-control',            
-                           ],               
-                        ]);
-                      ?>
-                      <span class="input-group-addon glyphicon glyphicon-calendar"></span>
-                </div>
-                </div>      
-
-                <div class="col-md-6">Edad:<div class="alert alert-success" role="alert"><?=$model->edad;?></div></div>
-
-            </div>
+           
 
             <div class="row">
 
@@ -164,25 +166,33 @@ use yii\jui\DatePicker;
 
 
             <div class="row">
-
-                <!--<div class="col-md-4"></div>-->
-
                 <div class="col-md-6"><?=$form->field($model, 'fecha_baja')->textInput()?></div>
-
             </div>
 
             <div class="row">
-
-                <!--<div class="col-md-4"></div>-->
-
-                <div class="col-md-12"><?=$form->field($model, 'obs')->textarea()?></div>
-
+              <div class="col-md-12"><?=$form->field($model, 'obs')->textarea()?></div>
             </div>
 
-
-        </div>
+          </div>
 
     </div>
+    
+    <div class="row"> 
+      <div class="col-md-3"><?=$form->field($model, 'grupo_sanguineo')->textInput(['maxlength' => 10])?></div>
+    </div>
+
+    <?=$form->field($model, 'antecedentes_medicos')->textarea()?>
+
+    <?=$form->field($model, 'sanciones')->textarea()?>
+  
+    <?=$form->field($model, 'tutor_nombre')->textInput()?>
+
+    <?=$form->field($model, 'tutor_dni')->textInput()?>
+
+    <?=$form->field($model, 'tutor_fn')->textInput()?>
+
+    <?=$form->field($model, 'tutor_tel')->textInput()?> 
+
     <div class="row">
         <div class="col-md-6">
            <?=Html::submitButton($model->isNewRecord ? 'Guardar Socio' : 'Modificar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary'])?>
@@ -190,11 +200,19 @@ use yii\jui\DatePicker;
     </div>
 </div>
 
-    <!--<div class="form-group">-->
+<script>
 
-    <!--</div>    -->
+    $(function () {
+        /*$('#socio-file').change(function(){ 
+          var path = $('#socio-file').val();
+          $('div#foto_perfil').empty();
+          $('div#foto_perfil').html("<p><img width=200 src='" + path + "'></p>");
+        });*/
+    });
 
-<?php ActiveForm::end();?>
+</script>
+
+
 
 
 
