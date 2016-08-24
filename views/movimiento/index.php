@@ -135,11 +135,6 @@ else {
     </div>
 
     
-    
-
-
-
-    
      <?=$form->field($model, 'tipo')->textInput(['value' => $tipo, 'type' => 'hidden'])?>
 
     <br>

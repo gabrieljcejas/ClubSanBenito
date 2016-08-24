@@ -177,27 +177,11 @@ use yii\jui\DatePicker;
 
     </div>
     
-    <div class="row"> 
-      <div class="col-md-3"><?=$form->field($model, 'grupo_sanguineo')->textInput(['maxlength' => 10])?></div>
-    </div>
-
-    <?=$form->field($model, 'antecedentes_medicos')->textarea()?>
-
-    <?=$form->field($model, 'sanciones')->textarea()?>
-  
-    <?=$form->field($model, 'tutor_nombre')->textInput()?>
-
-    <?=$form->field($model, 'tutor_dni')->textInput()?>
-
-    <?=$form->field($model, 'tutor_fn')->textInput()?>
-
-    <?=$form->field($model, 'tutor_tel')->textInput()?> 
-
-    <div class="row">
+    <!--<div class="row">
         <div class="col-md-6">
            <?=Html::submitButton($model->isNewRecord ? 'Guardar Socio' : 'Modificar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary'])?>
        </div>
-    </div>
+    </div>-->
 </div>
 
 <script>

@@ -48,7 +48,7 @@ class SocioDebito extends \yii\db\ActiveRecord {
 		return [
 			'id' => 'ID',
 			'id_socio' => '',
-			'id_debito' => 'Debito',
+			'id_debito' => '',
 			'debito.concepto' => ' Concepto',
 			'debito.importe' => 'Importe',
 			'debito.subcuenta_id' => 'Debito Subcuenta_id',

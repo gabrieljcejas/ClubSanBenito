@@ -2,6 +2,7 @@
 
 use yii\bootstrap\Tabs;
 use yii\widgets\ActiveForm;
+use yii\helpers\Html;
 ?>
 
 <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]);?>
@@ -18,7 +19,7 @@ Tabs::widget([
 		],
 		[
 			'label' => 'Mas Datos',
-			'content' => $this->render('debito_form', ['model' => $modelSD, 'form' => $form, 'dataProviderSocioDebito' => $dataProviderSocioDebito, 'proximoIDSocio' => $proximoIDSocio]),
+			'content' => $this->render('debito_form', ['modelSD' => $modelSD, 'form' => $form, 'dataProviderSocioDebito' => $dataProviderSocioDebito, 'proximoIDSocio' => $proximoIDSocio,'model'=>$model]),
 
 		],
 	],
@@ -26,5 +27,12 @@ Tabs::widget([
 ]);
 ?>
 
+	
+<?=Html::submitButton($model->isNewRecord ? 'Guardar Socio' : 'Modificar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary'])?>
+    
+
 </div>
+
+	
+
 <?php ActiveForm::end();?>
