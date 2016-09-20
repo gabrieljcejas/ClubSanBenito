@@ -10,7 +10,7 @@ use kartik\select2\Select2;
 
 $this->title = $title;
 $this->params['breadcrumbs'][] = "Tesoreria";
-$this->params['breadcrumbs'][] = $this->title;
+$this->params['breadcrumbs'][] = ['label' => $this->title, 'url' =>['view', 'v' => $v]];;
 
 ?>
 
@@ -23,9 +23,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="row">
 
-      <div class="col-md-3"><?=$form->field($model, 'nro_recibo')->textInput(['value' => $nroRecibo, 'readOnly' => 'readOnly'])?></div>
+      <div class="col-md-2"><?=$form->field($model, 'nro_recibo')->textInput(['value' => $nroRecibo, 'readOnly' => 'readOnly'])?></div>
       
-      <div class="col-md-3">       
+      <div class="col-md-2">       
       <label>Fecha</label>      
       <?= 
         DatePicker::widget([
@@ -44,7 +44,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="row">
 
-        <div class="col-md-3">
+        <div class="col-md-2">
             <?=$form->field($model, 'periodo_mes')->dropDownList([
 	'1' => 'Enero',
 	'2' => 'Febrero',
@@ -63,19 +63,17 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
         </div>
 
-        <div class="col-md-3"><?=$form->field($model, 'periodo_anio')->textInput(['value' => date('Y')])?></div>
+        <div class="col-md-2"><?=$form->field($model, 'periodo_anio')->textInput(['value' => date('Y')])?></div>
 
     </div>
 
 
     <div class="row">
 
-        
-
-<?php   if ($tipo == "i") { // si la variable es "i" (ingresos) traigo todos los socios y cuentas de resultado positivo 4.1
+    <?php   if ($tipo == "i") { // si la variable es "i" (ingresos) traigo todos los socios y cuentas de resultado positivo 4.1
             $list = ArrayHelper::map(Socio::find()->orderBy('apellido_nombre')->all(), 'id', 'apellido_nombre');?>
             
-            <div class="col-md-5">
+            <div class="col-md-4">
                 <?=$form->field($model, 'fk_cliente')->widget(Select2::classname(), [
                     'data' => $list,
                     //'language' => 'de',
@@ -90,7 +88,7 @@ $this->params['breadcrumbs'][] = $this->title;
 else {
 	       $list = ArrayHelper::map(Proveedor::find()->orderBy('nombre')->all(), 'id', 'nombre');
 ?>
-           <div class="col-md-5">
+           <div class="col-md-4">
                 <?=$form->field($model, 'fk_prov')->widget(Select2::classname(), [
                     'data' => $list,
                     //'language' => 'de',
@@ -103,7 +101,7 @@ else {
 
 <?php }?>
 
-        </div><br></br>
+        </div><br>
 
 
 
@@ -116,14 +114,7 @@ else {
                         <th>Importe</th>
                         <th>Forma de Pago</th>
                         <th>Importe</th>
-                        <th>
-                            <div class="col-md-3">
-                                <?=Html::a('Agregar Cuenta', null, [
-                                   'class' => 'btn btn-primary',
-                                   'id' => 'btn_agregar_cuenta',
-                                   'value' => $v,
-                                ])?>
-                            </div>
+                        <th>                            
                         </th>
                     </tr>
                 </thead>
@@ -137,15 +128,25 @@ else {
     
      <?=$form->field($model, 'tipo')->textInput(['value' => $tipo, 'type' => 'hidden'])?>
 
-    <br>
+    
     <div id="table_dinamic"></div>
       <div class="form-group">
-        <?=Html::submitButton($model->isNewRecord ? 'Guardar' : 'Guardar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-success'])?>
-        <?=Html::a('Ver Listado de Ingreso Cargados', ['view', 'v' => $v], [
-	'class' => ' btn btn-default',
-])?>
+        
+        <h3><p><?=Html::label("TOTAL: ","total",["id"=>"total"])?></p></h3><p></p>
+        <?=Html::submitButton($model->isNewRecord ? 'Guardar' : 'Guardar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-success'])?>       
 
-
+        <?=Html::a('Agregar Cuenta', null, [
+           'class' => 'btn btn-primary',
+           'id' => 'btn_agregar_cuenta',
+           'value' => $v,        
+        ])?>
+        
+        
+        
+        
+            
+        
+     
     </div>
 
     <?php ActiveForm::end();?>
@@ -163,9 +164,22 @@ function borrarfila(i){
     $("#del-"+i).remove();
 }
 
+function calculartotal(){
+    
+    var suma = 0;  
+    
+    $("#total").text("TOTAL: $");
+    
+    $( "input[name='importe[]']" ).each(function() {        
+        suma = parseFloat($(this).val()) + suma;    
+        $("#total").text("TOTAL: $" + suma);    
+    });  
+}
+
     $(function () {
 
         $('#movimiento-fk_cliente').change(function () {
+            
             $.ajax({
                 type: "POST",
                 url: "../web/index.php?r=movimiento/get-all-debitos-by-socio",
@@ -182,18 +196,20 @@ function borrarfila(i){
                         html+="<option value='30'>Cheque Propio</option>";
                         html+="<option value='31'>Cheque de Tercero</option>";
                         html+="</select></td>";
-                        html+="<td><input type='text' name='importe[]' value='" + debito.importe + "' class='form-control'></td>";
+                        html+="<td><input type='text' name='importe[]' value='" + debito.importe + "' class='form-control' onkeyup='funcionSumarTotal()'></td>";
                         html+="<td><a id='btn_borrar_cuenta' onClick='borrarfila(" + i + ");' class='btn btn-default glyphicon glyphicon-trash'></a></td></tr>";
 
                     })
                     $("#tabla_debitos").append(html);
-               }
-
+                    calculartotal();   
+               },
+               
             });
 
+            
         });
 
-
+         
 
 
         $("#btn_agregar_cuenta").click(function(){
@@ -218,7 +234,7 @@ function borrarfila(i){
                     html+="<option value='30'>Cheque Propio</option>";
                     html+="<option value='31'>Cheque de Tercero</option>";
                     html+="</select></td>";
-                    html+="<td><input type='text' name='importe[] value=' class='form-control'></td>";
+                    html+="<td><input type='text' name='importe[]' value='' class='form-control'></td>";
                     html+="<td><a id='btn_borrar_cuenta' onClick='borrarfila(" + nro_fila + ");' class='btn btn-default glyphicon glyphicon-trash'></a></td></tr>";
                     $("#tabla_debitos").append(html);
                }

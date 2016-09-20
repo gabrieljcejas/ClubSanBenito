@@ -448,9 +448,11 @@ class MovimientoController extends Controller {
 	public function actionView($v) {
 
 		$model = new Movimiento();
-		$dataProvider = $model->getListMov($v);
-		//var_dump($dataProvider);die;
+		
+		$dataProvider = $model->getListMov($v);		
+		
 		$model->tipo = $v;
+		
 		return $this->render('view', [
 			'model' => $model,
 			'dataProvider' => $dataProvider,
@@ -459,6 +461,7 @@ class MovimientoController extends Controller {
 	}
 
 	public function actionCreate() {
+		
 		$model = new Movimiento();
 
 		if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -625,7 +628,7 @@ class MovimientoController extends Controller {
 
 	public function actionConsultaMovimientoCaja() {
 
-		$model = new Movimiento();
+		//$model = new Movimiento();
 
 		if (Yii::$app->request->post()) {
 
@@ -646,6 +649,7 @@ class MovimientoController extends Controller {
 			exit;
 
 		}
+
 
 		return $this->render('_consulta', [
 			'accion' => "Movimientos de Caja",

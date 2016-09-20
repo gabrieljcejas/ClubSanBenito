@@ -20,6 +20,7 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 	      	<?=
 				DatePicker::widget([
 					'name' => 'fecha_desde',
+					'value'  => date('d-m-Y'),
 					'dateFormat' => 'php:d-m-Y',
 					'options' => [
 						'class' => 'form-control',
@@ -36,6 +37,7 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 	      	<?=
 				DatePicker::widget([
 					'name' => 'fecha_hasta',
+					'value'  => date('d-m-Y'),
 					'dateFormat' => 'php:d-m-Y',
 					'options' => [
 						'class' => 'form-control',

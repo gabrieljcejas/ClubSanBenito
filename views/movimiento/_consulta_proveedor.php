@@ -22,6 +22,7 @@ DatePicker::widget([
 
 	'name' => 'fecha_desde',
 	'dateFormat' => 'php:d-m-Y',
+	'value'  => date('d-m-Y'),
 	'options' => [
 		'class' => 'form-control',
 	],
@@ -39,6 +40,7 @@ DatePicker::widget([
 
 	'name' => 'fecha_hasta',
 	'dateFormat' => 'php:d-m-Y',
+	'value'  => date('d-m-Y'),
 	'options' => [
 		'class' => 'form-control',
 	],

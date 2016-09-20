@@ -124,7 +124,8 @@ class SocioController extends Controller {
 
 			$modelSD = new SocioDebito();
 
-			//var_dump($listDebito);die;
+			date_default_timezone_set('America/Buenos_Aires');
+       		$model->fecha_alta = date('d-m-Y',time());
 			return $this->render('create', [
 				'model' => $model,
 				'modelSD' => $modelSD,
@@ -201,10 +202,7 @@ class SocioController extends Controller {
 			//calcular antiguedad
 			$model->antiguedad = $service->calcularAntiguedad($model->fecha_alta);
 
-			//doy vuelta las fechas
-			$model->fecha_nacimiento = date('d-m-Y', strtotime($model->fecha_nacimiento));
-			$model->fecha_alta = date('d-m-Y', strtotime($model->fecha_alta));
-
+			
 			return $this->render('update', [
 				'model' => $model,
 				'nombre_img' => $nombre_img,

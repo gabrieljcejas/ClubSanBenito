@@ -11,7 +11,6 @@ use yii\jui\DatePicker;
 ?>
 <script type="text/javascript" src="<?=Yii::$app->request->baseUrl?>/js/jquery.min.js"></script>
 
-
 <br>
 <div class="container">
 
@@ -21,9 +20,26 @@ use yii\jui\DatePicker;
 
             <div class="row">
 
-                <div class="col-md-6"><?=$form->field($model, 'id_socio')->textInput(array('value' => $proximoIDSocio, 'type' => 'text', 'readOnly' => 'readOnly'))?></div>
+                <!--<div class="col-md-6"><?=$form->field($model, 'id_socio')->textInput(array('value' => $proximoIDSocio, 'type' => 'text', 'readOnly' => 'readOnly'))?></div>-->
 
                 <div class="col-md-6"><?=$form->field($model, 'matricula')->textInput()?></div>
+                
+                <div class="col-md-6">
+                    <label>Fecha Alta</label>      
+                     <div class="input-group">   
+                      <?= 
+                        DatePicker::widget([
+                          'model' => $model,
+                          'attribute' => 'fecha_alta',                          
+                          'dateFormat' => 'php:d-m-Y',
+                          'options'=>[
+                            'class'=>'form-control',            
+                           ],               
+                        ]);
+                      ?>
+                      <span class="input-group-addon glyphicon glyphicon-calendar"></span>
+                </div>
+                </div>
 
             </div>
 
@@ -113,25 +129,7 @@ use yii\jui\DatePicker;
         <div class="col-md-6">
 
             <div class="row">
-
-                <div class="col-md-6">
-                    <label>Fecha Alta</label>      
-                     <div class="input-group">   
-                      <?= 
-                        DatePicker::widget([
-                          'model' => $model,
-                          'attribute' => 'fecha_alta',                          
-                          'dateFormat' => 'php:d-m-Y',
-                          'options'=>[
-                            'class'=>'form-control',            
-                           ],               
-                        ]);
-                      ?>
-                      <span class="input-group-addon glyphicon glyphicon-calendar"></span>
-                </div>
-                </div>
-                 
-                 <div class="col-md-6">Antiguedad:<div class="alert alert-success" role="alert"><?=$model->antiguedad;?></div></div>
+                <div class="col-md-6">Antiguedad:<div class="alert alert-success" role="alert"><?=$model->antiguedad;?></div></div>
 
             </div>
 
@@ -166,7 +164,22 @@ use yii\jui\DatePicker;
 
 
             <div class="row">
-                <div class="col-md-6"><?=$form->field($model, 'fecha_baja')->textInput()?></div>
+                 <div class="col-md-6">
+                    <label>Fecha Baja</label>      
+                     <div class="input-group">   
+                      <?= 
+                        DatePicker::widget([
+                          'model' => $model,
+                          'attribute' => 'fecha_baja',                          
+                          'dateFormat' => 'php:d-m-Y',
+                          'options'=>[
+                            'class'=>'form-control',            
+                           ],               
+                        ]);
+                      ?>
+                      <span class="input-group-addon glyphicon glyphicon-calendar"></span>
+                </div>
+                </div>
             </div>
 
             <div class="row">
@@ -176,25 +189,9 @@ use yii\jui\DatePicker;
           </div>
 
     </div>
-    
-    <!--<div class="row">
-        <div class="col-md-6">
-           <?=Html::submitButton($model->isNewRecord ? 'Guardar Socio' : 'Modificar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary'])?>
-       </div>
-    </div>-->
+   
 </div>
 
-<script>
-
-    $(function () {
-        /*$('#socio-file').change(function(){ 
-          var path = $('#socio-file').val();
-          $('div#foto_perfil').empty();
-          $('div#foto_perfil').html("<p><img width=200 src='" + path + "'></p>");
-        });*/
-    });
-
-</script>
 
 
 

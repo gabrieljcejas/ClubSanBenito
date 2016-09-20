@@ -17,16 +17,16 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 	<div class="col-md-3">
      <label>Fecha Desde</label>
      <div class="input-group">
-      <?=
-DatePicker::widget([
-
-	'name' => 'fecha_desde',
-	'dateFormat' => 'php:d-m-Y',
-	'options' => [
-		'class' => 'form-control',
-	],
-]);
-?>
+      	<?=
+			DatePicker::widget([
+				'name' => 'fecha_desde',
+				'value'  => date('d-m-Y'),
+				'dateFormat' => 'php:d-m-Y',
+				'options' => [
+					'class' => 'form-control',
+				],
+			]);
+		?>
       <span class="input-group-addon glyphicon glyphicon-calendar"></span>
     </div>
 	</div>
@@ -34,16 +34,16 @@ DatePicker::widget([
 	<div class="col-md-3">
      <label>Fecha Hasta</label>
      <div class="input-group">
-      <?=
-DatePicker::widget([
-
-	'name' => 'fecha_hasta',
-	'dateFormat' => 'php:d-m-Y',
-	'options' => [
-		'class' => 'form-control',
-	],
-]);
-?>
+      	<?=
+			DatePicker::widget([
+				'name' => 'fecha_hasta',
+				'value'  => date('d-m-Y'),
+				'dateFormat' => 'php:d-m-Y',
+				'options' => [
+					'class' => 'form-control',
+				],
+			]);
+		?>
       <span class="input-group-addon glyphicon glyphicon-calendar"></span>
     </div>
 	</div>
