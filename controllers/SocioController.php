@@ -146,8 +146,7 @@ class SocioController extends Controller {
 
 		if (!$model->save()){
 			throw new NotFoundHttpException('The requested page does not exist.');die;
-		}		
-		return true;
+		}				
 	}
 
 	public function actionDeleteds() {
@@ -171,28 +170,49 @@ class SocioController extends Controller {
 		$model = $this->findModel($id);
 
 		$service = new SocioService();
-		//var_dump($service->calcularEdad($model->fecha_nacimiento));die;
+		
 		if ($model->load(Yii::$app->request->post())) {
 
 			/*** SUBIR FOTO ***/						
 			$model->file = UploadedFile::getInstance($model, 'file');
+
 			if ($model->file!=""){
+
 				$model->file->saveAs(Yii::$app->basePath . '/web/fotos/' . $model->dni . '.' . $model->file->extension);
+
 				$model->nombre_foto = $model->dni . '.' . $model->file->extension;
+
 			}
 			/*--FIN---*/
 
-			$model->fecha_alta = date('Y-m-d', strtotime($model->fecha_alta)); // da vuelta la fecha a mysql
-			$model->fecha_baja = date('Y-m-d', strtotime($model->fecha_baja)); // da vuelta la fecha a mysql
-			$model->fecha_nacimiento = date('Y-m-d', strtotime($model->fecha_nacimiento)); // da vuelta la fecha a mysql
+			if ($model->fecha_alta!=""){
+
+				$model->fecha_alta = date('Y-m-d', strtotime($model->fecha_alta)); // da vuelta la fecha a mysql	
+
+			}
+
+			if ($model->fecha_baja!=""){				
+
+				$model->fecha_baja = date('Y-m-d', strtotime($model->fecha_baja)); // da vuelta la fecha a mysql
+
+			}
+
+			if ($model->fecha_nacimiento!=""){				
+
+				$model->fecha_nacimiento = date('Y-m-d', strtotime($model->fecha_nacimiento)); // da vuelta la fecha a mysql
+				
+			}
+			
 			$model->save();
+
 			return $this->redirect(['view', 'id' => $model->id]);
+
 		} else {
 
 			$nombre_img = $model->nombre_foto;
 
 			$dataProviderSocioDebito = $service->findSocioDebitoById($id);
-			//var_dump($nombre_img);die;
+			
 			$proximoIDSocio = $id;
 
 			$modelSD = new SocioDebito();

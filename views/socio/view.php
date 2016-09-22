@@ -22,6 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-md-3">
           <div>
               <?php if (empty($model->nombre_foto)) {?>
+                  <br>
                     <div class="col-md-6" id="foto_perfil"><?=Html::img(yii::$app->urlManager->baseUrl . '/fotos/sin_foto.png', ['width' => 200])?></div>
                 <?php } else {?>
                     <div class="col-md-6" id="foto_perfil"><?=Html::img(yii::$app->urlManager->baseUrl . '/fotos/' . $model->nombre_foto, ['width' => 200])?></div>

@@ -61,7 +61,7 @@ use yii\helpers\Url;
         
     </div><br>
 
-    <?php \yii\widgets\Pjax::begin(['id' => 'grd_socio', 'timeout' => false]); ?>           
+    <?php \yii\widgets\Pjax::begin(['id' => 'wg_grd_socio','timeout'=>true]); ?>           
 
     <?=
     GridView::widget([
@@ -74,7 +74,7 @@ use yii\helpers\Url;
             'template' => '{deleted}',
             'buttons' => [             
               'deleted' => function ($url, $modelSD) {
-                return html::button('', ['class' => ' btn btn-default glyphicon glyphicon-trash', 'name' => 'eliminar', 'value' => $modelSD->id]);                     
+                return html::button('', ['class' => ' btn btn-default glyphicon glyphicon-trash', 'name' => 'eliminar', 'onclick'=>'myFunction('.$modelSD->id.')', 'value' => $modelSD->id]);                     
               },
             ],
             'urlCreator' => function ($action, $modelSD, $key, $index) {              
@@ -87,17 +87,37 @@ use yii\helpers\Url;
        ]//end column
     ])
     ?>
-   
+   <?php \yii\widgets\Pjax::end(); ?>
+
    <?= $form->field($modelSD, 'id_socio')->textInput(array('value' => $proximoIDSocio, 'type' => 'hidden')) ?>
 
  </div>
 
 <script>
 
+    function myFunction(id){
+      if (confirm('Seguro que desea Eliminar?')) {
+        var id = id;            
+        $.ajax({
+          type: "POST",
+          url: "../web/index.php?r=socio/delete-debito",
+          data: {
+            id: id ,                
+          },
+          success: function (data) {
+            $.pjax.reload({container: '#wg_grd_socio'});                    
+          }
+        });                                        
+      }
+    }
+
+
     $(function () {
         
         $('#btn_agregar_debito').click(function () {
-            
+
+            //$.pjax.reload({container: '#grd_socio'});
+
             var id_debito = $("#sociodebito-id_debito").val();
            
             if (id_debito == 0) {
@@ -111,35 +131,18 @@ use yii\helpers\Url;
                 url: "../web/index.php?r=socio/agregar-socio-debito",
                 data: {
                   id_debito: $("#sociodebito-id_debito").val(), 
-                  id_socio: $("#sociodebito-id_socio").val()
+                  id_socio: $("#sociodebito-id_socio").val(),
                 },
-                success: function (data) {              
-                  //window.location.reload(); 
-                  $.pjax.reload({container: '#grd_socio'});
+                success: function (data) {                                                  
+                  $.pjax.reload({container: '#wg_grd_socio'});
+                  //return false;                  
                 }
             });
-
-
+            
         });        
-
-       $("button[name='eliminar']").click(function () {
-          if (confirm('Seguro que desea Eliminar?')) {
-            var id = $(this).attr('value');            
-            $.ajax({
-              type: "POST",
-              url: "../web/index.php?r=socio/delete-debito",
-              data: {
-                id: id ,                
-              },
-              success: function (data) {
-                $.pjax.reload({container: '#grd_socio'});                    
-              }
-            });                                        
-          }
-        });
-
+   
     });
 
 </script>
-<?php \yii\widgets\Pjax::end(); ?>
+
 <?php ActiveForm::end(); ?>    

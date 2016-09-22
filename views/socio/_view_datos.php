@@ -13,7 +13,7 @@ use yii\widgets\DetailView;
           'attributes' => [
             'id',
             'fecha_alta',
-            'fecha_baja',
+            'fecha_baja',            
             'obs',
             'matricula',
             //'apellido_nombre',                                    
