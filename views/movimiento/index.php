@@ -124,29 +124,23 @@ else {
         </div>
         
     </div>
-
+    
+    <?=Html::a('Agregar Cuenta', null, [
+           'class' => 'btn btn-primary',
+           'id' => 'btn_agregar_cuenta',
+           'value' => $v,        
+        ])?>
     
      <?=$form->field($model, 'tipo')->textInput(['value' => $tipo, 'type' => 'hidden'])?>
 
     
     <div id="table_dinamic"></div>
+      
       <div class="form-group">
         
         <h3><p><?=Html::label("TOTAL: ","total",["id"=>"total"])?></p></h3><p></p>
         <?=Html::submitButton($model->isNewRecord ? 'Guardar' : 'Guardar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-success'])?>       
-
-        <?=Html::a('Agregar Cuenta', null, [
-           'class' => 'btn btn-primary',
-           'id' => 'btn_agregar_cuenta',
-           'value' => $v,        
-        ])?>
         
-        
-        
-        
-            
-        
-     
     </div>
 
     <?php ActiveForm::end();?>

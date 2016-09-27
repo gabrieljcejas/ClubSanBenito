@@ -133,9 +133,9 @@ class Movimiento extends \yii\db\ActiveRecord {
 
 		// si el parametro es i (ingreso) busco en la tabla movimiento todos los que clientes distinos de null
 		if ($v == 'i') {
-			$query = self::find()->where(['>', 'fk_cliente', ''])->andWhere(['<>', 'fecha_pago', ''])->andWhere(['<>', 'nro_recibo', ''])->orderBy('fecha_pago DESC');
+			$query = self::find()->where(['>', 'fk_cliente', ''])->andWhere(['<>', 'fecha_pago', ''])->orderBy('fecha_pago DESC');
 		} else {
-			$query = self::find()->where(['>', 'fk_prov', ''])->andWhere(['<>', 'fecha_pago', ''])->andWhere(['<>', 'nro_recibo', ''])->orderBy('fecha_pago DESC');
+			$query = self::find()->where(['>', 'fk_prov', ''])->andWhere(['<>', 'fecha_pago', ''])->orderBy('fecha_pago DESC');
 		}
 
 		$dataProvider = new ActiveDataProvider([

@@ -355,6 +355,12 @@ class SocioController extends Controller {
 		exit;
 	}
 
+	public function actionListadoSocio(){
+
+		return $this->render('_form_listado');
+
+	}
+
 
 
 }

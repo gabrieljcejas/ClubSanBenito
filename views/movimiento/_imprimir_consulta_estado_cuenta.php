@@ -9,7 +9,7 @@ use yii\grid\GridView;
     
     <h1>Estado de Cuenta <?=$titulo?></h1>    
     <h3>Deporte: <?= $dep->concepto ?></h3>
-    <h3>Categoria: <?= $cat->descripcion ?></h3><br>
+    <!--<h3>Categoria: <?= $cat->descripcion ?></h3><br>-->
     <label>Fecha desde: <?= date("d-m-Y",strtotime($fecha_desde)) . " hasta " . date("d-m-Y",strtotime($fecha_hasta))?></label>
 	
 
@@ -20,10 +20,9 @@ use yii\grid\GridView;
 <tr>
 	<th align="center">Socio</th>
 	<th align="center">Concepto</th>
-	<th align="center">Mes</th>
-	<th align="center">Año</th>
-	<th align="center">Fecha</th>
-	<th align="center">Importe Abonado</th>
+	<th align="center">Periodo Mes</th>
+	<th align="center">Periodo Año</th>	
+	<th align="center">Monto</th>
 </tr>
 
 <?php foreach ($socio as $s) {?>	
@@ -37,7 +36,7 @@ use yii\grid\GridView;
 				<td align="center"><?= $md->subCuenta->concepto ?></td>
 				<td align="center"><?= $md->periodo_mes ?></td>
 				<td align="center"><?= $md->periodo_anio ?></td>
-				<td align="center">
+				<!--<td align="center">->
 					<?php 
 						if ($md->movimiento->fecha_pago!=""){
 							echo date("d-m-Y",strtotime($md->movimiento->fecha_pago)) ;
@@ -45,7 +44,7 @@ use yii\grid\GridView;
 							echo "-";
 						}
 					?>		
-				</td>
+				<!--</td>-->
 				<?php $saldo = $md->importe + $saldo ?>
 				<td align="right"><?= "$".$md->importe?></td>
 			<?php } ?>	

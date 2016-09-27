@@ -39,11 +39,11 @@ echo Nav::widget([
 	'items' => [
 		['label' => 'Socios', 'url' => ['#'],
 			'items' => [
-				['label' => 'ABM', 'url' => ['/socio/index']],
-				['label' => 'Estado de Cuenta', 'url' => ['/movimiento/estado-cuenta']],
+				['label' => 'Alta-Baja-Modificacion (ABM)', 'url' => ['/socio/index']],
+				['label' => 'Estados de Cuentas', 'url' => ['/movimiento/estado-cuenta']],
 				['label' => 'Generar Debitos', 'url' => ['/movimiento/generar-debito']],
-				['label' => 'Imprimir Cuotas Anticipadas', 'url' => ['/estado-cuenta/generar-debito']],
-				['label' => 'Asistencia', 'url' => ['/asistencia/index']],
+				//['label' => 'Imprimir Cuotas Anticipadas', 'url' => ['/estado-cuenta/generar-debito']],
+				//['label' => 'Asistencias', 'url' => ['/asistencia/index']],
 				['label' => 'Emitir Credenciales', 'url' => ['/socio/credencial']],
 				//['label' => 'Generar Cuotas Anuales', 'url' => ['/estado-cuenta/generar-cuota-anual']],
 				'<li class="divider"></li>',
@@ -73,6 +73,7 @@ echo Nav::widget([
 				['label' => 'Detalles de Egresos', 'url' => ['movimiento/consulta-egresos']],
 				['label' => 'Pago a Proveedores', 'url' => ['movimiento/consulta-proveedor']],
 				['label' => 'Estado de Cuenta', 'url' => ['movimiento/consulta-estado-cuenta']],
+				['label' => 'Listado de Socios', 'url' => ['socio/listado-socio']],
 				//'<li class="divider"></li>',
 				//['label' => 'Estado de Cuenta', 'url' => ['/proveedor/index']],
 			],

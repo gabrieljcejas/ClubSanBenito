@@ -6,9 +6,9 @@ use yii\helpers\Url;
 use yii\widgets\Pjax;
 
 if ($v == "i") {
-	$this->title = "Ingreso";
+	$this->title = "Ingresos";
 } else {
-	$this->title = "Egreso";
+	$this->title = "Egresos";
 }
 //$this->params['breadcrumbs'][] = ['label' => 'Tesoreria', 'url' => ['index']];
 $this->params['breadcrumbs'][] = "Tesoreria";
@@ -40,19 +40,19 @@ $this->params['breadcrumbs'][] = "Listado";
 		[
 			'class' => 'yii\grid\ActionColumn',
 			'header' => 'Actions',
-			'template' => ' {delete} {imprimir}',
-			'buttons' => [
+			'template' => '{imprimir} {delete}',
+			'buttons' => [				
+				'imprimir' => function ($url, $model) {
+					return Html::a('<span class="btn btn-default glyphicon glyphicon-print"></span>', $url, [
+						'data-confirm' => Yii::t('yii', 'Imprimir el Recibo?'),
+
+					]);
+				},
 				'delete' => function ($url, $model) {
 					return Html::a('<span class="btn btn-default glyphicon glyphicon-trash"></span>', $url, [
 						'title' => Yii::t('app', 'Eliminar'),
 						'data-confirm' => Yii::t('yii', 'Seguro que desea eliminar?'),
 						//'data-method' => 'post',
-
-					]);
-				},
-				'imprimir' => function ($url, $model) {
-					return Html::a('<span class="btn btn-default glyphicon glyphicon-print"></span>', $url, [
-						'data-confirm' => Yii::t('yii', 'Imprimir el Recibo?'),
 
 					]);
 				},

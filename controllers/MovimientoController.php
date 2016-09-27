@@ -729,30 +729,31 @@ class MovimientoController extends Controller {
 						
 			// PARAMETROS	
 			$fecha_desde = date('Y-m-d', strtotime($post['fecha_desde']));
+			
 			$fecha_hasta = date('Y-m-d', strtotime($post['fecha_hasta']));		
+			
 			$deporte = $post['deportes'];
-			$categoria = $post['categorias'];
-			$estado_opcion = $post['estado_opcion'];			
+			
+			$categoria_desde = $post['categoria_desde'];
+			
+			$categoria_hasta = $post['categoria_hasta'];			
 						
-			$this->imprimirEstadoCuenta($fecha_desde,$fecha_hasta,$deporte,$categoria,$estado_opcion);
+			$this->imprimirEstadoCuenta($fecha_desde,$fecha_hasta,$deporte,$categoria_desde,$categoria_hasta);
 		}
 
 
-		$consultaSocios = Socio::find()->all();	
+		/*$consultaSocios = Socio::find()->all();	
 		// formo el array socio con el dni concatenado ;)
 	 	foreach ($consultaSocios as $cs) {
             $socios[$cs['id']] = $cs['apellido_nombre'] . "  - Dni:  ". $cs['dni'] ;
-        }	
-		
-		$consultaCategorias = CategoriaSocial::find()->all();
-		$categorias = ArrayHelper::map($consultaCategorias, 'id', 'descripcion');	
-		
+        }*/	
+				
 	 	$consultaDebitos = Debito::find()->asArray()->all();
+		
 		$deportes = ArrayHelper::map($consultaDebitos, 'id', 'concepto');
         
 		return $this->render('_consulta_estado_cuenta', [
-			'socios' => $socios,
-			'categorias' => $categorias,
+			'socios' => $socios,			
 			'deportes' => $deportes,			
 			'accion' => "Estado de Cuenta",
 		]);
@@ -762,31 +763,55 @@ class MovimientoController extends Controller {
 	/*	
 	**	CONSULTAS DE ESTADO DE CUENTA 
 	*/
-	private function imprimirEstadoCuenta($fecha_desde,$fecha_hasta,$deporte,$categoria,$estado_opcion){
+	private function imprimirEstadoCuenta($fecha_desde,$fecha_hasta,$deporte,$categoria_desde,$categoria_hasta){
 			
 			$mes_desde   = date('m', strtotime($fecha_desde));
+			
 			$mes_hasta   = date('m', strtotime($fecha_desde));
+			
 			$anio_desde  = date('Y', strtotime($fecha_hasta));
+			
 			$anio_hasta  = date('Y', strtotime($fecha_hasta));
+			
+			if ($deporte!=""){ // si seleciona un deporte
 
-			$cat = CategoriaSocial::findOne($categoria);			
-			$dep = Debito::findOne($deporte);
-		
-			$sql = "SELECT s.id,s.apellido_nombre,s.id_categoria_social FROM socio  s
-					JOIN socio_debito sd ON sd.id_socio = s.id
-					WHERE s.id_categoria_social = " . $categoria . " AND sd.id_debito = ". $deporte ." ORDER BY s.id DESC" ;
+				$dep = Debito::findOne($deporte);
 			
-			$socio = Socio::findBySql($sql)->all();
+				$sql = "SELECT s.id,s.apellido_nombre FROM socio  s
+						JOIN socio_debito sd ON sd.id_socio = s.id
+						WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."' AND sd.id_debito = ". $deporte ." ORDER BY s.id DESC" ;
+
+				$socio = Socio::findBySql($sql)->all();
 			
-			$movimientoDetalle = MovimientoDetalle::find()
-				->joinWith('movimiento')
-				->where(['movimiento.fecha_pago' => null])
-				->andWhere(['>=', 'periodo_mes', $mes_desde])
-				->andWhere(['>=', 'periodo_anio', $anio_desde])
-				->andWhere(['<=', 'periodo_mes', $mes_hasta])
-				->andWhere(['<=', 'periodo_anio', $anio_hasta])
-				->andWhere(['subcuenta_id'=>$dep->subcuenta_id])
-				->all();
+				$movimientoDetalle = MovimientoDetalle::find()
+					->joinWith('movimiento')
+					->where(['movimiento.fecha_pago' => null])
+					->andWhere(['>=', 'periodo_mes', $mes_desde])
+					->andWhere(['>=', 'periodo_anio', $anio_desde])
+					->andWhere(['<=', 'periodo_mes', $mes_hasta])
+					->andWhere(['<=', 'periodo_anio', $anio_hasta])
+					->andWhere(['subcuenta_id'=>$dep->subcuenta_id])
+					->all();
+			}			
+			else{
+				
+					$sql = "SELECT s.id,s.apellido_nombre FROM socio  s						
+						WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."' ORDER BY s.id DESC" ;
+					$socio = Socio::findBySql($sql)->all();
+			
+					$movimientoDetalle = MovimientoDetalle::find()
+						->joinWith('movimiento')
+						->where(['movimiento.fecha_pago' => null])
+						->andWhere(['>=', 'periodo_mes', $mes_desde])
+						->andWhere(['>=', 'periodo_anio', $anio_desde])
+						->andWhere(['<=', 'periodo_mes', $mes_hasta])
+						->andWhere(['<=', 'periodo_anio', $anio_hasta])
+						//->andWhere(['subcuenta_id'=>$dep->subcuenta_id])
+						->all();
+			}
+			
+			
+			
 
 			$titulo = " - Deudas";
 			
@@ -798,10 +823,10 @@ class MovimientoController extends Controller {
 				'fecha_desde' => $fecha_desde,
 				'fecha_hasta' => $fecha_hasta,	
 				'deporte' => $deporte,
-				'categoria' => $categoria,
+				//'categoria' => $categoria,
 				'socio' => $socio,
 				'movimientoDetalle' => $movimientoDetalle,
-				'cat' => $cat,
+				//'cat' => $cat,
 				'dep' => $dep,
 				'titulo' => $titulo,
 			]));

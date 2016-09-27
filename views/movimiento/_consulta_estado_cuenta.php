@@ -68,25 +68,18 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 </div><br>
 
 <div class="row">
-	<div class="col-md-6">
-		<label>Categorias</label>
-		 	<?=
-            	Select2::widget([
-	    			'name' => 'categorias',
-	                'data' => $categorias,
-	                //'language' => 'de',
-	                'options' => ['placeholder' => 'Selecione una Categoria ...','id'=>'categoria'],
-	                'pluginOptions' => [
-	                    'allowClear' => true
-	                ],
-        		]);
-        	?>        
+	<div class="col-md-3">
+	     <label>Categoria Desde</label>
+	     <?=html::input( "text", "categoria_desde", null, ["class"=>"form-control","placeholder"=>"Año"] ) ?>
+    </div>
+
+	<div class="col-md-3">
+	 	<label>Categoria Hasta</label> 	
+		<?=html::input( "text", "categoria_hasta", null, ["class"=>"form-control","placeholder"=>"Año"] ) ?>
 	</div>
 </div>
 
 <br>
-
-<div><!--<?=Html::Button('Buscar', ['class' => 'btn btn-success','name'=>'buttonSubmit'])?>--></div>
 
 <input type="button" id="buscar" name="buscar" value="Buscar" class="btn btn-success"/>
 
@@ -118,15 +111,21 @@ $(function () {
 			return false;
 		}
 		
-		if ( $( "#select2-deporte-container" ).prop('title') == "" ){		
+		/*if ( $( "#select2-deporte-container" ).prop('title') == "" ){		
 			alert("Ingrese un Deporte.");	
 			$( "#select2-deporte-container" ).focus();
 			return false;
+		}*/
+
+		if ( $( "input[name='categoria_hasta']" ).val() == "" ){
+			alert("CATEGORIA HASTA: Ingrese un valor.");
+			$( "input[name='categoria_hasta']" ).focus();
+			return false;
 		}
 
-		if ( $( "#select2-categoria-container" ).prop('title') == "" ){
-			alert("Ingrese una Categoria.");
-			$( "#select2-categoria-container" ).focus();			
+		if ( $( "input[name='categoria_desde']" ).val() == "" ){
+			alert("CATEGORIA DESDE: Ingrese un valor.");
+			$( "input[name='categoria_desde']" ).focus();
 			return false;
 		}
 		
