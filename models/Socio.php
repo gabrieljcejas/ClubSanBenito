@@ -71,7 +71,7 @@ class Socio extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['apellido_nombre','dni','matricula','direccion','id_categoria_social','id_cobrador','fecha_alta'], 'required'],
+            [['apellido_nombre','dni','direccion','id_categoria_social','id_cobrador','fecha_alta','fecha_nacimiento'], 'required'],
             [['dni','id_categoria_social', 'id_ciudad', 'id_cobrador', 'matricula','tutor_dni'], 'integer'],
             [['fecha_alta', 'fecha_baja', 'fecha_nacimiento'], 'safe'],
             [['apellido_nombre'], 'string', 'max' => 80],

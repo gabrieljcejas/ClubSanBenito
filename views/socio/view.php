@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="socio-view">
     <div class="row">
         <div class="col-md-6"><h1><?=Html::encode($this->title)?></h1></div>
-    </div>
+    </div><br>
 
     <div class="row">
         <div class="col-md-3">
@@ -58,7 +58,7 @@ $this->params['breadcrumbs'][] = $this->title;
           </div>
         </div>
 
-    </div>
+    </div><br>
     <?=
 Tabs::widget([
 	'items' => [

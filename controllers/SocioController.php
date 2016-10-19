@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\components\SocioService;
 use app\models\Socio;
+use app\models\Debito;
 use app\models\SocioDebito;
 use app\models\Movimiento;
 use app\models\SocioSearch;
@@ -13,6 +14,7 @@ use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\web\UploadedFile;
+use yii\helpers\ArrayHelper;
 use yii\filters\AccessControl;
 
 		
@@ -92,6 +94,7 @@ class SocioController extends Controller {
 	public function actionCreate() {
 
 		$model = new Socio();
+		
 		$service = new SocioService();
 
 		if ($model->load(Yii::$app->request->post())) {
@@ -99,38 +102,67 @@ class SocioController extends Controller {
 			
 			/*** SUBIR FOTO ***/						
 			$model->file = UploadedFile::getInstance($model, 'file');
+		
 			if ($model->file!=""){
+		
 				$model->file->saveAs(Yii::$app->basePath . '/web/fotos/' . $model->dni . '.' . $model->file->extension);
+		
 				$model->nombre_foto = $model->dni . '.' . $model->file->extension;
 			}
 			/*--FIN---*/
 
 
 			$model->fecha_alta = date('Y-m-d', strtotime($model->fecha_alta)); // da vuelta la fecha a mysql
+
 			$model->fecha_nacimiento = date('Y-m-d', strtotime($model->fecha_nacimiento)); // da vuelta la fecha a mysql
+
 			if (!$model->save()) {
+				// si no guarda tira error
 				throw new \yii\web\HttpException(400, 'Error al guardar Socio');
+
 			}
 			else{
+
+				try {
+						
+						// guardo la matricula con el mismo id del socio
+						$socioM = Socio::find()->where(['id' => $model->id])->one();
+						$socioM->matricula = $model->id;
+						$socioM->save();
+
+						// GUARDO LOS DEBITOS EN LA TABLA SOCIO DEBITO
+						$post = Yii::$app->request->post();
+
+						if (!empty($post['concepto'])){
+						
+							foreach ($post['concepto'] as $key => $value) {					
+								$socioDebito = new SocioDebito();
+								$socioDebito->id_socio = $model->id;
+								$socioDebito->id_debito = $post['id'][$key];
+								$socioDebito->save();
+
+							}
+
+						}
+
+				} catch (Exception $e) {
+					
+					echo "ERROR GUARDAR DEBITOS SOCIOS" . $e->menssage;die;					
+				}
+				
+
 				return $this->redirect(['view', 'id' => $model->id]);
 			}			
 			
 		} else {
 
-			//obtener el proximo id
-			$proximoIDSocio = $service->getProximoId();
-			//trae todos los debitos de los socios
-			$dataProviderSocioDebito = $service->findSocioDebitoById($proximoIDSocio);
-
-			$modelSD = new SocioDebito();
-
-			date_default_timezone_set('America/Buenos_Aires');
+			//fecha de alta			
+			date_default_timezone_set('America/Buenos_Aires'); 
+       		
        		$model->fecha_alta = date('d-m-Y',time());
+
 			return $this->render('create', [
-				'model' => $model,
-				'modelSD' => $modelSD,
-				'proximoIDSocio' => $proximoIDSocio,
-				'dataProviderSocioDebito' => $dataProviderSocioDebito,
+				'model' => $model,					
 			]);
 		}
 	}
@@ -357,7 +389,41 @@ class SocioController extends Controller {
 
 	public function actionListadoSocio(){
 
-		return $this->render('_form_listado');
+
+		if (Yii::$app->request->post()) {
+
+			$post = Yii::$app->request->post();
+						
+			// PARAMETROS				
+			
+			$deporte = $post['deportes'];
+			
+			$categoria_desde = $post['categoria_desde'];
+			
+			$categoria_hasta = $post['categoria_hasta'];
+
+			$check = $post['check'];
+
+			if ($check == 1){ // todos los socios
+
+				$consultaSocios = Socio::find()
+					->where(['fecha_baja'=> null])
+					->all();	
+
+				var_dump($consultaSocios);die;	
+
+			}
+
+			$this->imprimirEstadoCuenta($fecha_desde,$fecha_hasta,$deporte,$categoria_desde,$categoria_hasta);
+		}
+
+		$consultaDebitos = Debito::find()->asArray()->all();
+		
+		$deportes = ArrayHelper::map($consultaDebitos, 'id', 'concepto');
+        
+		return $this->render('_form_listado', [			
+			'deportes' => $deportes,						
+		]);
 
 	}
 

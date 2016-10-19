@@ -19,10 +19,8 @@ use yii\jui\DatePicker;
         <div class="col-md-6">
 
             <div class="row">
-
-                <!--<div class="col-md-6"><?=$form->field($model, 'id_socio')->textInput(array('value' => $proximoIDSocio, 'type' => 'text', 'readOnly' => 'readOnly'))?></div>-->
-
-                <div class="col-md-6"><?=$form->field($model, 'matricula')->textInput()?></div>
+            
+                <div class="col-md-6"><?=$form->field($model, 'matricula')->textInput(['type' => 'text', 'readOnly' => 'readOnly'])?></div>
                 
                 <div class="col-md-6">
                     <label>Fecha Alta</label>      
