@@ -11,11 +11,11 @@ use yii\widgets\DetailView;
         DetailView::widget([
           'model' => $model,
           'attributes' => [
-            'id',
+            //'id',
+            'matricula',
             'fecha_alta',
             'fecha_baja',            
-            'obs',
-            'matricula',
+            'obs',            
             //'apellido_nombre',                                    
             'fecha_nacimiento',
             'dni',

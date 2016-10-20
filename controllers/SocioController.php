@@ -237,18 +237,36 @@ class SocioController extends Controller {
 			
 			$model->save();
 
+			//PRIMERO BORRO TODOS LOS CONCEPTOS PARA DESPUES AGREGARLOS (PARA QUE NO SE VUELVAN AGREGAR)
+			SocioDebito::deleteAll(['id_socio'=>$model->id]);
+
+			// GUARDO LOS DEBITOS EN LA TABLA SOCIO DEBITO
+			$post = Yii::$app->request->post();
+
+			if (!empty($post['concepto'])){
+			
+				foreach ($post['concepto'] as $key => $value) {					
+			
+					$socioDebito = new SocioDebito();
+			
+					$socioDebito->id_socio = $model->id;
+			
+					$socioDebito->id_debito = $post['id'][$key];
+			
+					$socioDebito->save();
+
+				}
+
+			}
+
+
 			return $this->redirect(['view', 'id' => $model->id]);
 
 		} else {
 
 			$nombre_img = $model->nombre_foto;
 
-			$dataProviderSocioDebito = $service->findSocioDebitoById($id);
-			
-			$proximoIDSocio = $id;
-
-			$modelSD = new SocioDebito();
-
+			$socioDebitos = $service->findSocioDebitoByIdJson($id);			
 			//calcular edad
 			$model->edad = $service->calcularEdad($model->fecha_nacimiento);
 			//calcular antiguedad
@@ -257,10 +275,8 @@ class SocioController extends Controller {
 			
 			return $this->render('update', [
 				'model' => $model,
-				'nombre_img' => $nombre_img,
-				'modelSD' => $modelSD,
-				'proximoIDSocio' => $proximoIDSocio,
-				'dataProviderSocioDebito' => $dataProviderSocioDebito,
+				'nombre_img' => $nombre_img,				
+				'socioDebitos' => $socioDebitos,
 			]);
 		}
 	}

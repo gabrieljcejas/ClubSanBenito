@@ -20,7 +20,7 @@ use yii\jui\DatePicker;
 
             <div class="row">
             
-                <div class="col-md-6"><?=$form->field($model, 'matricula')->textInput(['type' => 'text', 'readOnly' => 'readOnly'])?></div>
+                <div class="col-md-6"><?=$form->field($model, 'matricula')->textInput(['type' => 'text', 'readOnly' => 'readOnly','placeHolder'=>'Sin Matricula'])?></div>
                 
                 <div class="col-md-6">
                     <label>Fecha Alta</label>      
@@ -31,7 +31,8 @@ use yii\jui\DatePicker;
                           'attribute' => 'fecha_alta',                          
                           'dateFormat' => 'php:d-m-Y',
                           'options'=>[
-                            'class'=>'form-control',            
+                            'class'=>'form-control',
+                            'readOnly'=>'readOnly'            
                            ],               
                         ]);
                       ?>

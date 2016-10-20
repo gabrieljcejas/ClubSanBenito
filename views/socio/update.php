@@ -24,11 +24,9 @@ $this->params['breadcrumbs'][] = ['label' => $model->apellido_nombre, 'url' => [
     <br>
     <?=
       $this->render('_form', [
-      'model' => $model,
-      'modelSD' => $modelSD,
-      'nombre_img' => $nombre_img,
-      'dataProviderSocioDebito' => $dataProviderSocioDebito,
-      'proximoIDSocio' => $proximoIDSocio,
+        'model' => $model,      
+        'nombre_img' => $nombre_img,
+        'socioDebitos' => $socioDebitos,      
       ])
     ?>
 </div>

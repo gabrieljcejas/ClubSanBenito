@@ -7,8 +7,6 @@ use yii\helpers\Html;
 
 <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]);?> 
 
-	<?=Html::submitButton($model->isNewRecord ? 'Guardar Socio' : 'Modificar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary'])?><br></br> 	
-
 	<div class="socio-view">
 
 	<?=
@@ -23,7 +21,7 @@ use yii\helpers\Html;
 				],
 				[
 					'label' => 'Mas Datos',
-					'content' => $this->render('debito_form', ['model' => $model, 'form' => $form]),
+					'content' => $this->render('debito_form', ['model' => $model, 'form' => $form,'socioDebitos'=>$socioDebitos]),
 				],
 			],
 

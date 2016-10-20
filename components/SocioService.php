@@ -27,6 +27,7 @@ class SocioService extends \yii\db\ActiveRecord {
     }
 
     public function findSocioDebitoById($id) {
+
         $query = SocioDebito::find()->where(['id_socio' => $id]);
 
         $dataProvider = new ActiveDataProvider([
@@ -36,7 +37,22 @@ class SocioService extends \yii\db\ActiveRecord {
         return $dataProvider;
     }
 
-    public function calcularEdad($fecha) {
+    public function findSocioDebitoByIdJson($id) {
+
+        $query = SocioDebito::find()->where(['id_socio' => $id])->all();
+
+        $debitos = array();  
+
+        foreach ($query as $sd) {
+               
+            $debitos[] = array('id' => $sd->debito->id, 'concepto' => $sd->debito->concepto);  
+
+        }
+                
+        return $debitos;
+    }
+
+     public function calcularEdad($fecha) {
         list($Y, $m, $d) = explode("-", $fecha);
         return( date("md") < $m . $d ? date("Y") - $Y - 1 : date("Y") - $Y );
     }

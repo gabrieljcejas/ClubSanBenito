@@ -34,6 +34,11 @@ $config = [
 			'enablePrettyUrl' => true,
 			'showScriptName' => false,
 		],*/
+		'authManager' =>[
+			'class'=> 'yii\rbac\DbManager',
+			'defaultRoles'=>['guest'],
+
+		],
 		'log' => [
 			'traceLevel' => YII_DEBUG ? 3 : 0,
 			'targets' => [
