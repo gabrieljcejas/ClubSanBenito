@@ -12,7 +12,7 @@ use yii\filters\AccessControl;
 /**
  * ProveedorController implements the CRUD actions for Proveedor model.
  */
-class ProveedorController extends Controller
+class ProveedorController extends BaseController
 {
     public function behaviors()
     {

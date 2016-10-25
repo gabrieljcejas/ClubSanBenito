@@ -13,7 +13,7 @@ use yii\filters\AccessControl;
 /**
  * CobradorController implements the CRUD actions for Cobrador model.
  */
-class CobradorController extends Controller
+class CobradorController extends BaseController
 {
     public function behaviors()
     {

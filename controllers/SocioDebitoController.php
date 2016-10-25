@@ -12,7 +12,7 @@ use yii\web\NotFoundHttpException;
 /**
  * SocioDebitoController implements the CRUD actions for SocioDebito model.
  */
-class SocioDebitoController extends Controller {
+class SocioDebitoController extends BaseController {
 	public function behaviors() {
 		return [
 			'verbs' => [

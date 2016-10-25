@@ -13,7 +13,7 @@ use yii\data\ActiveDataProvider;
 /**
  * UsuarioController implements the CRUD actions for Usuario model.
  */
-class UsuarioController extends Controller
+class UsuarioController extends BaseController
 {
     public function behaviors()
     {

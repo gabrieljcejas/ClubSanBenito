@@ -12,7 +12,7 @@ use yii\filters\AccessControl;
 /**
  * DebitoController implements the CRUD actions for Debito model.
  */
-class DebitoController extends Controller
+class DebitoController extends BaseController
 {
     public function behaviors()
     {

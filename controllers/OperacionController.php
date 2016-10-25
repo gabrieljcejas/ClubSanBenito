@@ -3,57 +3,49 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\Provincia;
-use app\models\ProvinciaSearch;
+use app\models\Operacion;
+use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use yii\filters\AccessControl;
+
 /**
- * ProvinciaController implements the CRUD actions for Provincia model.
+ * OperacionController implements the CRUD actions for Operacion model.
  */
-class ProvinciaController extends BaseController
+class OperacionController extends BaseController
 {
+    /**
+     * @inheritdoc
+     */
     public function behaviors()
     {
         return [
-            'access' => [
-                'class' => AccessControl::className(),
-                //'only' => ['logout'],
-                'rules' => [
-                    [
-                        //'actions' => ['logout'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],  
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['post'],
+                    'delete' => ['POST'],
                 ],
             ],
         ];
     }
 
     /**
-     * Lists all Provincia models.
+     * Lists all Operacion models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new ProvinciaSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $dataProvider = new ActiveDataProvider([
+            'query' => Operacion::find(),
+        ]);
 
         return $this->render('index', [
-            'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }
 
     /**
-     * Displays a single Provincia model.
+     * Displays a single Operacion model.
      * @param integer $id
      * @return mixed
      */
@@ -65,16 +57,16 @@ class ProvinciaController extends BaseController
     }
 
     /**
-     * Creates a new Provincia model.
+     * Creates a new Operacion model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Provincia();
+        $model = new Operacion();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['create']);
+            return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -83,7 +75,7 @@ class ProvinciaController extends BaseController
     }
 
     /**
-     * Updates an existing Provincia model.
+     * Updates an existing Operacion model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -102,7 +94,7 @@ class ProvinciaController extends BaseController
     }
 
     /**
-     * Deletes an existing Provincia model.
+     * Deletes an existing Operacion model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -115,15 +107,15 @@ class ProvinciaController extends BaseController
     }
 
     /**
-     * Finds the Provincia model based on its primary key value.
+     * Finds the Operacion model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Provincia the loaded model
+     * @return Operacion the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Provincia::findOne($id)) !== null) {
+        if (($model = Operacion::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

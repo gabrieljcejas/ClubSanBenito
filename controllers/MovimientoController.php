@@ -24,7 +24,7 @@ use yii\filters\AccessControl;
 /**
  * MovimientoController implements the CRUD actions for Movimiento model.
  */
-class MovimientoController extends Controller {
+class MovimientoController extends BaseController {
 	
 	public function behaviors() {
 		return [	

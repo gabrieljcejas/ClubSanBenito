@@ -12,7 +12,7 @@ use yii\filters\AccessControl;
 /**
  * CategoriaSocialController implements the CRUD actions for CategoriaSocial model.
  */
-class CategoriaSocialController extends Controller
+class CategoriaSocialController extends BaseController
 {
     public function behaviors()
     {

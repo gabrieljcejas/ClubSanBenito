@@ -21,7 +21,7 @@ use yii\filters\AccessControl;
 /**
  * SocioController implements the CRUD actions for Socio model.
  */
-class SocioController extends Controller {
+class SocioController extends BaseController {
 	
 
 	public function behaviors() {

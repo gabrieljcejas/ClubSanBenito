@@ -9,17 +9,22 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 
-class SiteController extends Controller
+class SiteController extends BaseController
 {
     public function behaviors()
     {
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout'],
+                'only' => ['logout', 'signup', 'about'],
                 'rules' => [
                     [
-                        'actions' => ['logout'],
+                        'actions' => ['login', 'signup', 'error'],
+                        'allow' => true,
+                        'roles' => ['?'],
+                    ],
+                    [
+                        'actions' => ['about', 'logout', 'index'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -32,6 +37,29 @@ class SiteController extends Controller
                 ],
             ],
         ];
+    }
+
+
+    public function beforeAction($action)
+    {
+        if (!parent::beforeAction($action)) {
+            return false;
+        }
+     
+        $operacion = str_replace("/", "-", Yii::$app->controller->route);
+     
+        $permitirSiempre = ['site-captcha', 'site-signup', 'site-index', 'site-error', 'site-contact', 'site-login', 'site-logout'];
+     
+        if (in_array($operacion, $permitirSiempre)) {
+            return true;
+        }
+     
+        if (!AccessHelpers::getAcceso($operacion)) {
+            echo $this->render('nopermitido');
+            return false;
+        }
+     
+        return true;
     }
 
     public function actions()

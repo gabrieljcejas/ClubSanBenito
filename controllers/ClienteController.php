@@ -13,7 +13,7 @@ use yii\filters\AccessControl;
 /**
  * ClienteController implements the CRUD actions for Cliente model.
  */
-class ClienteController extends Controller
+class ClienteController extends BaseController
 {
     /**
      * @inheritdoc

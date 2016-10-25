@@ -13,7 +13,7 @@ use yii\filters\AccessControl;
 /**
  * CuentaController implements the CRUD actions for Cuenta model.
  */
-class CuentaController extends Controller {
+class CuentaController extends BaseController {
 	public function behaviors() {
 		return [
 			'access' => [

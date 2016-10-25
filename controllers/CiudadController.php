@@ -13,7 +13,7 @@ use yii\filters\AccessControl;
 /**
  * CiudadController implements the CRUD actions for Ciudad model.
  */
-class CiudadController extends Controller
+class CiudadController extends BaseController
 {
     public function behaviors()
     {

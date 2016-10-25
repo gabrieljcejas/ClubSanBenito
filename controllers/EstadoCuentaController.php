@@ -15,7 +15,7 @@ use yii\filters\AccessControl;
 /**
  * EstadoCuentaController implements the CRUD actions for EstadoCuenta model.
  */
-class EstadoCuentaController extends Controller {
+class EstadoCuentaController extends BaseController {
 	public function behaviors() {
 		return [
 			'access' => [

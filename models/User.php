@@ -172,4 +172,14 @@ class User extends \yii\db\ActiveRecord  implements IdentityInterface
     }
     /** EXTENSION MOVIE **/
 
+
+    /**
+     * RELACIONES
+     */
+    public function getRol()
+    {
+            return $this->hasOne(Rol::className(), ['id' => 'rol_id']);
+    }
+
+
 }
