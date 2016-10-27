@@ -78,17 +78,16 @@ echo Nav::widget([
 				//['label' => 'Estado de Cuenta', 'url' => ['/proveedor/index']],
 			],
 		],
+		
+		
 		['label' => 'Admin', 'url' => ['#'],
 			'items' => [
 				['label' => 'Roles', 'url' => ['rol/index']],
 				['label' => 'Operaciones', 'url' => ['operacion/index']],
 				['label' => 'Usuarios', 'url' => ['user/index']],
 			],
-		],
-		
-		//['label' => 'Usuario', 'url' => ['usuario/index']],
+		],	
 
-		
 		Yii::$app->user->isGuest ?
 			['label' => 'Login', 'url' => ['/site/login']] :
 			['label' => 'Logout (' . Yii::$app->user->identity->username . ')',

@@ -30,7 +30,7 @@ class User extends \yii\db\ActiveRecord  implements IdentityInterface
     public function rules()
     {
         return [
-            [['username', 'password'], 'required'],
+            [['username', 'password','rol_id'], 'required'],            
             [['username', 'password'], 'string', 'max' => 100]            
         ];
     }
@@ -43,7 +43,8 @@ class User extends \yii\db\ActiveRecord  implements IdentityInterface
         return [
             'id' => 'Id',
             'username' => 'Username',
-            'password' => 'Password'
+            'password' => 'Password',
+            'rol_id'=> "Rol"
         ];
     }    
     /** INCLUDE USER LOGIN VALIDATION FUNCTIONS**/

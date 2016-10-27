@@ -50,6 +50,7 @@ class Rol extends \yii\db\ActiveRecord
 
     public function afterSave($insert, $changedAttributes)
     {
+        //var_dump("aftersave!");die;
         \Yii::$app->db->createCommand()->delete('rol_operacion', 'rol_id = '.(int) $this->id)->execute();
      
         foreach ($this->operaciones as $id) {

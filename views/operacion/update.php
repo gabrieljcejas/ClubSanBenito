@@ -5,10 +5,10 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\Models\Operacion */
 
-$this->title = 'Update Operacion: ' . $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Operacions', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->title = 'Modificar Permisos: ' . $model->nombre;
+$this->params['breadcrumbs'][] = ['label' => 'Permisos', 'url' => ['index']];
+$this->params['breadcrumbs'][] = 'Modificar';
+$this->params['breadcrumbs'][] = ['label' => $model->nombre, 'url' => ['view', 'id' => $model->id]];
 ?>
 <div class="operacion-update">
 

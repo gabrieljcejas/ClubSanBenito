@@ -22,8 +22,14 @@ class AccessHelpers {
         $result = $command->queryOne();
 
         if ($result['nombre'] != null){
+
             return true;
-        } else {
+            
+        }elseif (Yii::$app->user->identity->rol_id === 1) {// si el rol es 1 (administrador) devuelvo true para no tener que agregar todos los permisos en la tabla operaciones
+            return true;
+
+        }else{
+
             return false;
         }
     }

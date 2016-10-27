@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\Models\Operacion */
 
-$this->title = 'Create Operacion';
+$this->title = 'Agregar Permisos';
 $this->params['breadcrumbs'][] = ['label' => 'Operacions', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
