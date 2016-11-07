@@ -420,17 +420,8 @@ class SocioController extends BaseController {
 
 			$check = $post['check'];
 
-			if ($check == 1){ // todos los socios
-
-				$consultaSocios = Socio::find()
-					->where(['fecha_baja'=> null])
-					->all();	
-
-				var_dump($consultaSocios);die;	
-
-			}
-
-			$this->imprimirEstadoCuenta($fecha_desde,$fecha_hasta,$deporte,$categoria_desde,$categoria_hasta);
+			$this->imprimirListadoSocios($deporte,$categoria_desde,$categoria_hasta,$check);
+			
 		}
 
 		$consultaDebitos = Debito::find()->asArray()->all();
@@ -443,6 +434,73 @@ class SocioController extends BaseController {
 
 	}
 
+	private function imprimirListadoSocios($deporte,$categoria_desde,$categoria_hasta,$check){
 
+
+
+        if ($deporte!=""){ // si seleciona un deporte
+
+        	// busco el concepto del debito
+			$debito = Debito::findOne($deporte);
+
+            if ($check == 1){ //todos los socios activos 
+
+            	$estado = "ACTIVOS";
+                
+                $sql = "SELECT s.id,s.apellido_nombre,s.dni,s.matricula FROM socio  s
+                        JOIN socio_debito sd ON sd.id_socio = s.id
+                        WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."' AND sd.id_debito = ". $deporte ." AND fecha_baja IS NULL ORDER BY s.id DESC" ;
+            
+            }else{ // todos los socios dados de baja
+
+            	$estado = "DADOS DE BAJA";
+
+                $sql = "SELECT s.id,s.apellido_nombre,s.dni,s.matricula FROM socio  s
+                        JOIN socio_debito sd ON sd.id_socio = s.id
+                        WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."' AND sd.id_debito = ". $deporte ." AND fecha_baja IS NOT NULL ORDER BY s.id DESC" ;
+                   
+            }
+
+
+        }else{ // si no selecciono deporte (TODOS LOS DEPORTES)
+
+            if ($check == 1){ //todos los socios activos 
+
+            	$estado = "ACTIVOS";
+                
+                $sql = "SELECT s.id,s.apellido_nombre,s.dni,s.matricula FROM socio  s
+                        WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."'  AND fecha_baja IS NULL ORDER BY s.id DESC" ;
+            
+            }else{ // todos los socios dados de baja
+
+            	$estado = "DADOS DE BAJA";
+
+                $sql = "SELECT s.id,s.apellido_nombre,s.dni,s.matricula FROM socio  s
+                        WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."' AND fecha_baja IS NOT NULL ORDER BY s.id DESC" ;
+                   
+            }
+
+        }
+
+        $socio = Socio::findBySql($sql)->all();
+
+        /**
+        ****** IMPRIMIR 
+        **/
+        $mpdf = new mPDF('utf-8', 'A4');
+       
+        $mpdf->WriteHTML($this->renderPartial('_imprimir_listado_socios', [
+            'deporte' => $deporte,            
+            'socio' => $socio,
+            'titulo' => $titulo,
+            'estado' => $estado,
+            'debito' => $debito,
+        ]));
+        
+        $mpdf->Output();
+        
+        exit;
+
+    }
 
 }

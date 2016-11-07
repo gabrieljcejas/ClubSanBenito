@@ -5,6 +5,8 @@ namespace app\models;
 use Yii;
 use yii\data\ActiveDataProvider;
 
+
+
 /**
  * This is the model class for table "socio".
  *
@@ -171,6 +173,9 @@ class Socio extends \yii\db\ActiveRecord
         
         return $dataProvider;
     }
+
+
+    
 
         
 }
