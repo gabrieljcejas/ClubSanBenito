@@ -34,9 +34,11 @@ NavBar::begin([
 		'class' => 'navbar-inverse navbar-fixed-top',
 	],
 ]);
+
+
 echo Nav::widget([
 	'options' => ['class' => 'navbar-nav navbar-right'],
-	'items' => [
+	'items' => [		
 		['label' => 'Socios', 'url' => ['#'],
 			'items' => [
 				['label' => 'Alta-Baja-Modificacion (ABM)', 'url' => ['/socio/index']],
@@ -63,7 +65,7 @@ echo Nav::widget([
 				['label' => 'Plan de Cuentas', 'url' => ['/cuenta/index']],
 				'<li class="divider"></li>',
 				['label' => 'ABM Proveedores', 'url' => ['/proveedor/index']],
-				['label' => 'ABM Clientes', 'url' => ['/cliente/index']],
+				//['label' => 'ABM Clientes', 'url' => ['/cliente/index']],
 			],
 		],
 		['label' => 'Reportes', 'url' => ['#'],
@@ -82,11 +84,12 @@ echo Nav::widget([
 		
 		['label' => 'Admin', 'url' => ['#'],
 			'items' => [
-				['label' => 'Roles', 'url' => ['rol/index']],
-				['label' => 'Operaciones', 'url' => ['operacion/index']],
 				['label' => 'Usuarios', 'url' => ['user/index']],
-			],
+				['label' => 'Roles', 'url' => ['rol/index']],
+				['label' => 'Permisos', 'url' => ['operacion/index']],								
+			],			
 		],	
+		
 
 		Yii::$app->user->isGuest ?
 			['label' => 'Login', 'url' => ['/site/login']] :
@@ -98,6 +101,7 @@ echo Nav::widget([
 	],
 ]);
 NavBar::end();
+
 ?>
 <br><br><br>
         <div class="container">

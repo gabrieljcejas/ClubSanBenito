@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-10-2016 a las 04:22:02
+-- Tiempo de generación: 08-11-2016 a las 00:14:13
 -- Versión del servidor: 5.6.26
 -- Versión de PHP: 5.6.12
 
@@ -172,7 +172,16 @@ CREATE TABLE IF NOT EXISTS `movimiento` (
   `fk_prov` int(11) DEFAULT NULL,
   `fk_cliente` int(11) DEFAULT NULL,
   `obs` varchar(150) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `movimiento`
+--
+
+INSERT INTO `movimiento` (`id`, `nro_recibo`, `fecha_pago`, `fk_prov`, `fk_cliente`, `obs`) VALUES
+(3, 1, '2016-11-07', NULL, 1, NULL),
+(4, 2, '2016-11-07', NULL, 2, NULL),
+(5, 10, '2016-11-07', 1, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -189,7 +198,22 @@ CREATE TABLE IF NOT EXISTS `movimiento_detalle` (
   `importe` varchar(15) DEFAULT NULL,
   `periodo_mes` int(11) DEFAULT NULL,
   `periodo_anio` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `movimiento_detalle`
+--
+
+INSERT INTO `movimiento_detalle` (`id`, `tipo`, `movimiento_id`, `subcuenta_id`, `subcuenta_id_fp`, `importe`, `periodo_mes`, `periodo_anio`) VALUES
+(1, 'i', 1, 36, 4, '90', 2, 2016),
+(2, 'i', 2, 38, 4, '10.00', 4, 2016),
+(3, 'i', 2, 42, 4, '100.00', 4, 2016),
+(4, 'i', 3, 38, 4, '10.00', 2, 2016),
+(5, 'i', 3, 42, 4, '100.00', 2, 2016),
+(6, 'i', 4, 38, 4, '10.00', 1, 2016),
+(7, 'i', 4, 42, 4, '100.00', 1, 2016),
+(8, 'e', 5, 39, 4, '4545', NULL, 2016),
+(9, 'e', 5, 0, 4, '150', NULL, 2016);
 
 -- --------------------------------------------------------
 
@@ -200,14 +224,23 @@ CREATE TABLE IF NOT EXISTS `movimiento_detalle` (
 CREATE TABLE IF NOT EXISTS `operacion` (
   `id` int(11) NOT NULL,
   `nombre` varchar(64) COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `operacion`
 --
 
 INSERT INTO `operacion` (`id`, `nombre`) VALUES
-(1, 'site-about');
+(1, 'site-about'),
+(2, 'movimiento-view'),
+(3, 'movimiento-create'),
+(4, 'movimiento-index'),
+(5, 'movimiento-update'),
+(6, 'movimiento-delete'),
+(7, 'socio-index'),
+(8, 'socio-create'),
+(9, 'socio-update'),
+(10, 'socio-delete');
 
 -- --------------------------------------------------------
 
@@ -270,7 +303,7 @@ CREATE TABLE IF NOT EXISTS `recibo` (
 --
 
 INSERT INTO `recibo` (`id`, `i`, `e`) VALUES
-(1, 101, 9);
+(1, 2, 10);
 
 -- --------------------------------------------------------
 
@@ -288,8 +321,8 @@ CREATE TABLE IF NOT EXISTS `rol` (
 --
 
 INSERT INTO `rol` (`id`, `nombre`) VALUES
-(1, 'Usuario'),
-(2, 'Administrador');
+(1, 'Administrador'),
+(2, 'Usuario Limitado');
 
 -- --------------------------------------------------------
 
@@ -307,7 +340,9 @@ CREATE TABLE IF NOT EXISTS `rol_operacion` (
 --
 
 INSERT INTO `rol_operacion` (`rol_id`, `operacion_id`) VALUES
-(1, 1);
+(2, 1),
+(2, 2),
+(2, 3);
 
 -- --------------------------------------------------------
 
@@ -349,8 +384,8 @@ CREATE TABLE IF NOT EXISTS `socio` (
 --
 
 INSERT INTO `socio` (`id`, `matricula`, `apellido_nombre`, `cp`, `direccion`, `dni`, `email`, `fecha_alta`, `fecha_baja`, `obs`, `fecha_nacimiento`, `nombre_foto`, `id_categoria_social`, `id_ciudad`, `id_cobrador`, `id_provincia`, `sexo`, `telefono`, `telefono2`, `grupo_sanguineo`, `antecedentes_medicos`, `sanciones`, `tutor_nombre`, `tutor_dni`, `tutor_fn`, `tutor_tel`) VALUES
-(1, 1, 'MIGUELES MARIO ALEJANDRO', NULL, '', 0, NULL, '0000-00-00', NULL, NULL, '0000-00-00', NULL, NULL, 2, NULL, 1, 'M', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(2, 2, 'PALACIOS RUBEN ERNESTO', NULL, '', 0, NULL, '0000-00-00', NULL, NULL, '0000-00-00', NULL, NULL, 2, NULL, 1, 'M', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(1, 1, 'MIGUELES MARIO ALEJANDRO', '3100', 'Chubut', 0, 'gabrieljcejas@hotmail.com', '2016-11-01', NULL, '', '2016-11-07', NULL, 1, 1, 1, 1, 'm', '93434508038', '+5493434508038', 'a+', '', '', '', NULL, '', ''),
+(2, 2, 'PALACIOS RUBEN ERNESTO', '', 'qasdasd', 0, '', '1970-01-01', NULL, '', '2016-11-07', NULL, 2, 2, 1, 1, '', '', '', '', '', '', '', NULL, '', ''),
 (3, 3, 'SATTLER MIGUEL', NULL, '', 0, NULL, '0000-00-00', NULL, NULL, '0000-00-00', NULL, NULL, 2, NULL, 1, 'M', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (4, 4, 'GRINOVERO LUIS', NULL, '', 0, NULL, '0000-00-00', NULL, NULL, '0000-00-00', NULL, NULL, 2, NULL, 1, 'M', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (5, 5, 'CAVALLO ALBERTO', NULL, '', 0, NULL, '0000-00-00', NULL, NULL, '0000-00-00', NULL, NULL, 2, NULL, 1, 'M', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
@@ -688,7 +723,17 @@ CREATE TABLE IF NOT EXISTS `socio_debito` (
   `id` int(11) NOT NULL,
   `id_socio` int(11) NOT NULL,
   `id_debito` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `socio_debito`
+--
+
+INSERT INTO `socio_debito` (`id`, `id_socio`, `id_debito`) VALUES
+(5, 1, 19),
+(6, 1, 20),
+(7, 2, 19),
+(8, 2, 20);
 
 -- --------------------------------------------------------
 
@@ -745,14 +790,15 @@ CREATE TABLE IF NOT EXISTS `user` (
   `auth_key` varchar(32) DEFAULT NULL,
   `password_reset_token` varchar(255) DEFAULT NULL,
   `rol_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `user`
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `auth_key`, `password_reset_token`, `rol_id`) VALUES
-(1, 'gabriel', '7c4a8d09ca3762af61e59520943dc26494f8941b', NULL, NULL, 1);
+(1, 'gabriel', '7c4a8d09ca3762af61e59520943dc26494f8941b', NULL, NULL, 1),
+(2, 'rene', '7c4a8d09ca3762af61e59520943dc26494f8941b', NULL, NULL, 2);
 
 --
 -- Índices para tablas volcadas
@@ -917,17 +963,17 @@ ALTER TABLE `estado_cuenta`
 -- AUTO_INCREMENT de la tabla `movimiento`
 --
 ALTER TABLE `movimiento`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT de la tabla `movimiento_detalle`
 --
 ALTER TABLE `movimiento_detalle`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT de la tabla `operacion`
 --
 ALTER TABLE `operacion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT de la tabla `proveedor`
 --
@@ -957,7 +1003,7 @@ ALTER TABLE `socio`
 -- AUTO_INCREMENT de la tabla `socio_debito`
 --
 ALTER TABLE `socio_debito`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT de la tabla `subcuenta`
 --
@@ -967,7 +1013,17 @@ ALTER TABLE `subcuenta`
 -- AUTO_INCREMENT de la tabla `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `user`
+--
+ALTER TABLE `user`
+  ADD CONSTRAINT `user_rol` FOREIGN KEY (`id`) REFERENCES `rol` (`id`);
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

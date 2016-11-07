@@ -6,7 +6,7 @@ $this->title = 'Club Atletico y Social San Benito';
 <div class="site-index">
     
     <div class="jumbotron">        
-        <h1>Club Atletico y Social San Benito</h1>
+        <h1>Club Atletico y Social San Benito</h1><br><br><br>
         <?= Html::img(yii::$app->urlManager->baseUrl . '/fotos/logo.jpeg' , ['width' => 200]) ?>
     </div>
 

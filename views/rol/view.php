@@ -33,7 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]) ?>
 
-    <h2>Operaciones Permitidas</h2>
+    <h2>Permisos Asignados</h2>
  
     <?php
      

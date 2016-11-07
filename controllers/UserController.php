@@ -4,10 +4,15 @@ namespace app\controllers;
 
 use Yii;
 use app\models\User;
+use app\models\Rol;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\helpers\ArrayHelper;
+use yii\filters\AccessControl;
+
+
 
 /**
  * UserController implements the CRUD actions for User model.
@@ -17,13 +22,23 @@ class UserController extends Controller
     /**
      * @inheritdoc
      */
-    public function behaviors()
-    {
+    public function behaviors() {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                //'only' => ['logout'],
+                'rules' => [
+                    [
+                        //'actions' => ['logout'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],          
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['POST'],
+                    'delete' => ['post'],
                 ],
             ],
         ];
@@ -65,11 +80,21 @@ class UserController extends Controller
     {
         $model = new User();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        $roles = ArrayHelper::map(Rol::find()->all(), 'id', 'nombre');
+
+         if ($model->load(Yii::$app->request->post())) {
+
+            $model->password = sha1($model->password);
+            
+            $model->save();
+
             return $this->redirect(['view', 'id' => $model->id]);
+
         } else {
+
             return $this->render('create', [
                 'model' => $model,
+                'roles' => $roles,
             ]);
         }
     }
@@ -84,11 +109,20 @@ class UserController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        $roles = ArrayHelper::map(Rol::find()->all(), 'id', 'nombre');
+
+        if ($model->load(Yii::$app->request->post())) {
+
+            $model->password = sha1($model->password);
+            
+            $model->save();
+
             return $this->redirect(['view', 'id' => $model->id]);
+
         } else {
             return $this->render('update', [
                 'model' => $model,
+                'roles' => $roles,
             ]);
         }
     }

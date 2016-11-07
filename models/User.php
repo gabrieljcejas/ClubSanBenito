@@ -42,8 +42,8 @@ class User extends \yii\db\ActiveRecord  implements IdentityInterface
     {
         return [
             'id' => 'Id',
-            'username' => 'Username',
-            'password' => 'Password',
+            'username' => 'Usuario',
+            'password' => 'Contraseña',
             'rol_id'=> "Rol"
         ];
     }    

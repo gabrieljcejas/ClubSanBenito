@@ -21,49 +21,50 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' =>['view', 'v' 
 
     <?php $form = ActiveForm::begin();?>
 
-    <div class="row">
+    <div class="row">          
+          
+        <div class="col-md-2">       
 
-      <div class="col-md-2"><?=$form->field($model, 'nro_recibo')->textInput(['value' => $nroRecibo, 'readOnly' => 'readOnly'])?></div>
-      
-      <div class="col-md-2">       
-      <label>Fecha</label>      
-      <?= 
-        DatePicker::widget([
-          'model' => $model,
-          'attribute' => 'fecha_pago',
-          //'language' => 'ru',
-          'dateFormat' => 'php:d-m-Y',
-          'options'=>[
-            'class'=>'form-control',            
-           ],               
-        ]);
-      ?>
-      </div>
-
-    </div>
-
-    <div class="row">
-
-        <div class="col-md-2">
-            <?=$form->field($model, 'periodo_mes')->dropDownList([
-	'1' => 'Enero',
-	'2' => 'Febrero',
-	'3' => 'Marzo',
-	'4' => 'Abril',
-	'5' => 'Mayo',
-	'6' => 'Junio',
-	'7' => 'Julio',
-	'8' => 'Agosto',
-	'9' => 'Septiembre',
-	'10' => 'Octubre',
-	'11' => 'Noviembre',
-	'12' => 'Diciembre',
-],
-	['prompt' => 'Selecione un Mes..'])
-?>
+            <label>Fecha</label>      
+              <?= 
+                DatePicker::widget([
+                  'model' => $model,
+                  'attribute' => 'fecha_pago',
+                  //'language' => 'ru',
+                  'dateFormat' => 'php:d-m-Y',
+                  'options'=>[
+                    'class'=>'form-control',            
+                   ],               
+                ]);
+              ?>
         </div>
 
-        <div class="col-md-2"><?=$form->field($model, 'periodo_anio')->textInput(['value' => date('Y')])?></div>
+        <div class="col-md-2">
+
+            <?=$form->field($model, 'periodo_mes')->dropDownList([
+            	'1' => 'Enero',
+            	'2' => 'Febrero',
+            	'3' => 'Marzo',
+            	'4' => 'Abril',
+            	'5' => 'Mayo',
+            	'6' => 'Junio',
+            	'7' => 'Julio',
+            	'8' => 'Agosto',
+            	'9' => 'Septiembre',
+            	'10' => 'Octubre',
+            	'11' => 'Noviembre',
+            	'12' => 'Diciembre',
+            ],
+            	['prompt' => 'Selecione un Mes..'])
+            ?>
+
+        </div>
+
+        <div class="col-md-2">
+
+            <?=$form->field($model, 'periodo_anio')->textInput(['value' => date('Y')])?>
+                
+        </div>
 
     </div>
 
@@ -73,7 +74,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' =>['view', 'v' 
     <?php   if ($tipo == "i") { // si la variable es "i" (ingresos) traigo todos los socios y cuentas de resultado positivo 4.1
             $list = ArrayHelper::map(Socio::find()->orderBy('apellido_nombre')->all(), 'id', 'apellido_nombre');?>
             
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <?=$form->field($model, 'fk_cliente')->widget(Select2::classname(), [
                     'data' => $list,
                     //'language' => 'de',
@@ -88,7 +89,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' =>['view', 'v' 
 else {
 	       $list = ArrayHelper::map(Proveedor::find()->orderBy('nombre')->all(), 'id', 'nombre');
 ?>
-           <div class="col-md-4">
+           <div class="col-md-6">
                 <?=$form->field($model, 'fk_prov')->widget(Select2::classname(), [
                     'data' => $list,
                     //'language' => 'de',
@@ -122,17 +123,25 @@ else {
                 </tbody>
             </table>
         </div>
+
+        <div class="col-md-2">
+            
+             <?=Html::a('+', null, [
+               'class' => 'btn btn-default',
+               'id' => 'btn_agregar_cuenta',
+               'value' => $v,        
+            ])?>
+
+        </div>
         
     </div>
     
-    <?=Html::a('Agregar Cuenta', null, [
-           'class' => 'btn btn-primary',
-           'id' => 'btn_agregar_cuenta',
-           'value' => $v,        
-        ])?>
+   
     
      <?=$form->field($model, 'tipo')->textInput(['value' => $tipo, 'type' => 'hidden'])?>
-
+    
+     <input type="hidden" id="movimiento-nro_recibo" value="<?= $nroRecibo ?>" name="Movimiento[nro_recibo]">
+    
     
     <div id="table_dinamic"></div>
       
@@ -186,11 +195,9 @@ function calculartotal(){
                     $.each(data, function(i, debito) {
                         html+="<tr id='del-" + i + "'><td><input type='hidden' name='debito_sc_id[]' value='" + debito.subcuenta_id + "'>" + debito.concepto + "</td><td>$" + debito.importe + "</td>";
                         html+="<td><select name='forma_pago[]' class='form-control'>";
-                        html+="<option value='4'>Efectivo</option>";
-                        html+="<option value='30'>Cheque Propio</option>";
-                        html+="<option value='31'>Cheque de Tercero</option>";
+                        html+="<option value='4'>Efectivo</option>";                       
                         html+="</select></td>";
-                        html+="<td><input type='text' name='importe[]' value='" + debito.importe + "' class='form-control' onkeyup='funcionSumarTotal()'></td>";
+                        html+="<td><input type='text' name='importe[]' value='" + debito.importe + "' class='form-control' onkeyup='calculartotal()'></td>";
                         html+="<td><a id='btn_borrar_cuenta' onClick='borrarfila(" + i + ");' class='btn btn-default glyphicon glyphicon-trash'></a></td></tr>";
 
                     })
@@ -217,18 +224,16 @@ function calculartotal(){
                     var html='';
                     var nro_fila = $('#tabla_debitos >tbody >tr').length + 1;
                     html+="<tr id='del-" + nro_fila + "'><td><select name='debito_sc_id[]' class='form-control'>";
-                    html+="<option value='0'>Selecione una Cuenta</option>";
+                    html+="<option value='0'>...</option>";
                     $.each(data, function(i, sc) {
 
                         html+="<option value='" + sc.id + "''>" + sc.concepto + "</option>";
 
                     })
                     html+="</select></td><td></td><td><select name='forma_pago[]' class='form-control'>";
-                    html+="<option value='4'>Efectivo</option>";
-                    html+="<option value='30'>Cheque Propio</option>";
-                    html+="<option value='31'>Cheque de Tercero</option>";
+                    html+="<option value='4'>Efectivo</option>";                 
                     html+="</select></td>";
-                    html+="<td><input type='text' name='importe[]' value='' class='form-control'></td>";
+                    html+="<td><input type='text' name='importe[]' value='' class='form-control' onkeyup='calculartotal()'></td>";
                     html+="<td><a id='btn_borrar_cuenta' onClick='borrarfila(" + nro_fila + ");' class='btn btn-default glyphicon glyphicon-trash'></a></td></tr>";
                     $("#tabla_debitos").append(html);
                }
