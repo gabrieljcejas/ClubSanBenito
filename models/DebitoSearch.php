@@ -20,7 +20,7 @@ class DebitoSearch extends Debito
         return [
             [['id', 'subcuenta_id'], 'integer'],
             [['concepto'], 'safe'],
-            [['importe'], 'number'],
+           //[['importe'], 'number'],
         ];
     }
 
@@ -58,7 +58,7 @@ class DebitoSearch extends Debito
 
         $query->andFilterWhere([
             'id' => $this->id,
-            'importe' => $this->importe,
+            //'importe' => $this->importe,
             'subcuenta_id' => $this->subcuenta_id,
         ]);
 

@@ -31,7 +31,7 @@ class Rol extends \yii\db\ActiveRecord
     {
         return [
             [['nombre'], 'required'],
-            [['nombre'], 'string', 'max' => 32],
+            [['nombre'], 'string', 'max' => 60],
             ['operaciones', 'safe'],
         ];
     }
@@ -43,7 +43,7 @@ class Rol extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'nombre' => 'Nombre',
+            'nombre' => 'Rol',
         ];
     }
 
@@ -52,12 +52,16 @@ class Rol extends \yii\db\ActiveRecord
     {
         //var_dump("aftersave!");die;
         \Yii::$app->db->createCommand()->delete('rol_operacion', 'rol_id = '.(int) $this->id)->execute();
-     
-        foreach ($this->operaciones as $id) {
-            $ro = new RolOperacion();
-            $ro->rol_id = $this->id;
-            $ro->operacion_id = $id;
-            $ro->save();
+        
+        if (!empty($this->operaciones)){
+            
+            foreach ($this->operaciones as $id) {
+                $ro = new RolOperacion();
+                $ro->rol_id = $this->id;
+                $ro->operacion_id = $id;
+                $ro->save();
+            }
+            
         }
     }
 

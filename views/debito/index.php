@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
 'id',
 'concepto',
 'importe',
-'subcuenta_id',
+'subCuenta.concepto',
 
 ['class' => 'yii\grid\ActionColumn'],
 ],

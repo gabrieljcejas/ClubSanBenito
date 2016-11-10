@@ -6,13 +6,13 @@
 <style>
 @page{
 margin-top: 0.5cm; usable in first page only
-margin-right: 0.5cm;
+margin-right: 0.0cm;
 margin-left: 0.5cm;
 }
 </style>
 </head>
       <!-- codigo html tabla-->
-    <table width="100%" border="1" bordercolor="#000000">
+    <table border="1" bordercolor="#000000">
       <tr>
         <td colspan="3" align="center" bgcolor="#0066FF" style="border:none"><strong>CLUB ATLETICO Y SOCIAL SAN BENITO</strong></td>
         <td rowspan="2" align="center" bgcolor="#0066FF" style="border:none"><img src="<?=yii::$app->urlManager->baseUrl . '/img/logo.jpeg'?>" width="50"></td>
@@ -26,61 +26,56 @@ margin-left: 0.5cm;
         <td colspan="2" align="center" bgcolor="#0066FF" style="border:none"><strong>Fundado el 9 de julio de 1916.  Persona Juridica 2590</strong></td>
       </tr>
       <tr>
-        <td>Socio Nº:</td>
+        <td style="border:none">Fecha:</td>
         <td style="border:none"><strong>
-        <?=$m->socio->id?>
+         <?=date("d-m-Y", strtotime($m->fecha_pago))?>
         </strong></td>
-        <td>Recibo Nº:</td>
+        <td style="border:none">Rec.Nº:</td>
         <td style="border:none"><strong>
         <?=$m->nro_recibo?>
         </strong></td>
         <td style="border:none"></td>
-        <td>Socio Nº:</td>
+        <td style="border:none">Fecha:</td>
         <td style="border:none"><strong>
-        <?=$m->socio->id?>
+        <?=date("d-m-Y", strtotime($m->fecha_pago))?>
         </strong></td>
-        <td>Recibo Nº:</td>
+        <td style="border:none">Rec.Nº:</td>
         <td style="border:none"><strong>
         <?=$m->nro_recibo?>
         </strong></td>
       </tr>
       <tr>
-        <td>Apellido y Nombre:</td>
-        <td style="border:none"><strong>
+        <td style="border:none">Socio:</td>
+        <td style="border:none" colspan="3"><strong>
         <?=$m->socio->apellido_nombre?>
         </strong></td>
-        <td>Fecha:</td>
-        <td style="border:none"><strong>
-        <?=date("d-m-Y", strtotime($m->fecha_pago))?>
-        </strong></td>
+       
         <td style="border:none">&nbsp;</td>
-        <td>Apellido y Nombre:</td>
-        <td style="border:none"><strong>
+        <td style="border:none">Socio:</td>
+        <td style="border:none" colspan="3"><strong>
         <?=$m->socio->apellido_nombre?>
         </strong></td>
-        <td>Fecha:</td>
-        <td style="border:none"><strong>
-        <?=date("d-m-Y", strtotime($m->fecha_pago))?>
-        </strong></td>
+        
+        
       </tr>
       <tr>
        <?php foreach ($modelDetalle as $md) {
             $periodom = $md->getMes($md->periodo_mes) . " " . $md->periodo_anio;
          }?>
-        <td>Domicilio:</td>
+        <td style="border:none">Matricula:</td>
         <td style="border:none"><strong>
-        <?=$m->socio->direccion?>
+        <?=$m->socio->matricula?>
         </strong></td>
-        <td>Periodo:</td>
+        <td style="border:none">Periodo:</td>
         <td style="border:none"><strong>        
           <?= $periodom ?>
         </strong></td>
         <td style="border:none">&nbsp;</td>
-        <td>Domicilio:</td>
+        <td style="border:none">Matricula:</td>
         <td style="border:none"><strong>
-        <?=$m->socio->direccion?>
+        <?=$m->socio->matricula?>
         </strong></td>
-        <td>Periodo:</td>
+        <td style="border:none">Periodo:</td>
         <td style="border:none"><strong>
          <?= $periodom ?>
         </strong></td>
@@ -119,7 +114,7 @@ margin-left: 0.5cm;
     <!-- codigo html parte de abajo-->
     <tr>
         <td style="border:none"><br><br><barcode code="<?=$m->socio->dni?>" type="I25" /></td>
-        <td align="center" style="border:none"><br><br><p><strong>...........................</strong></p>          <p>Firma</p></td>
+        <td style="border:none"><br><br></td>
         <td align="right" ><br><br><strong>TOTAL:</strong></td>
         <td align="center"><br><br><br><strong>$
         <?=$total?>

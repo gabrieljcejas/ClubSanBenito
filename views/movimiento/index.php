@@ -33,7 +33,8 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' =>['view', 'v' 
                   //'language' => 'ru',
                   'dateFormat' => 'php:d-m-Y',
                   'options'=>[
-                    'class'=>'form-control',            
+                    'class'=>'form-control',
+                    'readOnly'=>'readOnly'            
                    ],               
                 ]);
               ?>
@@ -112,7 +113,7 @@ else {
                 <thead>
                     <tr>
                         <th>Concepto</th>
-                        <th>Importe</th>
+                        <th>Monto</th>
                         <th>Forma de Pago</th>
                         <th>Importe</th>
                         <th>                            
@@ -148,7 +149,8 @@ else {
       <div class="form-group">
         
         <h3><p><?=Html::label("TOTAL: ","total",["id"=>"total"])?></p></h3><p></p>
-        <?=Html::submitButton($model->isNewRecord ? 'Guardar' : 'Guardar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-success'])?>       
+        
+        <input type="button" id="Guardar" name="Guardar" value="Guardar" class="btn btn-success"/>
         
     </div>
 
@@ -160,11 +162,16 @@ else {
 
 
 <script type="text/javascript" src="<?=Yii::$app->request->baseUrl?>/js/jquery.min.js"></script>
+
 <script>
+
+
 
 function borrarfila(i){
     //alert("hola"+ i);
     $("#del-"+i).remove();
+    calculartotal();
+
 }
 
 function calculartotal(){
@@ -191,7 +198,7 @@ function calculartotal(){
                 success: function (data) {
                     var html='';
                     $("#tabla_debitos tr").remove();
-                    html+="<tr><th>Concepto</th><th>Importe</th><th>Forma de Pago</th><th>Importe Pagado</th><th></th><tr>";
+                    html+="<tr><th>Concepto</th><th>Monto</th><th>Forma de Pago</th><th>Importe</th><th></th><tr>";
                     $.each(data, function(i, debito) {
                         html+="<tr id='del-" + i + "'><td><input type='hidden' name='debito_sc_id[]' value='" + debito.subcuenta_id + "'>" + debito.concepto + "</td><td>$" + debito.importe + "</td>";
                         html+="<td><select name='forma_pago[]' class='form-control'>";
@@ -210,7 +217,30 @@ function calculartotal(){
             
         });
 
-         
+        $("#Guardar").click(function(){
+            
+            var nro_fila = $('#tabla_debitos >tbody >tr').length;
+            
+            if ( $( "#movimiento-periodo_mes" ).val() < 1 ){
+                alert("Debe Ingresar PERIODO MES");
+                $( "#movimiento-periodo_mes" ).focus();
+                return false;
+            }
+
+            if ( $( "#movimiento-periodo_anio" ).val() < 1 ){
+                alert("Debe Ingresar PERIODO AÑO");
+                $( "#movimiento-periodo_anio" ).focus();
+                return false;
+            }
+
+            if (nro_fila == 0){
+                alert("Debe agregar un concepto");
+                return false;
+            }
+
+            $("#Guardar").submit();
+
+        });
 
 
         $("#btn_agregar_cuenta").click(function(){
