@@ -101,7 +101,7 @@ class SocioController extends BaseController {
 			
 			
 			/*** SUBIR FOTO ***/						
-			$model->file = UploadedFile::getInstance($model, 'file');
+			$model->adjunto = UploadedFile::getInstance($model, 'file');
 		
 			if ($model->file!=""){
 		
@@ -449,7 +449,7 @@ class SocioController extends BaseController {
                 
                 $sql = "SELECT s.id,s.apellido_nombre,s.dni,s.matricula FROM socio  s
                         JOIN socio_debito sd ON sd.id_socio = s.id
-                        WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."' AND sd.id_debito = ". $deporte ." AND fecha_baja IS NULL ORDER BY s.id DESC" ;
+                        WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."' AND sd.id_debito = ". $deporte ." AND fecha_baja IS NULL ORDER BY s.apellido_nombre ASC" ;
             
             }else{ // todos los socios dados de baja
 
@@ -457,7 +457,7 @@ class SocioController extends BaseController {
 
                 $sql = "SELECT s.id,s.apellido_nombre,s.dni,s.matricula FROM socio  s
                         JOIN socio_debito sd ON sd.id_socio = s.id
-                        WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."' AND sd.id_debito = ". $deporte ." AND fecha_baja IS NOT NULL ORDER BY s.id DESC" ;
+                        WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."' AND sd.id_debito = ". $deporte ." AND fecha_baja IS NOT NULL ORDER BY s.apellido_nombre ASC" ;
                    
             }
 
@@ -469,14 +469,14 @@ class SocioController extends BaseController {
             	$estado = "ACTIVOS";
                 
                 $sql = "SELECT s.id,s.apellido_nombre,s.dni,s.matricula FROM socio  s
-                        WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."'  AND fecha_baja IS NULL ORDER BY s.id DESC" ;
+                        WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."'  AND fecha_baja IS NULL ORDER BY s.apellido_nombre ASC" ;
             
             }else{ // todos los socios dados de baja
 
             	$estado = "DADOS DE BAJA";
 
                 $sql = "SELECT s.id,s.apellido_nombre,s.dni,s.matricula FROM socio  s
-                        WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."' AND fecha_baja IS NOT NULL ORDER BY s.id DESC" ;
+                        WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."' AND fecha_baja IS NOT NULL ORDER BY s.apellido_nombre ASC" ;
                    
             }
 

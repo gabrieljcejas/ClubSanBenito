@@ -60,7 +60,7 @@ margin-left: 0.5cm;
       </tr>
       <tr>
        <?php foreach ($modelDetalle as $md) {
-            $periodom = $md->getMes($md->periodo_mes) . " " . $md->periodo_anio;
+            $periodom = $md->periodo_mes . "-" . $md->periodo_anio;
          }?>
         <td style="border:none">Matricula:</td>
         <td style="border:none"><strong>

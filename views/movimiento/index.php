@@ -195,11 +195,11 @@ function calculartotal(){
                 url: "../web/index.php?r=movimiento/get-all-debitos-by-socio",
                 data: {id: $(this).val()},
                 dataType: "json",
-                success: function (data) {
-                    var html='';
+                success: function (data) {                                        
                     $("#tabla_debitos tr").remove();
-                    html+="<tr><th>Concepto</th><th>Monto</th><th>Forma de Pago</th><th>Importe</th><th></th><tr>";
-                    $.each(data, function(i, debito) {
+                    var html='';
+                    html+="<tr><th>Concepto</th><th>Monto</th><th>Forma de Pago</th><th>Importe</th><th></th></tr>";
+                    $.each(data, function(i, debito) {                        
                         html+="<tr id='del-" + i + "'><td><input type='hidden' name='debito_sc_id[]' value='" + debito.subcuenta_id + "'>" + debito.concepto + "</td><td>$" + debito.importe + "</td>";
                         html+="<td><select name='forma_pago[]' class='form-control'>";
                         html+="<option value='4'>Efectivo</option>";                       
@@ -220,7 +220,7 @@ function calculartotal(){
         $("#Guardar").click(function(){
             
             var nro_fila = $('#tabla_debitos >tbody >tr').length;
-            
+                        
             if ( $( "#movimiento-periodo_mes" ).val() < 1 ){
                 alert("Debe Ingresar PERIODO MES");
                 $( "#movimiento-periodo_mes" ).focus();
@@ -233,7 +233,7 @@ function calculartotal(){
                 return false;
             }
 
-            if (nro_fila == 0){
+            if (nro_fila <= 1){
                 alert("Debe agregar un concepto");
                 return false;
             }

@@ -16,10 +16,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php $form = ActiveForm::begin();?>
     
-    <div class="row">
-        
-        <div class="col-md-2">                    
-        
+    <div class="row">        
+        <div class="col-md-2">                            
              <?=$form->field($model, 'periodo_mes_desde')->dropDownList([
                 '1' => 'Enero',
                 '2' => 'Febrero',
@@ -36,11 +34,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 ],
                 ['prompt' => 'Seleccione Mes...'])
             ?> 
-        </div>        
-        
-        <div class="col-md-2"><?=$form->field($model, 'periodo_anio')->textInput(['maxlength' => 4, 'placeHolder' => 'año', 'value' => date('Y')])?></div>
-        <!--<div class="col-md-2">               
-        <?=$form->field($model, 'periodo_mes_hasta')->dropDownList([
+        </div>
+        <div class="col-md-2">                            
+             <?=$form->field($model, 'periodo_mes_hasta')->dropDownList([
                 '1' => 'Enero',
                 '2' => 'Febrero',
                 '3' => 'Marzo',
@@ -55,11 +51,14 @@ $this->params['breadcrumbs'][] = $this->title;
                 '12' => 'Diciembre',
                 ],
                 ['prompt' => 'Seleccione Mes...'])
-            ?> 
-        </div>-->
-       
+            ?>
+        </div>
+    </div>    
+    <div class="row">    
+        <div class="col-md-2">
+            <?=$form->field($model, 'periodo_anio')->textInput(['maxlength' => 4, 'placeHolder' => 'año', 'value' => date('Y')])?>            
+        </div>          
     </div>   
-        
     <div class="row">
         <div class="col-md-2"><?=$form->field($model, 'socio_desde')->textInput(['value' => 1])?></div>        
         <div class="col-md-2"><?=$form->field($model, 'socio_hasta')->textInput(['value' => 99999999])?></div>        
@@ -77,7 +76,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?php if ($msj != "") {?>	
         <?=Html::a(' Imprimir', ['imprimir-g-d',
             'periodo_mes_desde' => $model->periodo_mes_desde,
-            'periodo_mes_hasta' => $model->periodo_mes_desde,
+            'periodo_mes_hasta' => $model->periodo_mes_hasta,
             'socio_desde' => $model->socio_desde,
             'socio_hasta' => $model->socio_hasta,
             'subcuenta_id' => $model->subcuenta_id,

@@ -59,9 +59,9 @@ class Movimiento extends \yii\db\ActiveRecord {
 	public function rules() {
 		return [
 			//[['nro_recibo', 'fecha_pago'], 'required'],
-			[['fk_prov', 'fk_cliente', 'periodo_mes', 'periodo_anio'], 'integer'],
+			[['fk_prov', 'fk_cliente', 'periodo_mes', 'periodo_anio','nro_recibo'], 'integer'],
 			[['fecha_pago'], 'safe'],
-			[['nro_recibo'], 'string', 'max' => 15],
+			//[['nro_recibo'], 'string', 'max' => 15],
 			[['obs'], 'string', 'max' => 150],
 			[['tipo'], 'string', 'max' => 1],
 			[['fecha_vencimiento', 'periodo_mes_desde', 'periodo_mes_hasta', 'periodo_anio', 'socio_desde', 'socio_hasta'], 'required', 'on' => 'generardebito'],
@@ -88,7 +88,7 @@ class Movimiento extends \yii\db\ActiveRecord {
 			'socio.apellido_nombre' => 'Cliente / Socio',
 			'proveedor.nombre' => 'Proveedor',
 			'periodo_mes' => 'Periodo Mes',
-			'periodo_mes_desde' => 'Periodo Mes',
+			'periodo_mes_desde' => 'Mes Desde',
 			'periodo_mes_hasta' => 'Mes Hasta',
 			'periodo_anio' => 'Periodo Año',
 			'fecha_vencimiento' => 'Fecha Vencimiento',
@@ -149,9 +149,13 @@ class Movimiento extends \yii\db\ActiveRecord {
 	public function getAllEstadoCuenta() {
 
 		$mes_actual = date('m');
-		$anio_actual = date('Y');
+		//$anio_actual = date('Y');
 		
-		$query = MovimientoDetalle::find()->where(['>=', 'periodo_mes', 1])->andWhere(['<=', 'periodo_mes', 12])->andWhere(['=', 'periodo_anio', $anio_actual]);
+		$query = MovimientoDetalle::find()
+		->where(['>=', 'periodo_mes', 1])
+		->andWhere(['<=', 'periodo_mes', 12])
+		->orderBy('periodo_anio DESC')		
+		;
 
 		$dataProvider = new ActiveDataProvider([
 			'query' => $query,
@@ -162,14 +166,17 @@ class Movimiento extends \yii\db\ActiveRecord {
 	public function getAllEstadoCuentaByCodigo($codigo) {
 
 		$mes_actual = date('m');
-		$anio_actual = date('Y');
+		//$anio_actual = date('Y');
 		$socio = Socio::find()->where(['dni' => $codigo])->one();
 
 		$query = MovimientoDetalle::find()
 			->joinWith('movimiento')
 			->where(['movimiento.fk_cliente' => $socio->id])
 		//->where(['id'=>$codigo])
-			->andWhere(['>=', 'periodo_mes', 1])->andWhere(['<=', 'periodo_mes', 12])->andWhere(['=', 'periodo_anio', $anio_actual]);
+			->andWhere(['>=', 'periodo_mes', 1])
+			->andWhere(['<=', 'periodo_mes', 12])
+			->orderBy('periodo_anio DESC')	
+			;
 
 		$dataProvider = new ActiveDataProvider([
 			'query' => $query,
@@ -180,13 +187,17 @@ class Movimiento extends \yii\db\ActiveRecord {
 	public function getAllEstadoCuentaByNombre($nombre) {
 
 		$mes_actual = date('m');
-		$anio_actual = date('Y');
+		//$anio_actual = date('Y');
 		$socio = Socio::find()->where(['like', 'apellido_nombre', $nombre . '%', false])->one();
 
 		$query = MovimientoDetalle::find()
 			->joinWith('movimiento')
 			->where(['movimiento.fk_cliente' => $socio->id])
-			->andWhere(['>=', 'periodo_mes', 1])->andWhere(['<=', 'periodo_mes', 12])->andWhere(['=', 'periodo_anio', $anio_actual]);
+			->andWhere(['>=', 'periodo_mes', 1])
+			->andWhere(['<=', 'periodo_mes', 12])
+			->orderBy('periodo_anio DESC')
+			;
+			//->andWhere(['=', 'periodo_anio', $anio_actual]);
 
 		$dataProvider = new ActiveDataProvider([
 			'query' => $query,
@@ -197,12 +208,15 @@ class Movimiento extends \yii\db\ActiveRecord {
 	public function getAllEstadoCuentaByCodigoSocio($codigo_socio) {
 
 		$mes_actual = date('m');
-		$anio_actual = date('Y');
+		//$anio_actual = date('Y');
 
 		$query = MovimientoDetalle::find()
 			->joinWith('movimiento')
 			->where(['movimiento.fk_cliente' => $codigo_socio])
-			->andWhere(['>=', 'periodo_mes', 1])->andWhere(['<=', 'periodo_mes', 12])->andWhere(['=', 'periodo_anio', $anio_actual]);
+			->andWhere(['>=', 'periodo_mes', 1])
+			->andWhere(['<=', 'periodo_mes', 12])
+			->orderBy('periodo_anio DESC');
+			//->andWhere(['=', 'periodo_anio', $anio_actual]);
 
 		$dataProvider = new ActiveDataProvider([
 			'query' => $query,
@@ -214,10 +228,13 @@ class Movimiento extends \yii\db\ActiveRecord {
 	public function getAllEstadoCuentaTodos() {
 
 		$mes_actual = date('m');
-		$anio_actual = date('Y');
+		//$anio_actual = date('Y');
 
 		$query = MovimientoDetalle::find()
-			->andWhere(['>=', 'periodo_mes', 1])->andWhere(['<=', 'periodo_mes', 12])->andWhere(['=', 'periodo_anio', $anio_actual]);
+			->andWhere(['>=', 'periodo_mes', 1])
+			->andWhere(['<=', 'periodo_mes', 12])
+			->orderBy('periodo_anio DESC');
+			//->andWhere(['=', 'periodo_anio', $anio_actual]);
 
 		$dataProvider = new ActiveDataProvider([
 			'query' => $query,

@@ -207,31 +207,29 @@ class MovimientoController extends BaseController {
 		$model = new Movimiento(['scenario' => 'generardebito']);
 
 		if ($model->load(Yii::$app->request->post())) {
-			// obtengo todos los registro de la tabla socio_debito con los parametros socio_desde y socio_hasta
-			// para luego consultar con el campo id_debito en la tabla "debito" obtener datos de la tabla.
-			$modelS = Socio::find()->where(['>=', 'id', $model->socio_desde])->andWhere(['<=', 'id', $model->socio_hasta])->orderBy('id ASC')->all();
-
-			$i = 0;
+			
+			//traigo todos los socios
+			$modelS = Socio::find()
+			->where(['>=', 'id', $model->socio_desde])
+			->andWhere(['<=', 'id', $model->socio_hasta])
+			->andWhere(['fecha_baja'=> null])
+			->orderBy('id ASC')
+			->all();
+			
 			// por cada socio
 			foreach ($modelS as $s) {
-
-				if ($i == 0) {
-					$idSocio = $s->id;
-					$i = $i + 1;
-				}
-				//verifico que no este dado de baja
-				if ($s->fecha_baja == null) {
-					// busco los debitos que tiene el socio
-					$modelSD = SocioDebito::findAll(['id_socio' => $s->id]);
-
-					// genero las cuotas a partir de los perido desde hasta del año actual
-					//for ($f=$model->periodo_mes_desde; $f <=$model->periodo_mes_desde ; $f++) {
-					// doy de alta en movimiento el socio para luego agregar los debitos en la tabla movimiento detalle
+						
+				// busco los debitos que tiene el socio
+				$modelSD = SocioDebito::findAll(['id_socio' => $s->id]);
+				
+				for ($f = $model->periodo_mes_desde; $f <= $model->periodo_mes_hasta; $f++) {
+					
 					$mMovimiento = new Movimiento();
 					$mMovimiento->fk_cliente = $s->id;
+
 					if (!$mMovimiento->save()) {
 						throw new \yii\web\HttpException(400, 'Error al insertar en movimiento', 405);
-					} else {
+					}else {
 						// si inserto en movimiento.
 						// Ahora tengo q insertar los debitos del socio en movimiento_detalle
 						//por cada debito del socio
@@ -241,7 +239,7 @@ class MovimientoController extends BaseController {
 								->joinWith('movimiento')
 								->where(['movimiento.fk_cliente' => $s->id])
 								->andWhere(['subcuenta_id' => $sd->debito->subcuenta_id])
-								->andWhere(['periodo_mes' => $model->periodo_mes_desde])
+								->andWhere(['periodo_mes' => $f])
 								->andWhere(['periodo_anio' => $model->periodo_anio])->one();
 							// si no se repite la cuota generada,genero la cuota si no no hace nada
 							if ($verificar == null) {
@@ -252,7 +250,7 @@ class MovimientoController extends BaseController {
 									$modelMovDetalle = new MovimientoDetalle();
 									$modelMovDetalle->tipo = 'i';
 									$modelMovDetalle->movimiento_id = $mMovimiento->id;
-									$modelMovDetalle->periodo_mes = $model->periodo_mes_desde;
+									$modelMovDetalle->periodo_mes = $f;
 									$modelMovDetalle->periodo_anio = $model->periodo_anio;
 									$modelMovDetalle->subcuenta_id = $sd->debito->subcuenta_id;
 									$modelMovDetalle->importe = $sd->debito->importe;
@@ -268,7 +266,7 @@ class MovimientoController extends BaseController {
 									$modelMovDetalle = new MovimientoDetalle();
 									$modelMovDetalle->tipo = 'i';
 									$modelMovDetalle->movimiento_id = $mMovimiento->id;
-									$modelMovDetalle->periodo_mes = $model->periodo_mes_desde;
+									$modelMovDetalle->periodo_mes = $f;
 									$modelMovDetalle->periodo_anio = $model->periodo_anio;
 									$modelMovDetalle->subcuenta_id = $sd->debito->subcuenta_id;
 									$modelMovDetalle->importe = $sd->debito->importe;
@@ -287,11 +285,7 @@ class MovimientoController extends BaseController {
 
 					} // end else si inserto en tabla movimiento
 
-					//}// for i <=
-
-				} // en if fecha_baja
-
-				$idSocio = $msd->id_socio;
+				}// for i <=		
 
 			} // FOR END
 
@@ -326,18 +320,30 @@ class MovimientoController extends BaseController {
 	public function actionPagar() {
 
 		try {
+			
 			$post = Yii::$app->request->post();
 			$id = $post['id'];
 			$fecha_pago = $post['fecha_pago'];
 			$importe_pago = $post['importe_pago'];
+			
 			$modelMD = MovimientoDetalle::findOne($id);
 			$modelMD->importe = $importe_pago;
 			$modelMD->subcuenta_id_fp = 4;
 			$modelMD->tipo = 'i';
 			$movimiento_id = $modelMD->movimiento_id;
+			
 			if ($modelMD->save()) {
+				
+				$modelR = Recibo::findOne(1);
+				$nro_recibo = $modelR->i;
+				$modelR->i = $nro_recibo + 1;
+				$modelR->save();
+
 				$modelM = Movimiento::findOne($movimiento_id);
 				$modelM->fecha_pago = date('Y-m-d', strtotime($fecha_pago));
+				$modelM->nro_recibo = $nro_recibo;
+
+
 				if (!$modelM->save()) {
 					throw new \yii\web\HttpException(400, 'Error al guardar pago 2');
 				}
@@ -388,16 +394,13 @@ class MovimientoController extends BaseController {
 
 		$modelDetalle = MovimientoDetalle::findOne($id);
 		$m = Movimiento::findOne(['id' => $modelDetalle->movimiento_id]);
-		$modelR = Recibo::findOne(1);
-		$nro_recibo = $modelR->i;
-		$modelR->i = $nro_recibo + 1;
-		$modelR->save();
-
+		$nro_recibo = $m->nro_recibo;
+		
 		$mpdf = new mPDF('utf-8', 'A4');
 		$mpdf->WriteHTML($this->renderPartial('_imprimir_recibo_individual', [
 			'm' => $m,
-			'modelDetalle' => $modelDetalle,
-			'nro_recibo' => $nro_recibo,
+			'modelDetalle' => $modelDetalle,	
+			'nro_recibo' => $nro_recibo,		
 		]));
 		$mpdf->Output();
 		exit;

@@ -66,7 +66,7 @@
         </strong></td>
         <td>Periodo:</td>
         <td style="border:none"><strong>
-        <?=$modelDetalle->getMes($modelDetalle->periodo_mes) . " " . $modelDetalle->periodo_anio ?>
+        <?=$modelDetalle->periodo_mes . "-" . $modelDetalle->periodo_anio ?>
         </strong></td>
         <td style="border:none">&nbsp;</td>
         <td>Domicilio:</td>
