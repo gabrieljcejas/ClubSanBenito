@@ -71,6 +71,11 @@ class UserController extends BaseController
         ]);
     }
 
+    public function actionBackup()
+    {
+        return $this->render('backup');
+    }
+
     /**
      * Creates a new User model.
      * If creation is successful, the browser will be redirected to the 'view' page.

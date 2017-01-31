@@ -32,7 +32,7 @@ use yii\jui\DatePicker;
                           'dateFormat' => 'php:d-m-Y',
                           'options'=>[
                             'class'=>'form-control',
-                            'readOnly'=>'readOnly'            
+                            //'readOnly'=>'readOnly'            
                            ],               
                         ]);
                       ?>
@@ -150,7 +150,7 @@ use yii\jui\DatePicker;
 
                     <div class="row">
 
-                        <a class="btn btn-default" href="#" role="button" ><?=Html::img(yii::$app->urlManager->baseUrl . '/fotos/btn_cam.png', ['width' => 70])?></a>
+                        <!--<a class="btn btn-default" href="#" role="button" ><?=Html::img(yii::$app->urlManager->baseUrl . '/fotos/btn_cam.png', ['width' => 70])?></a>-->
 
                     </div>
 
