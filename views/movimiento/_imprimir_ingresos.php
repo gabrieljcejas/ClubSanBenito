@@ -20,7 +20,16 @@
 
 			<?php if ($md->tipo == 'i') {?>
 			<td align="center"><?=date("d-m-Y", strtotime($m->fecha_pago))?></td>
-			<td align="center"><?=$m->socio->apellido_nombre?></td>
+			<td align="center">				
+				<?php 
+					if ($m->socio->apellido_nombre!=""){
+						echo $m->socio->apellido_nombre;
+					}else{
+						echo $m->otro;
+					}
+				?>
+				
+			</td>
 			<td align="center"><?=$md->subCuenta->concepto?></td>
 				<?php $saldo = $md->importe + $saldo?>
 				<td align="right"><?="$" . $md->importe?></td>

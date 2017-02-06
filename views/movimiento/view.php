@@ -27,16 +27,17 @@ $this->params['breadcrumbs'][] = "Listado";
 	'dataProvider' => $dataProvider,
 	//'model' => $model,
 	'summary' => '',
-	'columns' => [
+	'columns' => [		
+		'nro_recibo',		
+		'cliente.razon_social',
+		'socio.apellido_nombre',
+		'proveedor.nombre',		
 		[
 			'attribute' => 'fecha_pago',
 			'value' => function ($model) {
 				return date("d-m-Y", strtotime($model->fecha_pago));
 			},
 		],
-		'nro_recibo',
-		'socio.apellido_nombre',
-		'proveedor.nombre',
 		[
 			'class' => 'yii\grid\ActionColumn',
 			'header' => 'Actions',
@@ -59,7 +60,7 @@ $this->params['breadcrumbs'][] = "Listado";
 			],
 			'urlCreator' => function ($action, $model, $key, $index) {
 				if ($action === 'imprimir') {
-					if ($model->fk_cliente) {
+					if ($model->fk_cliente || $model->cliente_id ) {
 						$url = Url::to(['movimiento/imprimir-recibo-ingreso', 'id' => $model->id]);
 						return $url;
 					} else {

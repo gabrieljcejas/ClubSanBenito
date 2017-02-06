@@ -19,10 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-md-3"><input type="text" id="nombre" class="form-control" placeholder="Nombre"></div>        
         <div class="col-sm-2"><input type="radio" id="todos" name="sex" value="male" >Todos los Socios</div>
         <div class="col-sm-2"><input type="radio" id="deuda" name="sex" value="male" >Socios con Deuda</div>
-    </div>
-    <br>
-    
-
+    </div><br>
     <div id="resultado">
         <?=$this->render('_gridview_estado_cuenta', [
             'dataProvider' => $dataProvider,

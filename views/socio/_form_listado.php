@@ -15,13 +15,13 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 	
 	<div class="row">
 		<div class="col-md-6">
-			<label>Deportes</label>
+			<label>Debito:</label>
 			 	<?=
 	            	Select2::widget([
 		    			'name' => 'deportes',
 		                'data' => $deportes,
 		                //'language' => 'de',
-		                'options' => ['placeholder' => 'Selecione un Deporte ...','id'=>'deporte'],
+		                'options' => ['placeholder' => 'Selecione un Debito ...','id'=>'deporte'],
 		                'pluginOptions' => [
 		                    'allowClear' => true
 		                ],

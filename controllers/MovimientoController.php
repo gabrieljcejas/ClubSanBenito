@@ -9,6 +9,7 @@ use app\models\Debito;
 use app\models\CategoriaSocial;
 use app\models\Recibo;
 use app\models\Socio;
+use app\models\Cliente;
 use app\models\SocioDebito;
 use app\models\SubCuenta;
 use mPDF;
@@ -73,7 +74,9 @@ class MovimientoController extends BaseController {
 				$nro_recibo = $model->nro_recibo;
 				$periodo_mes = $model->periodo_mes;
 				$periodo_anio = $model->periodo_anio;
-				$socio = $model->fk_cliente;
+				$socio = $model->fk_cliente;					
+				//$model->obs = 'i';
+
 				// guardo por cada debito un registro en la tabla moviemietp de talle
 				foreach ($post['importe'] as $key => $value) {
 
@@ -140,6 +143,8 @@ class MovimientoController extends BaseController {
 				// si es egreso
 				//guardo el nuevo nro de recibo
 				$title = "Engresos";
+				//$model->obs = 'e';
+
 				$modelR = Recibo::find()->where(['id' => 1])->one();
 				$nroRecibo = $modelR->e;
 				$modelR->e = $nroRecibo + 1;
@@ -149,6 +154,7 @@ class MovimientoController extends BaseController {
 
 				$periodo_mes = $model->periodo_mes;
 				$periodo_anio = $model->periodo_anio;
+
 
 				if (!$model->save()) {
 					throw new \yii\web\HttpException(400, 'Error al guardar el egreso');
@@ -191,6 +197,7 @@ class MovimientoController extends BaseController {
 		// paso fecha actual
         date_default_timezone_set('America/Buenos_Aires');
         $model->fecha_pago = date('d-m-Y',time());
+        $listC = ArrayHelper::map(Cliente::find()->orderBy('razon_social')->all(), 'id', 'razon_social');
 		
 		return $this->render('index', [
 			'model' => $model,
@@ -198,6 +205,7 @@ class MovimientoController extends BaseController {
 			'title' => $title,
 			'v' => $v,
 			'tipo' => $v,
+			'listC' => $listC
 		]);
 
 	}

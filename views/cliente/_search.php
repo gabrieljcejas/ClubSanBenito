@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\CienteSearch */
+/* @var $model app\models\ClienteSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -17,17 +17,15 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'nombre') ?>
+    <?= $form->field($model, 'razon_social') ?>
 
-    <?= $form->field($model, 'cuit') ?>
+    <?= $form->field($model, 'domicilio') ?>
 
-    <?= $form->field($model, 'cond_iva') ?>
+    <?= $form->field($model, 'telefono') ?>
 
-    <?= $form->field($model, 'direccion') ?>
+    <?= $form->field($model, 'mail') ?>
 
-    <?php // echo $form->field($model, 'telefono') ?>
-
-    <?php // echo $form->field($model, 'email') ?>
+    <?php // echo $form->field($model, 'obs') ?>
 
     <?php // echo $form->field($model, 'rubro') ?>
 

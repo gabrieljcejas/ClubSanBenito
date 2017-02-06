@@ -4,16 +4,15 @@ namespace app\controllers;
 
 use Yii;
 use app\models\Cliente;
-use app\models\CienteSearch;
+use app\models\ClienteSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use yii\filters\AccessControl;
 
 /**
  * ClienteController implements the CRUD actions for Cliente model.
  */
-class ClienteController extends BaseController
+class ClienteController extends Controller
 {
     /**
      * @inheritdoc
@@ -21,21 +20,10 @@ class ClienteController extends BaseController
     public function behaviors()
     {
         return [
-            'access' => [
-                'class' => AccessControl::className(),
-                //'only' => ['logout'],
-                'rules' => [
-                    [
-                        //'actions' => ['logout'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],      
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['post'],
+                    'delete' => ['POST'],
                 ],
             ],
         ];
@@ -47,7 +35,7 @@ class ClienteController extends BaseController
      */
     public function actionIndex()
     {
-        $searchModel = new CienteSearch();
+        $searchModel = new ClienteSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -78,9 +66,9 @@ class ClienteController extends BaseController
         $model = new Cliente();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+             return $this->redirect(['/movimiento/index', 'v' => 'i']);
         } else {
-            return $this->render('create', [
+            return $this->renderAjax('create', [
                 'model' => $model,
             ]);
         }
@@ -97,7 +85,8 @@ class ClienteController extends BaseController
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+           
+             return $this->redirect(['index', 'id' => $model->id]);
         } else {
             return $this->render('update', [
                 'model' => $model,

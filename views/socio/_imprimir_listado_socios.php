@@ -8,6 +8,7 @@
 	<th align="center">Matricula</th>	
 	<th align="center">Nombre</th>
 	<th align="center">DNI</th>	
+	<th align="center">Fecha de Nacimiento</th>	
 </tr>
 
 <?php foreach ($socio as $s) {?>	
@@ -19,6 +20,15 @@
 		<td align="center"><?= $s->apellido_nombre ?></td> 
 	
 		<td align="center"><?= $s->dni ?></td>
+
+		<td align="center">
+			<?php
+				 if ($s->fecha_nacimiento!=""){
+				 	echo date("d-m-Y",strtotime($s->fecha_nacimiento));
+				 }
+
+		 	?>		 		
+	 	</td>
 
 	</tr>
 

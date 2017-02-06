@@ -6,6 +6,9 @@ use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\jui\DatePicker;
+use yii\bootstrap\Modal;
+use yii\widgets\Pjax;
+use yii\helpers\Url;
 use kartik\select2\Select2;
 
 $this->title = $title;
@@ -34,11 +37,15 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' =>['view', 'v' 
                   'dateFormat' => 'php:d-m-Y',
                   'options'=>[
                     'class'=>'form-control',
-                    'readOnly'=>'readOnly'            
+                    //'readOnly'=>'readOnly'            
                    ],               
                 ]);
               ?>
         </div>
+
+    </div><br>
+
+    <div class="row"> 
 
         <div class="col-md-2">
 
@@ -75,7 +82,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' =>['view', 'v' 
     <?php   if ($tipo == "i") { // si la variable es "i" (ingresos) traigo todos los socios y cuentas de resultado positivo 4.1
             $list = ArrayHelper::map(Socio::find()->orderBy('apellido_nombre')->all(), 'id', 'apellido_nombre');?>
             
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <?=$form->field($model, 'fk_cliente')->widget(Select2::classname(), [
                     'data' => $list,
                     //'language' => 'de',
@@ -85,12 +92,40 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' =>['view', 'v' 
                     ],
                 ]);?>
             </div>
+
+            <div class="col-md-4">
+                <?=$form->field($model, 'cliente_id')->widget(Select2::classname(), [
+                    'data' => $listC,
+                    //'language' => 'de',
+                    'options' => ['placeholder' => 'Selecione un Socio ...'],
+                    'pluginOptions' => [
+                        'allowClear' => true
+                    ],
+                ]);?>
+            </div>
+
+
+            <div class="col-md-1"><br>
+                    <?=html::button('', ['value'=>Url::to('index.php?r=cliente/create'),'class' => 'btn glyphicon glyphicon-plus', 'id' => 'agregarcliente'])?>  
+
+                    <?php 
+                        Modal::begin([
+                            //'header'=>'<h4>Agregar Cliente</h4>',
+                            'id'=> 'modal',
+                            'size'=>'modal-lg',
+                        ]);
+                        echo "<div id='modalContent'></div>";
+
+                        Modal::end();
+                    ?>     
+
+                </div>
 <?php }
 // si la variable es "e" (engresos) traigo todos los proveedores y cuentas de resultado negativo 4.2
 else {
 	       $list = ArrayHelper::map(Proveedor::find()->orderBy('nombre')->all(), 'id', 'nombre');
 ?>
-           <div class="col-md-6">
+           <div class="col-md-4">
                 <?=$form->field($model, 'fk_prov')->widget(Select2::classname(), [
                     'data' => $list,
                     //'language' => 'de',
@@ -102,7 +137,7 @@ else {
             </div>
 
 <?php }?>
-
+       
         </div><br>
 
 
@@ -143,7 +178,7 @@ else {
     
      <input type="hidden" id="movimiento-nro_recibo" value="<?= $nroRecibo ?>" name="Movimiento[nro_recibo]">
     
-    
+    <hr>
     <div id="table_dinamic"></div>
       
       <div class="form-group">
@@ -187,6 +222,11 @@ function calculartotal(){
 }
 
     $(function () {
+
+        //Modal Button Agregar Cliente
+        $("#agregarcliente").on( "click", function() {
+           $( "#modal").modal('show').find('#modalContent').load($(this).attr('value'));            
+        }); 
 
         $('#movimiento-fk_cliente').change(function () {
             
@@ -233,7 +273,7 @@ function calculartotal(){
                 return false;
             }
 
-            if (nro_fila <= 1){
+            if (nro_fila < 1){
                 alert("Debe agregar un concepto");
                 return false;
             }

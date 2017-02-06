@@ -9,7 +9,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\jui\DatePicker;
 ?>
-<script type="text/javascript" src="<?=Yii::$app->request->baseUrl?>/js/jquery.min.js"></script>
+
 
 <br>
 <div class="container">
@@ -192,7 +192,7 @@ use yii\jui\DatePicker;
 </div>
 
 
-
+<script type="text/javascript" src="<?=Yii::$app->request->baseUrl?>/js/jquery.min.js"></script>
 
 
 

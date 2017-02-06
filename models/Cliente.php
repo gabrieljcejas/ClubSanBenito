@@ -8,12 +8,11 @@ use Yii;
  * This is the model class for table "cliente".
  *
  * @property integer $id
- * @property string $nombre
- * @property string $cuit
- * @property string $cond_iva
- * @property string $direccion
- * @property string $telefono
- * @property string $email
+ * @property string $razon_social
+ * @property string $domicilio
+ * @property integer $telefono
+ * @property string $mail
+ * @property string $obs
  * @property string $rubro
  */
 class Cliente extends \yii\db\ActiveRecord
@@ -32,11 +31,12 @@ class Cliente extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['nombre'], 'required'],
-            [['nombre', 'direccion', 'rubro'], 'string', 'max' => 80],
-            [['cuit', 'telefono'], 'string', 'max' => 15],
-            [['cond_iva'], 'string', 'max' => 20],
-            [['email'], 'string', 'max' => 40],
+            [['razon_social'], 'required'],
+            [['telefono'], 'integer'],
+            [['razon_social'], 'string', 'max' => 100],
+            [['domicilio'], 'string', 'max' => 80],
+            [['mail', 'rubro'], 'string', 'max' => 50],
+            [['obs'], 'string', 'max' => 150],
         ];
     }
 
@@ -47,13 +47,13 @@ class Cliente extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'nombre' => 'Nombre',
-            'cuit' => 'Cuit',
-            'cond_iva' => 'Cond Iva',
-            'direccion' => 'Direccion',
+            'razon_social' => 'Razon Social',
+            'domicilio' => 'Domicilio',
             'telefono' => 'Telefono',
-            'email' => 'Email',
+            'mail' => 'Mail',
+            'obs' => 'Obs',
             'rubro' => 'Rubro',
         ];
     }
+
 }

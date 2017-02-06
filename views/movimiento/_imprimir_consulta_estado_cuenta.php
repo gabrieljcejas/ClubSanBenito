@@ -8,7 +8,15 @@ use yii\grid\GridView;
     </head>
     
     <h1>Estado de Cuenta <?=$titulo?></h1>    
-    <h3>Deporte: <?= $dep->concepto ?></h3>
+    <h3>Deporte:
+    <?php 
+		if ($dep->concepto!=""){
+			echo $dep->concepto ;
+		}else{
+			echo "Todos";
+		}
+	?>
+	</h3>		
     <!--<h3>Categoria: <?= $cat->descripcion ?></h3><br>-->
     <label>Fecha desde: <?= date("d-m-Y",strtotime($fecha_desde)) . " hasta " . date("d-m-Y",strtotime($fecha_hasta))?></label>
 	
@@ -18,8 +26,8 @@ use yii\grid\GridView;
 <table border="1" width="700px">
 
 <tr>
-	<th align="center">Socio</th>
-	<th align="center">Concepto</th>
+	<th align="center">Socios</th>
+	<th align="center">Conceptos</th>
 	<th align="center">Periodo Mes</th>
 	<th align="center">Periodo Año</th>	
 	<th align="center">Monto</th>

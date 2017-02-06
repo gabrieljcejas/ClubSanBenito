@@ -41,20 +41,13 @@ echo Nav::widget([
 	'items' => [		
 		['label' => 'Socios', 'url' => ['#'],
 			'items' => [
-				['label' => 'Alta-Baja-Modificacion (ABM)', 'url' => ['/socio/index']],
-				['label' => 'Estados de Cuentas', 'url' => ['/movimiento/estado-cuenta']],
-				['label' => 'Generar Debitos', 'url' => ['/movimiento/generar-debito']],
+				['label' => 'Alta', 'url' => ['/socio/index']],
+				['label' => 'Estados de Cuentas', 'url' => ['/movimiento/estado-cuenta']],				
 				//['label' => 'Imprimir Cuotas Anticipadas', 'url' => ['/estado-cuenta/generar-debito']],
 				//['label' => 'Asistencias', 'url' => ['/asistencia/index']],
 				['label' => 'Emitir Credenciales', 'url' => ['/socio/credencial']],
 				//['label' => 'Generar Cuotas Anuales', 'url' => ['/estado-cuenta/generar-cuota-anual']],
-				'<li class="divider"></li>',
-				['label' => 'ABM Categorias Sociales', 'url' => ['/categoria-social/index']],
-				['label' => 'ABM Debitos', 'url' => ['/debito/index']],
-				['label' => 'ABM Provincias', 'url' => ['/provincia/index']],
-				['label' => 'ABM Ciudades', 'url' => ['/ciudad/index']],
-				['label' => 'ABM Cobradores', 'url' => ['/cobrador/index']],
-
+				
 			],
 
 		],
@@ -62,13 +55,23 @@ echo Nav::widget([
 			'items' => [
 				['label' => 'Ingresos', 'url' => ['movimiento/view', 'v' => 'i']],
 				['label' => 'Egresos', 'url' => ['movimiento/view', 'v' => 'e']],
+				['label' => 'Generar Debitos', 'url' => ['/movimiento/generar-debito']],
 				['label' => 'Plan de Cuentas', 'url' => ['/cuenta/index']],
-				'<li class="divider"></li>',
-				['label' => 'ABM Proveedores', 'url' => ['/proveedor/index']],
-				//['label' => 'ABM Clientes', 'url' => ['/cliente/index']],
 			],
 		],
-		['label' => 'Reportes', 'url' => ['#'],
+		['label' => 'ABM', 'url' => ['#'],
+			'items' => [
+				['label' => 'Categorias Sociales', 'url' => ['/categoria-social/index']],
+				['label' => 'Debitos', 'url' => ['/debito/index']],
+				['label' => 'Provincias', 'url' => ['/provincia/index']],
+				['label' => 'Ciudades', 'url' => ['/ciudad/index']],
+				['label' => 'Cobradores', 'url' => ['/cobrador/index']],
+				['label' => 'Proveedores', 'url' => ['/proveedor/index']],
+				['label' => 'Clientes', 'url' => ['/cliente/index']],
+			],
+		],
+
+		['label' => 'Consultas', 'url' => ['#'],
 			'items' => [
 				['label' => 'Detalles Movimiento De Caja', 'url' => ['movimiento/consulta-movimiento-caja']],
 				['label' => 'Detalles de Ingresos', 'url' => ['movimiento/consulta-ingresos']],
@@ -79,15 +82,14 @@ echo Nav::widget([
 				//'<li class="divider"></li>',
 				//['label' => 'Estado de Cuenta', 'url' => ['/proveedor/index']],
 			],
-		],
-		
+		],		
 		
 		['label' => 'Admin', 'url' => ['#'],
 			'items' => [
 				['label' => 'Usuarios', 'url' => ['user/index']],
 				['label' => 'Roles', 'url' => ['rol/index']],				
 				['label' => 'Permisos', 'url' => ['operacion/index']],								
-				['label' => 'Backup', 'url' => ['user/backup']],
+				['label' => 'Backup', 'url' => ['user/backup']],				
 			],
 			'visible' => !Yii::$app->user->isGuest		
 		],	
@@ -114,12 +116,7 @@ NavBar::end();
         </div>
     </div>
 
-    <!--<footer class="footer">
-        <div class="container">
-            <p class="pull-left">&copy; Copyright <?=date('Y')?></p>
-            <p class="pull-right"><?=Yii::powered()?></p>
-        </div>
-    </footer>-->
+   
 
 <?php $this->endBody()?>
 </body>

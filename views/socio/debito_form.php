@@ -79,15 +79,13 @@ use yii\helpers\ArrayHelper;
         var socioDebitos = eval(<?php echo json_encode($socioDebitos) ?>);
         
         var html=''; 
-        
-        $.each(socioDebitos, function(i, debito) {
-            
-            var nro_fila = $('#tabla_debitos >tbody >tr').length + 1;
 
-               html+="<tr id='del-" + nro_fila + "'>";
+        $.each(socioDebitos, function(i, debito) {
+
+               html+="<tr id='del-" + debito.id + "'>";
                   
                html+="<td><input readOnly='readOnly' name='concepto[]' value='" + debito.concepto + "' class='form-control' ><input type='hidden' name='id[]' value='" + debito.id + "' class='form-control' style='width: 50px;'></td>";                                
-               html+="<td><a id='btn_borrar_cuenta' onClick='borrarfila(" + nro_fila + ");' class='btn btn-default glyphicon glyphicon-trash'></a></td>";
+               html+="<td><a id='btn_borrar_cuenta' onClick='borrarfila(" + debito.id + ");' class='btn btn-default glyphicon glyphicon-trash'></a></td>";
 
                html+="</tr>";
 
@@ -97,27 +95,25 @@ use yii\helpers\ArrayHelper;
  
     <?php } ?>
 
-
+    /*
+    ** BORRAR FILAS TABLA DEBITOS
+    **/
     function borrarfila(i){    
     
       $("#del-"+i).remove();    
-
-      var nro_fila = $('#tabla_debitos >tbody >tr').length;                   
-      
-      if (nro_fila==0){
-      
-          $( "#tabla_debitos" ).val("0");
-
-      }
-
+     
     }
+
+
+
     $(function () {
         
         $('#btn_agregar_debito').click(function () {
 
             var id_debito = $("#id_debito").val();
-
             var concepto = $("#id_debito :selected").text();
+            var html='';  
+            var nro_fila = '';   
 
            //valido que selecione un debito
             if (id_debito == 0) {
@@ -129,10 +125,9 @@ use yii\helpers\ArrayHelper;
                 return false;
             }
 
-            //ARMO LAS FILAS DE LA TABLA            
-            var html='';                        
+            //ARMO LAS FILAS DE LA TABLA   
             
-            var nro_fila = $('#tabla_debitos >tbody >tr').length + 1;
+            nro_fila = id_debito ;
 
              html+="<tr id='del-" + nro_fila + "'>";
                 

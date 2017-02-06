@@ -30,6 +30,7 @@ use yii\data\ActiveDataProvider;
  * @property string $fecha_vencimiento
  * @property string $fecha_desde
  * @property string $fecha_hasta
+ * @property integer $cliente_id
  */
 class Movimiento extends \yii\db\ActiveRecord {
 
@@ -59,9 +60,9 @@ class Movimiento extends \yii\db\ActiveRecord {
 	public function rules() {
 		return [
 			//[['nro_recibo', 'fecha_pago'], 'required'],
-			[['fk_prov', 'fk_cliente', 'periodo_mes', 'periodo_anio','nro_recibo'], 'integer'],
+			[['fk_prov', 'fk_cliente', 'periodo_mes', 'periodo_anio','nro_recibo','cliente_id'], 'integer'],
 			[['fecha_pago'], 'safe'],
-			//[['nro_recibo'], 'string', 'max' => 15],
+			//[['nro_recibo'], 'string', 'max' => 15],			
 			[['obs'], 'string', 'max' => 150],
 			[['tipo'], 'string', 'max' => 1],
 			[['fecha_vencimiento', 'periodo_mes_desde', 'periodo_mes_hasta', 'periodo_anio', 'socio_desde', 'socio_hasta'], 'required', 'on' => 'generardebito'],
@@ -78,14 +79,14 @@ class Movimiento extends \yii\db\ActiveRecord {
 			'nro_recibo' => 'Nro Recibo',
 			'fecha_pago' => 'Fecha Pago',
 			'fk_prov' => 'Proveedor',
-			'fk_cliente' => 'Socio/Cliente',
+			'fk_cliente' => 'Socio',
 			'fk_sc' => 'Cuenta',
 			'obs' => 'Nota',
 			'cuenta' => 'Cuenta',
 			'forma_pago' => 'Forma de Pago',
 			'importe' => 'Importe',
 			'tipo' => '',
-			'socio.apellido_nombre' => 'Cliente / Socio',
+			'socio.apellido_nombre' => 'Socio',
 			'proveedor.nombre' => 'Proveedor',
 			'periodo_mes' => 'Periodo Mes',
 			'periodo_mes_desde' => 'Mes Desde',
@@ -95,6 +96,7 @@ class Movimiento extends \yii\db\ActiveRecord {
 			'subc_id' => 'Concepto a Debitar',
 			'subcuenta_id' => '',
 			'periodo_mes' => 'Periodo Mes',
+			'cliente_id' => 'Cliente'
 		];
 	}
 
@@ -110,6 +112,10 @@ class Movimiento extends \yii\db\ActiveRecord {
 
 	public function getSocio() {
 		return $this->hasOne(Socio::className(), ['id' => 'fk_cliente']);
+	}
+
+	public function getCliente() {
+		return $this->hasOne(Cliente::className(), ['id' => 'cliente_id']);
 	}
 
 	public function getProveedor() {
@@ -133,9 +139,16 @@ class Movimiento extends \yii\db\ActiveRecord {
 
 		// si el parametro es i (ingreso) busco en la tabla movimiento todos los que clientes distinos de null
 		if ($v == 'i') {
-			$query = self::find()->where(['>', 'fk_cliente', ''])->andWhere(['<>', 'fecha_pago', ''])->orderBy('fecha_pago DESC');
+			$query = self::find()	
+			->where(['fk_prov'=>null])				
+			->andWhere(['not',['nro_recibo' => null]])
+			->orderBy('nro_recibo DESC');		
 		} else {
-			$query = self::find()->where(['>', 'fk_prov', ''])->andWhere(['<>', 'fecha_pago', ''])->orderBy('fecha_pago DESC');
+			$query = self::find()
+			->where(['fk_cliente'=>null])
+			->andWhere(['cliente_id'=>null])
+			->andWhere(['not',['nro_recibo' => null]])			
+			->orderBy('nro_recibo DESC');
 		}
 
 		$dataProvider = new ActiveDataProvider([

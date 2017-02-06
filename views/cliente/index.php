@@ -2,9 +2,9 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-use yii\widgets\Pjax;
+
 /* @var $this yii\web\View */
-/* @var $searchModel app\models\CienteSearch */
+/* @var $searchModel app\models\ClienteSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Clientes';
@@ -16,24 +16,23 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Cliente', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Agregar Clientes', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-<?php Pjax::begin(); ?>    <?= GridView::widget([
+    <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'nombre',
-            'cuit',
-            'cond_iva',
-            'direccion',
-            // 'telefono',
-            // 'email:email',
+            'razon_social',
+            'domicilio',
+            'telefono',
+            'mail',
+            // 'obs',
             // 'rubro',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
-<?php Pjax::end(); ?></div>
+</div>

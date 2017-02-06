@@ -12,22 +12,18 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'nombre')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'razon_social')->textInput() ?>
 
-    <?= $form->field($model, 'cuit')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'telefono')->textInput() ?>
 
-    <?= $form->field($model, 'cond_iva')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'direccion')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'telefono')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'domicilio')->textInput() ?>
 
     <?= $form->field($model, 'rubro')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'obs')->textArea(['rows' => '4']) ?>
+
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model->isNewRecord ? 'Guardar' : 'Guardar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

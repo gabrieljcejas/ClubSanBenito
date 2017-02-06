@@ -22,7 +22,17 @@
 			
 			<?php if ($md->tipo=='e'){ ?>				
 				<td align="center"><?= date("d-m-Y",strtotime($m->fecha_pago)) ?></td>
-				<td align="center"><?=$m->proveedor->nombre?></td>
+				<td align="center">
+					
+					<?php 
+						if ($m->proveedor->nombre!=""){
+							echo $m->proveedor->nombre;
+						}else{
+							echo $m->otro;
+						}
+					?>
+					
+				</td>
 				<td align="center"><?=$md->subCuenta->concepto?></td>
 				<?php $saldo = $md->importe + $saldo ?>
 				<td align="right"><?= "$".$md->importe?></td>

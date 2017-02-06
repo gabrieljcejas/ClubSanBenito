@@ -45,15 +45,29 @@ margin-left: 0.5cm;
         </strong></td>
       </tr>
       <tr>
-        <td style="border:none">Socio:</td>
+        <td style="border:none">Socio/Cliente:</td>
         <td style="border:none" colspan="3"><strong>
-        <?=$m->socio->apellido_nombre?>
+         <?php 
+            if ($fk_cliente!=""){
+                echo $m->socio->apellido_nombre;    
+            }else{
+                echo $m->cliente->razon_social;
+            } 
+            
+        ?>
         </strong></td>
        
         <td style="border:none">&nbsp;</td>
-        <td style="border:none">Socio:</td>
+        <td style="border:none">Socio/Cliente:</td>
         <td style="border:none" colspan="3"><strong>
-        <?=$m->socio->apellido_nombre?>
+        <?php 
+            if ($fk_cliente!=""){
+                echo $m->socio->apellido_nombre;    
+            }else{
+                echo $m->cliente->razon_social;
+            } 
+            
+        ?>
         </strong></td>
         
         
