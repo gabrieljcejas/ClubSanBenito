@@ -2,6 +2,7 @@
 use yii\grid\GridView;
 use yii\helpers\Html;
 use yii\helpers\Url;
+date_default_timezone_set('America/Buenos_Aires');        
 ?>
 
    <?php \yii\widgets\Pjax::begin(['id' => 'grd_ec', 'timeout' => false]);?>
@@ -17,12 +18,7 @@ use yii\helpers\Url;
 	'columns' => [
 		'movimiento.socio.apellido_nombre',
 		'subCuenta.concepto',
-		[
-			'attribute' => 'periodo_mes',
-			'value' => function ($model) {
-				return $model->getMes($model->periodo_mes);
-			},
-		],
+		'periodo_mes',
 		'periodo_anio',
 		[
 			'attribute' => 'importe',

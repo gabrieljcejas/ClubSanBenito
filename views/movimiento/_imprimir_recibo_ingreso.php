@@ -48,7 +48,7 @@ margin-left: 0.5cm;
         <td style="border:none">Socio/Cliente:</td>
         <td style="border:none" colspan="3"><strong>
          <?php 
-            if ($fk_cliente!=""){
+            if ($m->fk_cliente!=""){
                 echo $m->socio->apellido_nombre;    
             }else{
                 echo $m->cliente->razon_social;
@@ -61,7 +61,7 @@ margin-left: 0.5cm;
         <td style="border:none">Socio/Cliente:</td>
         <td style="border:none" colspan="3"><strong>
         <?php 
-            if ($fk_cliente!=""){
+            if ($m->fk_cliente!=""){
                 echo $m->socio->apellido_nombre;    
             }else{
                 echo $m->cliente->razon_social;

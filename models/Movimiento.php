@@ -165,13 +165,14 @@ class Movimiento extends \yii\db\ActiveRecord {
 		//$anio_actual = date('Y');
 		
 		$query = MovimientoDetalle::find()
-		->where(['>=', 'periodo_mes', 1])
-		->andWhere(['<=', 'periodo_mes', 12])
-		->orderBy('periodo_anio DESC')		
+		->joinWith('movimiento')
+		->where(['movimiento.cliente_id' => null])	
+		->orderBy('periodo_anio,periodo_mes DESC')		
 		;
 
 		$dataProvider = new ActiveDataProvider([
 			'query' => $query,
+			'pagination' => [ 'pageSize' => 15 ],
 		]);
 		return $dataProvider;
 	}
@@ -184,15 +185,13 @@ class Movimiento extends \yii\db\ActiveRecord {
 
 		$query = MovimientoDetalle::find()
 			->joinWith('movimiento')
-			->where(['movimiento.fk_cliente' => $socio->id])
-		//->where(['id'=>$codigo])
-			->andWhere(['>=', 'periodo_mes', 1])
-			->andWhere(['<=', 'periodo_mes', 12])
-			->orderBy('periodo_anio DESC')	
+			->where(['movimiento.fk_cliente' => $socio->id])		
+			->orderBy('periodo_anio,periodo_mes DESC')	
 			;
 
 		$dataProvider = new ActiveDataProvider([
 			'query' => $query,
+			'pagination' => [ 'pageSize' => 15 ],		  	
 		]);
 		return $dataProvider;
 	}
@@ -206,14 +205,12 @@ class Movimiento extends \yii\db\ActiveRecord {
 		$query = MovimientoDetalle::find()
 			->joinWith('movimiento')
 			->where(['movimiento.fk_cliente' => $socio->id])
-			->andWhere(['>=', 'periodo_mes', 1])
-			->andWhere(['<=', 'periodo_mes', 12])
-			->orderBy('periodo_anio DESC')
+			->orderBy('periodo_anio,periodo_mes DESC')	
 			;
-			//->andWhere(['=', 'periodo_anio', $anio_actual]);
-
+		
 		$dataProvider = new ActiveDataProvider([
 			'query' => $query,
+			'pagination' => [ 'pageSize' => 15 ],		  	
 		]);
 		return $dataProvider;
 	}
@@ -225,14 +222,13 @@ class Movimiento extends \yii\db\ActiveRecord {
 
 		$query = MovimientoDetalle::find()
 			->joinWith('movimiento')
-			->where(['movimiento.fk_cliente' => $codigo_socio])
-			->andWhere(['>=', 'periodo_mes', 1])
-			->andWhere(['<=', 'periodo_mes', 12])
-			->orderBy('periodo_anio DESC');
-			//->andWhere(['=', 'periodo_anio', $anio_actual]);
+			->where(['movimiento.fk_cliente' => $codigo_socio])			
+			->orderBy('periodo_anio,periodo_mes DESC')	
+			;
 
 		$dataProvider = new ActiveDataProvider([
 			'query' => $query,
+			'pagination' => [ 'pageSize' => 15 ],		  	
 		]);
 
 		return $dataProvider;
@@ -243,14 +239,14 @@ class Movimiento extends \yii\db\ActiveRecord {
 		$mes_actual = date('m');
 		//$anio_actual = date('Y');
 
-		$query = MovimientoDetalle::find()
-			->andWhere(['>=', 'periodo_mes', 1])
-			->andWhere(['<=', 'periodo_mes', 12])
-			->orderBy('periodo_anio DESC');
-			//->andWhere(['=', 'periodo_anio', $anio_actual]);
+		$query = MovimientoDetalle::find()	
+			->joinWith('movimiento')
+			->where(['movimiento.cliente_id' => null])		
+			->orderBy('periodo_mes,periodo_anio DESC');			
 
 		$dataProvider = new ActiveDataProvider([
 			'query' => $query,
+			'pagination' => [ 'pageSize' => 15 ],		  	
 		]);
 
 		return $dataProvider;
@@ -268,6 +264,7 @@ class Movimiento extends \yii\db\ActiveRecord {
 
 		$dataProvider = new ActiveDataProvider([
 			'query' => $query,
+			'pagination' => [ 'pageSize' => 15 ],		  	
 		]);
 
 		return $dataProvider;

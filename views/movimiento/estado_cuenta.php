@@ -15,8 +15,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>FILTRAR POR:<p>
     <div class="row">
-        <div class="col-md-3"><input type="text" id="codigo" class="form-control" placeholder="Codigo Barra o Dni"></div>
-        <div class="col-md-3"><input type="text" id="nombre" class="form-control" placeholder="Nombre"></div>        
+        <div class="col-md-3"><input type="text" id="codigo" name="codigo" class="form-control" placeholder="Codigo Barra o Dni"></div>
+        <div class="col-md-3"><input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre"></div>        
         <div class="col-sm-2"><input type="radio" id="todos" name="sex" value="male" >Todos los Socios</div>
         <div class="col-sm-2"><input type="radio" id="deuda" name="sex" value="male" >Socios con Deuda</div>
     </div><br>
