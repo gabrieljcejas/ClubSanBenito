@@ -13,7 +13,7 @@ use kartik\select2\Select2;
 
 $this->title = $title;
 $this->params['breadcrumbs'][] = "Tesoreria";
-$this->params['breadcrumbs'][] = ['label' => $this->title, 'url' =>['view', 'v' => $v]];;
+$this->params['breadcrumbs'][] = ['label' => $this->title, 'url' =>['view', 'v' => $v]];
 
 ?>
 
@@ -172,18 +172,20 @@ else {
         
     </div>
     
-   
+    <h3><p><?=Html::label("TOTAL: ","total",["id"=>"total"])?></p></h3><p></p>
     
      <?=$form->field($model, 'tipo')->textInput(['value' => $tipo, 'type' => 'hidden'])?>
-    
+        
+     <hr>
+        
      <input type="hidden" id="movimiento-nro_recibo" value="<?= $nroRecibo ?>" name="Movimiento[nro_recibo]">
     
-    <hr>
+    
     <div id="table_dinamic"></div>
       
       <div class="form-group">
         
-        <h3><p><?=Html::label("TOTAL: ","total",["id"=>"total"])?></p></h3><p></p>
+        
         
         <input type="button" id="Guardar" name="Guardar" value="Guardar" class="btn btn-success"/>
         

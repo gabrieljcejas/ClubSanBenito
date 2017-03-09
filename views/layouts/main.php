@@ -73,7 +73,8 @@ echo Nav::widget([
 
 		['label' => 'Consultas', 'url' => ['#'],
 			'items' => [
-				['label' => 'Detalles Movimiento De Caja', 'url' => ['movimiento/consulta-movimiento-caja']],
+				['label' => 'Movimientos De Caja', 'url' => ['movimiento/consulta-movimiento-caja']],
+				['label' => 'Movimientos de Caja Agrupado por Cuenta', 'url' => ['movimiento/consulta-movimiento-cuenta']],
 				['label' => 'Detalles de Ingresos', 'url' => ['movimiento/consulta-ingresos']],
 				['label' => 'Detalles de Egresos', 'url' => ['movimiento/consulta-egresos']],
 				['label' => 'Pago a Proveedores', 'url' => ['movimiento/consulta-proveedor']],

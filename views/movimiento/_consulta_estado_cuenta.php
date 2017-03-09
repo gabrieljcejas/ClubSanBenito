@@ -76,6 +76,22 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 	 	<label>Categoria Hasta</label> 	
 		<?=html::input( "text", "categoria_hasta", null, ["class"=>"form-control","placeholder"=>"Año"] ) ?>
 	</div>
+</div><br>
+
+<div class="row">
+	
+	<div class="col-md-6">
+		<label>Socio</label> 	
+        <?=Select2::widget([
+            'data' => $socios,
+            'name' => 'socio',
+            'options' => ['placeholder' => 'Selecione un Socio ...'],
+            'pluginOptions' => [
+                'allowClear' => true
+            ],
+        ]);?>
+    </div>
+
 </div>
 
 <br>

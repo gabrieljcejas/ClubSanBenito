@@ -7,7 +7,7 @@ use yii\grid\GridView;
         <link href="/club/web/css/site.css" rel="stylesheet">
     </head>
     
-    <h1>Estado de Cuenta <?=$titulo?></h1>    
+    <h1>Estado de Cuenta <?=$titulo?></h1>        
     <h3>Deporte:
     <?php 
 		if ($dep->concepto!=""){
@@ -28,38 +28,70 @@ use yii\grid\GridView;
 <tr>
 	<th align="center">Socios</th>
 	<th align="center">Conceptos</th>
-	<th align="center">Periodo Mes</th>
-	<th align="center">Periodo Año</th>	
-	<th align="center">Monto</th>
+	<th align="center">Periodo</th>	
+	<th align="center">Fecha de Pago</th>
+	<th align="center">Importe</th>
 </tr>
 
-<?php foreach ($socio as $s) {?>	
-	
+<?php if ($ss!="") {?>
+
 	<?php foreach ($movimientoDetalle as $md) {?>
 
-		<tr>			
-			<?php if ($s->id == $md->movimiento->fk_cliente){ ?>
+			<tr>			
+				<?php if ($ss == $md->movimiento->fk_cliente){ ?>
 
-				<td align="center"><?= $s->apellido_nombre ?></td> 
-				<td align="center"><?= $md->subCuenta->concepto ?></td>
-				<td align="center"><?= $md->periodo_mes ?></td>
-				<td align="center"><?= $md->periodo_anio ?></td>
-				<!--<td align="center">->
-					<?php 
-						if ($md->movimiento->fecha_pago!=""){
-							echo date("d-m-Y",strtotime($md->movimiento->fecha_pago)) ;
-						}else{
-							echo "-";
-						}
-					?>		
-				<!--</td>-->
-				<?php $saldo = $md->importe + $saldo ?>
-				<td align="right"><?= "$".$md->importe?></td>
-			<?php } ?>	
+					<td align="center"><?= $socio->apellido_nombre ?></td> 
+					<td align="center"><?= $md->subCuenta->concepto ?></td>
+					<td align="center"><?= $md->periodo_mes."-".$md->periodo_anio ?></td>				
+					<td align="center">
+						<?php 
+							if ($md->movimiento->fecha_pago!=""){
+								echo date("d-m-Y",strtotime($md->movimiento->fecha_pago)) ;
+								$saldo = $saldo - $md->importe;
+							}else{
+								echo "-";
+							}
+						?>		
+						<?php $saldo = $md->importe + $saldo ?>
+					</td>				
+					<td align="right"><?= "$".$md->importe?></td>
+				<?php } ?>	
 
-		</tr>
-	
+			</tr>
+		
 	<?php }	?>
+
+<?php }else{ ?>
+
+	<?php foreach ($socio as $s) {?>	
+		
+		<?php foreach ($movimientoDetalle as $md) {?>
+
+			<tr>			
+				<?php if ($s->id == $md->movimiento->fk_cliente){ ?>
+
+					<td align="center"><?= $s->apellido_nombre ?></td> 
+					<td align="center"><?= $md->subCuenta->concepto ?></td>
+					<td align="center"><?= $md->periodo_mes."-".$md->periodo_anio ?></td>				
+					<td align="center">
+						<?php 
+							if ($md->movimiento->fecha_pago!=""){
+								echo date("d-m-Y",strtotime($md->movimiento->fecha_pago)) ;
+								$saldo = $saldo - $md->importe;
+							}else{
+								echo "-";
+							}
+						?>		
+						<?php $saldo = $md->importe + $saldo ?>
+					</td>				
+					<td align="right"><?= "$".$md->importe?></td>
+				<?php } ?>	
+
+			</tr>
+		
+		<?php }	?>
+
+	<?php } ?>
 
 <?php } ?>
 
@@ -70,5 +102,5 @@ use yii\grid\GridView;
 
 <br>
 
-<b>SALDO: <?= "$".$saldo?></b>
+<b>SALDO DE DEUDA: <?= "$".$saldo?></b>
 
