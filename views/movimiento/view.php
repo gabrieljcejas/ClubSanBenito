@@ -32,10 +32,15 @@ $this->params['breadcrumbs'][] = "Listado";
 				'summary' => '',
 				'columns' => [		
 					'nro_recibo',
-					'socio.apellido_nombre',										
 					[
-						'attribute' => 'Cliente',
-						'value' => 'cliente.razon_social',
+						'attribute' => 'Socio/Cliente',
+						'value' => function ($model) {
+							 if ($model->fk_cliente!=""){
+								return $model->socio->apellido_nombre;
+							}else{
+								return $model->cliente->razon_social;
+							}
+						}
 					],
 					[
 						'attribute' => 'fecha_pago',

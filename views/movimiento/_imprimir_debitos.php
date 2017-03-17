@@ -1,7 +1,7 @@
 <?php
+//ini_set('max_execution_time', 300); //300 seconds = 5 minutes
+//ini_set('memory_limit', '-1');
 
-//use yii\helpers\Html;
-//echo yii::$app->urlManager->baseUrl.'/fotos/'.$model->nombre_foto;die
 
 ?><head>
 <style>

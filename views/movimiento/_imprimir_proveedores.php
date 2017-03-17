@@ -1,5 +1,5 @@
 <div>
-	<h1>Pago a Proveedores</h1>
+	<h1>Detalle Egresos</h1>
 	<label>Fechas: <?= date("d-m-Y",strtotime($fecha_desde)) . " - " . date("d-m-Y",strtotime($fecha_hasta))?></label>
 </div>
 

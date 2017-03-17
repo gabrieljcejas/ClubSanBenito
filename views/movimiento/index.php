@@ -94,7 +94,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' =>['view', 'v' 
                 <?=$form->field($model, 'cliente_id')->widget(Select2::classname(), [
                     'data' => $listC,
                     //'language' => 'de',
-                    'options' => ['placeholder' => 'Selecione un Socio ...'],
+                    'options' => ['placeholder' => 'Selecione un Cliente ...'],
                     'pluginOptions' => [
                         'allowClear' => true
                     ],
@@ -125,7 +125,7 @@ else {
                 <?=$form->field($model, 'fk_prov')->widget(Select2::classname(), [
                     'data' => $list,
                     //'language' => 'de',
-                    'options' => ['placeholder' => 'Selecione un Socio ...'],
+                    'options' => ['placeholder' => 'Selecione un Proveedor ...'],
                     'pluginOptions' => [
                         'allowClear' => true
                     ],
@@ -258,7 +258,7 @@ function calculartotal(){
         $("#Guardar").click(function(){
             
             var nro_fila = $('#tabla_debitos >tbody >tr').length;
-                        
+             
             if ( $( "#movimiento-periodo_mes" ).val() < 1 ){
                 alert("Debe Ingresar PERIODO MES");
                 $( "#movimiento-periodo_mes" ).focus();
@@ -269,7 +269,17 @@ function calculartotal(){
                 alert("Debe Ingresar PERIODO AÑO");
                 $( "#movimiento-periodo_anio" ).focus();
                 return false;
+            }            
+
+            if( $('#select2-movimiento-fk_cliente-container').length>0 ){                
+
             }
+
+         
+            if( $('#select2-movimiento-fk_prov-container').length>0 ){                
+               
+            }
+            
 
             if (nro_fila < 1){
                 alert("Debe agregar un concepto");

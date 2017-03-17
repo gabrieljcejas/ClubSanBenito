@@ -22,6 +22,8 @@ use yii\web\HttpException;
 use yii\web\NotFoundHttpException;
 use yii\filters\AccessControl;
 
+ini_set('max_execution_time', 300); //300 seconds = 5 minutes
+
 /**
  * MovimientoController implements the CRUD actions for Movimiento model.
  */

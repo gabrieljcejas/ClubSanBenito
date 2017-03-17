@@ -55881,3 +55881,3426 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1489074814.905
     'REQUEST_TIME' => 1489074814
 ]
+2017-03-17 14:51:06 [10.100.32.4][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.100.32.4
+    in C:\xampp\htdocs\ClubSanBenito\views\layouts\main.php:122
+    in C:\xampp\htdocs\ClubSanBenito\controllers\SiteController.php:80
+2017-03-17 14:51:06 [10.100.32.4][-][-][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '10.100.72.24'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at 10.100.72.24 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => '10.100.72.24'
+    'SERVER_ADDR' => '10.100.72.24'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.100.32.4'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '53950'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/clubsanbenito/web/index.php'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489758665.563
+    'REQUEST_TIME' => 1489758665
+]
+2017-03-17 14:51:14 [10.100.32.4][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.100.32.4
+    in C:\xampp\htdocs\ClubSanBenito\views\layouts\main.php:122
+    in C:\xampp\htdocs\ClubSanBenito\controllers\SiteController.php:95
+2017-03-17 14:51:13 [10.100.32.4][-][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'stm33fehaios1dh8pnea127oe1'
+    '_csrf' => 'c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eUxnMy-12Nk0Z9a01tfRM658rOC8APxR\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '10.100.72.24'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://10.100.72.24/clubsanbenito/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=stm33fehaios1dh8pnea127oe1; _csrf=c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eUxnMy-12Nk0Z9a01tfRM658rOC8APxR%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at 10.100.72.24 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => '10.100.72.24'
+    'SERVER_ADDR' => '10.100.72.24'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.100.32.4'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '53955'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489758673.976
+    'REQUEST_TIME' => 1489758673
+]
+2017-03-17 14:51:28 [10.100.32.4][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.100.32.4
+    in C:\xampp\htdocs\ClubSanBenito\views\layouts\main.php:122
+    in C:\xampp\htdocs\ClubSanBenito\controllers\SiteController.php:80
+2017-03-17 14:51:28 [10.100.32.4][1][-][info][application] $_COOKIE = [
+    '_csrf' => 'c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eUxnMy-12Nk0Z9a01tfRM658rOC8APxR\";}'
+    'PHPSESSID' => 'cuhjhoq8pupdlq21mq6jgcqoa1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '10.100.72.24'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://10.100.72.24/clubsanbenito/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eUxnMy-12Nk0Z9a01tfRM658rOC8APxR%22%3B%7D; PHPSESSID=cuhjhoq8pupdlq21mq6jgcqoa1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at 10.100.72.24 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => '10.100.72.24'
+    'SERVER_ADDR' => '10.100.72.24'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.100.32.4'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '53957'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/clubsanbenito/web/index.php'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489758688.118
+    'REQUEST_TIME' => 1489758688
+]
+2017-03-17 14:51:35 [10.100.32.4][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.100.32.4
+    in C:\xampp\htdocs\ClubSanBenito\views\layouts\main.php:122
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:698
+2017-03-17 14:51:35 [10.100.32.4][1][-][info][application] $_GET = [
+    'r' => 'movimiento/consulta-movimiento-cuenta'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eUxnMy-12Nk0Z9a01tfRM658rOC8APxR\";}'
+    'PHPSESSID' => 'cuhjhoq8pupdlq21mq6jgcqoa1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '10.100.72.24'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://10.100.72.24/clubsanbenito/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eUxnMy-12Nk0Z9a01tfRM658rOC8APxR%22%3B%7D; PHPSESSID=cuhjhoq8pupdlq21mq6jgcqoa1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at 10.100.72.24 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => '10.100.72.24'
+    'SERVER_ADDR' => '10.100.72.24'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.100.32.4'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '53958'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-movimiento-cuenta'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-movimiento-cuenta'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489758695.148
+    'REQUEST_TIME' => 1489758695
+]
+2017-03-17 14:51:44 [10.100.32.4][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.100.32.4
+    in C:\xampp\htdocs\ClubSanBenito\views\layouts\main.php:122
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:813
+2017-03-17 14:51:43 [10.100.32.4][1][-][info][application] $_GET = [
+    'r' => 'movimiento/consulta-estado-cuenta'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eUxnMy-12Nk0Z9a01tfRM658rOC8APxR\";}'
+    'PHPSESSID' => 'cuhjhoq8pupdlq21mq6jgcqoa1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '10.100.72.24'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://10.100.72.24/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-movimiento-cuenta'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eUxnMy-12Nk0Z9a01tfRM658rOC8APxR%22%3B%7D; PHPSESSID=cuhjhoq8pupdlq21mq6jgcqoa1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at 10.100.72.24 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => '10.100.72.24'
+    'SERVER_ADDR' => '10.100.72.24'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.100.32.4'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '53961'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-estado-cuenta'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-estado-cuenta'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489758703.724
+    'REQUEST_TIME' => 1489758703
+]
+2017-03-17 14:52:37 [10.100.32.4][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.100.32.4
+    in C:\xampp\htdocs\ClubSanBenito\views\layouts\main.php:122
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:736
+2017-03-17 14:52:37 [10.100.32.4][1][-][info][application] $_GET = [
+    'r' => 'movimiento/consulta-ingresos'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eUxnMy-12Nk0Z9a01tfRM658rOC8APxR\";}'
+    'PHPSESSID' => 'cuhjhoq8pupdlq21mq6jgcqoa1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '10.100.72.24'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://10.100.72.24/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-estado-cuenta'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eUxnMy-12Nk0Z9a01tfRM658rOC8APxR%22%3B%7D; PHPSESSID=cuhjhoq8pupdlq21mq6jgcqoa1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at 10.100.72.24 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => '10.100.72.24'
+    'SERVER_ADDR' => '10.100.72.24'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.100.32.4'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '53972'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-ingresos'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-ingresos'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489758757.448
+    'REQUEST_TIME' => 1489758757
+]
+2017-03-17 14:54:53 [10.100.32.4][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.100.32.4
+    in C:\xampp\htdocs\ClubSanBenito\views\layouts\main.php:122
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:736
+2017-03-17 14:54:53 [10.100.32.4][1][-][info][application] $_GET = [
+    'r' => 'movimiento/consulta-ingresos'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eUxnMy-12Nk0Z9a01tfRM658rOC8APxR\";}'
+    'PHPSESSID' => 'cuhjhoq8pupdlq21mq6jgcqoa1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '10.100.72.24'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://10.100.72.24/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-estado-cuenta'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eUxnMy-12Nk0Z9a01tfRM658rOC8APxR%22%3B%7D; PHPSESSID=cuhjhoq8pupdlq21mq6jgcqoa1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at 10.100.72.24 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => '10.100.72.24'
+    'SERVER_ADDR' => '10.100.72.24'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.100.32.4'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '53987'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-ingresos'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-ingresos'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489758893.056
+    'REQUEST_TIME' => 1489758893
+]
+2017-03-17 14:55:16 [10.100.32.4][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.100.32.4
+    in C:\xampp\htdocs\ClubSanBenito\views\layouts\main.php:122
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:766
+2017-03-17 14:55:15 [10.100.32.4][1][-][info][application] $_GET = [
+    'r' => 'movimiento/consulta-egresos'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eUxnMy-12Nk0Z9a01tfRM658rOC8APxR\";}'
+    'PHPSESSID' => 'cuhjhoq8pupdlq21mq6jgcqoa1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '10.100.72.24'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://10.100.72.24/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-ingresos'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eUxnMy-12Nk0Z9a01tfRM658rOC8APxR%22%3B%7D; PHPSESSID=cuhjhoq8pupdlq21mq6jgcqoa1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at 10.100.72.24 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => '10.100.72.24'
+    'SERVER_ADDR' => '10.100.72.24'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.100.32.4'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '53995'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-egresos'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-egresos'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489758915.863
+    'REQUEST_TIME' => 1489758915
+]
+2017-03-17 14:55:54 [10.100.32.4][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.100.32.4
+    in C:\xampp\htdocs\ClubSanBenito\views\layouts\main.php:122
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:986
+2017-03-17 14:55:54 [10.100.32.4][1][-][info][application] $_GET = [
+    'r' => 'movimiento/consulta-proveedor'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eUxnMy-12Nk0Z9a01tfRM658rOC8APxR\";}'
+    'PHPSESSID' => 'cuhjhoq8pupdlq21mq6jgcqoa1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '10.100.72.24'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://10.100.72.24/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-egresos'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eUxnMy-12Nk0Z9a01tfRM658rOC8APxR%22%3B%7D; PHPSESSID=cuhjhoq8pupdlq21mq6jgcqoa1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at 10.100.72.24 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => '10.100.72.24'
+    'SERVER_ADDR' => '10.100.72.24'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.100.32.4'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '54005'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-proveedor'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-proveedor'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489758954.272
+    'REQUEST_TIME' => 1489758954
+]
+2017-03-17 14:56:28 [10.100.32.4][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.100.32.4
+    in C:\xampp\htdocs\ClubSanBenito\views\layouts\main.php:122
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:986
+2017-03-17 14:56:27 [10.100.32.4][1][-][info][application] $_GET = [
+    'r' => 'movimiento/consulta-proveedor'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eUxnMy-12Nk0Z9a01tfRM658rOC8APxR\";}'
+    'PHPSESSID' => 'cuhjhoq8pupdlq21mq6jgcqoa1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '10.100.72.24'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://10.100.72.24/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-egresos'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eUxnMy-12Nk0Z9a01tfRM658rOC8APxR%22%3B%7D; PHPSESSID=cuhjhoq8pupdlq21mq6jgcqoa1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at 10.100.72.24 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => '10.100.72.24'
+    'SERVER_ADDR' => '10.100.72.24'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.100.32.4'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '54010'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-proveedor'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-proveedor'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489758987.97
+    'REQUEST_TIME' => 1489758987
+]
+2017-03-17 14:56:46 [10.100.32.4][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.100.32.4
+    in C:\xampp\htdocs\ClubSanBenito\views\layouts\main.php:122
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:986
+2017-03-17 14:56:45 [10.100.32.4][1][-][info][application] $_GET = [
+    'r' => 'movimiento/consulta-proveedor'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eUxnMy-12Nk0Z9a01tfRM658rOC8APxR\";}'
+    'PHPSESSID' => 'cuhjhoq8pupdlq21mq6jgcqoa1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '10.100.72.24'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://10.100.72.24/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-egresos'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eUxnMy-12Nk0Z9a01tfRM658rOC8APxR%22%3B%7D; PHPSESSID=cuhjhoq8pupdlq21mq6jgcqoa1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at 10.100.72.24 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => '10.100.72.24'
+    'SERVER_ADDR' => '10.100.72.24'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.100.32.4'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '54016'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-proveedor'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-proveedor'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489759005.875
+    'REQUEST_TIME' => 1489759005
+]
+2017-03-17 14:56:54 [10.100.32.4][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.100.32.4
+    in C:\xampp\htdocs\ClubSanBenito\views\layouts\main.php:122
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:766
+2017-03-17 14:56:54 [10.100.32.4][1][-][info][application] $_GET = [
+    'r' => 'movimiento/consulta-egresos'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eUxnMy-12Nk0Z9a01tfRM658rOC8APxR\";}'
+    'PHPSESSID' => 'cuhjhoq8pupdlq21mq6jgcqoa1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '10.100.72.24'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://10.100.72.24/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-ingresos'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eUxnMy-12Nk0Z9a01tfRM658rOC8APxR%22%3B%7D; PHPSESSID=cuhjhoq8pupdlq21mq6jgcqoa1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at 10.100.72.24 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => '10.100.72.24'
+    'SERVER_ADDR' => '10.100.72.24'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.100.32.4'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '54017'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-egresos'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-egresos'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489759014.304
+    'REQUEST_TIME' => 1489759014
+]
+2017-03-17 14:57:01 [10.100.32.4][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.100.32.4
+    in C:\xampp\htdocs\ClubSanBenito\views\layouts\main.php:122
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:736
+2017-03-17 14:57:01 [10.100.32.4][1][-][info][application] $_GET = [
+    'r' => 'movimiento/consulta-ingresos'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eUxnMy-12Nk0Z9a01tfRM658rOC8APxR\";}'
+    'PHPSESSID' => 'cuhjhoq8pupdlq21mq6jgcqoa1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '10.100.72.24'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://10.100.72.24/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-egresos'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eUxnMy-12Nk0Z9a01tfRM658rOC8APxR%22%3B%7D; PHPSESSID=cuhjhoq8pupdlq21mq6jgcqoa1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at 10.100.72.24 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => '10.100.72.24'
+    'SERVER_ADDR' => '10.100.72.24'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.100.32.4'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '54024'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-ingresos'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-ingresos'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489759021.577
+    'REQUEST_TIME' => 1489759021
+]
+2017-03-17 14:59:15 [10.100.32.4][1][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 10.100.32.4
+    in C:\xampp\htdocs\ClubSanBenito\views\layouts\main.php:122
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:309
+2017-03-17 14:59:15 [10.100.32.4][1][-][info][application] $_GET = [
+    'r' => 'movimiento/generar-debito'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eUxnMy-12Nk0Z9a01tfRM658rOC8APxR\";}'
+    'PHPSESSID' => 'cuhjhoq8pupdlq21mq6jgcqoa1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '10.100.72.24'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://10.100.72.24/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-ingresos'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c00ea3cb79373370a355b93bedd25a4e20642d992f393e855237399a8b466735a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eUxnMy-12Nk0Z9a01tfRM658rOC8APxR%22%3B%7D; PHPSESSID=cuhjhoq8pupdlq21mq6jgcqoa1'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at 10.100.72.24 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => '10.100.72.24'
+    'SERVER_ADDR' => '10.100.72.24'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '10.100.32.4'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '54030'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fgenerar-debito'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fgenerar-debito'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489759155.461
+    'REQUEST_TIME' => 1489759155
+]
+2017-03-17 15:27:02 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:65
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:89
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 15:27:02 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=socio%2Findex&page=3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11283'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489760822.416
+    'REQUEST_TIME' => 1489760822
+]
+2017-03-17 15:31:46 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:65
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:89
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 15:31:46 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Festado-cuenta'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11488'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489761106.509
+    'REQUEST_TIME' => 1489761106
+]
+2017-03-17 15:32:03 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:65
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:89
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 15:32:03 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Festado-cuenta'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11494'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489761123.185
+    'REQUEST_TIME' => 1489761123
+]
+2017-03-17 15:32:26 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:65
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:89
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 15:32:26 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Festado-cuenta'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11511'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489761146.239
+    'REQUEST_TIME' => 1489761146
+]
+2017-03-17 15:32:59 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:65
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:89
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 15:32:59 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Festado-cuenta'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11521'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489761179.312
+    'REQUEST_TIME' => 1489761179
+]
+2017-03-17 15:36:38 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:128
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:152
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 15:36:38 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-ingresos'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11564'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489761398.583
+    'REQUEST_TIME' => 1489761398
+]
+2017-03-17 15:37:55 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:128
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:152
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 15:37:55 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=proveedor%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11579'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489761475.147
+    'REQUEST_TIME' => 1489761475
+]
+2017-03-17 15:38:00 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:128
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:152
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 15:38:00 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+    'page' => '2'
+    '_pjax' => '#w0'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_X_CSRF_TOKEN' => 'Z1dhVzguRnAlejcfDRZ1CV8yBy9sSyQpVyNZExUbKwckIzMfWmgKPQ=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#w0'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11579'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e&page=2&_pjax=%23w0'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e&page=2&_pjax=%23w0'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489761480.416
+    'REQUEST_TIME' => 1489761480
+]
+2017-03-17 15:38:13 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:128
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:152
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 15:38:13 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+    'page' => '1'
+    '_pjax' => '#w0'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_X_CSRF_TOKEN' => 'Z1dhVzguRnAlejcfDRZ1CV8yBy9sSyQpVyNZExUbKwckIzMfWmgKPQ=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#w0'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e&page=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11582'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e&page=1&_pjax=%23w0&_pjax=%23w0'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e&page=1&_pjax=%23w0&_pjax=%23w0'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489761493.565
+    'REQUEST_TIME' => 1489761493
+]
+2017-03-17 15:38:34 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:128
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:152
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 15:38:34 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+    'page' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=proveedor%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11593'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e&page=1'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e&page=1'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489761514.371
+    'REQUEST_TIME' => 1489761514
+]
+2017-03-17 15:39:11 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:128
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:152
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 15:39:11 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Findex&v=e'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11605'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489761551.486
+    'REQUEST_TIME' => 1489761551
+]
+2017-03-17 15:39:17 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:128
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:152
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 15:39:17 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11609'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489761557.107
+    'REQUEST_TIME' => 1489761557
+]
+2017-03-17 15:43:12 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:65
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:89
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 15:43:12 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Findex&v=e'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11818'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489761792.398
+    'REQUEST_TIME' => 1489761792
+]
+2017-03-17 15:43:15 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:128
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:152
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 15:43:15 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11820'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489761795.142
+    'REQUEST_TIME' => 1489761795
+]
+2017-03-17 15:43:19 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:65
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:89
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 15:43:19 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11820'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489761799.094
+    'REQUEST_TIME' => 1489761799
+]
+2017-03-17 15:54:21 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:128
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:152
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 15:54:21 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Findex&v=i'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '12028'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489762461.405
+    'REQUEST_TIME' => 1489762461
+]
+2017-03-17 15:56:36 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:65
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:89
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 15:56:35 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Findex&v=e'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '12055'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489762595.923
+    'REQUEST_TIME' => 1489762595
+]
+2017-03-17 15:59:24 [::1][1][ghh3ocu8p7jdbtt05te11sdc72][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'if' (T_IF)' in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:42
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-17 15:59:24 [::1][1][ghh3ocu8p7jdbtt05te11sdc72][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Findex&v=e'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '12090'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489762764.645
+    'REQUEST_TIME' => 1489762764
+]
+2017-03-17 15:59:56 [::1][1][ghh3ocu8p7jdbtt05te11sdc72][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}'' in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:45
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-17 15:59:56 [::1][1][ghh3ocu8p7jdbtt05te11sdc72][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Findex&v=e'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '12095'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489762796.134
+    'REQUEST_TIME' => 1489762796
+]
+2017-03-17 16:00:02 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:73
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:97
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 16:00:02 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Findex&v=e'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '12097'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489762801.995
+    'REQUEST_TIME' => 1489762801
+]
+2017-03-17 16:00:19 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:73
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:97
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 16:00:19 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Findex&v=e'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '12101'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489762819.283
+    'REQUEST_TIME' => 1489762819
+]
+2017-03-17 16:00:34 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:73
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:97
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 16:00:34 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Findex&v=e'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '12106'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489762834.266
+    'REQUEST_TIME' => 1489762834
+]
+2017-03-17 16:00:46 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:73
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:97
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 16:00:46 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Findex&v=e'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '12114'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489762846.36
+    'REQUEST_TIME' => 1489762846
+]
+2017-03-17 16:01:14 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:75
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:99
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 16:01:13 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Findex&v=e'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '12120'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489762873.706
+    'REQUEST_TIME' => 1489762873
+]
+2017-03-17 16:01:35 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:70
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:94
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 16:01:35 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Findex&v=e'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '12125'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489762895.076
+    'REQUEST_TIME' => 1489762895
+]
+2017-03-17 16:01:58 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:70
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:94
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 16:01:57 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Findex&v=e'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '12138'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489762917.762
+    'REQUEST_TIME' => 1489762917
+]
+2017-03-17 16:13:11 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:133
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:157
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 16:13:10 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Findex&v=i'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '12644'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489763590.872
+    'REQUEST_TIME' => 1489763590
+]
+2017-03-17 16:14:56 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:70
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:94
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:471
+2017-03-17 16:14:56 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Findex&v=e'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '12684'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489763696.542
+    'REQUEST_TIME' => 1489763696
+]
+2017-03-17 16:17:27 [::1][1][ghh3ocu8p7jdbtt05te11sdc72][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Invalid argument supplied for foreach()' in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:81
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(81): yii\base\ErrorHandler->handleError(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 81, Array)
+#1 [internal function]: app\controllers\MovimientoController->actionIndex('i')
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('movimiento/inde...', Array)
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-03-17 16:17:27 [::1][1][ghh3ocu8p7jdbtt05te11sdc72][info][application] $_GET = [
+    'r' => 'movimiento/index'
+    'v' => 'i'
+]
+
+$_POST = [
+    '_csrf' => 'bnczUUQxajEsWmUZcQlZSFYSVSkQVAhoXgMLFWkEB0YtA2EZJncmfA=='
+    'Movimiento' => [
+        'fecha_pago' => '17-03-2017'
+        'periodo_mes' => '1'
+        'periodo_anio' => '2017'
+        'fk_cliente' => '376'
+        'cliente_id' => ''
+        'tipo' => 'i'
+        'nro_recibo' => '416'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '281'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Findex&v=i'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '12724'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Findex&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Findex&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489763847.559
+    'REQUEST_TIME' => 1489763847
+]
+2017-03-17 16:27:54 [::1][1][ghh3ocu8p7jdbtt05te11sdc72][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Maximum execution time of 30 seconds exceeded' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Command.php:842
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-17 16:27:25 [::1][1][ghh3ocu8p7jdbtt05te11sdc72][info][application] $_GET = [
+    'r' => 'movimiento/generar-debito'
+]
+
+$_POST = [
+    '_csrf' => 'OEF5NGZaSUd6bC98U2J6PgAkH0wyPyseCDVBcEtvJDB7NSt8BBwFCg=='
+    'Movimiento' => [
+        'periodo_mes_desde' => '11'
+        'periodo_mes_hasta' => '11'
+        'periodo_anio' => '2017'
+        'socio_desde' => '1'
+        'socio_hasta' => '99999999'
+        'subc_id' => ''
+        'subcuenta_id' => '0'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '297'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fgenerar-debito'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '13725'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Fgenerar-debito'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fgenerar-debito'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489764444.988
+    'REQUEST_TIME' => 1489764444
+]
+2017-03-17 16:29:48 [::1][1][ghh3ocu8p7jdbtt05te11sdc72][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Allowed memory size of 134217728 bytes exhausted (tried to allocate 42506680 bytes)' in C:\xampp\htdocs\ClubSanBenito\vendor\mpdf\mpdf\mpdf.php:30894
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-17 16:29:42 [::1][1][ghh3ocu8p7jdbtt05te11sdc72][info][application] $_GET = [
+    'r' => 'movimiento/imprimir-g-d'
+    'periodo_mes_desde' => '11'
+    'periodo_mes_hasta' => '11'
+    'socio_desde' => '1'
+    'socio_hasta' => '99999999'
+    'subcuenta_id' => '0'
+    'periodo_anio' => '2017'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fgenerar-debito'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '13967'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fimprimir-g-d&periodo_mes_desde=11&periodo_mes_hasta=11&socio_desde=1&socio_hasta=99999999&subcuenta_id=0&periodo_anio=2017'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fimprimir-g-d&periodo_mes_desde=11&periodo_mes_hasta=11&socio_desde=1&socio_hasta=99999999&subcuenta_id=0&periodo_anio=2017'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489764582.075
+    'REQUEST_TIME' => 1489764582
+]
+2017-03-17 16:31:11 [::1][1][ghh3ocu8p7jdbtt05te11sdc72][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Allowed memory size of 134217728 bytes exhausted (tried to allocate 42603444 bytes)' in C:\xampp\htdocs\ClubSanBenito\vendor\mpdf\mpdf\mpdf.php:30894
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-17 16:31:05 [::1][1][ghh3ocu8p7jdbtt05te11sdc72][info][application] $_GET = [
+    'r' => 'movimiento/imprimir-g-d'
+    'periodo_mes_desde' => '12'
+    'periodo_mes_hasta' => '12'
+    'socio_desde' => '1'
+    'socio_hasta' => '99999999'
+    'subcuenta_id' => '0'
+    'periodo_anio' => '2017'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fgenerar-debito'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '13990'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fimprimir-g-d&periodo_mes_desde=12&periodo_mes_hasta=12&socio_desde=1&socio_hasta=99999999&subcuenta_id=0&periodo_anio=2017'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fimprimir-g-d&periodo_mes_desde=12&periodo_mes_hasta=12&socio_desde=1&socio_hasta=99999999&subcuenta_id=0&periodo_anio=2017'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489764665.688
+    'REQUEST_TIME' => 1489764665
+]
+2017-03-17 16:40:52 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:70
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:94
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:473
+2017-03-17 16:40:52 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=socio%2Fcredencial'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '14304'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489765252.154
+    'REQUEST_TIME' => 1489765252
+]
+2017-03-17 16:40:58 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:70
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:94
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:473
+2017-03-17 16:40:58 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+    'page' => '10'
+    '_pjax' => '#w0'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_X_CSRF_TOKEN' => 'Q0Y1ZDEzUjIBa2MsBAthS3sjUxxlVjBrczINIBwGP0UAMmcsU3Uefw=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#w0'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '14320'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i&page=10&_pjax=%23w0'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i&page=10&_pjax=%23w0'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489765258.187
+    'REQUEST_TIME' => 1489765258
+]
+2017-03-17 16:41:03 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:133
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:157
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:473
+2017-03-17 16:41:03 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i&page=10'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '14320'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489765263.453
+    'REQUEST_TIME' => 1489765263
+]
+2017-03-17 16:46:39 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:70
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:94
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:473
+2017-03-17 16:46:39 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Festado-cuenta'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '14519'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489765599.069
+    'REQUEST_TIME' => 1489765599
+]
+2017-03-17 16:48:48 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:133
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:157
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:473
+2017-03-17 16:48:48 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+]
+
+$_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '14774'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489765727.99
+    'REQUEST_TIME' => 1489765727
+]
+2017-03-17 16:51:19 [::1][-][ghh3ocu8p7jdbtt05te11sdc72][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Connection.php:600
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Connection.php(600): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Connection.php(858): yii\db\Connection->open()
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Connection.php(845): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Command.php(834): yii\db\Command->prepare('<span class="ke...')
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Schema.php(146): yii\db\mysql\Schema->loadTableSchema('<span class="st...')
+#10 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveRecord.php(296): yii\db\Schema->getTableSchema('<span class="st...')
+#11 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveRecord.php(320): yii\db\ActiveRecord::getTableSchema()
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveRecord.php(176): yii\db\ActiveRecord::primaryKey()
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\BaseActiveRecord.php(102): yii\db\ActiveRecord::findByCondition('<span class="nu...')
+#14 C:\xampp\htdocs\ClubSanBenito\models\User.php(56): yii\db\BaseActiveRecord::findOne('<span class="nu...')
+#15 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\User.php(614): app\models\User::findIdentity('<span class="nu...')
+#16 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\User.php(176): yii\web\User->renewAuthStatus()
+#17 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\User.php(346): yii\web\User->getIdentity()
+#18 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Component.php(130): yii\web\User->getIsGuest()
+#19 C:\xampp\htdocs\ClubSanBenito\views\layouts\main.php(95): yii\base\Component->__get('<span class="st...')
+#20 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#22 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(392): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(app\controllers\SiteController))
+#23 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\Controller->renderContent('<span class="st...')
+#24 C:\xampp\htdocs\ClubSanBenito\controllers\SiteController.php(80): yii\base\Controller->render('<span class="st...')
+#25 [internal function]: app\controllers\SiteController->actionIndex()
+#26 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#27 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#28 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#29 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#30 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#32 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Connection.php:547
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Connection.php(858): yii\db\Connection->open()
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Connection.php(845): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Command.php(834): yii\db\Command->prepare('<span class="ke...')
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Schema.php(146): yii\db\mysql\Schema->loadTableSchema('<span class="st...')
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveRecord.php(296): yii\db\Schema->getTableSchema('<span class="st...')
+#9 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveRecord.php(320): yii\db\ActiveRecord::getTableSchema()
+#10 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveRecord.php(176): yii\db\ActiveRecord::primaryKey()
+#11 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\BaseActiveRecord.php(102): yii\db\ActiveRecord::findByCondition('<span class="nu...')
+#12 C:\xampp\htdocs\ClubSanBenito\models\User.php(56): yii\db\BaseActiveRecord::findOne('<span class="nu...')
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\User.php(614): app\models\User::findIdentity('<span class="nu...')
+#14 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\User.php(176): yii\web\User->renewAuthStatus()
+#15 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\User.php(346): yii\web\User->getIdentity()
+#16 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Component.php(130): yii\web\User->getIsGuest()
+#17 C:\xampp\htdocs\ClubSanBenito\views\layouts\main.php(95): yii\base\Component->__get('<span class="st...')
+#18 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#19 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#20 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(392): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(app\controllers\SiteController))
+#21 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\Controller->renderContent('<span class="st...')
+#22 C:\xampp\htdocs\ClubSanBenito\controllers\SiteController.php(80): yii\base\Controller->render('<span class="st...')
+#23 [internal function]: app\controllers\SiteController->actionIndex()
+#24 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#25 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#26 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#27 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[]')
+#28 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#30 {main}
+Additional Information:
+
+2017-03-17 16:51:19 [::1][-][ghh3ocu8p7jdbtt05te11sdc72][info][application] $_COOKIE = [
+    '_csrf' => '82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B-VH583y8efxTebY0t8D-5mwCtRHbFLM\";}'
+    'PHPSESSID' => 'ghh3ocu8p7jdbtt05te11sdc72'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=82eaad416baebb4daee788d30a614d40f44a9d52e253027e11ec0ba58e7a9248a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B-VH583y8efxTebY0t8D-5mwCtRHbFLM%22%3B%7D; PHPSESSID=ghh3ocu8p7jdbtt05te11sdc72'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '14851'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/clubsanbenito/web/'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1489765879.593
+    'REQUEST_TIME' => 1489765879
+]

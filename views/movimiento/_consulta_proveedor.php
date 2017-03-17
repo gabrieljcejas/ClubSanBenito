@@ -3,12 +3,12 @@
 use yii\helpers\Html;
 use yii\jui\DatePicker;
 use yii\widgets\ActiveForm;
-$this->title = "Consulta Pago a Proveedores";
+$this->title = "Detalle Egresos";
 $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 ?>
 
 
-<h1><?=Html::encode($this->title)?></h1><br><br>
+<h1><?=Html::encode($this->title)?></h1><br>
 
 <?php $form = ActiveForm::begin();?>
 
