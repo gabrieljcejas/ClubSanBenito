@@ -22,60 +22,137 @@ $this->params['breadcrumbs'][] = "Listado";
 	'class' => ' btn btn-success',
 ])?>
             <br><br>
-    <?php Pjax::begin();?>
-    <?=GridView::widget([
-	'dataProvider' => $dataProvider,
-	//'model' => $model,
-	'summary' => '',
-	'columns' => [		
-		'nro_recibo',		
-		'cliente.razon_social',
-		'socio.apellido_nombre',
-		'proveedor.nombre',		
-		[
-			'attribute' => 'fecha_pago',
-			'value' => function ($model) {
-				return date("d-m-Y", strtotime($model->fecha_pago));
-			},
-		],
-		[
-			'class' => 'yii\grid\ActionColumn',
-			'header' => 'Actions',
-			'template' => '{imprimir} {delete}',
-			'buttons' => [				
-				'imprimir' => function ($url, $model) {
-					return Html::a('<span class="btn btn-default glyphicon glyphicon-print"></span>', $url, [
-						'data-confirm' => Yii::t('yii', 'Imprimir el Recibo?'),
+<?php Pjax::begin();?>
 
-					]);
-				},
-				'delete' => function ($url, $model) {
-					return Html::a('<span class="btn btn-default glyphicon glyphicon-trash"></span>', $url, [
-						'title' => Yii::t('app', 'Eliminar'),
-						'data-confirm' => Yii::t('yii', 'Seguro que desea eliminar?'),
-						//'data-method' => 'post',
+    <?php if ($v=='i'){ ?>
+	    
+	    <?=GridView::widget([
+				'dataProvider' => $dataProvider,
+				//'model' => $model,
+				'summary' => '',
+				'columns' => [		
+					'nro_recibo',
+					'socio.apellido_nombre',										
+					[
+						'attribute' => 'Cliente',
+						'value' => 'cliente.razon_social',
+					],
+					[
+						'attribute' => 'fecha_pago',
+						'value' => function ($model) {
+							return date("d-m-Y", strtotime($model->fecha_pago));
+						},
+					],	
+					[
+						'attribute' => 'Importe',
+						'value' => function ($model) {
+							return "$".$model->getImporteTotal($model->id);
+						},
+					],					
+					[
+						'class' => 'yii\grid\ActionColumn',
+						'header' => 'Actions',
+						'template' => '{imprimir} {delete}',
+						'buttons' => [				
+							'imprimir' => function ($url, $model) {
+								return Html::a('<span class="btn btn-default glyphicon glyphicon-print"></span>', $url, [
+									'data-confirm' => Yii::t('yii', 'Imprimir el Recibo?'),
 
-					]);
-				},
-			],
-			'urlCreator' => function ($action, $model, $key, $index) {
-				if ($action === 'imprimir') {
-					if ($model->fk_cliente || $model->cliente_id ) {
-						$url = Url::to(['movimiento/imprimir-recibo-ingreso', 'id' => $model->id]);
-						return $url;
-					} else {
-						$url = Url::to(['movimiento/imprimir-recibo-egreso', 'id' => $model->id]);
-						return $url;
-					}
-				}
-				if ($action === 'delete') {
-					$url = Url::to(['movimiento/delete', 'id' => $model->id]);
-					return $url;
-				}
-			},
-		],
-	],
-]);?>
-    <?php Pjax::end();?>
+								]);
+							},
+							'delete' => function ($url, $model) {
+								return Html::a('<span class="btn btn-default glyphicon glyphicon-trash"></span>', $url, [
+									'title' => Yii::t('app', 'Eliminar'),
+									'data-confirm' => Yii::t('yii', 'Seguro que desea eliminar?'),
+									//'data-method' => 'post',
+
+								]);
+							},
+						],
+						'urlCreator' => function ($action, $model, $key, $index) {
+							if ($action === 'imprimir') {
+								if ($model->fk_cliente || $model->cliente_id ) {
+									$url = Url::to(['movimiento/imprimir-recibo-ingreso', 'id' => $model->id]);
+									return $url;
+								} else {
+									$url = Url::to(['movimiento/imprimir-recibo-egreso', 'id' => $model->id]);
+									return $url;
+								}
+							}
+							if ($action === 'delete') {
+								$url = Url::to(['movimiento/delete', 'id' => $model->id]);
+								return $url;
+							}
+						},
+					],
+				],
+			]);
+		?>
+
+	<?php } ?>
+
+	 <?php if ($v=='e'){ ?>
+	    
+	    <?=GridView::widget([
+				'dataProvider' => $dataProvider,
+				//'model' => $model,
+				'summary' => '',
+				'columns' => [		
+					'nro_recibo',							
+					'proveedor.nombre',		
+					[
+						'attribute' => 'fecha_pago',
+						'value' => function ($model) {
+							return date("d-m-Y", strtotime($model->fecha_pago));
+						},
+					],
+					[
+						'attribute' => 'Importe',
+						'value' => function ($model) {
+							return "$".$model->getImporteTotal($model->id);
+						},
+					],	
+					[
+						'class' => 'yii\grid\ActionColumn',
+						'header' => 'Actions',
+						'template' => '{imprimir} {delete}',
+						'buttons' => [				
+							'imprimir' => function ($url, $model) {
+								return Html::a('<span class="btn btn-default glyphicon glyphicon-print"></span>', $url, [
+									'data-confirm' => Yii::t('yii', 'Imprimir el Recibo?'),
+
+								]);
+							},
+							'delete' => function ($url, $model) {
+								return Html::a('<span class="btn btn-default glyphicon glyphicon-trash"></span>', $url, [
+									'title' => Yii::t('app', 'Eliminar'),
+									'data-confirm' => Yii::t('yii', 'Seguro que desea eliminar?'),
+									//'data-method' => 'post',
+
+								]);
+							},
+						],
+						'urlCreator' => function ($action, $model, $key, $index) {
+							if ($action === 'imprimir') {
+								if ($model->fk_cliente || $model->cliente_id ) {
+									$url = Url::to(['movimiento/imprimir-recibo-ingreso', 'id' => $model->id]);
+									return $url;
+								} else {
+									$url = Url::to(['movimiento/imprimir-recibo-egreso', 'id' => $model->id]);
+									return $url;
+								}
+							}
+							if ($action === 'delete') {
+								$url = Url::to(['movimiento/delete', 'id' => $model->id]);
+								return $url;
+							}
+						},
+					],
+				],
+			]);
+		?>
+
+	<?php } ?>
+<?php Pjax::end();?>
 
 </div>

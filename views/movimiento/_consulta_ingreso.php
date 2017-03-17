@@ -14,7 +14,7 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 
 <div class="row">
 	<div class="col-md-3">
-	     <label>Periodo Desde</label>
+	     <label>Fecha Desde</label>
 	     <div class="input-group">
 	      	<?=
 				DatePicker::widget([
@@ -31,7 +31,7 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
     </div>
 
 	<div class="col-md-3">
-	 	<label>Periodo Hasta</label> 	
+	 	<label>Fecha Hasta</label> 	
 		<div class="input-group">
 	      	<?=
 				DatePicker::widget([
@@ -76,24 +76,7 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 	 	<label>Categoria Hasta</label> 	
 		<?=html::input( "text", "categoria_hasta", null, ["class"=>"form-control","placeholder"=>"Año"] ) ?>
 	</div>
-</div><br>
-
-<div class="row">
-	
-	<div class="col-md-6">
-		<label>Socio</label> 	
-        <?=Select2::widget([
-            'data' => $socios,
-            'name' => 'socio',
-            'options' => ['placeholder' => 'Selecione un Socio ...'],
-            'pluginOptions' => [
-                'allowClear' => true
-            ],
-        ]);?>
-    </div>
-
 </div>
-
 <br>
 
 <input type="button" id="buscar" name="buscar" value="Buscar" class="btn btn-success"/>
@@ -126,11 +109,11 @@ $(function () {
 			return false;
 		}
 		
-		/*if ( $( "#select2-deporte-container" ).prop('title') == "" ){		
-			alert("Ingrese un Deporte.");	
-			$( "#select2-deporte-container" ).focus();
+		if ( $( "input[name='categoria_desde']" ).val() == "" ){
+			alert("CATEGORIA DESDE: Ingrese un valor.");
+			$( "input[name='categoria_desde']" ).focus();
 			return false;
-		}*/
+		}
 
 		if ( $( "input[name='categoria_hasta']" ).val() == "" ){
 			alert("CATEGORIA HASTA: Ingrese un valor.");
@@ -138,11 +121,7 @@ $(function () {
 			return false;
 		}
 
-		if ( $( "input[name='categoria_desde']" ).val() == "" ){
-			alert("CATEGORIA DESDE: Ingrese un valor.");
-			$( "input[name='categoria_desde']" ).focus();
-			return false;
-		}
+		
 		
 
 		$("#buscar").submit();

@@ -7,7 +7,7 @@ use yii\grid\GridView;
         <link href="/club/web/css/site.css" rel="stylesheet">
     </head>
     
-    <h1>Estado de Cuenta <?=$titulo?></h1>        
+    <h1><?=$titulo?></h1>        
     <h3>Deporte:
     <?php 
 		if ($dep->concepto!=""){
@@ -78,6 +78,7 @@ use yii\grid\GridView;
 							if ($md->movimiento->fecha_pago!=""){
 								echo date("d-m-Y",strtotime($md->movimiento->fecha_pago)) ;
 								$saldo = $saldo - $md->importe;
+								$abonado = $md->importe + $abonado;
 							}else{
 								echo "-";
 							}
@@ -102,5 +103,7 @@ use yii\grid\GridView;
 
 <br>
 
-<b>SALDO DE DEUDA: <?= "$".$saldo?></b>
+<b>TOTAL DEUDA: <?= "$".$saldo?></b><br><br>
+
+<b>TOTAL ABONADO: <?= "$".$abonado?></b>
 

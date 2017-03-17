@@ -322,4 +322,16 @@ class Movimiento extends \yii\db\ActiveRecord {
 		return $query;
 	}
 
+	public function getImporteTotal($id) {
+
+		$query = MovimientoDetalle::find()			
+			->where(['movimiento_id' => $id])		
+			->sum('importe');			
+			
+
+		//var_dump($query);die;	
+		return $query;		
+
+	}
+
 }

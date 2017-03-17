@@ -25,7 +25,7 @@
 					if ($m->socio->apellido_nombre!=""){
 						echo $m->socio->apellido_nombre;
 					}else{
-						echo $m->otro;
+						echo $m->cliente->razon_social;
 					}
 				?>
 				

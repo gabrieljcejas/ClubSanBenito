@@ -43,10 +43,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' =>['view', 'v' 
               ?>
         </div>
 
-    </div><br>
-
-    <div class="row"> 
-
+  
         <div class="col-md-2">
 
             <?=$form->field($model, 'periodo_mes')->dropDownList([
@@ -107,7 +104,6 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' =>['view', 'v' 
 
             <div class="col-md-1"><br>
                     <?=html::button('', ['value'=>Url::to('index.php?r=cliente/create'),'class' => 'btn glyphicon glyphicon-plus', 'id' => 'agregarcliente'])?>  
-
                     <?php 
                         Modal::begin([
                             //'header'=>'<h4>Agregar Cliente</h4>',
@@ -160,7 +156,7 @@ else {
             </table>
         </div>
 
-        <div class="col-md-2">
+        <div class="col-md-1">
             
              <?=Html::a('+', null, [
                'class' => 'btn btn-default',
@@ -169,7 +165,8 @@ else {
             ])?>
 
         </div>
-        
+
+               
     </div>
     
     <h3><p><?=Html::label("TOTAL: ","total",["id"=>"total"])?></p></h3><p></p>
@@ -248,7 +245,6 @@ function calculartotal(){
                         html+="</select></td>";
                         html+="<td><input type='text' name='importe[]' value='" + debito.importe + "' class='form-control' onkeyup='calculartotal()'></td>";
                         html+="<td><a id='btn_borrar_cuenta' onClick='borrarfila(" + i + ");' class='btn btn-default glyphicon glyphicon-trash'></a></td></tr>";
-
                     })
                     $("#tabla_debitos").append(html);
                     calculartotal();   
