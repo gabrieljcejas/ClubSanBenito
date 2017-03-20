@@ -79,7 +79,7 @@ class MovimientoController extends BaseController {
 				$socio = $model->fk_cliente;					
 				//$model->obs = 'i';
 
-				// guardo por cada debito un registro en la tabla moviemietp de talle
+				// guardo por cada debito un registro en la tabla moviemieto de talle
 				foreach ($post['importe'] as $key => $value) {
 
 					// VERIFICAR SI EL INGRESO YA EXISTE. SI EXISTE LO ACTUALIZO , SI NO LO AGREGO

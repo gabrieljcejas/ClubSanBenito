@@ -89,7 +89,7 @@ echo Nav::widget([
 			'items' => [
 				['label' => 'Usuarios', 'url' => ['user/index']],
 				['label' => 'Roles', 'url' => ['rol/index']],				
-				['label' => 'Permisos', 'url' => ['operacion/index']],								
+				['label' => 'Permisos', 'url' => ['operacion/index']],							
 				['label' => 'Backup', 'url' => ['user/backup']],				
 			],
 			'visible' => !Yii::$app->user->isGuest		

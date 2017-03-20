@@ -273,10 +273,19 @@ function calculartotal(){
 
             if( $('#select2-movimiento-fk_cliente-container').length>0 ){                
 
+                if ($('#movimiento-fk_cliente').val() == "" && $('#movimiento-cliente_id').val() == ""){
+                    alert("Debe Selecionar un Socio o un Cliente");
+                    return false;
+                }
             }
 
          
-            if( $('#select2-movimiento-fk_prov-container').length>0 ){                
+            if( $('#select2-movimiento-fk_prov-container').length>0 ){   
+
+                if ($('#movimiento-fk_prov').val() == ""){
+                    alert("Debe Selecionar un Proveedor");
+                    return false;
+                }             
                
             }
             
