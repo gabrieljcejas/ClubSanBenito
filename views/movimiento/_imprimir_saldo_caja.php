@@ -8,7 +8,7 @@
 <tr>
 	<th>Fecha</th>
 	<th>Concepto</th>
-	<th>Cliente</th>
+	<th>Socio/Cliente</th>
 	<th>Proveedor</th>	
 	<th>Ingresos</th>
 	<th>Egresos</th>

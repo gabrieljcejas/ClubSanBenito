@@ -1,6 +1,6 @@
 <?php
 
-use app\models\SubCuenta;
+use app\models\Debito;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
@@ -65,15 +65,15 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
     
     <div class="row">
-        <?php $list = ArrayHelper::map(SubCuenta::find()->select('id,concepto')->where(['<', 'codigo', '4.2'])->andWhere(['>', 'codigo', '4.1'])->all(), 'id', 'concepto')?>
-        <div class="col-md-3"><?=$form->field($model, 'subc_id')->dropDownList($list, ['prompt' => 'Todos'])?></div>
+        <?php $list = ArrayHelper::map(Debito::find()->select('subcuenta_id,concepto')->all(), 'subcuenta_id', 'concepto')?>
+        <div class="col-md-3"><?=$form->field($model, 'subcuenta_id')->dropDownList($list, ['prompt' => 'Todos'])?></div>
     </div>
 
     <?=$form->field($model, 'subcuenta_id')->textInput(['value' => 0, 'type' => 'hidden'])?>
 
     <div class="form-group">
         <?=Html::submitButton($model->isNewRecord ? 'Generar Debitos' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary'])?>
-        <?php if ($msj != "") {?>	
+        <!--<?php if ($msj != "") {?>	
         <?=Html::a(' Imprimir', ['imprimir-g-d',
             'periodo_mes_desde' => $model->periodo_mes_desde,
             'periodo_mes_hasta' => $model->periodo_mes_hasta,
@@ -83,7 +83,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'periodo_anio'=> $model->periodo_anio,
             ],
             ['class' => 'btn btn-default glyphicon glyphicon-print'])
-        ?>  
+        ?>  -->
         <div class="alert alert-success" role="alert"><?=$msj?></div>        
         <?php }?>
     </div>

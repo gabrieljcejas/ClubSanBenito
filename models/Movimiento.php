@@ -334,4 +334,16 @@ class Movimiento extends \yii\db\ActiveRecord {
 
 	}
 
+	public function getPeriodo($id) {
+
+		$query = MovimientoDetalle::find()			
+			->where(['movimiento_id' => $id])
+			->one();		
+		
+		$periodo = $query->periodo_mes."-".$query->periodo_anio;
+
+		return $periodo;		
+
+	}
+
 }

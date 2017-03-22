@@ -53,7 +53,13 @@ $this->params['breadcrumbs'][] = "Listado";
 						'value' => function ($model) {
 							return "$".$model->getImporteTotal($model->id);
 						},
-					],					
+					],	
+					[
+						'attribute' => 'Periodo',
+						'value' => function ($model) {
+							return $model->getPeriodo($model->id);
+						},
+					],								
 					[
 						'class' => 'yii\grid\ActionColumn',
 						'header' => 'Actions',
@@ -115,6 +121,12 @@ $this->params['breadcrumbs'][] = "Listado";
 						'attribute' => 'Importe',
 						'value' => function ($model) {
 							return "$".$model->getImporteTotal($model->id);
+						},
+					],	
+					[
+						'attribute' => 'Periodo',
+						'value' => function ($model) {
+							return $model->getPeriodo($model->id);
 						},
 					],	
 					[

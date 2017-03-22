@@ -242,6 +242,9 @@ function calculartotal(){
                         html+="<tr id='del-" + i + "'><td><input type='hidden' name='debito_sc_id[]' value='" + debito.subcuenta_id + "'>" + debito.concepto + "</td><td>$" + debito.importe + "</td>";
                         html+="<td><select name='forma_pago[]' class='form-control'>";
                         html+="<option value='4'>Efectivo</option>";                       
+                        html+="<option value='1'>Debito</option>";                       
+                        html+="<option value='2'>Credito</option>";                       
+                        html+="<option value='3'>Cheque</option>";                       
                         html+="</select></td>";
                         html+="<td><input type='text' name='importe[]' value='" + debito.importe + "' class='form-control' onkeyup='calculartotal()'></td>";
                         html+="<td><a id='btn_borrar_cuenta' onClick='borrarfila(" + i + ");' class='btn btn-default glyphicon glyphicon-trash'></a></td></tr>";
@@ -291,9 +294,29 @@ function calculartotal(){
             
 
             if (nro_fila < 1){
-                alert("Debe agregar un concepto");
+                
+                alert("Debe agregar un concepto");                
                 return false;
+
+            }else{
+                
+                /*VERIFICO QUE INGRESE UN IMPORTE*/
+                var flag = false;
+                $( "input[name='importe[]']" ).each(function() {                
+                    if ($(this).val()==""){                        
+                        flag = true;                        
+                    }      
+                });               
+                
+                if (flag == true){
+                    alert("Debe ingresar un importe mayor o igual a cero.");                
+                    return false;
+                }
             }
+
+            
+
+            
 
             $("#Guardar").submit();
 
