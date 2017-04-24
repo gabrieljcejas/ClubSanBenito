@@ -84,7 +84,7 @@ $this->params['breadcrumbs'][] = $this->title;
             },
         ],                    
         [
-            'attribute' => 'Importe',
+            'attribute' => 'Imp. Total',
             'format' => 'raw',
             'value' => function ($model) {
                 if ($model->fecha_pago == "") {
@@ -186,6 +186,7 @@ $(function () {
     $("button[name='pagar']").click(function () {
 
         var id = $(this).attr('value');
+        $(this).prop('disabled', true);          
 
         $.ajax({
             type: "POST",
@@ -193,8 +194,14 @@ $(function () {
             data: {
                 id: id ,                
             },
-            success: function (data) {                
-                $(':input[type="submit"]').submit();           
+            success: function (data) {  
+                if ($("select[name='socio']").val()!=""){                    
+                    $(':input[type="submit"]').submit();               
+                }else{
+                    $.pjax.reload({container: '#grd_ec'});
+                }
+
+                
             }
         });
 

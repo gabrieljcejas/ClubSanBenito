@@ -166,7 +166,7 @@ class Movimiento extends \yii\db\ActiveRecord {
 		$query = Movimiento::find()
 		->joinWith('movimientoDetalle')
 		->where(['not',['fk_cliente' => null]])
-		//->orderBy('movimientoDetalle.periodo_anio,movimientoDetalle.periodo_mes DESC')		
+		->orderBy('fk_cliente ASC')		
 		;
 
 		$dataProvider = new ActiveDataProvider([

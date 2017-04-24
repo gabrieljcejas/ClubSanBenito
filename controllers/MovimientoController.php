@@ -507,20 +507,27 @@ class MovimientoController extends BaseController {
 
 		if (Yii::$app->request->post()) {
 
-            $post = Yii::$app->request->post();
-            $idSocio = $post['socio'];
-            //var_dump($idSocio);die;
+            $post = Yii::$app->request->post();            
+            $idSocio = $post['socio'];            
 
             $aSearch = array(
                 'idSocio' => $idSocio,
             );
 
             $model = new Movimiento();
-            $dataProvider = $model->buscarSocio($aSearch);
+
+            if ($idSocio!=""){
+            	$dataProvider = $model->buscarSocio($aSearch);
+            	$deuda = $model->getDeudaTotalBySocio($idSocio,"codigo_socio");
+        	}
+        	else{
+        		$dataProvider = $model->getAllEstadoCuenta();
+				$deuda = $model->getDeudaTotal();
+        	}
 
             $listSocios = ArrayHelper::map(Socio::find()->orderBy('apellido_nombre')->all(), 'id', 'apellido_nombre');
 
-            $deuda = $model->getDeudaTotalBySocio($idSocio,"codigo_socio");
+            
 
             return $this->render('estado_cuenta', [
 				'dataProvider' => $dataProvider,
