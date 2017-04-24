@@ -21,9 +21,9 @@ margin-left: 0.5cm;
         <td colspan="2" rowspan="2" align="center" bgcolor="#0066FF" style="border:none"><img src="<?=yii::$app->urlManager->baseUrl . '/img/logo.jpeg'?>" width="50"></td>
       </tr>
       <tr>
-        <td colspan="3" align="center" bgcolor="#0066FF" style="border:none"><strong>Fundado el 9 de julio de 1916.  Persona Juridica 2590</strong></td>
+        <td colspan="3" align="center" bgcolor="#0066FF" style="border:none;font-size:11"><strong>Fundado el 9 de julio de 1916.  Persona Juridica 2590</strong></td>
         <td width="1%" style="border:none">&nbsp;</td>
-        <td colspan="2" align="center" bgcolor="#0066FF" style="border:none"><strong>Fundado el 9 de julio de 1916.  Persona Juridica 2590</strong></td>
+        <td colspan="2" align="center" bgcolor="#0066FF" style="border:none;font-size:11"><strong>Fundado el 9 de julio de 1916.  Persona Juridica 2590</strong></td>
       </tr>
       <tr>
         <td style="border:none">Fecha:</td>
@@ -74,7 +74,7 @@ margin-left: 0.5cm;
       </tr>
       <tr>
        <?php foreach ($modelDetalle as $md) {
-            $periodom = $md->periodo_mes . "-" . $md->periodo_anio;
+            $periodom = $mod->getMes($md->periodo_mes) . " " . $md->periodo_anio;
          }?>
         <td style="border:none">Matricula:</td>
         <td style="border:none"><strong>
@@ -108,14 +108,14 @@ margin-left: 0.5cm;
         <tr>
         <td colspan="3"><strong>
         <?=$md->subCuenta->concepto?>
-        ..........</strong></td>
+        </strong></td>
         <td align="center"><strong>
         $ <?=$md->importe?>
         </strong></td>
         <td style="border:none">&nbsp;</td>
         <td colspan="3"><strong>
         <?=$md->subCuenta->concepto?>
-        ..........</strong></td>
+        </strong></td>
         <td align="center"><strong>
         $ <?=$md->importe?>
         </strong></td>
@@ -127,17 +127,17 @@ margin-left: 0.5cm;
 
     <!-- codigo html parte de abajo-->
     <tr>
-        <td style="border:none"><br><br><barcode code="<?=$m->socio->dni?>" type="I25" /></td>
-        <td style="border:none"><br><br></td>
-        <td align="right" ><br><br><strong>TOTAL:</strong></td>
-        <td align="center"><br><br><br><strong>$
+        <td style="border:none"><!--<barcode code="<?=$m->socio->dni?>" type="I25" />--></td>
+        <td style="border:none"></td>
+        <td align="right" ><strong>TOTAL:</strong></td>
+        <td align="center"><strong>$
         <?=$total?>
         </strong></td>
         <td style="border:none"></td>
-        <td style="border:none"><br><br><barcode code="<?=$m->socio->dni?>" type="I25" /></td>
-        <td align="center" style="border:none"><br><br><p><strong>...........................</strong><br><br><p>Firma</p></td>
-      <td align="right" ><br><br><strong>TOTAL</strong></td>
-        <td align="center"><br><br><br><strong>$
+        <td style="border:none"><!--<barcode code="<?=$m->socio->dni?>" type="I25" /></td>-->
+        <td align="center" style="border:none"><p><strong>...........................</strong><p>Firma</p></td>
+      <td align="right" ><strong>TOTAL</strong></td>
+        <td align="center"><strong>$
         <?=$total?>
         </strong></td>
       </tr>

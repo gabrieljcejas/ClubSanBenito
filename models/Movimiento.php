@@ -96,7 +96,9 @@ class Movimiento extends \yii\db\ActiveRecord {
 			'subc_id' => 'Concepto a Debitar',
 			'subcuenta_id' => '',
 			'periodo_mes' => 'Periodo Mes',
-			'cliente_id' => 'Cliente'
+			'cliente_id' => 'Cliente',
+			'socio_desde'=> 'Matricula Desde',
+			'socio_hasta' => 'Matricula Hasta'
 		];
 	}
 
@@ -160,19 +162,16 @@ class Movimiento extends \yii\db\ActiveRecord {
 	}
 
 	public function getAllEstadoCuenta() {
-
-		$mes_actual = date('m');
-		//$anio_actual = date('Y');
 		
-		$query = MovimientoDetalle::find()
-		->joinWith('movimiento')
-		->where(['movimiento.cliente_id' => null])	
-		->orderBy('periodo_anio,periodo_mes DESC')		
+		$query = Movimiento::find()
+		->joinWith('movimientoDetalle')
+		->where(['not',['fk_cliente' => null]])
+		//->orderBy('movimientoDetalle.periodo_anio,movimientoDetalle.periodo_mes DESC')		
 		;
 
 		$dataProvider = new ActiveDataProvider([
 			'query' => $query,
-			'pagination' => [ 'pageSize' => 15 ],
+			//'pagination' => [ 'pageSize' => 15 ],
 		]);
 		return $dataProvider;
 	}
@@ -254,13 +253,9 @@ class Movimiento extends \yii\db\ActiveRecord {
 
 	public function getAllEstadoCuentaDeuda() {
 
-		$mes_actual = date('m');
-		$anio_actual = date('Y');
-
 		$query = MovimientoDetalle::find()
 			->joinWith('movimiento')
-			->where(['movimiento.fecha_pago' => null])
-			->andWhere(['>=', 'periodo_mes', 1])->andWhere(['<=', 'periodo_mes', 12])->andWhere(['=', 'periodo_anio', $anio_actual]);
+			->where(['movimiento.fecha_pago' => null]);			
 
 		$dataProvider = new ActiveDataProvider([
 			'query' => $query,
@@ -272,30 +267,22 @@ class Movimiento extends \yii\db\ActiveRecord {
 
 	public function getDeudaTotal() {
 
-		$mes_actual = date('m');
-		$anio_actual = date('Y');
-
-		$sql = "SELECT SUM(importe) AS 'importe' FROM movimiento_detalle md JOIN movimiento m ON md.movimiento_id = m.id WHERE m.fecha_pago is null AND md.periodo_mes>=1 AND md.periodo_mes<=12 AND md.periodo_anio=" . $anio_actual;
+		
+		$sql = "SELECT SUM(importe) AS 'importe' FROM movimiento_detalle md JOIN movimiento m ON md.movimiento_id = m.id WHERE m.fecha_pago is null" ;
 		$query = MovimientoDetalle::findBySql($sql)->one();
-
-		/*$dataProvider = new ActiveDataProvider([
-		'query' => $query,
-		]);*/
 
 		return $query;
 	}
 
 	public function getDeudaTotalBySocio($dato, $tipo) {
 
-		$mes_actual = date('m');
-		$anio_actual = date('Y');
-
+		
 		if ($tipo == 'codigo') {
 			$sql = "SELECT SUM(importe) AS 'importe'
 			FROM movimiento_detalle md
 			JOIN movimiento m ON md.movimiento_id = m.id
 			JOIN socio s ON m.fk_cliente=s.id
-			WHERE m.fecha_pago is null AND md.periodo_mes>=1 AND md.periodo_mes<=12 AND md.periodo_anio=" . $anio_actual . " AND s.dni=" . $dato;
+			WHERE m.fecha_pago is null AND s.dni=" . $dato;
 		}
 
 		if ($tipo == 'nombre') {
@@ -303,21 +290,17 @@ class Movimiento extends \yii\db\ActiveRecord {
 			FROM movimiento_detalle md
 			JOIN movimiento m ON md.movimiento_id = m.id
 			JOIN socio s ON m.fk_cliente=s.id
-			WHERE m.fecha_pago is null AND md.periodo_mes>=1 AND md.periodo_mes<=12 AND md.periodo_anio=" . $anio_actual . " AND s.apellido_nombre LIKE '" . $dato . "%'";
+			WHERE m.fecha_pago is null AND s.apellido_nombre LIKE '" . $dato . "%'";
 		}
 
 		if ($tipo == 'codigo_socio') {
 			$sql = "SELECT SUM(importe) AS 'importe'
 			FROM movimiento_detalle md
 			JOIN movimiento m ON md.movimiento_id = m.id
-			WHERE m.fecha_pago is null AND md.periodo_mes>=1 AND md.periodo_mes<=12 AND md.periodo_anio=" . $anio_actual . " AND m.fk_cliente=" . $dato;
+			WHERE m.fecha_pago is null AND m.fk_cliente=" . $dato;
 		}
 
 		$query = MovimientoDetalle::findBySql($sql)->one();
-
-		/*$dataProvider = new ActiveDataProvider([
-		'query' => $query,
-		]);*/
 
 		return $query;
 	}
@@ -340,10 +323,32 @@ class Movimiento extends \yii\db\ActiveRecord {
 			->where(['movimiento_id' => $id])
 			->one();		
 		
-		$periodo = $query->periodo_mes."-".$query->periodo_anio;
+		$modelMD = new MovimientoDetalle();
+		$periodo = $modelMD->getMes($query->periodo_mes) ." ".$query->periodo_anio;
 
 		return $periodo;		
 
 	}
+
+	public function buscarSocio($params)
+    {
+        $query = Movimiento::find();
+
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+
+
+        $query->andFilterWhere([
+            'fk_cliente' => $params['idSocio'],             
+        ]);
+        
+        //$query->andFilterWhere(['like', 'nombre',$params['obra']]);
+        //$query->orderBy('fecha_alta DESC');
+        //$query->andFilterWhere(['like', 'expediente',$params['expediente']]);
+
+        return $dataProvider;
+
+    }
 
 }

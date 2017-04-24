@@ -102,6 +102,10 @@ $this->params['breadcrumbs'][] = $this->title;
             $("#movimiento-subcuenta_id").val($(this).val());
         });
 
+        $(':input[type="submit"]').click(function () {            
+            $(':input[type="submit"]').submit();
+            $(':input[type="submit"]').prop('disabled', true);            
+        });
 
     });
 

@@ -143,8 +143,9 @@ else {
             <table class="table table-hover" id="tabla_debitos" border="1">
                 <thead>
                     <tr>
-                        <th>Concepto</th>                       
-                        <th>F.Pago</th>
+                        <th>Concepto</th>
+                        <th>Monto</th>
+                        <th>Forma de Pago</th>
                         <th>Importe</th>
                         <th>                            
                         </th>
@@ -168,15 +169,24 @@ else {
                
     </div>
     
-    <h3><p><?=Html::label("TOTAL: ","total",["id"=>"total"])?></p></h3>    
-     
+    <h3><p><?=Html::label("TOTAL: ","total",["id"=>"total"])?></p></h3><p></p>
+    
+     <?=$form->field($model, 'tipo')->textInput(['value' => $tipo, 'type' => 'hidden'])?>
+        
+     <hr>
+        
+     <input type="hidden" id="movimiento-nro_recibo" value="<?= $nroRecibo ?>" name="Movimiento[nro_recibo]">
+    
     
     <div id="table_dinamic"></div>
       
       <div class="form-group">
+        
+        
+        
         <input type="button" id="Guardar" name="Guardar" value="Guardar" class="btn btn-success"/>
+        
     </div>
-    <?=$form->field($model, 'tipo')->textInput(['value' => $tipo, 'type' => 'hidden'])?>
 
     <?php ActiveForm::end();?>
 
@@ -227,9 +237,9 @@ function calculartotal(){
                 success: function (data) {                                        
                     $("#tabla_debitos tr").remove();
                     var html='';
-                    html+="<tr><th>Concepto</th><th>F.Pago</th><th>Importe</th><th></th></tr>";
+                    html+="<tr><th>Concepto</th><th>Monto</th><th>Forma de Pago</th><th>Importe</th><th></th></tr>";
                     $.each(data, function(i, debito) {                        
-                        html+="<tr id='del-" + i + "'><td><input type='hidden' name='debito_sc_id[]' value='" + debito.subcuenta_id + "'>" + debito.concepto + "</td>";
+                        html+="<tr id='del-" + i + "'><td><input type='hidden' name='debito_sc_id[]' value='" + debito.subcuenta_id + "'>" + debito.concepto + "</td><td>$" + debito.importe + "</td>";
                         html+="<td><select name='forma_pago[]' class='form-control'>";
                         html+="<option value='4'>Efectivo</option>";                       
                         html+="<option value='1'>Debito</option>";                       
@@ -282,35 +292,32 @@ function calculartotal(){
                
             }
             
-            // si agrego una fila a la tabla 
-            if($("input[name='importe[]']").length>0){ 
 
+            if (nro_fila < 1){
+                
+                alert("Debe agregar un concepto");                
+                return false;
+
+            }else{
+                
+                /*VERIFICO QUE INGRESE UN IMPORTE*/
                 var flag = false;
-                   
-                // recorro para ver si agrego un concepto                
-                if ($("select[name='debito_sc_id[]']").val() == 0) {
-                    alert("Debe seleccionar un concepto");
-                    return false;                        
-                }   
-
-                 // recorro para saber si ingreso algun importe o no
                 $( "input[name='importe[]']" ).each(function() {                
                     if ($(this).val()==""){                        
                         flag = true;                        
                     }      
-                });                 
+                });               
                 
                 if (flag == true){
                     alert("Debe ingresar un importe mayor o igual a cero.");                
                     return false;
                 }
-              
-
-            }else{
-                alert("Debe agregar un concepto");
-                return false;   
             }
-        
+
+            
+
+            
+
             $("#Guardar").submit();
 
         });
@@ -333,7 +340,7 @@ function calculartotal(){
                         html+="<option value='" + sc.id + "''>" + sc.concepto + "</option>";
 
                     })
-                    html+="</select></td><td><select name='forma_pago[]' class='form-control'>";
+                    html+="</select></td><td></td><td><select name='forma_pago[]' class='form-control'>";
                     html+="<option value='4'>Efectivo</option>";                 
                     html+="</select></td>";
                     html+="<td><input type='text' name='importe[]' value='' class='form-control' onkeyup='calculartotal()'></td>";
@@ -342,7 +349,6 @@ function calculartotal(){
                }
 
             });
-
          });
 
 

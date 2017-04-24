@@ -4,6 +4,7 @@ use yii\grid\GridView;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\Pjax;
+use app\models\MovimientoDetalle;
 
 if ($v == "i") {
 	$this->title = "Ingresos";
@@ -42,6 +43,20 @@ $this->params['breadcrumbs'][] = "Listado";
 							}
 						}
 					],
+					[
+						'attribute' => 'Concepto',
+						'value' => function ($model) {
+							$movmd = MovimientoDetalle::find()->where(['movimiento_id'=>$model->id])->all();							
+							if (!empty($movmd)){
+								foreach ($movmd as $md ) {
+									$conceptos = $md->subCuenta->concepto . "-". $conceptos;
+								}
+								return $conceptos;
+							}else{
+								//return "-";
+							}
+						},
+					],					
 					[
 						'attribute' => 'fecha_pago',
 						'value' => function ($model) {

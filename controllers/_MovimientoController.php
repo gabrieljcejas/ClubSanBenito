@@ -133,23 +133,6 @@ class MovimientoController extends BaseController {
 						} else {
 							throw new \yii\web\HttpException(400, 'Error al guardar el ingreso 4');
 						}
-					} elseif ($modelmd->movimiento->fecha_pago != "") { 
-						// si existe el mismo periodo y ya lo pago, creo un nuevo registro 
-						if (!$model->save()) {
-							throw new \yii\web\HttpException(400, 'Error al guardar el ingreso 1');
-						} else {
-							$mMD = new MovimientoDetalle();
-							$mMD->movimiento_id = $model->id;
-							$mMD->subcuenta_id_fp = $post['forma_pago'][$key];
-							$mMD->subcuenta_id = $post['debito_sc_id'][$key];
-							$mMD->importe = $post['importe'][$key];
-							$mMD->periodo_mes = $periodo_mes;
-							$mMD->periodo_anio = $periodo_anio;
-							$mMD->tipo = strval($v);
-							if (!$mMD->save()) {
-								throw new \yii\web\HttpException(400, 'Error al guardar el ingreso 2');
-							}
-						}
 					}					
 				}
 			} else { // SI ES EGRESO--------------------------------------------------------------			
@@ -333,19 +316,57 @@ class MovimientoController extends BaseController {
 
 	}
 
-	
+	public function actionPagar() {
+
+		try {
+			
+			$post = Yii::$app->request->post();
+			$id = $post['id'];
+			$fecha_pago = $post['fecha_pago'];
+			$importe_pago = $post['importe_pago'];
+			
+			$modelMD = MovimientoDetalle::findOne($id);
+			$modelMD->importe = $importe_pago;
+			$modelMD->subcuenta_id_fp = 4;
+			$modelMD->tipo = 'i';
+			$movimiento_id = $modelMD->movimiento_id;
+			
+			if ($modelMD->save()) {
+				
+				$modelR = Recibo::findOne(1);
+				$nro_recibo = $modelR->i;
+				$modelR->i = $nro_recibo + 1;
+				$modelR->save();
+
+				$modelM = Movimiento::findOne($movimiento_id);
+				$modelM->fecha_pago = date('Y-m-d', strtotime($fecha_pago));
+				$modelM->nro_recibo = $nro_recibo;
+
+
+				if (!$modelM->save()) {
+					throw new \yii\web\HttpException(400, 'Error al guardar pago 2');
+				}
+			} else {
+				throw new \yii\web\HttpException(400, 'Error al guardar pago 1');
+			}
+
+		} catch (Exception $e) {
+			echo "Error function pagar" . $e;
+		}
+
+	}
 
 	/*** IMPIRMIR RECIBO INGRESO ***/
 	public function actionImprimirReciboIngreso($id) {
 
 		$m = Movimiento::find()->where(['id' => $id])->one();
 		$modelDetalle = MovimientoDetalle::find()->where(['movimiento_id' => $m->id])->all();
-		$mod = new MovimientoDetalle();		
+		$md = new MovimientoDetalle();		
 		$mpdf = new mPDF('utf-8', 'A4');
 		$mpdf->WriteHTML($this->renderPartial('_imprimir_recibo_ingreso', [
 			'm' => $m,
 			'modelDetalle' => $modelDetalle,
-			'mod'=>$mod,
+			'md'=>$md,
 		]));
 		$mpdf->Output();
 		exit;
@@ -372,13 +393,13 @@ class MovimientoController extends BaseController {
 
 		$modelDetalle = MovimientoDetalle::findOne($id);
 		$m = Movimiento::findOne(['id' => $modelDetalle->movimiento_id]);
-		//$nro_recibo = $m->nro_recibo;
+		$nro_recibo = $m->nro_recibo;
 		
 		$mpdf = new mPDF('utf-8', 'A4');
 		$mpdf->WriteHTML($this->renderPartial('_imprimir_recibo_individual', [
 			'm' => $m,
 			'modelDetalle' => $modelDetalle,	
-			//'nro_recibo' => $nro_recibo,		
+			'nro_recibo' => $nro_recibo,		
 		]));
 		$mpdf->Output();
 		exit;
@@ -505,77 +526,20 @@ class MovimientoController extends BaseController {
 
 	public function actionEstadoCuenta() {
 
-		if (Yii::$app->request->post()) {
-
-            $post = Yii::$app->request->post();
-            $idSocio = $post['socio'];
-            //var_dump($idSocio);die;
-
-            $aSearch = array(
-                'idSocio' => $idSocio,
-            );
-
-            $model = new Movimiento();
-            $dataProvider = $model->buscarSocio($aSearch);
-
-            $listSocios = ArrayHelper::map(Socio::find()->orderBy('apellido_nombre')->all(), 'id', 'apellido_nombre');
-
-            $deuda = $model->getDeudaTotalBySocio($idSocio,"codigo_socio");
-
-            return $this->render('estado_cuenta', [
-				'dataProvider' => $dataProvider,
-				'deuda' => $deuda,
-				'listSocios'=> $listSocios,
-				'idSocio'=> $idSocio
-			]);
-        }    
-
 		$model = new Movimiento();
-		$dataProvider = $model->getAllEstadoCuenta();
-		$deuda = $model->getDeudaTotal();
-		$listSocios = ArrayHelper::map(Socio::find()->orderBy('apellido_nombre')->all(), 'id', 'apellido_nombre');
-		$idSocio = null;
 
-		
+		$dataProvider = $model->getAllEstadoCuenta();
+
+		$deuda = $model->getDeudaTotal();
+		//var_dump($deuda->importe);
 		return $this->render('estado_cuenta', [
 			'dataProvider' => $dataProvider,
 			'deuda' => $deuda,
-			'listSocios'=> $listSocios,
-			'idSocio'=> $idSocio,
 		]);
 
 	}
 
-	public function actionPagar() {
-
-		try {
-			
-			$post = Yii::$app->request->post();
-			$id = $post['id'];
-			// set fecha actual
-	        date_default_timezone_set('America/Buenos_Aires');
-	        $fecha = date('Y-m-d');
-		
-			$modelR = Recibo::findOne(1);
-			$nro_recibo = $modelR->i;
-			$modelR->i = $nro_recibo + 1;
-			$modelR->save();
-
-			$modelM = Movimiento::findOne($id);
-			$modelM->fecha_pago = date('Y-m-d', strtotime($fecha));
-			$modelM->nro_recibo = $nro_recibo;
-			if (!$modelM->save()) {
-				throw new \yii\web\HttpException(400, 'Error al guardar pago');
-			}
-			
-
-		} catch (Exception $e) {
-			echo "Error function pagar" . $e;
-		}
-
-	}
-
-	/*public function actionEstadoCuentaByCodigo() {
+	public function actionEstadoCuentaByCodigo() {
 
 		$post = Yii::$app->request->post();
 
@@ -630,7 +594,7 @@ class MovimientoController extends BaseController {
 			'deuda' => $deuda,
 		]);
 
-	}*/
+	}
 
 	public function actionEstadoCuentaTodos() {
 
