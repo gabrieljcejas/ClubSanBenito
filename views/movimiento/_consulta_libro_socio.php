@@ -4,12 +4,12 @@ use yii\jui\DatePicker;
 use yii\widgets\ActiveForm;
 use kartik\select2\Select2;
 date_default_timezone_set('America/Buenos_Aires');
-$this->title = $accion;
+$this->title = 'Libro de Socios';
 $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 ?>
 
 
-<h1>Libro Socio</h1><br>
+<h1>Libro de Socios</h1><br>
 
 <?php $form = ActiveForm::begin();?>
 

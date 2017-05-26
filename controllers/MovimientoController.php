@@ -506,6 +506,7 @@ class MovimientoController extends BaseController {
 		}
 	}
 
+	
 	public function actionDeleted($id) {
 
 		$model = Movimiento::findOne(['id' => $id]);
@@ -1058,9 +1059,17 @@ class MovimientoController extends BaseController {
 			$proveedor = $post['proveedor'];
 
 			if ($proveedor == null){
-				$movimiento = Movimiento::find()->where(['>=', 'fecha_pago', $fecha_desde])->andWhere(['<=', 'fecha_pago', $fecha_hasta])->andWhere(['not', ['fk_prov' => null]])->all();				
+				$movimiento = Movimiento::find()
+				->where(['>=', 'fecha_pago', $fecha_desde])
+				->andWhere(['<=', 'fecha_pago', $fecha_hasta])
+				->andWhere(['obs' => null])
+				->andWhere(['not', ['fk_prov' => null]])->all();				
 			} else{
-				$movimiento = Movimiento::find()->where(['>=', 'fecha_pago', $fecha_desde])->andWhere(['<=', 'fecha_pago', $fecha_hasta])->andWhere(['fk_prov' => $proveedor])->all();				
+				$movimiento = Movimiento::find()
+				->where(['>=', 'fecha_pago', $fecha_desde])
+				->andWhere(['<=', 'fecha_pago', $fecha_hasta])
+				->andWhere(['obs' => null])
+				->andWhere(['fk_prov' => $proveedor])->all();				
 			}
 
 			$mpdf = new mPDF('utf-8', 'A4');

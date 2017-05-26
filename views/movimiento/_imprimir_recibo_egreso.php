@@ -57,7 +57,7 @@
     <td colspan="2" style="border:none">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2" style="border:none">&nbsp;</td>
+    <td colspan="2" style="border:none"><h1><?=$m->obs?></h1></td>
     <td align="center" style="border:none">...........................................</td>
   </tr>
   <tr>
@@ -124,7 +124,7 @@
     <td colspan="2" style="border:none">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2" style="border:none">&nbsp;</td>
+    <td colspan="2" style="border:none"><h1><?=$m->obs?></h1></td>
     <td align="center" style="border:none">...........................................</td>
   </tr>
   <tr>

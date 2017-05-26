@@ -9,6 +9,18 @@ use yii\bootstrap\ActiveForm;
 //$this->title = 'Login';
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
+
+<style type="text/css" media="screen">
+.panel-info > .panel-heading {
+    color: #ffffff;
+    background-color: #222222;
+    border-color: #222222;
+} 
+.panel-info {
+    border-color: #222222;
+}   
+</style>
+
 <div class="site-login">
     
 <h1><?= Html::encode($this->title) ?></h1>    

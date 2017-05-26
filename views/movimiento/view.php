@@ -23,7 +23,7 @@ $this->params['breadcrumbs'][] = "Listado";
 	'class' => ' btn btn-success',
 ])?>
             <br><br>
-<?php Pjax::begin();?>
+<?php Pjax::begin(['id' => 'grd_view', 'timeout' => false]);?>
 
     <?php if ($v=='i'){ ?>
 	    
@@ -111,8 +111,9 @@ $this->params['breadcrumbs'][] = "Listado";
 							'anular' => function ($url, $model) {
 			                    if ($model->obs == null) {
 			                        return Html::a('<span class="btn btn-danger glyphicon glyphicon-remove-sign"> Anular</span>', $url, [
-			                            'data-confirm' => Yii::t('yii', 'Seguro que desea ANULAR?'),
-			                            'title'=>"Anular"
+			                            'title'=>"Anular",
+			                            'name'=>'anular',
+			                            'value'=>$model->id
 			                        ]);
 			                    }else{
 			                         return Html::a('<span class="btn btn-danger glyphicon glyphicon-remove-sign disabled"> Anular</span>', null, [
@@ -135,11 +136,7 @@ $this->params['breadcrumbs'][] = "Listado";
 							if ($action === 'delete') {
 								$url = Url::to(['movimiento/delete', 'id' => $model->id]);
 								return $url;
-							}
-							if ($action === 'anular') {
-			                    $url = Url::to(['movimiento/anular', 'id' => $model->id]);
-			                    return $url;
-			                }
+							}							
 						},
 					],
 				],
@@ -158,17 +155,19 @@ $this->params['breadcrumbs'][] = "Listado";
 					'nro_recibo',							
 					'proveedor.nombre',		
 					[
-						'attribute' => 'fecha_pago',
+						'attribute' => 'Concepto',
 						'value' => function ($model) {
-							return date("d-m-Y", strtotime($model->fecha_pago));
+							$movmd = MovimientoDetalle::find()->where(['movimiento_id'=>$model->id])->all();							
+							if (!empty($movmd)){
+								foreach ($movmd as $md ) {
+									$conceptos = $md->subCuenta->concepto . "-". $conceptos;
+								}
+								return $conceptos;
+							}else{
+								//return "-";
+							}
 						},
 					],
-					[
-						'attribute' => 'Importe',
-						'value' => function ($model) {
-							return "$".$model->getImporteTotal($model->id);
-						},
-					],	
 					[
 						'attribute' => 'Periodo',
 						'value' => function ($model) {
@@ -176,9 +175,35 @@ $this->params['breadcrumbs'][] = "Listado";
 						},
 					],	
 					[
+						'attribute' => 'Imp. Total',
+						'value' => function ($model) {
+							return "$".$model->getImporteTotal($model->id);
+						},
+					],						
+					[
+						'attribute' => 'Fecha',
+						'value' => function ($model) {
+							return date("d-m-Y", strtotime($model->fecha_pago));
+						},
+					],	
+					[
+			            'attribute' => 'Estado',
+			            'format' => 'raw',
+			            'value' => function ($model) {
+			                
+			                if ($model->obs != null) {
+			                    return "ANULADO";
+			                }else{
+			                    return "Pagado";
+			                }
+
+			            },
+			        ],
+					
+					[
 						'class' => 'yii\grid\ActionColumn',
 						'header' => 'Actions',
-						'template' => '{imprimir} {delete}',
+						'template' => '{imprimir} {anular}',
 						'buttons' => [				
 							'imprimir' => function ($url, $model) {
 								return Html::a('<span class="btn btn-default glyphicon glyphicon-print"></span>', $url, [
@@ -194,6 +219,20 @@ $this->params['breadcrumbs'][] = "Listado";
 
 								]);
 							},
+							'anular' => function ($url, $model) {
+			                    if ($model->obs == null) {
+			                        return Html::a('<span class="btn btn-danger glyphicon glyphicon-remove-sign"> Anular</span>', $url, [
+			                            'title'=>"Anular",
+			                            'name'=>'anular',
+			                            'value'=>$model->id
+			                        ]);
+			                    }else{
+			                         return Html::a('<span class="btn btn-danger glyphicon glyphicon-remove-sign disabled"> Anular</span>', null, [
+			                            //'data-confirm' => Yii::t('yii', 'Seguro que desea ANULAR?'),
+			                            'title'=>"Anular"                           
+			                        ]);
+			                    }
+			                },
 						],
 						'urlCreator' => function ($action, $model, $key, $index) {
 							if ($action === 'imprimir') {
@@ -208,7 +247,7 @@ $this->params['breadcrumbs'][] = "Listado";
 							if ($action === 'delete') {
 								$url = Url::to(['movimiento/delete', 'id' => $model->id]);
 								return $url;
-							}
+							}							
 						},
 					],
 				],
@@ -216,6 +255,43 @@ $this->params['breadcrumbs'][] = "Listado";
 		?>
 
 	<?php } ?>
+
+
+<!-- Funciones Ajax -->
+<script type="text/javascript" src="<?=Yii::$app->request->baseUrl?>/js/jquery.min.js"></script>
+<script >
+
+$(function () {     
+
+     $("a[name='anular']").click(function () {
+
+        var id = $(this).attr('value');
+        $(this).prop('disabled', true); 
+        if (confirm("¿Seguro que desea ANULAR?") == true) {
+            
+        } else {
+            return false;
+        }                 
+
+        $.ajax({
+            type: "POST",
+            url: "../web/index.php?r=movimiento/anular",
+            data: {
+                id: id ,                
+            },
+            success: function (data) {  
+                    $.pjax.reload({container: '#grd_view'});
+                
+            }
+        });
+
+    });
+
+
+});
+
+</script>
+
 <?php Pjax::end();?>
 
 </div>
