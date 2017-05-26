@@ -5,9 +5,9 @@
 
 	//  Conexión con la Base de Datos.
 	
-	$db_name			= "club"; 
-	$db_username		= "root"; 
-	$db_password		= ""; 
+	$db_name			= "u515299824_club"; 
+	$db_username		= "u515299824_club"; 
+	$db_password		= "9dejulio"; 
 
 	//  Nombre del archivo.
 

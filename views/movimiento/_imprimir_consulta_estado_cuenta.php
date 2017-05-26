@@ -26,8 +26,9 @@ use yii\grid\GridView;
 <table border="1" width="700px">
 
 <tr>
-	<th align="center">Socios</th>
-	<th align="center">Conceptos</th>
+	<th align="center">Socio</th>
+	<th align="center">Categoria</th>
+	<th align="center">Concepto</th>
 	<th align="center">Periodo</th>	
 	<th align="center">Fecha de Pago</th>
 	<th align="center">Importe</th>
@@ -41,6 +42,7 @@ use yii\grid\GridView;
 				<?php if ($ss == $md->movimiento->fk_cliente){ ?>
 
 					<td align="center"><?= $socio->apellido_nombre ?></td> 
+					<td align="center"><?= date("Y",strtotime($socio->fecha_nacimiento)) ?></td>
 					<td align="center"><?= $md->subCuenta->concepto ?></td>
 					<td align="center"><?= $md->periodo_mes."-".$md->periodo_anio ?></td>				
 					<td align="center">
@@ -71,6 +73,7 @@ use yii\grid\GridView;
 				<?php if ($s->id == $md->movimiento->fk_cliente){ ?>
 
 					<td align="center"><?= $s->apellido_nombre ?></td> 
+					<td align="center"><?= date("Y",strtotime($s->fecha_nacimiento)) ?></td>
 					<td align="center"><?= $md->subCuenta->concepto ?></td>
 					<td align="center"><?= $md->periodo_mes."-".$md->periodo_anio ?></td>				
 					<td align="center">

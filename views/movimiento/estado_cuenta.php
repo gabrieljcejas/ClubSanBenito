@@ -34,21 +34,24 @@ $this->params['breadcrumbs'][] = $this->title;
                     ?>        
             </div>
             <div class="col-md-2"><br>
-                <?= Html::submitButton('BUSCAR',['class'=>'btn btn-primary'])?>
+                <?= Html::submitButton(' BUSCAR',['class'=>'btn btn-default glyphicon glyphicon-search'])?>
             </div>
         </div><br>
 
     
    
    
-    <?php \yii\widgets\Pjax::begin(['id' => 'grd_ec', 'timeout' => false]);?>
+   <?php \yii\widgets\Pjax::begin(['id' => 'grd_ec', 'timeout' => false]);?>
    <?=GridView::widget([
     'dataProvider' => $dataProvider,
     //'filterModel' => $searchModel,
     'rowOptions' => function ($model) {
-        if ($model->fecha_pago == "") {
+        if ($model->fecha_pago == ""  && $model->obs == null) {
             return ['class' => 'danger'];
         }
+        /*if ($model->obs != "") {
+            return ['class' => 'warning'];
+        }*/
     },
     'summary' => '',
     'columns' => [        
@@ -109,9 +112,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'attribute' => 'Estado',
             'format' => 'raw',
             'value' => function ($model) {
-                if ($model->fecha_pago == "") {                    
+                if ($model->fecha_pago == "" && $model->obs == null) {                    
                     return html::button(' Pagar', ['class' => ' btn btn-success glyphicon glyphicon-ok', 'name' => 'pagar', 'value' => $model->id]);
-                } else {
+                }elseif ($model->obs != null) {
+                    return "ANULADO";
+                }else{
                     return "Pagado";
                 }
 
@@ -120,23 +125,40 @@ $this->params['breadcrumbs'][] = $this->title;
         [
             'class' => 'yii\grid\ActionColumn',
             'header' => 'Actions',
-            'template' => '{imprimir} {deleted}',
+            'template' => '{imprimir} {anular}',
             'buttons' => [
                 'imprimir' => function ($url, $model) {          
-                    if ($model->fecha_pago != "") {
-                        return Html::a('<span class="btn btn-default glyphicon glyphicon-print"></span>', $url, [
+                    if ($model->fecha_pago != "" || $model->obs!=null) {
+                        return Html::a('<span class="btn btn-default glyphicon glyphicon-print"> Imprimir</span>', $url, [
                             'data-confirm' => Yii::t('yii', 'Imprimir el Recibo?'),
+                            'title'=>"Imprimir"
                         ]);
                     }else{
-                        return Html::a('<span class="btn btn-default glyphicon glyphicon-print" disabled="disabled"></span>', $url, [
-                            'data-confirm' => Yii::t('yii', 'Imprimir el Recibo?'),
+                        return Html::a('<span class="btn btn-default glyphicon glyphicon-print disabled"> Imprimir</span>', null, [
+                            //'data-confirm' => Yii::t('yii', 'Imprimir el Recibo?'),
+                            'title'=>"Imprimir",
                         ]);
                     }
                 },
                 'deleted' => function ($url, $model) {
-                    return Html::a('<span class="btn btn-default glyphicon glyphicon-trash"></span>', $url, [
+                    return Html::a('<span class="btn btn-default glyphicon glyphicon-trash"> Eliminar</span>', $url, [
                         'data-confirm' => Yii::t('yii', 'Seguro que desea Eliminar?'),
+                        'title'=>"Eliminar"
                     ]);
+                },
+                'anular' => function ($url, $model) {
+                    if ($model->obs == null) {
+                        return Html::a('<span class="btn btn-danger glyphicon glyphicon-remove-sign"> Anular</span>', $url, [
+                            'title'=>"Anular",
+                            'name'=>'anular',
+                            'value'=>$model->id
+                        ]);
+                    }else{
+                         return Html::a('<span class="btn btn-danger glyphicon glyphicon-remove-sign disabled"> Anular</span>', null, [
+                            //'data-confirm' => Yii::t('yii', 'Seguro que desea ANULAR?'),
+                            'title'=>"Anular"                           
+                        ]);
+                    }
                 },
             ],
             'urlCreator' => function ($action, $model, $key, $index) {
@@ -147,7 +169,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 if ($action === 'deleted') {
                     $url = Url::to(['movimiento/deleted', 'id' => $model->id]);
                     return $url;
-                }
+                }               
             },
         ],
     ],
@@ -164,15 +186,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 echo number_format($deuda->importe, 2, ',', '.');  ;
             }
         ?>
-        </strong></h3>
-        <?php             
-            /*if ($idSocio != ""){
-                echo Html::a(' Estado Cuenta', ['socio/imprimir-estado-cuenta', 'id' => $idSocio], [
-                    'class' => ' btn btn-default glyphicon glyphicon-print',
-                    'target'=>"_blank"
-                ]);    
-            }*/
-        ?>
+        </strong></h3>        
     </div>
 </div>
 
@@ -186,7 +200,12 @@ $(function () {
     $("button[name='pagar']").click(function () {
 
         var id = $(this).attr('value');
-        $(this).prop('disabled', true);          
+        
+        if (confirm("¿Seguro que desea PAGAR?") == false) {
+            return false;
+        }          
+        
+        $(this).prop('disabled', true); 
 
         $.ajax({
             type: "POST",
@@ -195,8 +214,8 @@ $(function () {
                 id: id ,                
             },
             success: function (data) {  
-                if ($("select[name='socio']").val()!=""){                    
-                    $(':input[type="submit"]').submit();               
+                if ($("select[name='socio']").val()!=""){
+                    $(':input[type="submit"]').submit();
                 }else{
                     $.pjax.reload({container: '#grd_ec'});
                 }
@@ -207,39 +226,32 @@ $(function () {
 
     });
 
+     $("a[name='anular']").click(function () {
 
-    $('#btn_imprimir').click(function () {
+        var id = $(this).attr('value');
+        $(this).prop('disabled', true); 
+        if (confirm("¿Seguro que desea ANULAR?") == true) {
+            
+        } else {
+            return false;
+        }                 
 
-        var myObj = [];
-
-        $(":checkbox:checked").each(function () {
-                myObj.push({
-                id:$(this).val()
-                });
-        });
-        var json = JSON.stringify(myObj);
-        if (json == "[]"){
-            alert("Selecione lo que va a imprimir");
-            return;
-        }
         $.ajax({
             type: "POST",
-            url: "../web/index.php?r=movimiento/imprimir-e-c",
-            data: { arr : json },//JSON.stringify(myObj),
-            dataType: "json",
-            success: function (data) {
-                 //$.pjax.reload({container: '#grd_ec'});
+            url: "../web/index.php?r=movimiento/anular",
+            data: {
+                id: id ,                
+            },
+            success: function (data) {  
+                if ($("select[name='socio']").val()!=""){
+                    $(':input[type="submit"]').submit();
+                }else{
+                    $.pjax.reload({container: '#grd_ec'});
+                }
             }
         });
 
     });
-
-    /*$("select[name='socio']").change(function () {
-        //alert("hola");
-        submit();
-    });*/
-
-
 
 
 });

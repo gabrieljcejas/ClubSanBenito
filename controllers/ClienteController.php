@@ -74,6 +74,18 @@ class ClienteController extends Controller
         }
     }
 
+    public function actionCreate2()
+    {
+        $model = new Cliente();
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+             return $this->redirect(['index']);
+        } else {
+            return $this->render('create', [
+                'model' => $model,
+            ]);
+        }
+    }
     /**
      * Updates an existing Cliente model.
      * If update is successful, the browser will be redirected to the 'view' page.

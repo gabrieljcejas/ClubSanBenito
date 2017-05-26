@@ -7,7 +7,7 @@
 
 <tr>
 	<th>Fecha</th>
-	<th>Cliente</th>
+	<th>Cliente</th>	
 	<th>Concepto</th>
 	<th>Importe</th>
 </tr>
@@ -29,7 +29,7 @@
 					}
 				?>
 				
-			</td>
+			</td>			
 			<td align="center"><?=$md->subCuenta->concepto?></td>
 				<?php $saldo = $md->importe + $saldo?>
 				<td align="right"><?="$" . $md->importe?></td>

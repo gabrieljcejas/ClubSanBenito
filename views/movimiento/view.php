@@ -7,9 +7,9 @@ use yii\widgets\Pjax;
 use app\models\MovimientoDetalle;
 
 if ($v == "i") {
-	$this->title = "Ingresos";
+	$this->title = "Ingreso";
 } else {
-	$this->title = "Egresos";
+	$this->title = "Egreso";
 }
 //$this->params['breadcrumbs'][] = ['label' => 'Tesoreria', 'url' => ['index']];
 $this->params['breadcrumbs'][] = "Tesoreria";
@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = "Listado";
 <div class="movimiento-view">
 
     <h1><?=Html::encode($this->title)?></h1><br>
-    <?=Html::a("Agregar " . $this->title, ['index', 'v' => $v], [
+    <?=Html::a("Nuevo " . $this->title, ['index', 'v' => $v], [
 	'class' => ' btn btn-success',
 ])?>
             <br><br>
@@ -56,44 +56,71 @@ $this->params['breadcrumbs'][] = "Listado";
 								//return "-";
 							}
 						},
-					],					
-					[
-						'attribute' => 'fecha_pago',
-						'value' => function ($model) {
-							return date("d-m-Y", strtotime($model->fecha_pago));
-						},
-					],	
-					[
-						'attribute' => 'Importe',
-						'value' => function ($model) {
-							return "$".$model->getImporteTotal($model->id);
-						},
-					],	
+					],
 					[
 						'attribute' => 'Periodo',
 						'value' => function ($model) {
 							return $model->getPeriodo($model->id);
 						},
-					],								
+					],	
+					[
+						'attribute' => 'Imp. Total',
+						'value' => function ($model) {
+							return "$".$model->getImporteTotal($model->id);
+						},
+					],						
+					[
+						'attribute' => 'Fecha',
+						'value' => function ($model) {
+							return date("d-m-Y", strtotime($model->fecha_pago));
+						},
+					],	
+					[
+			            'attribute' => 'Estado',
+			            'format' => 'raw',
+			            'value' => function ($model) {
+			                
+			                if ($model->obs != null) {
+			                    return "ANULADO";
+			                }else{
+			                    return "Pagado";
+			                }
+
+			            },
+			        ],
+												
 					[
 						'class' => 'yii\grid\ActionColumn',
 						'header' => 'Actions',
-						'template' => '{imprimir} {delete}',
+						'template' => '{imprimir} {anular}',
 						'buttons' => [				
 							'imprimir' => function ($url, $model) {
-								return Html::a('<span class="btn btn-default glyphicon glyphicon-print"></span>', $url, [
+								return Html::a('<span class="btn btn-default glyphicon glyphicon-print"> Imprimir</span>', $url, [
 									'data-confirm' => Yii::t('yii', 'Imprimir el Recibo?'),
 
 								]);
 							},
 							'delete' => function ($url, $model) {
-								return Html::a('<span class="btn btn-default glyphicon glyphicon-trash"></span>', $url, [
+								return Html::a('<span class="btn btn-default glyphicon glyphicon-trash"> Eliminar</span>', $url, [
 									'title' => Yii::t('app', 'Eliminar'),
 									'data-confirm' => Yii::t('yii', 'Seguro que desea eliminar?'),
 									//'data-method' => 'post',
 
 								]);
 							},
+							'anular' => function ($url, $model) {
+			                    if ($model->obs == null) {
+			                        return Html::a('<span class="btn btn-danger glyphicon glyphicon-remove-sign"> Anular</span>', $url, [
+			                            'data-confirm' => Yii::t('yii', 'Seguro que desea ANULAR?'),
+			                            'title'=>"Anular"
+			                        ]);
+			                    }else{
+			                         return Html::a('<span class="btn btn-danger glyphicon glyphicon-remove-sign disabled"> Anular</span>', null, [
+			                            //'data-confirm' => Yii::t('yii', 'Seguro que desea ANULAR?'),
+			                            'title'=>"Anular"                           
+			                        ]);
+			                    }
+			                },
 						],
 						'urlCreator' => function ($action, $model, $key, $index) {
 							if ($action === 'imprimir') {
@@ -109,6 +136,10 @@ $this->params['breadcrumbs'][] = "Listado";
 								$url = Url::to(['movimiento/delete', 'id' => $model->id]);
 								return $url;
 							}
+							if ($action === 'anular') {
+			                    $url = Url::to(['movimiento/anular', 'id' => $model->id]);
+			                    return $url;
+			                }
 						},
 					],
 				],

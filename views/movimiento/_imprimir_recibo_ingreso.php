@@ -8,6 +8,7 @@
 margin-top: 0.5cm; usable in first page only
 margin-right: 0.0cm;
 margin-left: 0.5cm;
+
 }
 </style>
 </head>
@@ -127,14 +128,14 @@ margin-left: 0.5cm;
 
     <!-- codigo html parte de abajo-->
     <tr>
-        <td style="border:none"><!--<barcode code="<?=$m->socio->dni?>" type="I25" />--></td>
+        <td align="center" style="border:none"><!--<barcode code="<?=$m->socio->dni?>" type="I25" />--><h1><?=$m->obs?></h1></td>
         <td style="border:none"></td>
         <td align="right" ><strong>TOTAL:</strong></td>
         <td align="center"><strong>$
         <?=$total?>
         </strong></td>
         <td style="border:none"></td>
-        <td style="border:none"><!--<barcode code="<?=$m->socio->dni?>" type="I25" /></td>-->
+        <td align="center" style="border:none"><!--<barcode code="<?=$m->socio->dni?>" type="I25" />--><h1><?=$m->obs?></h1></td>
         <td align="center" style="border:none"><p><strong>...........................</strong><p>Firma</p></td>
       <td align="right" ><strong>TOTAL</strong></td>
         <td align="center"><strong>$

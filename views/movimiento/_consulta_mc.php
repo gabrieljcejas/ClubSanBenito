@@ -50,6 +50,14 @@ $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 	</div>
 
 </div><br>
+<div class="row">
+	<div class="col-md-3">
+	<label>Caja Inicial</label>
+	<?= Html::input('text', 'caja_inicial', $value = null, ['class' => 'form-control','placeHolder'=>'Ejemplo: 1000.50']); ?>
+	</div>
+</div>
+
+<br>
 
 <div><?=Html::submitButton('Buscar', ['class' => 'btn btn-success'])?></div>
 

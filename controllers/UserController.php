@@ -114,22 +114,30 @@ class UserController extends BaseController
     {
         $model = $this->findModel($id);
 
-        $roles = ArrayHelper::map(Rol::find()->all(), 'id', 'nombre');
-
         if ($model->load(Yii::$app->request->post())) {
 
-            $model->password = sha1($model->password);
+            $query = User::findOne($id);
+
+            if ($query->password === $model->password){
+                echo "es igual!!!";
+            }
+            else{
+                $model->password = sha1($model->password);                
+            }
             
             $model->save();
 
             return $this->redirect(['view', 'id' => $model->id]);
 
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-                'roles' => $roles,
-            ]);
-        }
+        } 
+
+        $roles = ArrayHelper::map(Rol::find()->all(), 'id', 'nombre');
+        
+        return $this->render('update', [
+            'model' => $model,
+            'roles' => $roles,
+        ]);
+        
     }
 
     /**

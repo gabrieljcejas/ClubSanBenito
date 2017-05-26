@@ -166,7 +166,7 @@ class Movimiento extends \yii\db\ActiveRecord {
 		$query = Movimiento::find()
 		->joinWith('movimientoDetalle')
 		->where(['not',['fk_cliente' => null]])
-		->orderBy('fk_cliente ASC')		
+		->orderBy('nro_recibo DESC')		
 		;
 
 		$dataProvider = new ActiveDataProvider([
@@ -268,7 +268,7 @@ class Movimiento extends \yii\db\ActiveRecord {
 	public function getDeudaTotal() {
 
 		
-		$sql = "SELECT SUM(importe) AS 'importe' FROM movimiento_detalle md JOIN movimiento m ON md.movimiento_id = m.id WHERE m.fecha_pago is null" ;
+		$sql = "SELECT SUM(importe) AS 'importe' FROM movimiento_detalle md JOIN movimiento m ON md.movimiento_id = m.id WHERE m.fecha_pago is null AND m.obs is NULL" ;
 		$query = MovimientoDetalle::findBySql($sql)->one();
 
 		return $query;
@@ -282,7 +282,7 @@ class Movimiento extends \yii\db\ActiveRecord {
 			FROM movimiento_detalle md
 			JOIN movimiento m ON md.movimiento_id = m.id
 			JOIN socio s ON m.fk_cliente=s.id
-			WHERE m.fecha_pago is null AND s.dni=" . $dato;
+			WHERE m.fecha_pago is null AND m.obs is NULL AND s.dni=" . $dato;
 		}
 
 		if ($tipo == 'nombre') {
@@ -290,14 +290,14 @@ class Movimiento extends \yii\db\ActiveRecord {
 			FROM movimiento_detalle md
 			JOIN movimiento m ON md.movimiento_id = m.id
 			JOIN socio s ON m.fk_cliente=s.id
-			WHERE m.fecha_pago is null AND s.apellido_nombre LIKE '" . $dato . "%'";
+			WHERE m.fecha_pago is null AND m.obs is NULL AND s.apellido_nombre LIKE '" . $dato . "%'";
 		}
 
 		if ($tipo == 'codigo_socio') {
 			$sql = "SELECT SUM(importe) AS 'importe'
 			FROM movimiento_detalle md
 			JOIN movimiento m ON md.movimiento_id = m.id
-			WHERE m.fecha_pago is null AND m.fk_cliente=" . $dato;
+			WHERE m.fecha_pago is null AND m.obs is NULL AND m.fk_cliente=" . $dato;
 		}
 
 		$query = MovimientoDetalle::findBySql($sql)->one();
@@ -336,6 +336,9 @@ class Movimiento extends \yii\db\ActiveRecord {
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'pagination' => [
+		        'pageSize' => 30,
+		    ],
         ]);
 
 
@@ -346,6 +349,7 @@ class Movimiento extends \yii\db\ActiveRecord {
         //$query->andFilterWhere(['like', 'nombre',$params['obra']]);
         //$query->orderBy('fecha_alta DESC');
         //$query->andFilterWhere(['like', 'expediente',$params['expediente']]);
+        $query->orderBy('fk_cliente,nro_recibo DESC');	
 
         return $dataProvider;
 

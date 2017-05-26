@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\jui\DatePicker;
 use yii\widgets\ActiveForm;
+date_default_timezone_set('America/Buenos_Aires');
 $this->title = "Detalle Egresos";
 $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 ?>

@@ -110,6 +110,11 @@ class Socio extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Cobrador::className(), ['id' => 'id_cobrador']);
     }
+
+    public function getSocioDebito()
+    {
+        return $this->hasOne(SocioDebito::className(), ['id' => 'id_debito']);
+    }
        
        
     

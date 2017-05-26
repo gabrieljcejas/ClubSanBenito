@@ -7,7 +7,7 @@ use yii\helpers\Html;
 /* @var $searchModel app\models\CategoriaSocialSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Categoria Socials';
+$this->title = 'Categoria Social';
 $this->params['breadcrumbs'][] = ['label' => 'Socios', 'url' => ['socio/index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -17,20 +17,20 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?=Html::a('Create Categoria Social', ['create'], ['class' => 'btn btn-success'])?>
+        <?=Html::a('Crear Categoria Social', ['create'], ['class' => 'btn btn-success'])?>
     </p>
 
     <?=GridView::widget([
-'dataProvider' => $dataProvider,
-'filterModel' => $searchModel,
-'columns' => [
-['class' => 'yii\grid\SerialColumn'],
+		'dataProvider' => $dataProvider,
+		'filterModel' => $searchModel,
+		'columns' => [
+			//['class' => 'yii\grid\SerialColumn'],
 
-'id',
-'descripcion',
+			'id',
+			'descripcion',
 
-['class' => 'yii\grid\ActionColumn'],
-],
-]);?>
+			['class' => 'yii\grid\ActionColumn'],
+		],
+	]);?>
 
 </div>

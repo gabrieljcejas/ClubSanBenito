@@ -73,10 +73,14 @@ class SocioController extends BaseController {
 		$model->fecha_nacimiento = date('d-m-Y', strtotime($model->fecha_nacimiento));
 		$model->fecha_alta = date('d-m-Y', strtotime($model->fecha_alta));
 
+        $aSearch = array(
+            'idSocio' => $model->id,
+        );
+
 		//estado de cuenta
 		$modelM = new Movimiento();		
-		$deuda = $modelM->getDeudaTotalBySocio($id,'codigo_socio');
-		$dataProvider = $modelM->getAllEstadoCuentaByCodigoSocio($id);
+		$dataProvider = $modelM->buscarSocio($aSearch);
+    	$deuda = $modelM->getDeudaTotalBySocio($model->id,"codigo_socio");
 
 		return $this->render('view', [
 			'model' => $model,

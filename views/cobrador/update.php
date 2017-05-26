@@ -2,12 +2,10 @@
 
 use yii\helpers\Html;
 
-/* @var $this yii\web\View */
-/* @var $model app\models\Cobrador */
 
-$this->title = 'Update Cobrador: ' . ' ' . $model->id;
+$this->title = 'Modificar: ' . ' ' . $model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Socios', 'url' => ['socio/index']];
-$this->params['breadcrumbs'][] = ['label' => 'Cobradors', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Cobradores', 'url' => ['index']];
 $this->params['breadcrumbs'][] = 'Update';
 $this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
 ?>

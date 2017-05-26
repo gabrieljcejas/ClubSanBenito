@@ -3,6 +3,7 @@ use yii\helpers\Html;
 use yii\jui\DatePicker;
 use yii\widgets\ActiveForm;
 use kartik\select2\Select2;
+date_default_timezone_set('America/Buenos_Aires');
 $this->title = $accion;
 $this->params['breadcrumbs'][] = 'Reportes / ' . $this->title;
 ?>

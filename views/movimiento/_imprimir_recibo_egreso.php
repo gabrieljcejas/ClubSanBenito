@@ -20,23 +20,33 @@
     <td colspan="2" style="border:none"><strong><?=$m->proveedor->nombre?></strong></td>
   </tr>
   <tr>
+    <td>PERIODO:</td>
+    <td colspan="2" style="border:none"><strong><?=$m->getPeriodo($m->id)?></strong></td>
+  </tr>
+  <tr>
     <td style="border:none" colspan="2" >&nbsp;</td>
     <td colspan="2" style="border:none">&nbsp;</td>
   </tr>
   <tr>
     <td colspan="2" align="center"  bgcolor="#0066FF">CONCEPTO</td>
     <td colspan="2" align="center"  bgcolor="#0066FF">IMPORTE</td>
-  </tr>
+  </tr>  
+  <?php foreach ($modelDetalle as $md) {?>
   <tr>
-    <td colspan="2" align="center"><strong><?=$modelDetalle->subCuenta->concepto?></strong></td>
-    <td colspan="2"  align="center"><strong>$ <?=$modelDetalle->importe?></strong></td>
+    <td colspan="2" align="center"><strong><?=$md->subCuenta->concepto?></strong></td>
+    <td colspan="2"  align="center"><strong>$ <?=$md->importe?></strong></td>    
+  </tr>
+  <?php $suma = $md->importe + $suma?>
+  <?php } ?>
+  <tr>
+    <td colspan="2" align="right" style="border:none"><strong>TOTAL:</strong></td>
+    <td colspan="2" align="center"><strong>$<?=$suma?></strong></td>
   </tr>
   <tr>
     <td style="border:none" colspan="2" >&nbsp;</td>
     <td colspan="2" style="border:none">&nbsp;</td>
   </tr>
-  <tr>
-    <!--<td style="border:none" colspan="3">IMPORTE EN LETRAS: <STRONG><?=$modelDetalle->num2letras($modelDetalle->importe)?> ARG 0/100</STRONG>-->
+  <tr>   
   </tr>
   <tr>
     <td style="border:none" colspan="2" >&nbsp;</td>
@@ -78,6 +88,10 @@
     <td colspan="2" style="border:none"><strong><?=$m->proveedor->nombre?></strong></td>
   </tr>
   <tr>
+    <td>PERIODO:</td>
+    <td colspan="2" style="border:none"><strong><?=$m->getPeriodo($m->id)?></strong></td>
+  </tr>
+  <tr>
     <td style="border:none" colspan="2" >&nbsp;</td>
     <td colspan="2" style="border:none">&nbsp;</td>
   </tr>
@@ -85,16 +99,21 @@
     <td colspan="2" align="center"  bgcolor="#0066FF">CONCEPTO</td>
     <td colspan="2" align="center"  bgcolor="#0066FF">IMPORTE</td>
   </tr>
+ <?php foreach ($modelDetalle as $md) {?>
   <tr>
-    <td colspan="2" align="center"><strong><?=$modelDetalle->subCuenta->concepto?></strong></td>
-    <td colspan="2"  align="center"><strong>$ <?=$modelDetalle->importe?></strong></td>
+    <td colspan="2" align="center"><strong><?=$md->subCuenta->concepto?></strong></td>
+    <td colspan="2" align="center"><strong>$ <?=$md->importe?></strong></td>      
+  </tr>    
+  <?php } ?>
+  <tr>
+    <td colspan="2" align="right" style="border:none"><strong>TOTAL:</strong></td>
+    <td colspan="2" align="center"><strong>$<?=$suma?></strong></td>
   </tr>
   <tr>
     <td style="border:none" colspan="2" >&nbsp;</td>
     <td colspan="2" style="border:none">&nbsp;</td>
   </tr>
-  <tr>
-    <!--<td style="border:none" colspan="3">IMPORTE EN LETRAS: <STRONG><?=$modelDetalle->num2letras($modelDetalle->importe)?> ARG 0/100</STRONG>-->
+  <tr>   
   </tr>
   <tr>
     <td style="border:none" colspan="2" >&nbsp;</td>

@@ -334,7 +334,10 @@ function calculartotal(){
 
                     })
                     html+="</select></td><td><select name='forma_pago[]' class='form-control'>";
-                    html+="<option value='4'>Efectivo</option>";                 
+                    html+="<option value='4'>Efectivo</option>";                       
+                    html+="<option value='1'>Debito</option>";                       
+                    html+="<option value='2'>Credito</option>";                       
+                    html+="<option value='3'>Cheque</option>";                     
                     html+="</select></td>";
                     html+="<td><input type='text' name='importe[]' value='' class='form-control' onkeyup='calculartotal()'></td>";
                     html+="<td><a id='btn_borrar_cuenta' onClick='borrarfila(" + nro_fila + ");' class='btn btn-default glyphicon glyphicon-trash'></a></td></tr>";

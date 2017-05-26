@@ -73,12 +73,14 @@ echo Nav::widget([
 
 		['label' => 'Consultas', 'url' => ['#'],
 			'items' => [
+				['label' => 'Balances', 'url' => ['movimiento/consulta-balance']],
 				['label' => 'Movimientos De Caja', 'url' => ['movimiento/consulta-movimiento-caja']],
-				['label' => 'Movimientos de Caja Agrupado por Cuenta', 'url' => ['movimiento/consulta-movimiento-cuenta']],
+				//['label' => 'Movimientos de Caja Agrupado por Cuenta', 'url' => ['movimiento/consulta-movimiento-cuenta']],
 				['label' => 'Detalles de Ingresos', 'url' => ['movimiento/consulta-ingresos']],
 				['label' => 'Detalles de Egresos', 'url' => ['movimiento/consulta-proveedor']],
-				//['label' => 'Pago a Proveedores', 'url' => ['movimiento/consulta-proveedor']],
-				['label' => 'Estado de Cuenta', 'url' => ['movimiento/consulta-estado-cuenta']],
+				['label' => 'Recibos Anulados', 'url' => ['movimiento/consulta-recibos-anulados']],
+				['label' => 'Estado de Cuenta Socios', 'url' => ['movimiento/consulta-estado-cuenta']],
+				['label' => 'Libro de Socios', 'url' => ['movimiento/consulta-libro-socio']],
 				['label' => 'Listado de Socios', 'url' => ['socio/listado-socio']],
 				//'<li class="divider"></li>',
 				//['label' => 'Estado de Cuenta', 'url' => ['/proveedor/index']],

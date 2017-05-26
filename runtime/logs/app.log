@@ -61110,3 +61110,2185 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1490192475.267
     'REQUEST_TIME' => 1490192475
 ]
+2017-04-25 18:02:15 [::1][-][kfsavqqhp38us23cp452r2s045][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/#' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('#', Array)
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/#', Array)
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-25 18:02:15 [::1][-][kfsavqqhp38us23cp452r2s045][info][application] $_GET = [
+    'r' => 'site/#'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'kfsavqqhp38us23cp452r2s045'
+    '_csrf' => 'a8c15f9c5ebebc555ff914867633221ec09e245da6a188eeeaadec1f8f9ce792a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wsPxlVYciL484rC8IBQXYTl-S0znK25Z\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=socio%2Findex'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=kfsavqqhp38us23cp452r2s045; _csrf=a8c15f9c5ebebc555ff914867633221ec09e245da6a188eeeaadec1f8f9ce792a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wsPxlVYciL484rC8IBQXYTl-S0znK25Z%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '44009'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2F%23'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=site%2F%23'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493136135.074
+    'REQUEST_TIME' => 1493136135
+]
+2017-04-25 18:02:16 [::1][-][kfsavqqhp38us23cp452r2s045][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/#' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('#', Array)
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/#', Array)
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-25 18:02:16 [::1][-][kfsavqqhp38us23cp452r2s045][info][application] $_GET = [
+    'r' => 'site/#'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'kfsavqqhp38us23cp452r2s045'
+    '_csrf' => 'a8c15f9c5ebebc555ff914867633221ec09e245da6a188eeeaadec1f8f9ce792a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wsPxlVYciL484rC8IBQXYTl-S0znK25Z\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=socio%2Findex'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=site%2F%23'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=kfsavqqhp38us23cp452r2s045; _csrf=a8c15f9c5ebebc555ff914867633221ec09e245da6a188eeeaadec1f8f9ce792a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wsPxlVYciL484rC8IBQXYTl-S0znK25Z%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '44014'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2F%23'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=site%2F%23'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493136136.029
+    'REQUEST_TIME' => 1493136136
+]
+2017-04-25 18:04:00 [::1][-][kfsavqqhp38us23cp452r2s045][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/#' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('#', Array)
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/#', Array)
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-25 18:04:00 [::1][-][kfsavqqhp38us23cp452r2s045][info][application] $_GET = [
+    'r' => 'site/#'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'kfsavqqhp38us23cp452r2s045'
+    '_csrf' => 'a8c15f9c5ebebc555ff914867633221ec09e245da6a188eeeaadec1f8f9ce792a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wsPxlVYciL484rC8IBQXYTl-S0znK25Z\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=socio%2Findex'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=site%2F%23'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=kfsavqqhp38us23cp452r2s045; _csrf=a8c15f9c5ebebc555ff914867633221ec09e245da6a188eeeaadec1f8f9ce792a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wsPxlVYciL484rC8IBQXYTl-S0znK25Z%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '44139'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2F%23'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=site%2F%23'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493136240.388
+    'REQUEST_TIME' => 1493136240
+]
+2017-05-04 14:02:31 [::1][-][chof365d1tvs7ph77t0u66ndk5][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Connection.php:600
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Connection.php(600): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Connection.php(858): yii\db\Connection->open()
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Connection.php(845): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Schema.php(477): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Connection.php(754): yii\db\Schema->quoteValue('<span class="st...')
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#7 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Command.php(809): yii\db\Command->getRawSql()
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#9 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#10 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(290): yii\db\Query->one('<span class="ke...')
+#11 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\BaseActiveRecord.php(102): yii\db\ActiveQuery->one()
+#12 C:\xampp\htdocs\ClubSanBenito\models\User.php(82): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#13 C:\xampp\htdocs\ClubSanBenito\models\LoginForm.php(74): app\models\User::findByUsername('<span class="st...')
+#14 C:\xampp\htdocs\ClubSanBenito\models\LoginForm.php(45): app\models\LoginForm->getUser()
+#15 [internal function]: app\models\LoginForm->validatePassword('<span class="st...', '<span class="ke...')
+#16 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func('[<span class="t...', '<span class="st...', '<span class="ke...')
+#17 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\validators\Validator.php(243): yii\validators\InlineValidator->validateAttribute(Object(app\models\LoginForm), '<span class="st...')
+#18 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(app\models\LoginForm), '[<span class="s...')
+#19 C:\xampp\htdocs\ClubSanBenito\models\LoginForm.php(58): yii\base\Model->validate()
+#20 C:\xampp\htdocs\ClubSanBenito\controllers\SiteController.php(90): app\models\LoginForm->login()
+#21 [internal function]: app\controllers\SiteController->actionLogin()
+#22 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#23 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#24 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#25 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#26 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#28 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Connection.php:547
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Connection.php(858): yii\db\Connection->open()
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Connection.php(845): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Schema.php(477): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Connection.php(754): yii\db\Schema->quoteValue('<span class="st...')
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Command.php(809): yii\db\Command->getRawSql()
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(290): yii\db\Query->one('<span class="ke...')
+#9 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\BaseActiveRecord.php(102): yii\db\ActiveQuery->one()
+#10 C:\xampp\htdocs\ClubSanBenito\models\User.php(82): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#11 C:\xampp\htdocs\ClubSanBenito\models\LoginForm.php(74): app\models\User::findByUsername('<span class="st...')
+#12 C:\xampp\htdocs\ClubSanBenito\models\LoginForm.php(45): app\models\LoginForm->getUser()
+#13 [internal function]: app\models\LoginForm->validatePassword('<span class="st...', '<span class="ke...')
+#14 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func('[<span class="t...', '<span class="st...', '<span class="ke...')
+#15 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\validators\Validator.php(243): yii\validators\InlineValidator->validateAttribute(Object(app\models\LoginForm), '<span class="st...')
+#16 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(app\models\LoginForm), '[<span class="s...')
+#17 C:\xampp\htdocs\ClubSanBenito\models\LoginForm.php(58): yii\base\Model->validate()
+#18 C:\xampp\htdocs\ClubSanBenito\controllers\SiteController.php(90): app\models\LoginForm->login()
+#19 [internal function]: app\controllers\SiteController->actionLogin()
+#20 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#21 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#22 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#23 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#24 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#26 {main}
+Additional Information:
+
+2017-05-04 14:02:30 [::1][-][chof365d1tvs7ph77t0u66ndk5][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'Vk1sbk4wVVgCHBUNC2Nlajd8XTY0YQMAGBwvPgpfAGpkFSg/AnwcPA=='
+    'LoginForm' => [
+        'username' => 'administrador'
+        'password' => '9dejulio'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'chof365d1tvs7ph77t0u66ndk5'
+    '_csrf' => '0f1565aa120d4708bba9e475ac8a532231d25419d9d02b854bd4b5f0930368b8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"TQycES02a11XzQVXNQCPDoU22XDQLLId\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '153'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=chof365d1tvs7ph77t0u66ndk5; _csrf=0f1565aa120d4708bba9e475ac8a532231d25419d9d02b854bd4b5f0930368b8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22TQycES02a11XzQVXNQCPDoU22XDQLLId%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '8215'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1493899350.94
+    'REQUEST_TIME' => 1493899350
+]
+2017-05-23 15:27:19 [::1][-][jb4qas723uapa90cv54ppnvpu2][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Incapaz de verificar los datos enviados.' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\controllers\BaseController.php(10): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\ClubSanBenito\controllers\SiteController.php(45): app\controllers\BaseController->beforeAction(Object(yii\base\InlineAction))
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(152): app\controllers\SiteController->beforeAction(Object(yii\base\InlineAction))
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('login', Array)
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/login', Array)
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#7 {main}
+2017-05-23 15:27:19 [::1][-][jb4qas723uapa90cv54ppnvpu2][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'WHZPVE1zai5uHycgO0EgaBUFKwElKy4cG0V8Mhc5OkkLRXsfBysDGA=='
+    'LoginForm' => [
+        'username' => 'administrador'
+        'password' => '9dejulio'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'jb4qas723uapa90cv54ppnvpu2'
+    '_csrf' => '39b93e1cfa95a0390fac65cd4d73b7fe6999d9d96ef1e4cf4536d2a54014062ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"C1JlMQgXRvT6oYaEMcyrhzeobqr2bnza\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=socio%2Findex'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '151'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=jb4qas723uapa90cv54ppnvpu2; _csrf=39b93e1cfa95a0390fac65cd4d73b7fe6999d9d96ef1e4cf4536d2a54014062ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22C1JlMQgXRvT6oYaEMcyrhzeobqr2bnza%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '39471'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495546039.014
+    'REQUEST_TIME' => 1495546039
+]
+2017-05-24 17:33:35 [::1][1][cf86h972m838821jhj9dtplqc6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: socio/consulta-libro-socio' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('consulta-libro-...', Array)
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('socio/consulta-...', Array)
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-24 17:33:35 [::1][1][cf86h972m838821jhj9dtplqc6][info][application] $_GET = [
+    'r' => 'socio/consulta-libro-socio'
+]
+
+$_COOKIE = [
+    '_csrf' => '4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc\";}'
+    'PHPSESSID' => 'cf86h972m838821jhj9dtplqc6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-movimiento-caja'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-movimiento-caja'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc%22%3B%7D; PHPSESSID=cf86h972m838821jhj9dtplqc6'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '10253'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=socio%2Fconsulta-libro-socio'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=socio%2Fconsulta-libro-socio'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495640015.795
+    'REQUEST_TIME' => 1495640015
+]
+2017-05-24 18:00:36 [::1][1][cf86h972m838821jhj9dtplqc6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: socio/consulta-libro-socio' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('consulta-libro-...', Array)
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('socio/consulta-...', Array)
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-24 18:00:35 [::1][1][cf86h972m838821jhj9dtplqc6][info][application] $_GET = [
+    'r' => 'socio/consulta-libro-socio'
+]
+
+$_COOKIE = [
+    '_csrf' => '4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc\";}'
+    'PHPSESSID' => 'cf86h972m838821jhj9dtplqc6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-movimiento-caja'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-estado-cuenta'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc%22%3B%7D; PHPSESSID=cf86h972m838821jhj9dtplqc6'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '10922'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=socio%2Fconsulta-libro-socio'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=socio%2Fconsulta-libro-socio'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495641635.858
+    'REQUEST_TIME' => 1495641635
+]
+2017-05-24 18:01:13 [::1][1][cf86h972m838821jhj9dtplqc6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: socio/consulta-libro-socio' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('consulta-libro-...', Array)
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('socio/consulta-...', Array)
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-24 18:01:13 [::1][1][cf86h972m838821jhj9dtplqc6][info][application] $_GET = [
+    'r' => 'socio/consulta-libro-socio'
+]
+
+$_COOKIE = [
+    '_csrf' => '4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc\";}'
+    'PHPSESSID' => 'cf86h972m838821jhj9dtplqc6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-movimiento-caja'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-estado-cuenta'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc%22%3B%7D; PHPSESSID=cf86h972m838821jhj9dtplqc6'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '10932'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=socio%2Fconsulta-libro-socio'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=socio%2Fconsulta-libro-socio'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495641673.746
+    'REQUEST_TIME' => 1495641673
+]
+2017-05-24 18:01:21 [::1][1][cf86h972m838821jhj9dtplqc6][error][yii\base\InvalidParamException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\models\Socio::getsocio_debito()' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1121): yii\base\Component->__call('getsocio_debito', Array)
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1121): app\models\Socio->getsocio_debito()
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(520): yii\db\BaseActiveRecord->getRelation('<span class="st...')
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(435): yii\db\ActiveQuery->joinWithRelations(Object(app\models\Socio), '[<span class="s...', '<span class="st...')
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(89): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(314): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#7 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Query.php(210): yii\db\ActiveQuery->createCommand('<span class="ke...')
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#9 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(657): yii\db\ActiveQuery->all()
+#10 [internal function]: app\controllers\MovimientoController->actionConsultaLibroSocio()
+#11 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#14 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#15 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\base\InvalidParamException' with message 'app\models\Socio has no relation named "socio_debito".' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\BaseActiveRecord.php:1124
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(520): yii\db\BaseActiveRecord->getRelation('<span class="st...')
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(435): yii\db\ActiveQuery->joinWithRelations(Object(app\models\Socio), '[<span class="s...', '<span class="st...')
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(89): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(314): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Query.php(210): yii\db\ActiveQuery->createCommand('<span class="ke...')
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#7 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(657): yii\db\ActiveQuery->all()
+#8 [internal function]: app\controllers\MovimientoController->actionConsultaLibroSocio()
+#9 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#10 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2017-05-24 18:01:21 [::1][1][cf86h972m838821jhj9dtplqc6][info][application] $_GET = [
+    'r' => 'movimiento/consulta-libro-socio'
+]
+
+$_COOKIE = [
+    '_csrf' => '4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc\";}'
+    'PHPSESSID' => 'cf86h972m838821jhj9dtplqc6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-movimiento-caja'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc%22%3B%7D; PHPSESSID=cf86h972m838821jhj9dtplqc6'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '10932'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-libro-socio'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-libro-socio'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495641681.166
+    'REQUEST_TIME' => 1495641681
+]
+2017-05-24 18:01:45 [::1][1][cf86h972m838821jhj9dtplqc6][error][yii\base\InvalidParamException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\models\Socio::getsocioDebito()' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1121): yii\base\Component->__call('getsocioDebito', Array)
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1121): app\models\Socio->getsocioDebito()
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(520): yii\db\BaseActiveRecord->getRelation('<span class="st...')
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(435): yii\db\ActiveQuery->joinWithRelations(Object(app\models\Socio), '[<span class="s...', '<span class="st...')
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(89): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(314): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#7 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Query.php(210): yii\db\ActiveQuery->createCommand('<span class="ke...')
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#9 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(657): yii\db\ActiveQuery->all()
+#10 [internal function]: app\controllers\MovimientoController->actionConsultaLibroSocio()
+#11 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#14 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#15 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\base\InvalidParamException' with message 'app\models\Socio has no relation named "socioDebito".' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\BaseActiveRecord.php:1124
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(520): yii\db\BaseActiveRecord->getRelation('<span class="st...')
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(435): yii\db\ActiveQuery->joinWithRelations(Object(app\models\Socio), '[<span class="s...', '<span class="st...')
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(89): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(314): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Query.php(210): yii\db\ActiveQuery->createCommand('<span class="ke...')
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#7 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(657): yii\db\ActiveQuery->all()
+#8 [internal function]: app\controllers\MovimientoController->actionConsultaLibroSocio()
+#9 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#10 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2017-05-24 18:01:45 [::1][1][cf86h972m838821jhj9dtplqc6][info][application] $_GET = [
+    'r' => 'movimiento/consulta-libro-socio'
+]
+
+$_COOKIE = [
+    '_csrf' => '4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc\";}'
+    'PHPSESSID' => 'cf86h972m838821jhj9dtplqc6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-movimiento-caja'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc%22%3B%7D; PHPSESSID=cf86h972m838821jhj9dtplqc6'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '10945'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-libro-socio'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-libro-socio'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495641705.166
+    'REQUEST_TIME' => 1495641705
+]
+2017-05-24 18:03:27 [::1][1][cf86h972m838821jhj9dtplqc6][error][yii\base\InvalidParamException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\models\Socio::getsocio_debito()' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1121): yii\base\Component->__call('getsocio_debito', Array)
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1121): app\models\Socio->getsocio_debito()
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(520): yii\db\BaseActiveRecord->getRelation('<span class="st...')
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(435): yii\db\ActiveQuery->joinWithRelations(Object(app\models\Socio), '[<span class="s...', '<span class="st...')
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(89): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(314): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#7 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Query.php(210): yii\db\ActiveQuery->createCommand('<span class="ke...')
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#9 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(657): yii\db\ActiveQuery->all()
+#10 [internal function]: app\controllers\MovimientoController->actionConsultaLibroSocio()
+#11 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#14 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#15 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\base\InvalidParamException' with message 'app\models\Socio has no relation named "socio_debito".' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\BaseActiveRecord.php:1124
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(520): yii\db\BaseActiveRecord->getRelation('<span class="st...')
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(435): yii\db\ActiveQuery->joinWithRelations(Object(app\models\Socio), '[<span class="s...', '<span class="st...')
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(89): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(314): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Query.php(210): yii\db\ActiveQuery->createCommand('<span class="ke...')
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#7 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(657): yii\db\ActiveQuery->all()
+#8 [internal function]: app\controllers\MovimientoController->actionConsultaLibroSocio()
+#9 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#10 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2017-05-24 18:03:27 [::1][1][cf86h972m838821jhj9dtplqc6][info][application] $_GET = [
+    'r' => 'movimiento/consulta-libro-socio'
+]
+
+$_COOKIE = [
+    '_csrf' => '4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc\";}'
+    'PHPSESSID' => 'cf86h972m838821jhj9dtplqc6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-movimiento-caja'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc%22%3B%7D; PHPSESSID=cf86h972m838821jhj9dtplqc6'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '10960'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-libro-socio'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-libro-socio'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495641807.227
+    'REQUEST_TIME' => 1495641807
+]
+2017-05-24 18:05:36 [::1][1][cf86h972m838821jhj9dtplqc6][error][yii\base\InvalidParamException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\models\Socio::getsocio_debito()' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1121): yii\base\Component->__call('getsocio_debito', Array)
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\BaseActiveRecord.php(1121): app\models\Socio->getsocio_debito()
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(520): yii\db\BaseActiveRecord->getRelation('<span class="st...')
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(435): yii\db\ActiveQuery->joinWithRelations(Object(app\models\Socio), '[<span class="s...', '<span class="st...')
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(89): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(314): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#7 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Query.php(210): yii\db\ActiveQuery->createCommand('<span class="ke...')
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#9 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(657): yii\db\ActiveQuery->all()
+#10 [internal function]: app\controllers\MovimientoController->actionConsultaLibroSocio()
+#11 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#14 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#15 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\base\InvalidParamException' with message 'app\models\Socio has no relation named "socio_debito".' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\BaseActiveRecord.php:1124
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(520): yii\db\BaseActiveRecord->getRelation('<span class="st...')
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(435): yii\db\ActiveQuery->joinWithRelations(Object(app\models\Socio), '[<span class="s...', '<span class="st...')
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(146): yii\db\ActiveQuery->buildJoinWith()
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(89): yii\db\ActiveQuery->prepare(Object(yii\db\mysql\QueryBuilder))
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(314): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Query.php(210): yii\db\ActiveQuery->createCommand('<span class="ke...')
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#7 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(657): yii\db\ActiveQuery->all()
+#8 [internal function]: app\controllers\MovimientoController->actionConsultaLibroSocio()
+#9 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#10 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#11 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#15 {main}
+2017-05-24 18:05:36 [::1][1][cf86h972m838821jhj9dtplqc6][info][application] $_GET = [
+    'r' => 'movimiento/consulta-libro-socio'
+]
+
+$_COOKIE = [
+    '_csrf' => '4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc\";}'
+    'PHPSESSID' => 'cf86h972m838821jhj9dtplqc6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-movimiento-caja'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc%22%3B%7D; PHPSESSID=cf86h972m838821jhj9dtplqc6'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '10981'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-libro-socio'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-libro-socio'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495641936.566
+    'REQUEST_TIME' => 1495641936
+]
+2017-05-24 18:05:46 [::1][1][cf86h972m838821jhj9dtplqc6][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Operator 'SOCIODEBITO.ID_SOCIO = SOCIO.ID' requires two operands.' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php:1310
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(955): yii\db\QueryBuilder->buildSimpleCondition('SOCIODEBITO.ID_...', Array, '<span class="st...')
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(1007): yii\db\QueryBuilder->buildCondition(Array, '<span class="st...')
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(955): yii\db\QueryBuilder->buildAndCondition('AND', Array, '<span class="st...')
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(1007): yii\db\QueryBuilder->buildCondition(Array, '<span class="st...')
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(955): yii\db\QueryBuilder->buildAndCondition('AND', Array, '<span class="st...')
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(1007): yii\db\QueryBuilder->buildCondition(Array, '<span class="st...')
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(955): yii\db\QueryBuilder->buildAndCondition('AND', Array, '<span class="st...')
+#7 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(1007): yii\db\QueryBuilder->buildCondition(Array, '<span class="st...')
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(955): yii\db\QueryBuilder->buildAndCondition('AND', Array, '<span class="st...')
+#9 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(759): yii\db\QueryBuilder->buildCondition(Array, '<span class="st...')
+#10 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(97): yii\db\QueryBuilder->buildWhere(Array, '<span class="st...')
+#11 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(314): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Query.php(210): yii\db\ActiveQuery->createCommand(NULL)
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all(NULL)
+#14 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(657): yii\db\ActiveQuery->all()
+#15 [internal function]: app\controllers\MovimientoController->actionConsultaLibroSocio()
+#16 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('consulta-libro-...', Array)
+#19 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('movimiento/cons...', Array)
+#20 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2017-05-24 18:05:46 [::1][1][cf86h972m838821jhj9dtplqc6][info][application] $_GET = [
+    'r' => 'movimiento/consulta-libro-socio'
+]
+
+$_COOKIE = [
+    '_csrf' => '4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc\";}'
+    'PHPSESSID' => 'cf86h972m838821jhj9dtplqc6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-movimiento-caja'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc%22%3B%7D; PHPSESSID=cf86h972m838821jhj9dtplqc6'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '10986'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-libro-socio'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-libro-socio'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495641946.564
+    'REQUEST_TIME' => 1495641946
+]
+2017-05-24 18:08:47 [::1][1][cf86h972m838821jhj9dtplqc6][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Operator '`SOCIODEBITO`.`ID_SOCIO` = `SOCIO`.`ID`' requires two operands.' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php:1310
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(955): yii\db\QueryBuilder->buildSimpleCondition('`SOCIODEBITO`.`...', Array, '<span class="st...')
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(1007): yii\db\QueryBuilder->buildCondition(Array, '<span class="st...')
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(955): yii\db\QueryBuilder->buildAndCondition('AND', Array, '<span class="st...')
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(1007): yii\db\QueryBuilder->buildCondition(Array, '<span class="st...')
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(955): yii\db\QueryBuilder->buildAndCondition('AND', Array, '<span class="st...')
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(1007): yii\db\QueryBuilder->buildCondition(Array, '<span class="st...')
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(955): yii\db\QueryBuilder->buildAndCondition('AND', Array, '<span class="st...')
+#7 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(1007): yii\db\QueryBuilder->buildCondition(Array, '<span class="st...')
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(955): yii\db\QueryBuilder->buildAndCondition('AND', Array, '<span class="st...')
+#9 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(759): yii\db\QueryBuilder->buildCondition(Array, '<span class="st...')
+#10 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\QueryBuilder.php(97): yii\db\QueryBuilder->buildWhere(Array, '<span class="st...')
+#11 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(314): yii\db\QueryBuilder->build(Object(yii\db\ActiveQuery))
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\Query.php(210): yii\db\ActiveQuery->createCommand(NULL)
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all(NULL)
+#14 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(657): yii\db\ActiveQuery->all()
+#15 [internal function]: app\controllers\MovimientoController->actionConsultaLibroSocio()
+#16 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('consulta-libro-...', Array)
+#19 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('movimiento/cons...', Array)
+#20 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2017-05-24 18:08:47 [::1][1][cf86h972m838821jhj9dtplqc6][info][application] $_GET = [
+    'r' => 'movimiento/consulta-libro-socio'
+]
+
+$_COOKIE = [
+    '_csrf' => '4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc\";}'
+    'PHPSESSID' => 'cf86h972m838821jhj9dtplqc6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-movimiento-caja'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc%22%3B%7D; PHPSESSID=cf86h972m838821jhj9dtplqc6'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11007'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-libro-socio'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-libro-socio'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495642127.163
+    'REQUEST_TIME' => 1495642127
+]
+2017-05-24 18:15:21 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ':'' in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:655
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-05-24 18:15:20 [::1][-][-][info][application] $_GET = [
+    'r' => 'movimiento/consulta-libro-socio'
+]
+
+$_COOKIE = [
+    '_csrf' => '4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc\";}'
+    'PHPSESSID' => 'cf86h972m838821jhj9dtplqc6'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=4a6b5e9c049e2c6e7c2f8b091d1ac78fa52a8a864543b480e272d757096da537a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ipJY9I8j7xdsyU7ixE3Rlg7AKRfWOuc%22%3B%7D; PHPSESSID=cf86h972m838821jhj9dtplqc6'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11045'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-libro-socio'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-libro-socio'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495642520.806
+    'REQUEST_TIME' => 1495642520
+]
+2017-05-26 13:46:23 [::1][1][nfj6d2pp26ah03mlu0riv9o951][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: C:\xampp\htdocs\ClubSanBenito\views\movimiento\_imprimir_libro_socio.php' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\MovimientoController))
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\View->render('_imprimir_libro...', Array, Object(app\controllers\MovimientoController))
+#2 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(666): yii\base\Controller->renderPartial('_imprimir_libro...', Array)
+#3 [internal function]: app\controllers\MovimientoController->actionConsultaLibroSocio()
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('consulta-libro-...', Array)
+#7 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('movimiento/cons...', Array)
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2017-05-26 13:46:23 [::1][1][nfj6d2pp26ah03mlu0riv9o951][info][application] $_GET = [
+    'r' => 'movimiento/consulta-libro-socio'
+]
+
+$_POST = [
+    '_csrf' => 'MHJkVTAyUFQFHjcMVF4aBWQlFTYGZgobejRXGXVcJWADISEPRncHZQ=='
+    'categoria_desde' => '2000'
+    'categoria_hasta' => '2005'
+    'anio' => '2017'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1\";}'
+    'PHPSESSID' => 'nfj6d2pp26ah03mlu0riv9o951'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=socio%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '118'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-libro-socio'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1%22%3B%7D; PHPSESSID=nfj6d2pp26ah03mlu0riv9o951'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '8561'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-libro-socio'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-libro-socio'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495799183.261
+    'REQUEST_TIME' => 1495799183
+]
+2017-05-26 13:54:52 [::1][-][nfj6d2pp26ah03mlu0riv9o951][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The table does not exist: user' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveRecord.php:299
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveRecord.php(320): yii\db\ActiveRecord::getTableSchema()
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\ActiveRecord.php(176): yii\db\ActiveRecord::primaryKey()
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\BaseActiveRecord.php(102): yii\db\ActiveRecord::findByCondition(1)
+#3 C:\xampp\htdocs\ClubSanBenito\models\User.php(56): yii\db\BaseActiveRecord::findOne(1)
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\User.php(614): app\models\User::findIdentity(1)
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\User.php(176): yii\web\User->renewAuthStatus()
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\User.php(346): yii\web\User->getIdentity()
+#7 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\filters\AccessRule.php(149): yii\web\User->getIsGuest()
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\filters\AccessRule.php(104): yii\filters\AccessRule->matchRole(Object(yii\web\User))
+#9 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\filters\AccessControl.php(118): yii\filters\AccessRule->allows(Object(yii\base\InlineAction), Object(yii\web\User), Object(yii\web\Request))
+#10 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#11 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Component.php(541): call_user_func(Array, Object(yii\base\ActionEvent))
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#14 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#15 C:\xampp\htdocs\ClubSanBenito\controllers\BaseController.php(10): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#16 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(152): app\controllers\BaseController->beforeAction(Object(yii\base\InlineAction))
+#17 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('view', Array)
+#18 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('movimiento/view', Array)
+#19 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#21 {main}
+2017-05-26 13:54:51 [::1][-][nfj6d2pp26ah03mlu0riv9o951][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1\";}'
+    'PHPSESSID' => 'nfj6d2pp26ah03mlu0riv9o951'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=socio%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-estado-cuenta'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1%22%3B%7D; PHPSESSID=nfj6d2pp26ah03mlu0riv9o951'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '9019'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495799691.662
+    'REQUEST_TIME' => 1495799691
+]
+2017-05-26 13:58:19 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:191
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:215
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:434
+2017-05-26 13:58:18 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1\";}'
+    'PHPSESSID' => 'nfj6d2pp26ah03mlu0riv9o951'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=socio%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-estado-cuenta'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1%22%3B%7D; PHPSESSID=nfj6d2pp26ah03mlu0riv9o951'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '9047'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495799898.796
+    'REQUEST_TIME' => 1495799898
+]
+2017-05-26 13:59:09 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:191
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:215
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:434
+2017-05-26 13:59:09 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1\";}'
+    'PHPSESSID' => 'nfj6d2pp26ah03mlu0riv9o951'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=socio%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Findex&v=i'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1%22%3B%7D; PHPSESSID=nfj6d2pp26ah03mlu0riv9o951'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '9066'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495799949.14
+    'REQUEST_TIME' => 1495799949
+]
+2017-05-26 13:59:21 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:191
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:215
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:434
+2017-05-26 13:59:21 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1\";}'
+    'PHPSESSID' => 'nfj6d2pp26ah03mlu0riv9o951'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=socio%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1%22%3B%7D; PHPSESSID=nfj6d2pp26ah03mlu0riv9o951'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '9068'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495799961.076
+    'REQUEST_TIME' => 1495799961
+]
+2017-05-26 13:59:24 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:191
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:215
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:434
+2017-05-26 13:59:24 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1\";}'
+    'PHPSESSID' => 'nfj6d2pp26ah03mlu0riv9o951'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=socio%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1%22%3B%7D; PHPSESSID=nfj6d2pp26ah03mlu0riv9o951'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '9068'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495799964.543
+    'REQUEST_TIME' => 1495799964
+]
+2017-05-26 14:00:54 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:191
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:215
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:434
+2017-05-26 14:00:54 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1\";}'
+    'PHPSESSID' => 'nfj6d2pp26ah03mlu0riv9o951'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=socio%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Festado-cuenta'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1%22%3B%7D; PHPSESSID=nfj6d2pp26ah03mlu0riv9o951'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '9098'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495800054.493
+    'REQUEST_TIME' => 1495800054
+]
+2017-05-26 14:15:48 [::1][1][nfj6d2pp26ah03mlu0riv9o951][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Parámetros requeridos ausentes: id' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Controller.php:93
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('anular', Array)
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('movimiento/anul...', Array)
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2017-05-26 14:15:48 [::1][1][nfj6d2pp26ah03mlu0riv9o951][info][application] $_GET = [
+    'r' => 'movimiento/anular'
+]
+
+$_POST = [
+    'id' => '2405'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1\";}'
+    'PHPSESSID' => 'nfj6d2pp26ah03mlu0riv9o951'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=socio%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '7'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_CSRF_TOKEN' => 'YjhLVGstUjFXVBgND0EYYDZvOjddeQh.KH54GC5DJwVRaw4OHWgFAA=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Festado-cuenta'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1%22%3B%7D; PHPSESSID=nfj6d2pp26ah03mlu0riv9o951'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '9839'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento/anular'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento/anular'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495800948.388
+    'REQUEST_TIME' => 1495800948
+]
+2017-05-26 14:58:37 [::1][1][nfj6d2pp26ah03mlu0riv9o951][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: movimiento/consulta-recibos-anulados' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('consulta-recibo...', Array)
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('movimiento/cons...', Array)
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Página no encontrada.' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-05-26 14:58:37 [::1][1][nfj6d2pp26ah03mlu0riv9o951][info][application] $_GET = [
+    'r' => 'movimiento/consulta-recibos-anulados'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1\";}'
+    'PHPSESSID' => 'nfj6d2pp26ah03mlu0riv9o951'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=socio%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1%22%3B%7D; PHPSESSID=nfj6d2pp26ah03mlu0riv9o951'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '10970'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-recibos-anulados'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495803517.133
+    'REQUEST_TIME' => 1495803517
+]
+2017-05-26 15:05:07 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$mpdf' (T_VARIABLE)' in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:644
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-05-26 15:05:06 [::1][-][-][info][application] $_GET = [
+    'r' => 'movimiento/estado-cuenta'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1\";}'
+    'PHPSESSID' => 'nfj6d2pp26ah03mlu0riv9o951'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1%22%3B%7D; PHPSESSID=nfj6d2pp26ah03mlu0riv9o951'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11081'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Festado-cuenta'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Festado-cuenta'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495803906.858
+    'REQUEST_TIME' => 1495803906
+]
+2017-05-26 15:17:07 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:191
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:215
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:434
+2017-05-26 15:17:07 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1\";}'
+    'PHPSESSID' => 'nfj6d2pp26ah03mlu0riv9o951'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=socio%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-movimiento-caja'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1%22%3B%7D; PHPSESSID=nfj6d2pp26ah03mlu0riv9o951'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11217'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495804627.346
+    'REQUEST_TIME' => 1495804627
+]
+2017-05-26 15:17:41 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:191
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:215
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:434
+2017-05-26 15:17:41 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1\";}'
+    'PHPSESSID' => 'nfj6d2pp26ah03mlu0riv9o951'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=socio%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Findex&v=e'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1%22%3B%7D; PHPSESSID=nfj6d2pp26ah03mlu0riv9o951'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11229'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495804661.341
+    'REQUEST_TIME' => 1495804661
+]
+2017-05-26 15:19:20 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:191
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:215
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:434
+2017-05-26 15:19:20 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'e'
+]
+
+$_COOKIE = [
+    '_csrf' => 'c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"5lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1\";}'
+    'PHPSESSID' => 'nfj6d2pp26ah03mlu0riv9o951'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=socio%2Findex'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=cuenta%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=c926874ee315d2afd2ba7be3468173014bf0bede8c975b076182e11fd98d65c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%225lSYdlJQTWqc6TZOJF3LEnu43SEZvEW1%22%3B%7D; PHPSESSID=nfj6d2pp26ah03mlu0riv9o951'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '11279'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=e'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=e'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1495804760.085
+    'REQUEST_TIME' => 1495804760
+]
