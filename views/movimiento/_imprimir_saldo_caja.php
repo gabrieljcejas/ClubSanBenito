@@ -74,5 +74,5 @@ th {
 <p><strong>CAJA INCIAL:</strong> $<?= number_format($caja_inicial,2,",",".") ?></p>
 <p><strong>TOTAL INGRESO:</strong> $<?= number_format($suma_ingreso,2,",",".") ?></p>
 <p><strong>TOTAL EGRESO:</strong> $<?= number_format($suma_egreso,2,",",".") ?></p>
-<p><strong>CAJA FINAL:</strong> $<?= number_format($saldo,2,",",".") ?></p>
+<p><strong>CAJA FINAL:</strong> $<?= number_format($saldo+$caja_inicial,2,",",".") ?></p>
 

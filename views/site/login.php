@@ -58,7 +58,7 @@ use yii\bootstrap\ActiveForm;
                                     <!-- Button -->
 
                                     <div class="col-sm-12 controls" align="right">
-                                       <?= Html::submitButton('Login', ['class' => 'btn btn-success', 'name' => 'login-button']) ?>
+                                       <?= Html::submitButton('Entrar', ['class' => 'btn btn-success', 'name' => 'login-button']) ?>
                                     </div>
                                 </div>
 

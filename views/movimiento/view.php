@@ -206,7 +206,7 @@ $this->params['breadcrumbs'][] = "Listado";
 						'template' => '{imprimir} {anular}',
 						'buttons' => [				
 							'imprimir' => function ($url, $model) {
-								return Html::a('<span class="btn btn-default glyphicon glyphicon-print"></span>', $url, [
+								return Html::a('<span class="btn btn-default glyphicon glyphicon-print"> Imprimir</span>', $url, [
 									'data-confirm' => Yii::t('yii', 'Imprimir el Recibo?'),
 
 								]);
@@ -280,7 +280,7 @@ $(function () {
                 id: id ,                
             },
             success: function (data) {  
-                    $.pjax.reload({container: '#grd_view'});
+            	$.pjax.reload({container: '#grd_view'});
                 
             }
         });

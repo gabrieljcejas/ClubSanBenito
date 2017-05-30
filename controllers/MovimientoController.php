@@ -69,7 +69,7 @@ class MovimientoController extends BaseController {
 			
 			if ($v == 'i') {
 			 # SI ES INRESO--------------------------------------------------------------	
-				$title = "Ingresos";
+				$title = "Ingreso";
 
 				// Genero Nuevo Nro de Recibo
 				$modelR = Recibo::find()->where(['id' => 1])->one();
@@ -143,7 +143,7 @@ class MovimientoController extends BaseController {
 
 			} else {		
 				 # SI ES EGRESO--------------------------------------------------------------		
-				$title = "Engresos";
+				$title = "Engreso";
 				
 				$modelR = Recibo::find()->where(['id' => 1])->one();
 				$nroRecibo = $modelR->e;
@@ -184,11 +184,11 @@ class MovimientoController extends BaseController {
 		$modelR = new Recibo();
 		if ($v == 'i') {
 			$nroRecibo = $modelR->getLastNroRecibo('i');
-			$title = "Ingresos";
+			$title = "Ingreso";
 		} else {
 			// si es egreso
 			$nroRecibo = $modelR->getLastNroRecibo('e');
-			$title = "Engresos";
+			$title = "Engreso";
 		}
 
 		// paso fecha actual
@@ -675,7 +675,7 @@ class MovimientoController extends BaseController {
 			
 			$query = "SELECT * FROM `movimiento_detalle` md 
 				JOIN movimiento m on  md.movimiento_id = m.id
-				where md.periodo_mes>=1 AND md.periodo_mes<=12 AND md.periodo_anio=". $anio ." AND m.obs is null AND (md.subcuenta_id=38 OR md.subcuenta_id=50 OR md.subcuenta_id=51)
+				where md.periodo_mes>=1 AND md.periodo_mes<=12 AND md.periodo_anio=". $anio ." AND m.obs is null AND (md.subcuenta_id=38 OR md.subcuenta_id=50 OR md.subcuenta_id=51) AND fecha_pago is NOT null
 				ORDER BY m.fk_cliente,md.periodo_mes";
 			
 			$movimientoDetalle = MovimientoDetalle::findBySql($query)->all();
