@@ -92,7 +92,7 @@ $this->params['breadcrumbs'][] = "Listado";
 					[
 						'class' => 'yii\grid\ActionColumn',
 						'header' => 'Actions',
-						'template' => '{imprimir} {anular}',
+						'template' => '{imprimir} {anular} {delete}',
 						'buttons' => [				
 							'imprimir' => function ($url, $model) {
 								return Html::a('<span class="btn btn-default glyphicon glyphicon-print"> Imprimir</span>', $url, [
@@ -101,24 +101,19 @@ $this->params['breadcrumbs'][] = "Listado";
 								]);
 							},
 							'delete' => function ($url, $model) {
-								return Html::a('<span class="btn btn-default glyphicon glyphicon-trash"> Eliminar</span>', $url, [
+								return Html::a('<span class="btn btn-default glyphicon glyphicon-trash" style="margin-top: 7px;"> Eliminar</span>', $url, [
 									'title' => Yii::t('app', 'Eliminar'),
-									'data-confirm' => Yii::t('yii', 'Seguro que desea eliminar?'),
+									'data-confirm' => Yii::t('yii', 'Seguro que desea ELIMINAR?'),
 									//'data-method' => 'post',
 
 								]);
 							},
 							'anular' => function ($url, $model) {
-			                    if ($model->obs == null) {
+			                     if ($model->fecha_pago != "" && $model->obs == null) {
 			                        return Html::a('<span class="btn btn-danger glyphicon glyphicon-remove-sign"> Anular</span>', $url, [
 			                            'title'=>"Anular",
 			                            'name'=>'anular',
 			                            'value'=>$model->id
-			                        ]);
-			                    }else{
-			                         return Html::a('<span class="btn btn-danger glyphicon glyphicon-remove-sign disabled"> Anular</span>', null, [
-			                            //'data-confirm' => Yii::t('yii', 'Seguro que desea ANULAR?'),
-			                            'title'=>"Anular"                           
 			                        ]);
 			                    }
 			                },
@@ -203,7 +198,7 @@ $this->params['breadcrumbs'][] = "Listado";
 					[
 						'class' => 'yii\grid\ActionColumn',
 						'header' => 'Actions',
-						'template' => '{imprimir} {anular}',
+						'template' => '{imprimir} {anular} {delete}',
 						'buttons' => [				
 							'imprimir' => function ($url, $model) {
 								return Html::a('<span class="btn btn-default glyphicon glyphicon-print"> Imprimir</span>', $url, [
@@ -212,24 +207,19 @@ $this->params['breadcrumbs'][] = "Listado";
 								]);
 							},
 							'delete' => function ($url, $model) {
-								return Html::a('<span class="btn btn-default glyphicon glyphicon-trash"></span>', $url, [
+								return Html::a('<span class="btn btn-default glyphicon glyphicon-trash" style="margin-top: 7px;"> Eliminar</span>', $url, [
 									'title' => Yii::t('app', 'Eliminar'),
-									'data-confirm' => Yii::t('yii', 'Seguro que desea eliminar?'),
+									'data-confirm' => Yii::t('yii', 'Seguro que desea ELIMINAR?'),
 									//'data-method' => 'post',
 
 								]);
 							},
 							'anular' => function ($url, $model) {
-			                    if ($model->obs == null) {
+			                     if ($model->fecha_pago != "" && $model->obs == null) {
 			                        return Html::a('<span class="btn btn-danger glyphicon glyphicon-remove-sign"> Anular</span>', $url, [
 			                            'title'=>"Anular",
 			                            'name'=>'anular',
 			                            'value'=>$model->id
-			                        ]);
-			                    }else{
-			                         return Html::a('<span class="btn btn-danger glyphicon glyphicon-remove-sign disabled"> Anular</span>', null, [
-			                            //'data-confirm' => Yii::t('yii', 'Seguro que desea ANULAR?'),
-			                            'title'=>"Anular"                           
 			                        ]);
 			                    }
 			                },

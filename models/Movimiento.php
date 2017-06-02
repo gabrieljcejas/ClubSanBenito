@@ -161,6 +161,21 @@ class Movimiento extends \yii\db\ActiveRecord {
 
 	}
 
+	public function getRecibosAnulados() {
+				
+		$query = self::find()	
+			->where(['not',['obs' => null]])				
+			->andWhere(['not',['nro_recibo' => null]])
+			->orderBy('nro_recibo DESC');			
+		
+		$dataProvider = new ActiveDataProvider([
+			'query' => $query,
+		]);
+
+		return $dataProvider;
+
+	}
+
 	public function getAllEstadoCuenta() {
 		
 		$query = Movimiento::find()

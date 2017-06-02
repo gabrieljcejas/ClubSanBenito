@@ -68634,3 +68634,1707 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1496075311
     'REQUEST_TIME' => 1496075311
 ]
+2017-06-02 15:18:32 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:105
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:138
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:434
+2017-06-02 15:18:32 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '4363'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496409512.107
+    'REQUEST_TIME' => 1496409512
+]
+2017-06-02 15:18:56 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:105
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:138
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:434
+2017-06-02 15:18:56 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '4368'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496409536.354
+    'REQUEST_TIME' => 1496409536
+]
+2017-06-02 15:19:27 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:105
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:138
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:434
+2017-06-02 15:19:26 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Findex&v=i'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '4457'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496409566.82
+    'REQUEST_TIME' => 1496409566
+]
+2017-06-02 15:26:17 [::1][1][9cv1ukd6cn4meb36534clvkj61][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}'' in C:\xampp\htdocs\ClubSanBenito\views\movimiento\_imprimir_recibos_anulados.php:61
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-06-02 15:26:17 [::1][1][9cv1ukd6cn4meb36534clvkj61][info][application] $_GET = [
+    'r' => 'movimiento/consulta-recibos-anulados'
+]
+
+$_POST = [
+    '_csrf' => 'TkpOc3RUS255LSEXTBMTDXYYDQQ3AAUAFgElBwFhe1wNEiheOWwvWQ=='
+    'fecha_desde' => '01-05-2017'
+    'fecha_hasta' => '01-05-2017'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '4698'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-recibos-anulados'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496409977.051
+    'REQUEST_TIME' => 1496409977
+]
+2017-06-02 15:26:34 [::1][1][9cv1ukd6cn4meb36534clvkj61][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\db\ActiveQuery::getCount()' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(178): yii\base\Component->__call('getCount', Array)
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(178): yii\db\ActiveQuery->getCount()
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(149): yii\widgets\BaseListView->renderSummary()
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection('{summary}')
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{summary}')
+#5 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#7 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Widget.php(98): yii\grid\GridView->run()
+#9 C:\xampp\htdocs\ClubSanBenito\views\movimiento\_imprimir_recibos_anulados.php(58): yii\base\Widget::widget(Array)
+#10 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\MovimientoController))
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\View->render('_imprimir_recib...', Array, Object(app\controllers\MovimientoController))
+#14 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(650): yii\base\Controller->renderPartial('_imprimir_recib...', Array)
+#15 [internal function]: app\controllers\MovimientoController->actionConsultaRecibosAnulados()
+#16 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('consulta-recibo...', Array)
+#19 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('movimiento/cons...', Array)
+#20 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2017-06-02 15:26:33 [::1][1][9cv1ukd6cn4meb36534clvkj61][info][application] $_GET = [
+    'r' => 'movimiento/consulta-recibos-anulados'
+]
+
+$_POST = [
+    '_csrf' => 'TkpOc3RUS255LSEXTBMTDXYYDQQ3AAUAFgElBwFhe1wNEiheOWwvWQ=='
+    'fecha_desde' => '01-05-2017'
+    'fecha_hasta' => '01-05-2017'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '4701'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-recibos-anulados'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496409993.807
+    'REQUEST_TIME' => 1496409993
+]
+2017-06-02 15:28:06 [::1][1][9cv1ukd6cn4meb36534clvkj61][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\db\ActiveQuery::getCount()' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(178): yii\base\Component->__call('getCount', Array)
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(178): yii\db\ActiveQuery->getCount()
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(149): yii\widgets\BaseListView->renderSummary()
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection('{summary}')
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{summary}')
+#5 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#7 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Widget.php(98): yii\grid\GridView->run()
+#9 C:\xampp\htdocs\ClubSanBenito\views\movimiento\_imprimir_recibos_anulados.php(58): yii\base\Widget::widget(Array)
+#10 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\MovimientoController))
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\View->render('_imprimir_recib...', Array, Object(app\controllers\MovimientoController))
+#14 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(653): yii\base\Controller->renderPartial('_imprimir_recib...', Array)
+#15 [internal function]: app\controllers\MovimientoController->actionConsultaRecibosAnulados()
+#16 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('consulta-recibo...', Array)
+#19 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('movimiento/cons...', Array)
+#20 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2017-06-02 15:28:05 [::1][1][9cv1ukd6cn4meb36534clvkj61][info][application] $_GET = [
+    'r' => 'movimiento/consulta-recibos-anulados'
+]
+
+$_POST = [
+    '_csrf' => 'TkpOc3RUS255LSEXTBMTDXYYDQQ3AAUAFgElBwFhe1wNEiheOWwvWQ=='
+    'fecha_desde' => '01-05-2017'
+    'fecha_hasta' => '01-05-2017'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '4715'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-recibos-anulados'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496410085.688
+    'REQUEST_TIME' => 1496410085
+]
+2017-06-02 15:28:33 [::1][1][9cv1ukd6cn4meb36534clvkj61][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\db\ActiveQuery::getCount()' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(178): yii\base\Component->__call('getCount', Array)
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(178): yii\db\ActiveQuery->getCount()
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(149): yii\widgets\BaseListView->renderSummary()
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection('{summary}')
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{summary}')
+#5 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#7 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Widget.php(98): yii\grid\GridView->run()
+#9 C:\xampp\htdocs\ClubSanBenito\views\movimiento\_imprimir_recibos_anulados.php(58): yii\base\Widget::widget(Array)
+#10 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\MovimientoController))
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\View->render('_imprimir_recib...', Array, Object(app\controllers\MovimientoController))
+#14 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(653): yii\base\Controller->renderPartial('_imprimir_recib...', Array)
+#15 [internal function]: app\controllers\MovimientoController->actionConsultaRecibosAnulados()
+#16 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('consulta-recibo...', Array)
+#19 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('movimiento/cons...', Array)
+#20 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2017-06-02 15:28:32 [::1][1][9cv1ukd6cn4meb36534clvkj61][info][application] $_GET = [
+    'r' => 'movimiento/consulta-recibos-anulados'
+]
+
+$_POST = [
+    '_csrf' => 'TkpOc3RUS255LSEXTBMTDXYYDQQ3AAUAFgElBwFhe1wNEiheOWwvWQ=='
+    'fecha_desde' => '01-05-2017'
+    'fecha_hasta' => '01-05-2017'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '4729'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-recibos-anulados'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496410112.599
+    'REQUEST_TIME' => 1496410112
+]
+2017-06-02 15:30:01 [::1][1][9cv1ukd6cn4meb36534clvkj61][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\db\ActiveQuery::getCount()' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(178): yii\base\Component->__call('getCount', Array)
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(178): yii\db\ActiveQuery->getCount()
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(149): yii\widgets\BaseListView->renderSummary()
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection('{summary}')
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{summary}')
+#5 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#7 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Widget.php(98): yii\grid\GridView->run()
+#9 C:\xampp\htdocs\ClubSanBenito\views\movimiento\_imprimir_recibos_anulados.php(58): yii\base\Widget::widget(Array)
+#10 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\MovimientoController))
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\View->render('_imprimir_recib...', Array, Object(app\controllers\MovimientoController))
+#14 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(653): yii\base\Controller->renderPartial('_imprimir_recib...', Array)
+#15 [internal function]: app\controllers\MovimientoController->actionConsultaRecibosAnulados()
+#16 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('consulta-recibo...', Array)
+#19 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('movimiento/cons...', Array)
+#20 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#22 {main}
+2017-06-02 15:30:01 [::1][1][9cv1ukd6cn4meb36534clvkj61][info][application] $_GET = [
+    'r' => 'movimiento/consulta-recibos-anulados'
+]
+
+$_POST = [
+    '_csrf' => 'NjRJSEZNRlgBUyYsfgoeOw5mCj8FGQg2bn8iPDN4dmp1bC9lC3Uibw=='
+    'fecha_desde' => '01-05-2017'
+    'fecha_hasta' => '01-05-2017'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '4746'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-recibos-anulados'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496410201.407
+    'REQUEST_TIME' => 1496410201
+]
+2017-06-02 15:31:59 [::1][1][9cv1ukd6cn4meb36534clvkj61][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'MovimientoDetalle' not found' in C:\xampp\htdocs\ClubSanBenito\views\movimiento\_imprimir_recibos_anulados.php:34
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-06-02 15:31:59 [::1][1][9cv1ukd6cn4meb36534clvkj61][info][application] $_GET = [
+    'r' => 'movimiento/consulta-recibos-anulados'
+]
+
+$_POST = [
+    '_csrf' => 'cVMxb2owSVpGNF4LUncROUkBchgpZAc0KRhaGx8FeWgyC1dCJwgtbQ=='
+    'fecha_desde' => '01-05-2017'
+    'fecha_hasta' => '01-05-2017'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '4757'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-recibos-anulados'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496410319.167
+    'REQUEST_TIME' => 1496410319
+]
+2017-06-02 15:36:54 [::1][1][9cv1ukd6cn4meb36534clvkj61][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in C:\xampp\htdocs\ClubSanBenito\models\Movimiento.php:168
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-06-02 15:36:54 [::1][1][9cv1ukd6cn4meb36534clvkj61][info][application] $_GET = [
+    'r' => 'movimiento/consulta-recibos-anulados'
+]
+
+$_POST = [
+    '_csrf' => 'd3Y1SEZyRWFAEVosfjUdAk8kdj8FJgsPLz1ePDNHdVM0LlNlC0ohVg=='
+    'fecha_desde' => '01-05-2017'
+    'fecha_hasta' => '31-05-2017'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '4799'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-recibos-anulados'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496410614.617
+    'REQUEST_TIME' => 1496410614
+]
+2017-06-02 15:37:03 [::1][1][9cv1ukd6cn4meb36534clvkj61][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in C:\xampp\htdocs\ClubSanBenito\models\Movimiento.php:168
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-06-02 15:37:03 [::1][1][9cv1ukd6cn4meb36534clvkj61][info][application] $_GET = [
+    'r' => 'movimiento/consulta-recibos-anulados'
+]
+
+$_POST = [
+    '_csrf' => 'd3Y1SEZyRWFAEVosfjUdAk8kdj8FJgsPLz1ePDNHdVM0LlNlC0ohVg=='
+    'fecha_desde' => '01-05-2017'
+    'fecha_hasta' => '31-05-2017'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '4804'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-recibos-anulados'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496410623.419
+    'REQUEST_TIME' => 1496410623
+]
+2017-06-02 15:37:32 [::1][1][9cv1ukd6cn4meb36534clvkj61][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in C:\xampp\htdocs\ClubSanBenito\models\Movimiento.php:168
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-06-02 15:37:32 [::1][1][9cv1ukd6cn4meb36534clvkj61][info][application] $_GET = [
+    'r' => 'movimiento/consulta-recibos-anulados'
+]
+
+$_POST = [
+    '_csrf' => 'd3Y1SEZyRWFAEVosfjUdAk8kdj8FJgsPLz1ePDNHdVM0LlNlC0ohVg=='
+    'fecha_desde' => '01-05-2017'
+    'fecha_hasta' => '31-05-2017'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '4814'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-recibos-anulados'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496410652.148
+    'REQUEST_TIME' => 1496410652
+]
+2017-06-02 15:38:54 [::1][1][9cv1ukd6cn4meb36534clvkj61][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in C:\xampp\htdocs\ClubSanBenito\models\Movimiento.php:168
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-06-02 15:38:53 [::1][1][9cv1ukd6cn4meb36534clvkj61][info][application] $_GET = [
+    'r' => 'movimiento/consulta-recibos-anulados'
+]
+
+$_POST = [
+    '_csrf' => 'd3Y1SEZyRWFAEVosfjUdAk8kdj8FJgsPLz1ePDNHdVM0LlNlC0ohVg=='
+    'fecha_desde' => '01-05-2017'
+    'fecha_hasta' => '31-05-2017'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '4825'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-recibos-anulados'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496410733.933
+    'REQUEST_TIME' => 1496410733
+]
+2017-06-02 15:39:18 [::1][1][9cv1ukd6cn4meb36534clvkj61][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The "query" property must be an instance of a class that implements the QueryInterface e.g. yii\db\Query or its subclasses.' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\data\ActiveDataProvider.php:101
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\data\BaseDataProvider.php(79): yii\data\ActiveDataProvider->prepareModels()
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\data\BaseDataProvider.php(92): yii\data\BaseDataProvider->prepare()
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\data\BaseDataProvider.php(133): yii\data\BaseDataProvider->getModels()
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(178): yii\data\BaseDataProvider->getCount()
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(149): yii\widgets\BaseListView->renderSummary()
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection('{summary}')
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{summary}')
+#7 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#9 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#10 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Widget.php(98): yii\grid\GridView->run()
+#11 C:\xampp\htdocs\ClubSanBenito\views\movimiento\_imprimir_recibos_anulados.php(58): yii\base\Widget::widget(Array)
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#14 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\MovimientoController))
+#15 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\View->render('_imprimir_recib...', Array, Object(app\controllers\MovimientoController))
+#16 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(654): yii\base\Controller->renderPartial('_imprimir_recib...', Array)
+#17 [internal function]: app\controllers\MovimientoController->actionConsultaRecibosAnulados()
+#18 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('consulta-recibo...', Array)
+#21 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('movimiento/cons...', Array)
+#22 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#24 {main}
+2017-06-02 15:39:18 [::1][1][9cv1ukd6cn4meb36534clvkj61][info][application] $_GET = [
+    'r' => 'movimiento/consulta-recibos-anulados'
+]
+
+$_POST = [
+    '_csrf' => 'd3Y1SEZyRWFAEVosfjUdAk8kdj8FJgsPLz1ePDNHdVM0LlNlC0ohVg=='
+    'fecha_desde' => '01-05-2017'
+    'fecha_hasta' => '31-05-2017'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '4896'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-recibos-anulados'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496410758.09
+    'REQUEST_TIME' => 1496410758
+]
+2017-06-02 15:40:29 [::1][1][9cv1ukd6cn4meb36534clvkj61][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The "query" property must be an instance of a class that implements the QueryInterface e.g. yii\db\Query or its subclasses.' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\data\ActiveDataProvider.php:101
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\data\BaseDataProvider.php(79): yii\data\ActiveDataProvider->prepareModels()
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\data\BaseDataProvider.php(92): yii\data\BaseDataProvider->prepare()
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\data\BaseDataProvider.php(133): yii\data\BaseDataProvider->getModels()
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(178): yii\data\BaseDataProvider->getCount()
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(149): yii\widgets\BaseListView->renderSummary()
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection('{summary}')
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{summary}')
+#7 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#9 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#10 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Widget.php(98): yii\grid\GridView->run()
+#11 C:\xampp\htdocs\ClubSanBenito\views\movimiento\_imprimir_recibos_anulados.php(57): yii\base\Widget::widget(Array)
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#14 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\MovimientoController))
+#15 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\View->render('_imprimir_recib...', Array, Object(app\controllers\MovimientoController))
+#16 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(654): yii\base\Controller->renderPartial('_imprimir_recib...', Array)
+#17 [internal function]: app\controllers\MovimientoController->actionConsultaRecibosAnulados()
+#18 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#19 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('consulta-recibo...', Array)
+#21 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('movimiento/cons...', Array)
+#22 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#24 {main}
+2017-06-02 15:40:29 [::1][1][9cv1ukd6cn4meb36534clvkj61][info][application] $_GET = [
+    'r' => 'movimiento/consulta-recibos-anulados'
+]
+
+$_POST = [
+    '_csrf' => 'd3Y1SEZyRWFAEVosfjUdAk8kdj8FJgsPLz1ePDNHdVM0LlNlC0ohVg=='
+    'fecha_desde' => '01-05-2017'
+    'fecha_hasta' => '31-05-2017'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '4906'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-recibos-anulados'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496410829.382
+    'REQUEST_TIME' => 1496410829
+]
+2017-06-02 15:41:44 [::1][1][9cv1ukd6cn4meb36534clvkj61][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in C:\xampp\htdocs\ClubSanBenito\models\Movimiento.php:168
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-06-02 15:41:44 [::1][1][9cv1ukd6cn4meb36534clvkj61][info][application] $_GET = [
+    'r' => 'movimiento/consulta-recibos-anulados'
+]
+
+$_POST = [
+    '_csrf' => 'd3Y1SEZyRWFAEVosfjUdAk8kdj8FJgsPLz1ePDNHdVM0LlNlC0ohVg=='
+    'fecha_desde' => '01-05-2017'
+    'fecha_hasta' => '31-05-2017'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '4913'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-recibos-anulados'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496410904.054
+    'REQUEST_TIME' => 1496410904
+]
+2017-06-02 15:42:15 [::1][1][9cv1ukd6cn4meb36534clvkj61][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in C:\xampp\htdocs\ClubSanBenito\models\Movimiento.php:168
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-06-02 15:42:15 [::1][1][9cv1ukd6cn4meb36534clvkj61][info][application] $_GET = [
+    'r' => 'movimiento/consulta-recibos-anulados'
+]
+
+$_POST = [
+    '_csrf' => 'd3Y1SEZyRWFAEVosfjUdAk8kdj8FJgsPLz1ePDNHdVM0LlNlC0ohVg=='
+    'fecha_desde' => '01-05-2017'
+    'fecha_hasta' => '31-05-2017'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '4918'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-recibos-anulados'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496410935.612
+    'REQUEST_TIME' => 1496410935
+]
+2017-06-02 15:42:36 [::1][1][9cv1ukd6cn4meb36534clvkj61][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in C:\xampp\htdocs\ClubSanBenito\models\Movimiento.php:169
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-06-02 15:42:36 [::1][1][9cv1ukd6cn4meb36534clvkj61][info][application] $_GET = [
+    'r' => 'movimiento/consulta-recibos-anulados'
+]
+
+$_POST = [
+    '_csrf' => 'd3Y1SEZyRWFAEVosfjUdAk8kdj8FJgsPLz1ePDNHdVM0LlNlC0ohVg=='
+    'fecha_desde' => '01-05-2017'
+    'fecha_hasta' => '31-05-2017'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '4927'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-recibos-anulados'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496410956.17
+    'REQUEST_TIME' => 1496410956
+]
+2017-06-02 16:00:47 [::1][1][9cv1ukd6cn4meb36534clvkj61][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Movimiento::scoreTraining' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\db\BaseActiveRecord.php(247): yii\base\Component->__get('scoreTraining')
+#1 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(204): yii\db\BaseActiveRecord->__get('scoreTraining')
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\DataColumn.php(193): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Movimiento), 'scoreTraining')
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\DataColumn.php(204): yii\grid\DataColumn->getDataCellValue(Object(app\models\Movimiento), 1421, 0)
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\Column.php(108): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Movimiento), 1421, 0)
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(504): yii\grid\Column->renderDataCell(Object(app\models\Movimiento), 1421, 0)
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(473): yii\grid\GridView->renderTableRow(Object(app\models\Movimiento), 1421, 0)
+#7 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(344): yii\grid\GridView->renderTableBody()
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(151): yii\grid\GridView->renderItems()
+#9 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection('{items}')
+#10 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#14 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Widget.php(98): yii\grid\GridView->run()
+#15 C:\xampp\htdocs\ClubSanBenito\views\movimiento\_imprimir_recibos_anulados.php(80): yii\base\Widget::widget(Array)
+#16 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#18 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\MovimientoController))
+#19 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\View->render('_imprimir_recib...', Array, Object(app\controllers\MovimientoController))
+#20 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(654): yii\base\Controller->renderPartial('_imprimir_recib...', Array)
+#21 [internal function]: app\controllers\MovimientoController->actionConsultaRecibosAnulados()
+#22 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#23 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#24 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('consulta-recibo...', Array)
+#25 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('movimiento/cons...', Array)
+#26 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#28 {main}
+2017-06-02 16:00:46 [::1][1][9cv1ukd6cn4meb36534clvkj61][info][application] $_GET = [
+    'r' => 'movimiento/consulta-recibos-anulados'
+]
+
+$_POST = [
+    '_csrf' => 'd3Y1SEZyRWFAEVosfjUdAk8kdj8FJgsPLz1ePDNHdVM0LlNlC0ohVg=='
+    'fecha_desde' => '01-05-2017'
+    'fecha_hasta' => '31-05-2017'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'HTTP_IF_MODIFIED_SINCE' => 'Fri, 02 Jun 2017 13:55:51 GMT'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '5620'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-recibos-anulados'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496412046.593
+    'REQUEST_TIME' => 1496412046
+]
+2017-06-02 16:01:45 [::1][1][9cv1ukd6cn4meb36534clvkj61][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message ''26-05-2017' is not a numeric value.' in C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\i18n\Formatter.php:1279
+Stack trace:
+#0 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\i18n\Formatter.php(935): yii\i18n\Formatter->normalizeNumericValue('26-05-2017')
+#1 [internal function]: yii\i18n\Formatter->asDecimal('26-05-2017', 2)
+#2 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\i18n\Formatter.php(316): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\DataColumn.php(204): yii\i18n\Formatter->format('26-05-2017', Array)
+#4 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\Column.php(108): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Movimiento), 1421, 0)
+#5 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(504): yii\grid\Column->renderDataCell(Object(app\models\Movimiento), 1421, 0)
+#6 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(473): yii\grid\GridView->renderTableRow(Object(app\models\Movimiento), 1421, 0)
+#7 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(344): yii\grid\GridView->renderTableBody()
+#8 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(151): yii\grid\GridView->renderItems()
+#9 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(313): yii\widgets\BaseListView->renderSection('{items}')
+#10 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(126): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\widgets\BaseListView.php(129): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\grid\GridView.php(288): yii\widgets\BaseListView->run()
+#14 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Widget.php(98): yii\grid\GridView->run()
+#15 C:\xampp\htdocs\ClubSanBenito\views\movimiento\_imprimir_recibos_anulados.php(70): yii\base\Widget::widget(Array)
+#16 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#18 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\MovimientoController))
+#19 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\View->render('_imprimir_recib...', Array, Object(app\controllers\MovimientoController))
+#20 C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php(654): yii\base\Controller->renderPartial('_imprimir_recib...', Array)
+#21 [internal function]: app\controllers\MovimientoController->actionConsultaRecibosAnulados()
+#22 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#23 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#24 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('consulta-recibo...', Array)
+#25 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('movimiento/cons...', Array)
+#26 C:\xampp\htdocs\ClubSanBenito\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\xampp\htdocs\ClubSanBenito\web\index.php(12): yii\base\Application->run()
+#28 {main}
+2017-06-02 16:01:45 [::1][1][9cv1ukd6cn4meb36534clvkj61][info][application] $_GET = [
+    'r' => 'movimiento/consulta-recibos-anulados'
+]
+
+$_POST = [
+    '_csrf' => 'd3Y1SEZyRWFAEVosfjUdAk8kdj8FJgsPLz1ePDNHdVM0LlNlC0ohVg=='
+    'fecha_desde' => '01-05-2017'
+    'fecha_hasta' => '31-05-2017'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '5625'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=movimiento%2Fconsulta-recibos-anulados'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496412105.383
+    'REQUEST_TIME' => 1496412105
+]
+2017-06-02 16:07:28 [::1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\xampp\htdocs\ClubSanBenito/messages/es/app.php
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:105
+    in C:\xampp\htdocs\ClubSanBenito\views\movimiento\view.php:138
+    in C:\xampp\htdocs\ClubSanBenito\controllers\MovimientoController.php:434
+2017-06-02 16:07:28 [::1][1][-][info][application] $_GET = [
+    'r' => 'movimiento/view'
+    'v' => 'i'
+]
+
+$_COOKIE = [
+    '_csrf' => '6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"7god8GXc8RCwCTNnXKktu502CXf-M8d7\";}'
+    'PHPSESSID' => '9cv1ukd6cn4meb36534clvkj61'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-balance'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/clubsanbenito/web/index.php?r=movimiento%2Fconsulta-recibos-anulados'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es;q=0.8'
+    'HTTP_COOKIE' => '_csrf=6119e97a3cbe024fe2bf30d08b5a52c1e633233e8b0312c30a76d573017668f7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%227god8GXc8RCwCTNnXKktu502CXf-M8d7%22%3B%7D; PHPSESSID=9cv1ukd6cn4meb36534clvkj61'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\DTS\\Binn\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/ClubSanBenito/web/index.php'
+    'REMOTE_PORT' => '5870'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=movimiento%2Fview&v=i'
+    'REQUEST_URI' => '/clubsanbenito/web/index.php?r=movimiento%2Fview&v=i'
+    'SCRIPT_NAME' => '/clubsanbenito/web/index.php'
+    'PHP_SELF' => '/clubsanbenito/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1496412448.035
+    'REQUEST_TIME' => 1496412448
+]

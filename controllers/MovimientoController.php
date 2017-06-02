@@ -634,19 +634,23 @@ class MovimientoController extends BaseController {
 
 	public function actionConsultaRecibosAnulados() {
 
+		
 		if (Yii::$app->request->post()) {
 
 			$post = Yii::$app->request->post();
 			$fecha_desde = date('Y-m-d', strtotime($post['fecha_desde']));
 			$fecha_hasta = date('Y-m-d', strtotime($post['fecha_hasta']));
 
-			$movimiento = Movimiento::find()->where(['not','obs',null])->all();
+			$model = new Movimiento();
+			//$dataProvider = Movimiento::find()->where(['not','obs',null]);
+			$dataProvider = $model->getRecibosAnulados();	
 			
 			$mpdf = new mPDF('utf-8', 'A4');
 			$mpdf->WriteHTML($this->renderPartial('_imprimir_recibos_anulados', [
-				'movimiento' => $movimiento,
+				'dataProvider' => $dataProvider,
 				'fecha_desde' => $fecha_desde,
-				'fecha_hasta' => $fecha_hasta,					
+				'fecha_hasta' => $fecha_hasta,	
+				'model'=>$model,				
 			]));
 			$mpdf->Output();
 			exit;
@@ -667,15 +671,15 @@ class MovimientoController extends BaseController {
 			$categoria_hasta = $post['categoria_hasta'];
 			$anio = $post['anio'];
 
-			$sql = "SELECT s.id,s.apellido_nombre,s.fecha_nacimiento FROM socio s
+			$sql = "SELECT s.id,s.apellido_nombre,s.fecha_nacimiento,s.matricula,s.fecha_baja FROM socio s
 					JOIN socio_debito sd ON sd.id_socio = s.id
-					WHERE YEAR(fecha_nacimiento) >= '". $categoria_desde ."' AND YEAR(fecha_nacimiento) <= '". $categoria_hasta ."' AND (sd.id_debito = 19 OR sd.id_debito = 22 OR sd.id_debito = 23) AND s.fecha_baja is null ORDER BY s.apellido_nombre ASC" ;
+					WHERE YEAR(fecha_nacimiento) >= '". $categoria_desde ."' AND YEAR(fecha_nacimiento) <= '". $categoria_hasta ."' AND (sd.id_debito = 19 OR sd.id_debito = 22 OR sd.id_debito = 23) ORDER BY s.apellido_nombre ASC" ;
 
 			$socio = Socio::findBySql($sql)->all();
 			
 			$query = "SELECT * FROM `movimiento_detalle` md 
 				JOIN movimiento m on  md.movimiento_id = m.id
-				where md.periodo_mes>=1 AND md.periodo_mes<=12 AND md.periodo_anio=". $anio ." AND m.obs is null AND (md.subcuenta_id=38 OR md.subcuenta_id=50 OR md.subcuenta_id=51) AND fecha_pago is NOT null
+				where md.periodo_mes>=1 AND md.periodo_mes<=12 AND md.periodo_anio=". $anio ." AND m.obs is null AND (md.subcuenta_id=38 OR md.subcuenta_id=50 OR md.subcuenta_id=51) 
 				ORDER BY m.fk_cliente,md.periodo_mes";
 			
 			$movimientoDetalle = MovimientoDetalle::findBySql($query)->all();
@@ -874,20 +878,60 @@ class MovimientoController extends BaseController {
 						
 			// PARAMETROS	
 			$fecha_desde = date('Y-m-d', strtotime($post['fecha_desde']));
-			
-			$fecha_hasta = date('Y-m-d', strtotime($post['fecha_hasta']));	
-			
+			$fecha_hasta = date('Y-m-d', strtotime($post['fecha_hasta']));
 			$deporte = $post['deportes'];
-			
 			$categoria_desde = $post['categoria_desde'];
+			$categoria_hasta = $post['categoria_hasta'];
+			$socio = $post['socio'];
+			$anio = 2017;	
 			
-			$categoria_hasta = $post['categoria_hasta'];	
+			if ($socio == ""){
+				$sql = "SELECT s.id,s.apellido_nombre,s.fecha_nacimiento,s.matricula,s.fecha_baja FROM socio s
+						JOIN socio_debito sd ON sd.id_socio = s.id
+						WHERE YEAR(fecha_nacimiento) >= '". $categoria_desde ."' AND YEAR(fecha_nacimiento) <= '". $categoria_hasta ."' AND sd.id_debito > 19 group by s.id ASC" ;
+				$socio = Socio::findBySql($sql)->all();
+			}else{
+				$sql = "SELECT s.id,s.apellido_nombre,s.fecha_nacimiento,s.matricula,s.fecha_baja FROM socio s
+						JOIN socio_debito sd ON sd.id_socio = s.id
+						WHERE YEAR(fecha_nacimiento) >= '". $categoria_desde ."' AND YEAR(fecha_nacimiento) <= '". $categoria_hasta
+						 ."' AND sd.id_debito > 19 AND s.id=".$socio." group by s.id ASC" ;
+				$socio = Socio::findBySql($sql)->all();
+			}
 
-			$socio = $post['socio'];	
 
-			$titulo = "ESTADO DE CUENTA";
+			$dep = Debito::findOne($deporte);
 
-			$this->imprimirEstadoCuenta($fecha_desde,$fecha_hasta,$deporte,$categoria_desde,$categoria_hasta,$socio,$titulo);
+			if ($deporte == ""){ // si no seleciona un deporte 
+				$query = "SELECT * FROM `movimiento_detalle` md 
+					JOIN movimiento m on  md.movimiento_id = m.id
+					where md.periodo_mes>=1 AND md.periodo_mes<=12 AND md.periodo_anio=". $anio ." AND m.obs is null
+					ORDER BY m.fk_cliente,md.periodo_mes";
+								
+			}else{ // si selecciona un deporte 
+				$query = "SELECT * FROM `movimiento_detalle` md 
+					JOIN movimiento m on  md.movimiento_id = m.id
+					where md.periodo_mes>=1 AND md.periodo_mes<=12 AND md.periodo_anio=". $anio ." AND m.obs is null
+					 AND md.subcuenta_id = " . $dep->subcuenta_id . "
+					ORDER BY m.fk_cliente,md.periodo_mes";
+			}
+			
+			$movimientoDetalle = MovimientoDetalle::findBySql($query)->all();
+			
+			
+			/****** IMPRIMIR ****/
+			$mpdf = new mPDF('utf-8', 'A4-L');
+			$mpdf->WriteHTML($this->renderPartial('_imprimir_ec', [
+				'socio' => $socio,
+				'movimientoDetalle' => $movimientoDetalle,				
+				'anio' => $anio,
+				'categoria_desde'=>$categoria_desde,
+				'categoria_hasta'=>$categoria_hasta
+			]));
+			$mpdf->Output();
+			exit;
+
+
+			
 		}
 
 
@@ -897,11 +941,17 @@ class MovimientoController extends BaseController {
             $socios[$cs['id']] = $cs['apellido_nombre'] . "  - Dni:  ". $cs['dni'] ;
         }
 				
-	 	$consultaDebitos = Debito::find()->asArray()->all();
+	 	$consultaDebitos = Debito::find()
+	 	->where(['<>','subcuenta_id','38'])
+	 	->andWhere(['<>','subcuenta_id','36'])
+	 	->andWhere(['<>','subcuenta_id','50'])
+	 	->andWhere(['<>','subcuenta_id','51'])
+	 	->asArray()
+	 	->all();
 		
 		$deportes = ArrayHelper::map($consultaDebitos, 'id', 'concepto');
         
-		return $this->render('_consulta_estado_cuenta', [
+		return $this->render('_consulta_ec', [
 			'socios' => $socios,			
 			'deportes' => $deportes,			
 			'accion' => "Estado de Cuenta",
@@ -928,7 +978,7 @@ class MovimientoController extends BaseController {
 
 					$dep = Debito::findOne($deporte);
 				
-					$sql = "SELECT s.id,s.apellido_nombre,s.fecha_nacimiento FROM socio  s
+					$sql = "SELECT s.id,s.apellido_nombre,s.fecha_nacimiento,s.matricula,s.fecha_baja FROM socio  s
 							JOIN socio_debito sd ON sd.id_socio = s.id
 							WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."' AND sd.id_debito = ". $deporte ." ORDER BY s.id DESC" ;
 
@@ -941,11 +991,12 @@ class MovimientoController extends BaseController {
 						->andWhere(['<=', 'periodo_mes', $mes_hasta])
 						->andWhere(['<=', 'periodo_anio', $anio_hasta])
 						->andWhere(['subcuenta_id'=>$dep->subcuenta_id])
+						->andWhere(['movimiento.obs'=>null])
 						->all();
 				}			
 				else{
 					
-						$sql = "SELECT s.id,s.apellido_nombre,s.fecha_nacimiento FROM socio  s						
+						$sql = "SELECT s.id,s.apellido_nombre,s.fecha_nacimiento,s.matricula,s.fecha_baja FROM socio  s						
 							WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."' ORDER BY s.id DESC" ;
 						$socio = Socio::findBySql($sql)->all();
 				
@@ -955,7 +1006,7 @@ class MovimientoController extends BaseController {
 							->andWhere(['>=', 'periodo_anio', $anio_desde])
 							->andWhere(['<=', 'periodo_mes', $mes_hasta])
 							->andWhere(['<=', 'periodo_anio', $anio_hasta])
-							//->andWhere(['subcuenta_id'=>$dep->subcuenta_id])
+							->andWhere(['movimiento.obs'=>null])
 							->all();							
 				}
 				
@@ -965,7 +1016,12 @@ class MovimientoController extends BaseController {
 								
 				$movimientoDetalle = MovimientoDetalle::find()
 					->joinWith('movimiento')					
-					->andWhere(['movimiento.fk_cliente' => $ss])					
+					->andWhere(['movimiento.fk_cliente' => $ss])
+					->where(['>=', 'periodo_mes', $mes_desde])
+					->andWhere(['>=', 'periodo_anio', $anio_desde])
+					->andWhere(['<=', 'periodo_mes', $mes_hasta])
+					->andWhere(['<=', 'periodo_anio', $anio_hasta])
+					->andWhere(['movimiento.obs'=>null])
 					->all();
 					
 			}
@@ -1009,7 +1065,7 @@ class MovimientoController extends BaseController {
 					->joinWith('movimiento')					
 					->where(['>=', 'fecha_pago', $fecha_desde])
 					->andWhere(['<=', 'fecha_pago', $fecha_hasta])
-					->andWhere(['obs' => null])
+					->andWhere(['movimiento.obs' => null])
 					->andWhere(['subcuenta_id'=>$dep->subcuenta_id])
 					->all();
 			}			
@@ -1023,7 +1079,7 @@ class MovimientoController extends BaseController {
 						->joinWith('movimiento')
 						->where(['>=', 'fecha_pago', $fecha_desde])
 						->andWhere(['<=', 'fecha_pago', $fecha_hasta])		
-						->andWhere(['obs' => null])				
+						->andWhere(['movimiento.obs' => null])				
 						->all();							
 			}
 				

@@ -125,18 +125,13 @@ $this->params['breadcrumbs'][] = $this->title;
         [
             'class' => 'yii\grid\ActionColumn',
             'header' => 'Actions',
-            'template' => '{imprimir} {anular}',
+            'template' => '{imprimir} {anular} {deleted}',
             'buttons' => [
                 'imprimir' => function ($url, $model) {          
                     if ($model->fecha_pago != "" || $model->obs!=null) {
                         return Html::a('<span class="btn btn-default glyphicon glyphicon-print"> Imprimir</span>', $url, [
                             'data-confirm' => Yii::t('yii', 'Imprimir el Recibo?'),
                             'title'=>"Imprimir"
-                        ]);
-                    }else{
-                        return Html::a('<span class="btn btn-default glyphicon glyphicon-print disabled"> Imprimir</span>', null, [
-                            //'data-confirm' => Yii::t('yii', 'Imprimir el Recibo?'),
-                            'title'=>"Imprimir",
                         ]);
                     }
                 },
@@ -147,16 +142,11 @@ $this->params['breadcrumbs'][] = $this->title;
                     ]);
                 },
                 'anular' => function ($url, $model) {
-                    if ($model->obs == null) {
+                    if ($model->fecha_pago != "" && $model->obs == null) {
                         return Html::a('<span class="btn btn-danger glyphicon glyphicon-remove-sign"> Anular</span>', $url, [
                             'title'=>"Anular",
                             'name'=>'anular',
                             'value'=>$model->id
-                        ]);
-                    }else{
-                         return Html::a('<span class="btn btn-danger glyphicon glyphicon-remove-sign disabled"> Anular</span>', null, [
-                            //'data-confirm' => Yii::t('yii', 'Seguro que desea ANULAR?'),
-                            'title'=>"Anular"                           
                         ]);
                     }
                 },

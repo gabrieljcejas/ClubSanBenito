@@ -1,5 +1,5 @@
 <div>
-	<h1>Libro de Socios</h1>
+	<h1>Estado de Cuenta - Socios</h1>
 	<label>Categoria desde <?=$categoria_desde?> hasta <?=$categoria_hasta?>.</label>
 	<label>Periodo: <?=$anio?></label>
 </div>

@@ -78,7 +78,7 @@ echo Nav::widget([
 				//['label' => 'Movimientos de Caja Agrupado por Cuenta', 'url' => ['movimiento/consulta-movimiento-cuenta']],
 				['label' => 'Detalles de Ingresos', 'url' => ['movimiento/consulta-ingresos']],
 				['label' => 'Detalles de Egresos', 'url' => ['movimiento/consulta-proveedor']],
-				//['label' => 'Recibos Anulados', 'url' => ['movimiento/consulta-recibos-anulados']],
+				['label' => 'Recibos Anulados', 'url' => ['movimiento/consulta-recibos-anulados']],
 				['label' => 'Estado de Cuenta Socios', 'url' => ['movimiento/consulta-estado-cuenta']],
 				['label' => 'Libro de Socios', 'url' => ['movimiento/consulta-libro-socio']],
 				['label' => 'Listado de Socios', 'url' => ['socio/listado-socio']],

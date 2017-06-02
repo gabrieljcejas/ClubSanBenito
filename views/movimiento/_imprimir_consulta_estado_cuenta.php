@@ -44,7 +44,7 @@ use yii\grid\GridView;
 					<td align="center"><?= $socio->apellido_nombre ?></td> 
 					<td align="center"><?= date("Y",strtotime($socio->fecha_nacimiento)) ?></td>
 					<td align="center"><?= $md->subCuenta->concepto ?></td>
-					<td align="center"><?= $md->periodo_mes."-".$md->periodo_anio ?></td>				
+					<td align="center"><?= $md->movimiento->getPeriodo($md->movimiento_id) ?></td>				
 					<td align="center">
 						<?php 
 							if ($md->movimiento->fecha_pago!=""){
