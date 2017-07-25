@@ -1,9 +1,14 @@
+<style type="text/css"> 
+th,td,b,p {
+ 		font-size: 10px;
+ 	}
+</style>
 <div><h1>Detalle Ingresos</h1><label>Fechas: <?=date("d-m-Y", strtotime($fecha_desde)) . " - " . date("d-m-Y", strtotime($fecha_hasta))?></label></div>
 <hr>
 
 <br><br><br>
 
-<table border="1" width="700">
+<table border="1">
 
 <tr>
 	<th>Fecha</th>
@@ -23,9 +28,9 @@
 			<td align="center">				
 				<?php 
 					if ($m->socio->apellido_nombre!=""){
-						echo $m->socio->apellido_nombre;
+						echo  strtoupper($m->socio->apellido_nombre);
 					}else{
-						echo $m->cliente->razon_social;
+						echo  strtoupper($m->cliente->razon_social);
 					}
 				?>
 				

@@ -1,9 +1,14 @@
+<style type="text/css"> 
+th,td,b,p {
+ 		font-size: 10px;
+ 	}
+</style>
 <div><h1>Movimientos de caja agrupado por cuenta</h1><label>Fecha desde: <?=date("d-m-Y", strtotime($fecha_desde)) . " hasta " . date("d-m-Y", strtotime($fecha_hasta))?></label></div>
 <hr>
 
 <br><br><br>
 
-<table border="1" width="700px">
+<table border="1">
 
 <tr>
 	<th>Fecha</th>

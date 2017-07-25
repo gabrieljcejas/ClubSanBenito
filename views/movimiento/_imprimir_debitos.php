@@ -16,7 +16,7 @@ margin-left: 0.5cm;
 <?php foreach ($movimiento as $m) {?>
         <?php $total = 0;?>
          <!-- codigo html tabla-->
-                <table width="100%" border="1" bordercolor="#000000">
+                <table width="100%" border="1" bordercolor="#000000" style="font-size:10px">
                   <tr>
                     <td colspan="3" align="center" bgcolor="#0066FF"  style="border:none"><strong>CLUB ATLETICO Y SOCIAL SAN BENITO</strong></td>
                     <td rowspan="2" align="center" bgcolor="#0066FF"  style="border:none"><img src="<?=yii::$app->urlManager->baseUrl . '/img/logo.jpeg'?>" width="50"></td>

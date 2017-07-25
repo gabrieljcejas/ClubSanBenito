@@ -1,3 +1,8 @@
+<style type="text/css"> 
+	th,td,b,p {
+ 		font-size: 10px;
+ 	}
+</style>
 <div>
 	<h1>Estado de Cuenta - Socios</h1>
 	<label>Categoria desde <?=$categoria_desde?> hasta <?=$categoria_hasta?>.</label>
@@ -5,12 +10,11 @@
 </div>
 <hr>
 
-<table border="1" width="100%">
+<table border="1">
 
 <tr>
-	<th align="center">N°</th>
-	<th align="center">Socio</th>
 	<th align="center">Matricula</th>	
+	<th align="left">Socio</th>	
 	<th align="center">Categoria</th>
 	<th align="center">Ene</th>
 	<th align="center">Feb</th>
@@ -51,9 +55,9 @@
 			<?php if ($md->movimiento->fk_cliente == $s->id){ ?>
 				
 				<?php if ($i == 0){ $i++; ?>
-					<td align="center"><?= $e++ ?></td>					 
-					<td align="center"><?= strtoupper($s->apellido_nombre)?></td>							
-					<td align="center"><?= $s->matricula ?></td>
+					<td align="center"><?= $s->matricula ?></td>					 
+					<td align="left"><?= strtoupper($s->apellido_nombre)?></td>		
+					
 					<td align="center"><?=$md->subCuenta->concepto ?></td>
 				<?php } ?>
 				<?php 				
@@ -115,7 +119,13 @@
 			<?php  } ?>
 	<?php } ?>
 	<?php if ($i == 1){ ?>
-		<td><?=$ene?></td><td><?=$feb?></td><td><?=$mar?></td><td><?=$abr?></td><td><?=$may?></td><td><?=$jun?></td><td><?=$jul?></td><td><?=$ago?></td><td><?=$sep?></td><td><?=$oct?></td><td><?=$nov?></td><td><?=$dic?></td><td></td>
+		<td><?=$ene?></td><td><?=$feb?></td><td><?=$mar?></td><td><?=$abr?></td><td><?=$may?></td><td><?=$jun?></td><td><?=$jul?></td><td><?=$ago?></td><td><?=$sep?></td><td><?=$oct?></td><td><?=$nov?></td><td><?=$dic?></td>
+			<td>
+				<?php if (!empty($s->fecha_baja)) {
+					echo date("d-m-Y",strtotime($s->fecha_baja)). " ". $s->obs;
+				}
+
+				 ?></td>
 	<?php } ?>
 	</tr>
 <?php } ?>

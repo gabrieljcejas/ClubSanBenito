@@ -11,9 +11,9 @@ use yii\widgets\Pjax;
 
 <div class="cliente-form">
 
-    <?php $form = ActiveForm::begin([
-        'id'=>$model->formName()        
-        ]);?>
+    <?php $form = ActiveForm::begin();?>
+
+    <form id="form" action="index.php?r=cliente/create"  method="post">
 
     <?= $form->field($model, 'razon_social')->textInput() ?>
 
@@ -28,45 +28,9 @@ use yii\widgets\Pjax;
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Guardar' : 'Guardar', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
-    <!--<?= Html::submitButton('Guardar',['class' =>'btn btn-success'])?>-->
+    
 
-     
+     </form>
 
     
-<?php ActiveForm::end(); ?>
-
-
-</div>
-<script type="text/javascript" src="<?=Yii::$app->request->baseUrl?>/js/jquery.min.js"></script>
-
-<script>
-    $(document).ready(function () {
-        $( "form" ).submit(function(e) { 
-            var form = $(this);
-            // return false if form still have some validation errors
-            if (form.find('.has-error').length) 
-            {
-                return false;
-            }
-            // submit form
-            $.ajax({
-                url    : form.attr('action'),
-                type   : form.attr('method'),
-                data   : form.serialize(),
-                success: function (data) 
-                {
-                   $(document).find('#modal').modal('hide');
-                    //alert('Grabo! '+ data.id);
-                    $(form).trigger('reset');  
-                    $.pjax.reload({container: '#s2_cliente'});
-                },
-                error  : function () 
-                {
-                    console.log('internal server error');
-                }
-            });
-            
-            return false;
-         });
-    });
-</script>
+    <?php ActiveForm::end(); ?>

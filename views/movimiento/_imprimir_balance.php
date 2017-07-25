@@ -1,6 +1,7 @@
 <?php
 ini_set('max_execution_time', 300); //300 seconds = 5 minutes
 ?>
+
 <div>
 	<h1>Balance</h1>
 	<label>Fecha desde: <?=date("d-m-Y", strtotime($fecha_desde)) . " hasta " . date("d-m-Y", strtotime($fecha_hasta))?></label>
@@ -9,7 +10,7 @@ ini_set('max_execution_time', 300); //300 seconds = 5 minutes
 
 <br><br>
 
-<table border="1" width="100%">
+<table border="1" width="100%" style="font-size:10px">
 <tr>	
 	<th>Conceptos</th>
 	<th>Ingresos</th>
@@ -44,6 +45,6 @@ ini_set('max_execution_time', 300); //300 seconds = 5 minutes
 
 <br>
 
-<p><strong>TOTAL INGRESO:</strong> $<?= number_format($suma_ingreso,2,",",".") ?></p>
-<p><strong>TOTAL GASTOS:</strong> $<?= number_format($suma_egreso,2,",",".") ?></p>
-<p><strong>SALDO:</strong> $<?= number_format($saldo,2,",",".") ?></p>
+<p style="font-size:10px"><strong>TOTAL INGRESO:</strong> $<?= number_format($suma_ingreso,2,",",".") ?></p>
+<p style="font-size:10px"><strong>TOTAL GASTOS:</strong> $<?= number_format($suma_egreso,2,",",".") ?></p>
+<p style="font-size:10px"><strong>SALDO:</strong> $<?= number_format($saldo,2,",",".") ?></p>

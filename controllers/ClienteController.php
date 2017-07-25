@@ -67,17 +67,17 @@ class ClienteController extends Controller
         $model = new Cliente();
 
         if ($model->load(Yii::$app->request->post())) {
-
+           
             if  ($model->save()){
-                Yii::$app->response->format = 'json';
-                return ['id'=>$model->id];                
+                return $this->redirect(['/movimiento/index', 'v' => 'i']);
             }
-            //return $this->redirect(['/movimiento/index', 'v' => 'i']);
-        } else {
-            return $this->renderAjax('create', [
-                'model' => $model,
-            ]);
-        }
+            
+        } 
+            
+        return $this->renderAjax('create', [
+            'model' => $model,
+        ]);
+       
     }
 
     public function actionCreate2()

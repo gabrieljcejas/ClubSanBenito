@@ -451,7 +451,7 @@ class SocioController extends BaseController {
 
             	$estado = "ACTIVOS";
                 
-                $sql = "SELECT s.id,s.apellido_nombre,s.dni,s.matricula,s.fecha_nacimiento FROM socio  s
+                $sql = "SELECT * FROM socio  s
                         JOIN socio_debito sd ON sd.id_socio = s.id
                         WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."' AND sd.id_debito = ". $deporte ." AND fecha_baja IS NULL ORDER BY s.matricula ASC" ;
             
@@ -459,7 +459,7 @@ class SocioController extends BaseController {
 
             	$estado = "DADOS DE BAJA";
 
-                $sql = "SELECT s.id,s.apellido_nombre,s.dni,s.matricula,s.fecha_nacimiento FROM socio  s
+                $sql = "SELECT * FROM socio  s
                         JOIN socio_debito sd ON sd.id_socio = s.id
                         WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."' AND sd.id_debito = ". $deporte ." AND fecha_baja IS NOT NULL ORDER BY  s.matricula ASC" ;
                    
@@ -472,14 +472,14 @@ class SocioController extends BaseController {
 
             	$estado = "ACTIVOS";
                 
-                $sql = "SELECT s.id,s.apellido_nombre,s.dni,s.matricula,s.fecha_nacimiento FROM socio  s
+                $sql = "SELECT * FROM socio  s
                         WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."'  AND fecha_baja IS NULL ORDER BY s.matricula ASC" ;
             
             }else{ // todos los socios dados de baja
 
             	$estado = "DADOS DE BAJA";
 
-                $sql = "SELECT s.id,s.apellido_nombre,s.dni,s.matricula,s.fecha_nacimiento FROM socio  s
+                $sql = "SELECT * FROM socio  s
                         WHERE YEAR(fecha_nacimiento) >= '".$categoria_desde."' AND YEAR(fecha_nacimiento) <= '".$categoria_hasta."' AND fecha_baja IS NOT NULL ORDER BY s.matricula ASC" ;
                    
             }
@@ -491,7 +491,7 @@ class SocioController extends BaseController {
         /**
         ****** IMPRIMIR 
         **/
-        $mpdf = new mPDF('utf-8', 'A4');
+        $mpdf = new mPDF('utf-8', 'A4-L');
        
         $mpdf->WriteHTML($this->renderPartial('_imprimir_listado_socios', [
             'deporte' => $deporte,            

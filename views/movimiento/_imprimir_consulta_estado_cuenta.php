@@ -6,6 +6,11 @@ use yii\grid\GridView;
         <link href="/club/web/assets/83b0ec3d/css/bootstrap.css" rel="stylesheet">
         <link href="/club/web/css/site.css" rel="stylesheet">
     </head>
+    <style type="text/css"> 
+	th,td,b,p {
+ 		font-size: 10px;
+ 	}
+</style>
     
     <h1><?=$titulo?></h1>        
     <h3>Deporte:
@@ -23,7 +28,7 @@ use yii\grid\GridView;
 
 <hr><br><br>
 
-<table border="1" width="700px">
+<table border="1">
 
 <tr>
 	<th align="center">Socio</th>
@@ -41,7 +46,7 @@ use yii\grid\GridView;
 			<tr>			
 				<?php if ($ss == $md->movimiento->fk_cliente){ ?>
 
-					<td align="center"><?= $socio->apellido_nombre ?></td> 
+					<td align="left"><?=  strtoupper($socio->apellido_nombre) ?></td> 
 					<td align="center"><?= date("Y",strtotime($socio->fecha_nacimiento)) ?></td>
 					<td align="center"><?= $md->subCuenta->concepto ?></td>
 					<td align="center"><?= $md->movimiento->getPeriodo($md->movimiento_id) ?></td>				
@@ -72,7 +77,7 @@ use yii\grid\GridView;
 			<tr>			
 				<?php if ($s->id == $md->movimiento->fk_cliente){ ?>
 
-					<td align="center"><?= $s->apellido_nombre ?></td> 
+					<td align="left"><?=  strtoupper($s->apellido_nombre) ?></td> 
 					<td align="center"><?= date("Y",strtotime($s->fecha_nacimiento)) ?></td>
 					<td align="center"><?= $md->subCuenta->concepto ?></td>
 					<td align="center"><?= $md->periodo_mes."-".$md->periodo_anio ?></td>				
@@ -106,7 +111,7 @@ use yii\grid\GridView;
 
 <br>
 
-<b>TOTAL DEUDA: <?= "$".$saldo?></b><br><br>
+<b style="font-size:10px">TOTAL DEUDA: <?= "$".$saldo?></b><br><br>
 
-<b>TOTAL ABONADO: <?= "$".$abonado?></b>
+<b style="font-size:10px">TOTAL ABONADO: <?= "$".$abonado?></b>
 

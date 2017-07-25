@@ -1,9 +1,6 @@
-<style type="text/css">
- td {
- 		font-size: 12px;
- 	}
-th {
- 		font-size: 12px;
+<style type="text/css"> 
+th,td,b,p {
+ 		font-size: 10px;
  	}
 </style>
 <div>
@@ -11,7 +8,7 @@ th {
 </div>
 <hr>
 
-<br><br>
+<br>
 
 <table border="1">
 
@@ -31,25 +28,25 @@ th {
 	<?php foreach ($m->movimientoDetalle as $md) {?>
 
 		<tr>
-			<td align="center"><?=date("d-m-Y", strtotime($m->fecha_pago))?></td>
+			<td align="left"><?=date("d-m-Y", strtotime($m->fecha_pago))?></td>
 			<td align="center"><?=$m->nro_recibo?></td>
 			<?php if ($md->tipo == 'i') {?>			
 				<?php $saldo = $md->importe + $saldo?>
 				<?php $suma_ingreso = $md->importe + $suma_ingreso?>
-				<td align="center">
+				<td align="left">
 					<?php if ($m->fk_cliente!=""){
-						 	echo $m->socio->apellido_nombre; 
+						 	echo strtoupper($m->socio->apellido_nombre); 
 						 }elseif ($m->cliente_id!="") {
-						 	echo $m->cliente->razon_social; 
+						 	echo strtoupper($m->cliente->razon_social); 
 						 } 
 				 	?>					
 				</td>				
 			<?php } else{	?>
 			<?php $saldo = $saldo - $md->importe?>
 			<?php $suma_egreso = $md->importe + $suma_egreso?>
-				<td align="center">
+				<td align="left">
 					<?php if ($m->fk_prov!=""){
-						 	echo $m->proveedor->nombre;
+						 	echo strtoupper($m->proveedor->nombre);
 						 }; 
 				 	?>
 			 	</td>
@@ -71,8 +68,8 @@ th {
 
 </table>
 
-<p><strong>CAJA INCIAL:</strong> $<?= number_format($caja_inicial,2,",",".") ?></p>
-<p><strong>TOTAL INGRESO:</strong> $<?= number_format($suma_ingreso,2,",",".") ?></p>
-<p><strong>TOTAL EGRESO:</strong> $<?= number_format($suma_egreso,2,",",".") ?></p>
-<p><strong>CAJA FINAL:</strong> $<?= number_format($saldo+$caja_inicial,2,",",".") ?></p>
+<p style="font-size:10px"><strong>CAJA INCIAL:</strong> $<?= number_format($caja_inicial,2,",",".") ?></p>
+<p style="font-size:10px"> <strong>TOTAL INGRESO:</strong> $<?= number_format($suma_ingreso,2,",",".") ?></p>
+<p style="font-size:10px"><strong>TOTAL EGRESO:</strong> $<?= number_format($suma_egreso,2,",",".") ?></p>
+<p style="font-size:10px"><strong>CAJA FINAL:</strong> $<?= number_format($saldo+$caja_inicial,2,",",".") ?></p>
 

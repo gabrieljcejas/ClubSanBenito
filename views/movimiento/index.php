@@ -89,7 +89,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' =>['view', 'v' 
                     ],
                 ]);?>
             </div>
-            <?php Pjax::begin(['id' => 's2_cliente']);?>
+            
                 <div class="col-md-4">
                     <?=$form->field($model, 'cliente_id')->widget(Select2::classname(), [
                         'data' => $listC,
@@ -100,7 +100,7 @@ $this->params['breadcrumbs'][] = ['label' => $this->title, 'url' =>['view', 'v' 
                         ],
                     ]);?>
                 </div>
-            <?php Pjax::end();?>
+            
 
             <div class="col-md-1"><br>
                     <?=html::button('', ['value'=>Url::to('index.php?r=cliente/create'),'class' => 'btn glyphicon glyphicon-plus', 'id' => 'agregarcliente'])?>  

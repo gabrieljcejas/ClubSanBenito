@@ -81,7 +81,7 @@ echo Nav::widget([
 				['label' => 'Recibos Anulados', 'url' => ['movimiento/consulta-recibos-anulados']],
 				['label' => 'Estado de Cuenta Socios', 'url' => ['movimiento/consulta-estado-cuenta']],
 				['label' => 'Libro de Socios', 'url' => ['movimiento/consulta-libro-socio']],
-				['label' => 'Listado de Socios', 'url' => ['socio/listado-socio']],
+				['label' => 'Padron de Socios', 'url' => ['socio/listado-socio']],
 				//'<li class="divider"></li>',
 				//['label' => 'Estado de Cuenta', 'url' => ['/proveedor/index']],
 			],

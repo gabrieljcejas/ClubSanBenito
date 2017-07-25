@@ -1,4 +1,8 @@
-
+<style type="text/css"> 
+th,td,b,p {
+ 		font-size: 10px;
+ 	}
+</style>
 <div>
 	<h1>Detalle Egresos</h1><label>Fechas: <?= date("d-m-Y",strtotime($fecha_desde)) . " - " . date("d-m-Y",strtotime($fecha_hasta))?></label>
 </div>

@@ -6,7 +6,11 @@ use yii\helpers\Url;
 use app\models\MovimientoDetalle;
 ini_set('max_execution_time', 300); //300 seconds = 5 minutes
 ?>
-
+<style type="text/css"> 
+th,td,b,p {
+ 		font-size: 10px;
+ 	}
+</style>
 <div>
 	<h1>Recibos Anulados</h1>
 	<label>Fecha desde: <?=date("d-m-Y", strtotime($fecha_desde)) . " hasta " . date("d-m-Y", strtotime($fecha_hasta))?></label>

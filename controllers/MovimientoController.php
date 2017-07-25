@@ -232,12 +232,7 @@ class MovimientoController extends BaseController {
 					for ($f = $model->periodo_mes_desde; $f <= $model->periodo_mes_hasta; $f++) 
 					{
 						
-						$mMovimiento = new Movimiento();
-						$mMovimiento->fk_cliente = $s->id;
-
-						if (!$mMovimiento->save()) {
-							throw new \yii\web\HttpException(400, 'Error al insertar en movimiento', 405);
-						}else {
+						
 							// si inserto en movimiento.
 							// Ahora tengo q insertar los debitos del socio en movimiento_detalle
 							//por cada debito del socio
@@ -251,6 +246,12 @@ class MovimientoController extends BaseController {
 									->andWhere(['periodo_anio' => $model->periodo_anio])->one();
 								// si no se repite la cuota generada,genero la cuota si no no hace nada
 								if ($verificar == null) {
+									$mMovimiento = new Movimiento();
+									$mMovimiento->fk_cliente = $s->id;
+
+									if (!$mMovimiento->save()) {
+										throw new \yii\web\HttpException(400, 'Error al insertar en movimiento', 405);
+									}
 									//si el select con id subcuenta_id es cero es por que eligio la opcion  "todos" (todas las cuentas) del select
 									if ($model->subcuenta_id == 0) {
 										//var_dump("etro cero");die;
@@ -287,7 +288,7 @@ class MovimientoController extends BaseController {
 
 									}
 
-								}
+								
 
 							} // end foreach ($modelSD as $sd) {
 
@@ -671,9 +672,9 @@ class MovimientoController extends BaseController {
 			$categoria_hasta = $post['categoria_hasta'];
 			$anio = $post['anio'];
 
-			$sql = "SELECT s.id,s.apellido_nombre,s.fecha_nacimiento,s.matricula,s.fecha_baja FROM socio s
+			$sql = "SELECT s.id,s.apellido_nombre,s.fecha_nacimiento,s.matricula,s.fecha_baja,s.obs FROM socio s
 					JOIN socio_debito sd ON sd.id_socio = s.id
-					WHERE YEAR(fecha_nacimiento) >= '". $categoria_desde ."' AND YEAR(fecha_nacimiento) <= '". $categoria_hasta ."' AND (sd.id_debito = 19 OR sd.id_debito = 22 OR sd.id_debito = 23) ORDER BY s.apellido_nombre ASC" ;
+					WHERE YEAR(fecha_nacimiento) >= '". $categoria_desde ."' AND YEAR(fecha_nacimiento) <= '". $categoria_hasta ."' AND (sd.id_debito = 19 OR sd.id_debito = 22 OR sd.id_debito = 23) ORDER BY s.matricula ASC" ;
 
 			$socio = Socio::findBySql($sql)->all();
 			
@@ -886,15 +887,15 @@ class MovimientoController extends BaseController {
 			$anio = 2017;	
 			
 			if ($socio == ""){
-				$sql = "SELECT s.id,s.apellido_nombre,s.fecha_nacimiento,s.matricula,s.fecha_baja FROM socio s
+				$sql = "SELECT s.id,s.apellido_nombre,s.fecha_nacimiento,s.matricula,s.fecha_baja,s.obs FROM socio s
 						JOIN socio_debito sd ON sd.id_socio = s.id
-						WHERE YEAR(fecha_nacimiento) >= '". $categoria_desde ."' AND YEAR(fecha_nacimiento) <= '". $categoria_hasta ."' AND sd.id_debito > 19 group by s.id ASC" ;
+						WHERE YEAR(fecha_nacimiento) >= '". $categoria_desde ."' AND YEAR(fecha_nacimiento) <= '". $categoria_hasta ."' AND sd.id_debito > 19 group by s.apellido_nombre ASC" ;
 				$socio = Socio::findBySql($sql)->all();
 			}else{
-				$sql = "SELECT s.id,s.apellido_nombre,s.fecha_nacimiento,s.matricula,s.fecha_baja FROM socio s
+				$sql = "SELECT s.id,s.apellido_nombre,s.fecha_nacimiento,s.matricula,s.fecha_baja,s.obs FROM socio s
 						JOIN socio_debito sd ON sd.id_socio = s.id
 						WHERE YEAR(fecha_nacimiento) >= '". $categoria_desde ."' AND YEAR(fecha_nacimiento) <= '". $categoria_hasta
-						 ."' AND sd.id_debito > 19 AND s.id=".$socio." group by s.id ASC" ;
+						 ."' AND sd.id_debito > 19 AND s.id=".$socio." group by s.apellido_nombre ASC" ;
 				$socio = Socio::findBySql($sql)->all();
 			}
 

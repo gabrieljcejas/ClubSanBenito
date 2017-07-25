@@ -1,13 +1,18 @@
+<style type="text/css"> 
+th,td,b,p {
+ 		font-size: 10px;
+ 	}
+</style>
 <div>
 	<h1>Detalle Egresos</h1>
-	<label>Fechas: <?= date("d-m-Y",strtotime($fecha_desde)) . " - " . date("d-m-Y",strtotime($fecha_hasta))?></label>
+	<label>Fechas Desde: <?= date("d-m-Y",strtotime($fecha_desde)) . " Hasta: " . date("d-m-Y",strtotime($fecha_hasta))?></label>
 </div>
 
 <hr>
 
-<br><br><br>
+<br><br>
 
-<table border="1" width="100%">
+<table border="1">
 
 <tr><th>Fecha</th>
 <th>Proveedor</th>
